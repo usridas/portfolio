@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './App';
-import './src/fonts/EditorialNew/PPEditorialNew-Italic.otf';
-import './src/fonts/EditorialNew/PPEditorialNew-Regular.otf';
-import './src/fonts/EditorialNew/PPEditorialNew-Ultrabold.otf';
-import './src/fonts/EditorialNew/PPEditorialNew-UltraboldItalic.otf';
-import './src/fonts/EditorialNew/PPEditorialNew-Ultralight.otf';
-import './src/fonts/EditorialNew/PPEditorialNew-UltralightItalic.otf';
+import './fonts/EditorialNew/PPEditorialNew-Italic.otf';
+import './fonts/EditorialNew/PPEditorialNew-Regular.otf';
+import './fonts/EditorialNew/PPEditorialNew-Ultrabold.otf';
+import './fonts/EditorialNew/PPEditorialNew-UltraboldItalic.otf';
+import './fonts/EditorialNew/PPEditorialNew-Ultralight.otf';
+import './fonts/EditorialNew/PPEditorialNew-UltralightItalic.otf';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
