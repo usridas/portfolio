@@ -1,0 +1,15 @@
+@import '../index.scss';
+
+.navBarContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.tab {
+    color: #E95400;
+    opacity: 0.7;
+    font-family: 'SatoshiBlack';
+    font-size: 20px;
+    white-space: nowrap;
+}
