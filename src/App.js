@@ -9,31 +9,27 @@ import { ProjectPage } from './pages/ProjectPage';
 
 function App() {
   const [tab, setTab] = useState('home');
+  const homeOnClick = () => {
+    setTab('home');
+  }
 
-  if (tab === 'home') {
   return (
     <div className='appContainer'>
       <div className='titleContainer'>
-        <div className='title'>Umaiyal Sridas | Portfolio</div>
+        <a className='title' href='' onClick={homeOnClick}>Umaiyal Sridas | Portfolio</a>
         <NavBar setTab={setTab}/>
       </div>
-      <Profile />
-      <ArtDesign />
-      <Projects setTab={setTab}/>
-      <Photography />
+      {tab  === 'home' ?
+        <div>
+          <Profile />
+          <ArtDesign />
+          <Projects setTab={setTab}/>
+          <Photography />
+        </div> :
+        <ProjectPage tab={tab}/>
+      }
     </div>
   );
- }
-if (tab !== 'home') {
-  return (
-    <div className='appContainer'>
-      <div className='titleContainer'>
-        <div className='title'>Umaiyal Sridas | Portfolio</div>
-        <NavBar setTab={setTab}/>
-      </div>
-      <ProjectPage tab={tab}/>
-    </div>
-  );}
 }
 
 export default App;

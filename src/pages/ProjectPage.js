@@ -13,7 +13,6 @@ export const ProjectPage = ({tab}) => {
     let projectDetails;
         switch (tab) {
         case 'elfsterRedesign':
-            console.log('hello woohoo');
             projectDetails = elfsterRedesignInformation;
             break;
         case 'myViasatApp':

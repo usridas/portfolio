@@ -8,9 +8,9 @@ export const elfsterRedesignInformation = {
     title: 'Elfster Redesign',
     body: [
       {subtitle: 'Objective', bodyText: 'Redesign the Elfster gift exchange mobile app to be more user friendly, intuitive, and versatile. Elfster is an app that allows users to create wishlists and groups with friends to organize gift exchanges. When a group exchange is made, a user can create a wishlist which friends can see and order from. Essentially this app should allow friends to get purposeful gifts and to avoid duplicates.'},
-      {subtitle: 'Identify the problem', bodyText: 'This is a collection of feedback I collected from myself and other Elfster users about the pros and cons of the app. A lot of the criticism of the app rose from difficult navigation, the functionality of wishlists, and excess information or advertising.', extraContent: {}},
-      {subtitle: 'Research and extraction', bodyText: 'Take screenshots and extract essential information, navigation, and interactions in order to optimize the mobile app.', extraContent: {}},
-      {subtitle: 'Ideate and execute solutions', bodyText: 'Use the existing framework of the app and essential ideas to create a better user experience for customers of Elfster.', extraContent: {}},
+      {subtitle: 'Identify the problem', bodyText: 'This is a collection of feedback I collected from myself and other Elfster users about the pros and cons of the app. A lot of the criticism of the app rose from difficult navigation, the functionality of wishlists, and excess information or advertising.'},
+      {subtitle: 'Research and extraction', bodyText: 'Take screenshots and extract essential information, navigation, and interactions in order to optimize the mobile app.'},
+      {subtitle: 'Ideate and execute solutions', bodyText: 'Use the existing framework of the app and essential ideas to create a better user experience for customers of Elfster.'},
     ]
 };
 
