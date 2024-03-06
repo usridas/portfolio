@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.60c6e31f.css",
-    "main.js": "/portfolio/static/js/main.5378e9c5.js",
+    "main.css": "/portfolio/static/css/main.d789d04d.css",
+    "main.js": "/portfolio/static/js/main.7d6f101e.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/MushroomSeries-01.png": "/portfolio/static/media/MushroomSeries-01.d4f7ff76c1902f71f93b.png",
     "static/media/AnatomySeries-01.png": "/portfolio/static/media/AnatomySeries-01.fabc98353d76aa01cb90.png",
@@ -21,12 +21,12 @@
     "static/media/ViasatAddOns.png": "/portfolio/static/media/ViasatAddOns.7d737344bb1f80efb3de.png",
     "static/media/US_Resume_11-07-23.pdf": "/portfolio/static/media/US_Resume_11-07-23.8b6428c47de534fb9884.pdf",
     "index.html": "/portfolio/index.html",
-    "main.60c6e31f.css.map": "/portfolio/static/css/main.60c6e31f.css.map",
-    "main.5378e9c5.js.map": "/portfolio/static/js/main.5378e9c5.js.map",
+    "main.d789d04d.css.map": "/portfolio/static/css/main.d789d04d.css.map",
+    "main.7d6f101e.js.map": "/portfolio/static/js/main.7d6f101e.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60c6e31f.css",
-    "static/js/main.5378e9c5.js"
+    "static/css/main.d789d04d.css",
+    "static/js/main.7d6f101e.js"
   ]
 }
