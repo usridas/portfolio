@@ -6,6 +6,7 @@ import { Photography } from './components/Photography';
 import { Profile } from './pages/Profile';
 import { Projects } from './components/Projects';
 import { ProjectPage } from './pages/ProjectPage';
+import { Footer } from './components/Footer';
 
 function App() {
   const [tab, setTab] = useState('home');
@@ -28,6 +29,7 @@ function App() {
         </div> :
         <ProjectPage tab={tab}/>
       }
+      <Footer />
     </div>
   );
 }

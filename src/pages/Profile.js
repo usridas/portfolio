@@ -1,7 +1,7 @@
 import './Profile.scss';
 import skills from '../images/skillsDiagram.svg';
 import profile from '../images/profile.jpg';
-import resume from '../documents/US_Resume_11-07-23.pdf'
+import resume from '../documents/US_Resume_03-06-24.pdf'
 
 export const Profile = () => {
     return (

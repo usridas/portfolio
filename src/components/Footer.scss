@@ -1,0 +1,24 @@
+@import '../index.scss';
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contactButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contactButton {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
