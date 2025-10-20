@@ -5,7 +5,7 @@ import image1 from './images/laptopMockup.png';
 import image2 from './images/smartPhoneMockup.png';
 import image3 from './images/smartPhoneMockup2.png';
 
-export const Projects = ({}) => {
+export const Projects = ({setTab}) => {
 
   const imagePaths = [
     image1,
@@ -19,7 +19,13 @@ export const Projects = ({}) => {
     "THIS IS IMAGE 3"
   ]
 
-  const projectSlide = <ImageSlide title={'PROJECT TITLE'} timeFrame={'TIME - TIME'} imagePaths={imagePaths} imageTexts={imageTexts}/>;
+  const imageLinks = [
+    "Umeko",
+    "Umeko2",
+    "Umeko3"
+  ]
+
+  const projectSlide = <ImageSlide title={'PROJECT TITLE'} timeFrame={'TIME - TIME'} imagePaths={imagePaths} imageTexts={imageTexts} imageLinks={imageLinks} setTab={setTab}/>;
   return (
         <LargeContent title={'PROJECTS'} content={projectSlide} />
   );

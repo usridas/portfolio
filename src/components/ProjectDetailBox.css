@@ -1,0 +1,48 @@
+.fullLargeColorBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 568px;
+    gap: 16px;
+    padding: 20px;
+}
+
+.fullLargeFontBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 568px;
+    gap: 16px;
+    padding: 20px;
+    border: 1px solid #33322A;
+}
+
+.largeColorBoxText {
+    white-space: pre-wrap;
+}
+
+.largeImageBox {
+    width: 100%;
+    background-color: #E6E5E0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    aspect-ratio: 1/1;
+}
+
+.largeProjectDetailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.largeProjectDetailContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}

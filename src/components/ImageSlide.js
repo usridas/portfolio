@@ -2,19 +2,7 @@ import './ImageSlide.css';
 import { useState } from 'react';
 
 
-export const ImageSlide = ({title, timeFrame, imagePaths, imageTexts}) => {
-
-  // const imagePaths = [
-  //   image1,
-  //   image2,
-  //   image3
-  // ];
-
-  // const imageText = [
-  //   "THIS IS IMAGE 1",
-  //   "THIS IS IMAGE 2",
-  //   "THIS IS IMAGE 3"
-  // ]
+export const ImageSlide = ({title, timeFrame, imagePaths, imageTexts, imageLinks, setTab}) => {
 
   const [imageIndex, setImageIndex] = useState(0);
 
@@ -34,6 +22,10 @@ export const ImageSlide = ({title, timeFrame, imagePaths, imageTexts}) => {
     }
   }
 
+  function onImageClick() {
+    setTab(imageLinks[imageIndex]);
+  }
+
   return (
     <div className="fullImageSlideContainer">
         <div className='imageSlideTextContainer'>
@@ -41,8 +33,8 @@ export const ImageSlide = ({title, timeFrame, imagePaths, imageTexts}) => {
             <h4>{timeFrame}</h4>
         </div>
         <div className='imageSlideContainer'>
-          <div className='imageSlide' id="imageSlide" style={{backgroundImage: `url(${imagePaths[imageIndex]})`}}>
-            <a className='imageSlideLink'>{imageTexts[imageIndex]}</a>
+          <div className='largeImageBox' style={{backgroundImage: `url(${imagePaths[imageIndex]})`}}>
+            <a className='imageSlideLink' onClick={onImageClick}>{imageTexts[imageIndex]}</a>
           </div>
         </div>
         <div className='imageSlideTextContainer'>

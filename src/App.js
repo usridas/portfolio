@@ -6,6 +6,7 @@ import { Experience } from './pages/Experience';
 import Projects from './pages/Projects';
 import LargeContent from './components/LargeContent';
 import Artwork from './pages/Artwork';
+import Umeko from './pages/Umeko';
 
 function App() {
   const [tab, setTab] = useState('Projects');
@@ -17,18 +18,22 @@ function App() {
     currentPage = <Experience />
   };
   if(tab === 'Projects') {
-    currentPage = <Projects />
+    currentPage = <Projects setTab={setTab}/>
   };
   if(tab === 'Artwork') {
     currentPage = <Artwork />
   };
+  if(tab === 'Umeko') {
+    currentPage = <Umeko />
+  };
+  const isProject = tab !== 'AboutMe' && tab !== 'Experience' && tab !== 'Projects' && tab !== 'Artwork';
   
     return (
       <div className="appContainer">
-        <LargeNav setTab={setTab}/>
+        <LargeNav setTab={setTab} isProject={isProject}/>
         <div className='largePageContainer'>
-          <LargeContent title={'WELCOME'} content={<p>{'After graduating from my undergrad, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. I love the intersection between art and technology and aim to be a bridge between these two fields.\n\n​I am currently in a Masters program for User Experience Design and am searching for work in the UI/UX field.'}</p>} />
-          <hr className='divider'/>
+          {!isProject && <LargeContent title={'WELCOME'} content={<p>{'After graduating from my undergrad, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. I love the intersection between art and technology and aim to be a bridge between these two fields.\n\n​I am currently in a Masters program for User Experience Design and am searching for work in the UI/UX field.'}</p>} />}
+          {!isProject && <hr className='divider'/>}
           {currentPage}
         </div>
       </div>
