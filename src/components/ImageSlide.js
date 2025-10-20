@@ -1,8 +1,6 @@
 import './ImageSlide.css';
 import { useState } from 'react';
-import image1 from './images/laptopMockup.png';
-import image2 from './images/smartPhoneMockup.png';
-import image3 from './images/smartPhoneMockup2.png';
+
 
 export const ImageSlide = ({title, timeFrame, imagePaths, imageTexts}) => {
 
