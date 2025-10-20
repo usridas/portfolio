@@ -16,10 +16,33 @@
 
 .imageSlide {
     width: 100%;
-    background: url('/public/images/smartPhoneMockup.png') center/100% no-repeat, #E6E5E0;
+    background-color: #E6E5E0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
     aspect-ratio: 1/1;
     animation-name: slideInFromLeft;
     animation-duration: 1s;
+}
+
+.imageSlideLink {
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.imageSlideLink:hover {
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background-color: #E6E5E077;
 }
 
 .imageSlideContainer {

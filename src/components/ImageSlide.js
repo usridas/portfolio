@@ -1,34 +1,39 @@
 import './ImageSlide.css';
+import { useState } from 'react';
+import image1 from './images/laptopMockup.png';
+import image2 from './images/smartPhoneMockup.png';
+import image3 from './images/smartPhoneMockup2.png';
 
-export const ImageSlide = ({title, timeFrame, text}) => {
+export const ImageSlide = ({title, timeFrame, imagePaths, imageTexts}) => {
 
-  const imagePaths = [
-      '/images/laptopMockup.png',
-      '/images/smartPhoneMockup.png',
-      '/images/smartPhoneMockup2.png',
-    ];
+  // const imagePaths = [
+  //   image1,
+  //   image2,
+  //   image3
+  // ];
 
-  let imageIndex = 0;
-  let currentImage = `'url(${imagePaths[imageIndex]}) center/100% no-repeat, #E6E5E0'`;
+  // const imageText = [
+  //   "THIS IS IMAGE 1",
+  //   "THIS IS IMAGE 2",
+  //   "THIS IS IMAGE 3"
+  // ]
+
+  const [imageIndex, setImageIndex] = useState(0);
 
   function onBackClick() {
     if (imageIndex > 0 && imageIndex < imagePaths.length) {
-      imageIndex--;
+      setImageIndex(imageIndex-1);
     } else {
-      imageIndex = imagePaths.length - 1;
+      setImageIndex(imagePaths.length - 1);
     }
-    currentImage = `'url(${imagePaths[imageIndex]}) center/100% no-repeat, #E6E5E0'`;
-    console.log("hello: ", imageIndex, currentImage);
   }
 
   function onNextClick() {
-    if (imageIndex >= 0 && imageIndex < imagePaths.length - 1) {
-      imageIndex++;
+    if (imageIndex === imagePaths.length - 1) {
+      setImageIndex(0);
     } else {
-      imageIndex = 0;
+      setImageIndex(imageIndex+1);
     }
-    currentImage = `'url(${imagePaths[imageIndex]}) center/100% no-repeat, #E6E5E0'`;
-    console.log("bye: ", imageIndex, currentImage);
   }
 
   return (
@@ -38,7 +43,9 @@ export const ImageSlide = ({title, timeFrame, text}) => {
             <h4>{timeFrame}</h4>
         </div>
         <div className='imageSlideContainer'>
-          <div className='imageSlide' style={{background: currentImage}}/>
+          <div className='imageSlide' id="imageSlide" style={{backgroundImage: `url(${imagePaths[imageIndex]})`}}>
+            <a className='imageSlideLink'>{imageTexts[imageIndex]}</a>
+          </div>
         </div>
         <div className='imageSlideTextContainer'>
             <a onClick={()=>onBackClick()}>BACK</a>
