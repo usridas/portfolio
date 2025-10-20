@@ -1,0 +1,20 @@
+.largeContentContainer {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    gap: 24px;
+}
+
+.largeContentTitle {
+    width: 134px;
+    min-width: 134px;
+    overflow-wrap: break-word;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.largeContentText {
+    width: 100%;
+    max-width: 608px;
+    gap: 40px;
+}
