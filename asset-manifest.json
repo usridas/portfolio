@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d4abc052.css",
-    "main.js": "/portfolio/static/js/main.84bdba86.js",
+    "main.css": "/portfolio/static/css/main.808a0a8e.css",
+    "main.js": "/portfolio/static/js/main.46ce1cfc.js",
     "static/js/453.6264690d.chunk.js": "/portfolio/static/js/453.6264690d.chunk.js",
-    "static/media/laptopMockup.png": "/portfolio/static/media/laptopMockup.124fc14c7272055f5efb.png",
-    "static/media/smartPhoneMockup2.png": "/portfolio/static/media/smartPhoneMockup2.ea1b492c439ffb558ca0.png",
+    "static/media/mockup1.png": "/portfolio/static/media/mockup1.ac11e73db170f5c8ce96.png",
+    "static/media/Daruma.jpg": "/portfolio/static/media/Daruma.ad79e52f6631038396f9.jpg",
+    "static/media/HermitCrab.jpg": "/portfolio/static/media/HermitCrab.6439516f5f1304877282.jpg",
+    "static/media/Fig1Lime.jpg": "/portfolio/static/media/Fig1Lime.92456edbf2241894f18d.jpg",
+    "static/media/Fig3Onion.jpg": "/portfolio/static/media/Fig3Onion.125008c5a9c9d3c56069.jpg",
+    "static/media/Fig2Pomegranate.jpg": "/portfolio/static/media/Fig2Pomegranate.99ba4be6d6474b175c93.jpg",
+    "static/media/KaviLogos-06.png": "/portfolio/static/media/KaviLogos-06.14f4262f4ade748fdfd2.png",
+    "static/media/UmekoLogos-02.png": "/portfolio/static/media/UmekoLogos-02.b46e089ea38d29d7c767.png",
+    "static/media/smartMockup1.jpg": "/portfolio/static/media/smartMockup1.8a945d62fb69230a07dc.jpg",
     "index.html": "/portfolio/index.html",
-    "main.d4abc052.css.map": "/portfolio/static/css/main.d4abc052.css.map",
-    "main.84bdba86.js.map": "/portfolio/static/js/main.84bdba86.js.map",
+    "main.808a0a8e.css.map": "/portfolio/static/css/main.808a0a8e.css.map",
+    "main.46ce1cfc.js.map": "/portfolio/static/js/main.46ce1cfc.js.map",
     "453.6264690d.chunk.js.map": "/portfolio/static/js/453.6264690d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4abc052.css",
-    "static/js/main.84bdba86.js"
+    "static/css/main.808a0a8e.css",
+    "static/js/main.46ce1cfc.js"
   ]
 }
