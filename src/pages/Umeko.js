@@ -1,6 +1,6 @@
-import ColorBoxSection from '../components/ColorBoxSection';
-import FontBoxSection from '../components/FontBoxSection';
-import ImageBoxSection from '../components/ImageBoxSection';
+import ColorBoxSection from '../components/ProjectDetails/ColorBoxSection';
+import FontBoxSection from '../components/ProjectDetails/FontBoxSection';
+import ImageBoxSection from '../components/ProjectDetails/ImageBoxSection';
 import LargeContent from '../components/LargeContent';
 import './Pages.css';
 

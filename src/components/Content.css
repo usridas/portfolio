@@ -18,3 +18,11 @@
     max-width: 608px;
     gap: 40px;
 }
+
+.smallContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 24px;
+}

@@ -1,11 +1,15 @@
 import LargeContent from '../components/LargeContent';
-import ImageSlide from '../components/ImageSlide';
+import SmallContent from '../components/SmallContent.js';
+import ImageSlide from '../components/ImageSlide/ImageSlide';
 import './Pages.css';
 import image1 from './images/laptopMockup.png';
 import image2 from './images/smartPhoneMockup.png';
 import image3 from './images/smartPhoneMockup2.png';
+import { useScreenResolution } from '../utils/ScreenSize.tsx';
 
 export const Projects = ({setTab}) => {
+
+  const { isLarge } = useScreenResolution();
 
   const imagePaths = [
     image1,
@@ -26,9 +30,15 @@ export const Projects = ({setTab}) => {
   ]
 
   const projectSlide = <ImageSlide title={'PROJECT TITLE'} timeFrame={'TIME - TIME'} imagePaths={imagePaths} imageTexts={imageTexts} imageLinks={imageLinks} setTab={setTab}/>;
-  return (
-        <LargeContent title={'PROJECTS'} content={projectSlide} />
-  );
+  if (isLarge) {
+    return (
+      <LargeContent title={'PROJECTS'} content={projectSlide} />
+    );
+  }
+  else
+    return (
+      <SmallContent title={'PROJECTS'} content={projectSlide} />
+    );
 }
 
 export default Projects;

@@ -3,7 +3,7 @@ import './Nav.css';
 export const LargeNav = ({setTab, isProject}) => {
   return (
     <div className="largeNavContainer">
-      <div className='largeNavTitle'>UMAIYAL SRIDAS</div>
+      <div className='navTitle'>UMAIYAL SRIDAS</div>
       {!isProject &&
         <div className='largeNavList'>
           <a onClick={()=>{setTab('AboutMe')}}>ABOUT ME</a>

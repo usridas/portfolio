@@ -1,5 +1,5 @@
-import LargeContent from './LargeContent';
-import LargeTextContainer from './LargeTextContainer';
+import LargeContent from '../LargeContent';
+import TextContainer from '../TextContainer';
 import './ProjectDetailBox.css';
 
 export const ColorBoxSection = ({title, text}) => {
@@ -12,7 +12,7 @@ export const ColorBoxSection = ({title, text}) => {
         );
     };
 
-    const colorDescription = <LargeTextContainer title={title} text={text} />;
+    const colorDescription = <TextContainer title={title} text={text} />;
     const colorBox1 = <SingleColorBox colorTitle={'COLOR NAME'} colorText={'Hex Code: #FFFFFF\nRGB: 255 255 255\nCMYK: 50% 50% 50% 50%'} color={'#C3BFFF'}/>
     const colorBox2 = <SingleColorBox colorTitle={'COLOR NAME'} colorText={'Hex Code: #FFFFFF\nRGB: 255 255 255\nCMYK: 50% 50% 50% 50%'} color={'#C3BFFF'}/>
     const colorBox3 = <SingleColorBox colorTitle={'COLOR NAME'} colorText={'Hex Code: #FFFFFF\nRGB: 255 255 255\nCMYK: 50% 50% 50% 50%'} color={'#C3BFFF'}/>
