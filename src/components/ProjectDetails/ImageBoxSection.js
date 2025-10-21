@@ -1,14 +1,14 @@
-import LargeContent from '../LargeContent';
-import TextContainer from '../TextContainer';
-import SmallHorizontalContent from '../SmallHorizontalContent.js';
+import LargeContent from '../Content/LargeContent.js';
+import TextContainer from '../Text/TextContainer.js';
+import SmallHorizontalContent from '../Content/SmallHorizontalContent.js';
 import './ProjectDetailBox.css';
 
 export const ImageBoxSection = ({title, text, isLarge}) => {
 
     const imageDescription = <TextContainer title={title} text={text} />;
-    const imageBox = <div className='largeImageBox'/>
+    const imageBox = <div className='imageBox'/>
     const imageSection =
-        <div className='largeProjectDetailContainer'>
+        <div className='projectDetailContainer'>
             {imageDescription}
             {imageBox}
         </div>;

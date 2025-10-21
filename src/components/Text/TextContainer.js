@@ -2,7 +2,7 @@ import './TextContainer.css';
 
 export const TextContainer = ({title, subtitle, text, fontFamily, textSize, fontWeight, fontStyle}) => {
   return (
-    <div className="fullTextContainer">
+    <div className="textContainer">
         <div className='titleSubtitle'>
             <h3>{title}</h3>
             {subtitle && <h4>{subtitle}</h4>}

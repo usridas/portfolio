@@ -1,5 +1,5 @@
-import LargeContent from '../components/LargeContent';
-import SmallContent from '../components/SmallContent.js';
+import LargeContent from '../components/Content/LargeContent.js';
+import SmallContent from '../components/Content/SmallContent.js';
 import ImageSlide from '../components/ImageSlide/ImageSlide';
 import './Pages.css';
 import umekoCover from './images/Umeko/UmekoLogos-02.png';
@@ -26,11 +26,11 @@ export const Projects = ({setTab}) => {
     "VIASAT"
   ]
 
-  const timeFrames = [
-    "JULY 2024",
-    "JULY 2024",
+  const descriptions = [
+    "July 2024",
+    "July 2024",
     "XXX - XXX",
-    "JUNE 2021 - NOVEMBER 2023"
+    "June 2021 - November 2023"
   ]
 
   const imageTexts = [
@@ -47,7 +47,7 @@ export const Projects = ({setTab}) => {
     "Viasat"
   ]
 
-  const projectSlide = <ImageSlide titles={titles} timeFrames={timeFrames} imagePaths={imagePaths} imageTexts={imageTexts} imageLinks={imageLinks} setTab={setTab}/>;
+  const projectSlide = <ImageSlide titles={titles} descriptions={descriptions} imagePaths={imagePaths} imageTexts={imageTexts} imageLinks={imageLinks} setTab={setTab}/>;
   if (isLarge) {
     return (
       <LargeContent title={'PROJECTS'} content={projectSlide} />

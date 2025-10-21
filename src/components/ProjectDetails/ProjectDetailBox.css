@@ -1,4 +1,4 @@
-.fullLargeColorBox {
+.colorBox {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -12,7 +12,7 @@
     }
 }
 
-.fullLargeFontBox {
+.fontBox {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -27,11 +27,7 @@
     }
 }
 
-.largeColorBoxText {
-    white-space: pre-wrap;
-}
-
-.largeImageBox {
+.imageBox {
     border: 1px solid #33322A;
     background-repeat: no-repeat;
     background-position: center;
@@ -39,14 +35,14 @@
     aspect-ratio: 1/1;
 }
 
-.largeProjectDetailContainer {
+.projectDetailContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
 }
 
-.largeProjectDetailContent {
+.projectDetailContent {
     display: flex;
     flex-direction: column;
     align-items: flex-start;

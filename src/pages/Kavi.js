@@ -1,10 +1,10 @@
 import ColorBoxSection from '../components/ProjectDetails/ColorBoxSection';
 import FontBoxSection from '../components/ProjectDetails/FontBoxSection';
 import ImageBoxSection from '../components/ProjectDetails/ImageBoxSection';
-import LargeContent from '../components/LargeContent';
+import LargeContent from '../components/Content/LargeContent.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
-import SmallContent from '../components/SmallContent.js';
+import SmallContent from '../components/Content/SmallContent.js';
 
 export const Kavi = ({}) => {
 
@@ -27,7 +27,7 @@ export const Kavi = ({}) => {
   ];
 
   return (
-        <div className="largeSectionContainer">
+        <div className="sectionContainer">
             {titleContent}
             <hr className='divider'/>
             <ColorBoxSection title={'COLORS'} text={'This brand should use bold, tropical colors to imitate bright saree/textile colors. I also took inspiration from colors applied in Pichwai or Mughal art with lotuses and peacocks.'} isLarge={isLarge} colors={colors}/>

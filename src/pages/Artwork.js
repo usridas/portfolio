@@ -1,5 +1,5 @@
-import LargeContent from '../components/LargeContent';
-import SmallContent from '../components/SmallContent.js';
+import LargeContent from '../components/Content/LargeContent.js';
+import SmallContent from '../components/Content/SmallContent.js';
 import ImageSlide from '../components/ImageSlide/ImageSlide';
 import './Pages.css';
 import linocutLime from './images/Artwork/Fig1Lime.jpg';
@@ -14,28 +14,30 @@ export const Artwork = ({setTab}) => {
   const { isLarge } = useScreenResolution();
 
   const imagePaths = [
+    paintedHermitCrab,
     linocutLime,
     linocutPomegranate,
     linocutOnion,
     linocutDaruma,
-    paintedHermitCrab
   ];
 
   const titles = [
-    "UMEKO",
-    "KAVI",
-    "ELFSTER REDESIGN",
-    "VIASAT"
+    "HERMIT CRAB",
+    "FIG. 1. CITRUS AURANTIIFOLIA",
+    "FIG. 2. PUNICA GRANATUM",
+    "FIG. 3. ALLIUM CEPA",
+    "DARUMA"
   ]
 
-  const timeFrames = [
-    "JULY 2024",
-    "JULY 2024",
-    "XXX - XXX",
-    "JUNE 2021 - NOVEMBER 2023"
+  const descriptions = [
+    "Acrylic on canvas",
+    "Linocut with ink",
+    "Linocut with ink",
+    "Linocut with ink",
+    "Linocut with ink"
   ]
 
-  const artworkSlide = <ImageSlide titles={titles} timeFrames={timeFrames} imagePaths={imagePaths}/>;
+  const artworkSlide = <ImageSlide titles={titles} descriptions={descriptions} imagePaths={imagePaths}/>;
   if (isLarge) {
     return (
       <LargeContent title={'ARTWORK'} content={artworkSlide} />

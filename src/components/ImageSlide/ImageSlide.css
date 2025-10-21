@@ -1,4 +1,4 @@
-.fullImageSlideContainer {
+.imageSlideContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -21,8 +21,6 @@
     background-position: center;
     background-size: 100%;
     aspect-ratio: 1/1;
-    animation-name: slideInFromRight;
-    animation-duration: 1s;
 }
 
 .imageSlideLink {
@@ -50,20 +48,11 @@
     overflow: hidden;
 }
 
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideOutToLeft {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(100%);
-    }
+.imageBox {
+    border: 1px solid #33322A;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: -webkit-fill-available;
+    aspect-ratio: 1/1;
 }

@@ -1,10 +1,10 @@
 import ColorBoxSection from '../components/ProjectDetails/ColorBoxSection';
 import FontBoxSection from '../components/ProjectDetails/FontBoxSection';
 import ImageBoxSection from '../components/ProjectDetails/ImageBoxSection';
-import LargeContent from '../components/LargeContent';
+import LargeContent from '../components/Content/LargeContent.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
-import SmallContent from '../components/SmallContent.js';
+import SmallContent from '../components/Content/SmallContent.js';
 
 export const Umeko = ({}) => {
 
@@ -24,7 +24,7 @@ export const Umeko = ({}) => {
   ]
 
   return (
-        <div className="largeSectionContainer">
+        <div className="sectionContainer">
             {titleContent}
             <hr className='divider'/>
             <ColorBoxSection title={'COLORS'} text={'Used cute, romantic pastels to create an inviting aesthetic. Pinks and purples will pay homage to the plum and plum blossom and give almost a 90s anime/vaporwave feel.'} isLarge={isLarge} colors = {colors}/>

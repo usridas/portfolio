@@ -1,6 +1,6 @@
-import LargeContent from '../components/LargeContent';
-import SmallContent from '../components/SmallContent.js';
-import TextContainer from '../components/TextContainer';
+import LargeContent from '../components/Content/LargeContent.js';
+import SmallContent from '../components/Content/SmallContent.js';
+import TextContainer from '../components/Text/TextContainer.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 
@@ -15,7 +15,7 @@ export const Experience = ({}) => {
     const experience6 = <TextContainer title={'IT SOFTWARE ENGINEERING AND DESIGN INTERN AT VIASAT INC.'} subtitle={'May 2019 - August 2019'} text={'Designed Viasat 404 error page to reduce unnecessary cost of long customer calls and engineering team infographics to prevent excess cost of testing and rebuilding far into the production process.'}/>;
 
     const allExperiences =
-        <div className='largeSectionContainer'>
+        <div className='sectionContainer'>
             {experience1}
             {experience2}
             {experience3}

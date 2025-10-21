@@ -1,17 +1,17 @@
 import './App.css';
 import { useState } from 'react';
+import { useScreenResolution } from './utils/ScreenSize.tsx';
 import LargeNav from './components/Nav/LargeNav';
 import AboutMe from './pages/AboutMe';
-import { Experience } from './pages/Experience';
+import Experience from './pages/Experience';
 import Projects from './pages/Projects';
-import LargeContent from './components/LargeContent';
+import LargeContent from './components/Content/LargeContent';
 import Artwork from './pages/Artwork';
 import Umeko from './pages/Umeko';
-import { useScreenResolution } from './utils/ScreenSize.tsx';
-import SmallContent from './components/SmallContent.js';
+import Kavi from './pages/Kavi';
+import SmallContent from './components/Content/SmallContent.js';
 import SmallNav from './components/Nav/SmallNav.js';
 import SmallNavModal from './components/Nav/SmallNavModal.js';
-import Kavi from './pages/Kavi.js';
 
 function App() {
   const { isLarge, isMedium, isSmall } = useScreenResolution();

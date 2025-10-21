@@ -1,6 +1,6 @@
-import LargeContent from '../components/LargeContent';
-import SmallContent from '../components/SmallContent.js';
-import TextContainer from '../components/TextContainer';
+import LargeContent from '../components/Content/LargeContent.js';
+import SmallContent from '../components/Content/SmallContent.js';
+import TextContainer from '../components/Text/TextContainer.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 
@@ -13,20 +13,20 @@ export const AboutMe = ({}) => {
     const skills2 = <TextContainer title={'SOFTWARE'} text={'JavaScript/TypeScript, HTML/CSS/SCSS, React, Node.js, GitHub, Jira/Confluence, Postman'}/>;
 
     const allEducation =
-        <div className='largeSectionContainer'>
+        <div className='sectionContainer'>
             {education1}
             {education2}
         </div>;
 
       const allSkills =
-        <div className='largeSectionContainer'>
+        <div className='sectionContainer'>
             {skills1}
             {skills2}
         </div>;
 
     if (isLarge) {
     return (
-        <div className="largeSectionContainer">
+        <div className="sectionContainer">
             <LargeContent title={'EDUCATION'} content={allEducation}></LargeContent>
             <hr className='divider'/>
             <LargeContent title={'SKILLS'} content={allSkills}></LargeContent> 
@@ -35,7 +35,7 @@ export const AboutMe = ({}) => {
     }
     else
         return (
-        <div className="largeSectionContainer">
+        <div className="sectionContainer">
             <SmallContent title={'EDUCATION'} content={allEducation}></SmallContent>
             <hr className='divider'/>
             <SmallContent title={'SKILLS'} content={allSkills}></SmallContent> 

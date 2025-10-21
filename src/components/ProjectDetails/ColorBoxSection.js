@@ -1,20 +1,20 @@
-import LargeContent from '../LargeContent';
-import SmallHorizontalContent from '../SmallHorizontalContent.js';
-import TextContainer from '../TextContainer';
+import LargeContent from '../Content/LargeContent.js';
+import SmallHorizontalContent from '../Content/SmallHorizontalContent.js';
+import TextContainer from '../Text/TextContainer.js';
 import './ProjectDetailBox.css';
 
 export const ColorBoxSection = ({title, text, isLarge, colors}) => {
     const SingleColorBox = ({colorTitle, colorText, color}) => {
         return (
-            <div className="fullLargeColorBox" style={{background: `${color}`}}>
+            <div className="colorBox" style={{background: `${color}`}}>
                 <h3>{colorTitle}</h3>
-                <p className='largeColorBoxText'>{colorText}</p>
+                <p>{colorText}</p>
             </div>
         );
     };
 
     const fullColorBox = 
-        <div className='largeProjectDetailContent'>
+        <div className='projectDetailContent'>
           {colors?.map(color => (
             <SingleColorBox colorTitle={color.colorName} colorText={color.text} color={color.color}/>
           ))}
@@ -23,7 +23,7 @@ export const ColorBoxSection = ({title, text, isLarge, colors}) => {
 
     const colorDescription = <TextContainer title={title} text={text} />;
     const colorSection =
-        <div className='largeProjectDetailContainer'>
+        <div className='projectDetailContainer'>
             {colorDescription}
             {fullColorBox}
         </div>;
