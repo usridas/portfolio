@@ -21,7 +21,7 @@
     background-position: center;
     background-size: 100%;
     aspect-ratio: 1/1;
-    animation-name: slideInFromLeft;
+    animation-name: slideInFromRight;
     animation-duration: 1s;
 }
 
@@ -50,7 +50,7 @@
     overflow: hidden;
 }
 
-@keyframes slideInFromLeft {
+@keyframes slideInFromRight {
     0% {
         transform: translateX(100%);
     }

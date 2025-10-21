@@ -3,7 +3,7 @@ import SmallHorizontalContent from '../SmallHorizontalContent.js';
 import TextContainer from '../TextContainer';
 import './ProjectDetailBox.css';
 
-export const ColorBoxSection = ({title, text, isLarge}) => {
+export const ColorBoxSection = ({title, text, isLarge, colors}) => {
     const SingleColorBox = ({colorTitle, colorText, color}) => {
         return (
             <div className="fullLargeColorBox" style={{background: `${color}`}}>
@@ -13,18 +13,15 @@ export const ColorBoxSection = ({title, text, isLarge}) => {
         );
     };
 
-    const colorDescription = <TextContainer title={title} text={text} />;
-    const colorBox1 = <SingleColorBox colorTitle={'COLOR NAME'} colorText={'Hex Code: #FFFFFF\nRGB: 255 255 255\nCMYK: 50% 50% 50% 50%'} color={'#C3BFFF'}/>
-    const colorBox2 = <SingleColorBox colorTitle={'COLOR NAME'} colorText={'Hex Code: #FFFFFF\nRGB: 255 255 255\nCMYK: 50% 50% 50% 50%'} color={'#C3BFFF'}/>
-    const colorBox3 = <SingleColorBox colorTitle={'COLOR NAME'} colorText={'Hex Code: #FFFFFF\nRGB: 255 255 255\nCMYK: 50% 50% 50% 50%'} color={'#C3BFFF'}/>
-    const colorBox4 = <SingleColorBox colorTitle={'COLOR NAME'} colorText={'Hex Code: #FFFFFF\nRGB: 255 255 255\nCMYK: 50% 50% 50% 50%'} color={'#C3BFFF'}/>
-    const fullColorBox =
+    const fullColorBox = 
         <div className='largeProjectDetailContent'>
-            {colorBox1}
-            {colorBox2}
-            {colorBox3}
-            {colorBox4}
+          {colors?.map(color => (
+            <SingleColorBox colorTitle={color.colorName} colorText={color.text} color={color.color}/>
+          ))}
         </div>;
+
+
+    const colorDescription = <TextContainer title={title} text={text} />;
     const colorSection =
         <div className='largeProjectDetailContainer'>
             {colorDescription}
@@ -38,7 +35,7 @@ export const ColorBoxSection = ({title, text, isLarge}) => {
     }
     else
         return (
-            <SmallHorizontalContent title={'1'} description={colorDescription} content={fullColorBox}/>
+            <SmallHorizontalContent title={'1'} description={colorDescription} content={fullColorBox} titleSize={'64'}/>
         );
     
 }

@@ -8,6 +8,7 @@
     padding: 20px;
     @media (max-width: 767px) {
         max-width: none;
+        width: -webkit-fill-available;
     }
 }
 
@@ -20,6 +21,10 @@
     gap: 16px;
     padding: 20px;
     border: 1px solid #33322A;
+    @media (max-width: 767px) {
+        max-width: none;
+        width: -webkit-fill-available;
+    }
 }
 
 .largeColorBoxText {
@@ -27,8 +32,7 @@
 }
 
 .largeImageBox {
-    width: 100%;
-    background-color: #E6E5E0;
+    border: 1px solid #33322A;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
