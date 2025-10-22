@@ -3,7 +3,7 @@ import SmallHorizontalContent from '../Content/SmallHorizontalContent.js';
 import TextContainer from '../Text/TextContainer.js';
 import './ProjectDetailBox.css';
 
-export const ColorBoxSection = ({title, text, isLarge, colors}) => {
+export const ColorBoxSection = ({number, title, text, isLarge, colors}) => {
     const SingleColorBox = ({colorTitle, colorText, color}) => {
         return (
             <div className="colorBox" style={{background: `${color}`}}>
@@ -30,12 +30,12 @@ export const ColorBoxSection = ({title, text, isLarge, colors}) => {
 
     if (isLarge) {
         return (
-            <LargeContent title={'1'} content={colorSection} titleSize={'128'}/>
+            <LargeContent title={number} content={colorSection} titleSize={'128'}/>
         );
     }
     else
         return (
-            <SmallHorizontalContent title={'1'} description={colorDescription} content={fullColorBox} titleSize={'64'}/>
+            <SmallHorizontalContent title={number} description={colorDescription} content={fullColorBox} titleSize={'64'}/>
         );
     
 }

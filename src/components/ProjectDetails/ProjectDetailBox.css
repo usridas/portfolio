@@ -10,7 +10,7 @@
         max-width: none;
         width: -moz-available;
         width: -webkit-fill-available;
-        width: fill-available;
+        width: stretch;
     }
 }
 
@@ -27,7 +27,7 @@
         max-width: none;
         width: -moz-available;
         width: -webkit-fill-available;
-        width: fill-available;
+        width: stretch;
     }
 }
 
@@ -36,6 +36,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
     aspect-ratio: 1/1;
 }
 

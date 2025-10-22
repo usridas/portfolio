@@ -3,7 +3,7 @@ import TextContainer from '../Text/TextContainer.js';
 import SmallHorizontalContent from '../Content/SmallHorizontalContent.js';
 import './ProjectDetailBox.css';
 
-export const ImageBoxSection = ({title, text, content, isLarge}) => {
+export const ImageBoxSection = ({number, title, text, content, isLarge}) => {
 
     const imageDescription = <TextContainer title={title} text={text} />;
     const imageSection =
@@ -14,12 +14,12 @@ export const ImageBoxSection = ({title, text, content, isLarge}) => {
 
   if (isLarge) {
             return (
-                <LargeContent title={'3'} content={imageSection} titleSize={'128'}/>
+                <LargeContent title={number} content={imageSection} titleSize={'128'}/>
             );
         }
         else
             return (
-                <SmallHorizontalContent title={'3'} description={imageDescription} content={content} titleSize={'64'}/>
+                <SmallHorizontalContent title={number} description={imageDescription} content={content} titleSize={'64'}/>
             );
 }
 

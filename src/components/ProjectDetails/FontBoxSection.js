@@ -3,7 +3,7 @@ import TextContainer from '../Text/TextContainer.js';
 import SmallHorizontalContent from '../Content/SmallHorizontalContent.js';
 import './ProjectDetailBox.css';
 
-export const FontBoxSection = ({title, text, isLarge, fonts}) => {
+export const FontBoxSection = ({number, title, text, isLarge, fonts}) => {
 
     const SingleFontBox = ({fontTitle, fontSubtitle, fontFamily, fontSize, fontWeight, fontStyle}) => {
         const fontText = 'Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz';
@@ -30,12 +30,12 @@ export const FontBoxSection = ({title, text, isLarge, fonts}) => {
 
   if (isLarge) {
           return (
-              <LargeContent title={'2'} content={fontSection} titleSize={'128'}/>
+              <LargeContent title={number} content={fontSection} titleSize={'128'}/>
           );
       }
       else
           return (
-              <SmallHorizontalContent title={'2'} description={fontDescription} content={fullFontBox} titleSize={'64'}/>
+              <SmallHorizontalContent title={number} description={fontDescription} content={fullFontBox} titleSize={'64'}/>
           );
 }
 

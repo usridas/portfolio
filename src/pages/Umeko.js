@@ -70,9 +70,9 @@ export const Umeko = ({}) => {
         <div className="sectionContainer">
             {titleContent}
             <hr className='divider'/>
-            <ColorBoxSection title={'COLORS'} text={'Used cute, romantic pastels to create an inviting aesthetic. Pinks and purples will pay homage to the plum and plum blossom and give almost a 90s anime/vaporwave feel.'} isLarge={isLarge} colors = {colors}/>
-            <FontBoxSection title={'TYPEFACES'} text={'These typefaces are bubbly, yet easy to read, to welcome an audience of all ages. The typeface also pairs well with the cute cat logo.'} isLarge={isLarge} fonts={fonts}/>
-            <ImageBoxSection title={'IMAGES'} text={'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'} content={imageSlide} isLarge={isLarge}/>
+            <ColorBoxSection number={'1'} title={'COLORS'} text={'Used cute, romantic pastels to create an inviting aesthetic. Pinks and purples will pay homage to the plum and plum blossom and give almost a 90s anime/vaporwave feel.'} isLarge={isLarge} colors = {colors}/>
+            <FontBoxSection number={'2'} title={'TYPEFACES'} text={'These typefaces are bubbly, yet easy to read, to welcome an audience of all ages. The typeface also pairs well with the cute cat logo.'} isLarge={isLarge} fonts={fonts}/>
+            <ImageBoxSection number={'3'} title={'IMAGES'} text={'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'} content={imageSlide} isLarge={isLarge}/>
         </div>
     );
 }

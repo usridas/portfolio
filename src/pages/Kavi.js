@@ -69,9 +69,9 @@ export const Kavi = ({}) => {
         <div className="sectionContainer">
             {titleContent}
             <hr className='divider'/>
-            <ColorBoxSection title={'COLORS'} text={'This brand should use bold, tropical colors to imitate bright saree/textile colors. I also took inspiration from colors applied in Pichwai or Mughal art with lotuses and peacocks.'} isLarge={isLarge} colors={colors}/>
-            <FontBoxSection title={'TYPEFACES'} text={'These typefaces are mature and elegant. The Cormorant Garamond Medium is the primary typeface while the DM Sans Regular is the secondary typeface. For quotes and extra information, use the Cormorant Garamond Semibold Italic.'} isLarge={isLarge} fonts={fonts}/>
-            <ImageBoxSection title={'IMAGES'} text={'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'} content={imageSlide} isLarge={isLarge}/>
+            <ColorBoxSection number={'1'} title={'COLORS'} text={'This brand should use bold, tropical colors to imitate bright saree/textile colors. I also took inspiration from colors applied in Pichwai or Mughal art with lotuses and peacocks.'} isLarge={isLarge} colors={colors}/>
+            <FontBoxSection number={'2'} title={'TYPEFACES'} text={'These typefaces are mature and elegant. The Cormorant Garamond Medium is the primary typeface while the DM Sans Regular is the secondary typeface. For quotes and extra information, use the Cormorant Garamond Semibold Italic.'} isLarge={isLarge} fonts={fonts}/>
+            <ImageBoxSection number={'3'} title={'IMAGES'} text={'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'} content={imageSlide} isLarge={isLarge}/>
         </div>
     );
 }

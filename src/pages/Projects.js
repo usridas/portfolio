@@ -4,7 +4,7 @@ import ImageSlide from '../components/ImageSlide/ImageSlide';
 import './Pages.css';
 import umekoCover from './images/Umeko/logo2.png';
 import kaviCover from './images/Kavi/logo1.png';
-import elfsterCover from './images/ElfsterRedesign/smartMockup1.jpg';
+import elfsterCover from './images/ElfsterRedesign/mockup1.jpg';
 import viasatCover from './images/Viasat/mockup1.png';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 

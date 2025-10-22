@@ -2,7 +2,7 @@ import './ImageSlide.css';
 import { useState } from 'react';
 
 
-export const ImageSlide = ({titles, descriptions, imagePaths, imageTexts, imageLinks, setTab}) => {
+export const ImageSlide = ({titles, descriptions, imagePaths, imageTexts, imageLinks, imageSizes, setTab}) => {
 
   const [imageIndex, setImageIndex] = useState(0);
 
@@ -35,7 +35,7 @@ export const ImageSlide = ({titles, descriptions, imagePaths, imageTexts, imageL
           </div>
         }
         <div className='imageSlideContainer'>
-          <div className='imageBox' style={{backgroundImage: `url(${imagePaths[imageIndex]})`}}>
+          <div className='imageBox' style={{backgroundImage: `url(${imagePaths[imageIndex]})`, backgroundSize: `${imageSizes ? imageSizes[imageIndex] : '100%'}`}}>
             {imageLinks && <a className='imageSlideLink' onClick={onImageClick}>{imageTexts[imageIndex]}</a>}
           </div>
         </div>
