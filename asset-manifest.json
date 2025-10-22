@@ -1,24 +1,32 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f442bce3.css",
-    "main.js": "/portfolio/static/js/main.161acbf1.js",
+    "main.css": "/portfolio/static/css/main.7058cae8.css",
+    "main.js": "/portfolio/static/js/main.8b0dcc2c.js",
     "static/js/453.6264690d.chunk.js": "/portfolio/static/js/453.6264690d.chunk.js",
-    "static/media/mockup1.png": "/portfolio/static/media/mockup1.ac11e73db170f5c8ce96.png",
+    "static/media/mockup4.png": "/portfolio/static/media/mockup4.4e883e7a5e31d886385c.png",
+    "static/media/mockup3.png": "/portfolio/static/media/mockup3.c298d1c6a85c101c9c72.png",
+    "static/media/mockup2.png": "/portfolio/static/media/mockup2.afc63c5c6bba0aaec3e4.png",
+    "static/media/mockup1.png": "/portfolio/static/media/mockup1.14f4262f4ade748fdfd2.png",
+    "static/media/mockup5.png": "/portfolio/static/media/mockup5.a599faac8715f5e4b7a8.png",
+    "static/media/brandAsset3.png": "/portfolio/static/media/brandAsset3.1b265b5cdbc5bc3b5f70.png",
     "static/media/Daruma.jpg": "/portfolio/static/media/Daruma.ad79e52f6631038396f9.jpg",
     "static/media/HermitCrab.jpg": "/portfolio/static/media/HermitCrab.6439516f5f1304877282.jpg",
     "static/media/Fig1Lime.jpg": "/portfolio/static/media/Fig1Lime.92456edbf2241894f18d.jpg",
     "static/media/Fig3Onion.jpg": "/portfolio/static/media/Fig3Onion.125008c5a9c9d3c56069.jpg",
     "static/media/Fig2Pomegranate.jpg": "/portfolio/static/media/Fig2Pomegranate.99ba4be6d6474b175c93.jpg",
-    "static/media/KaviLogos-06.png": "/portfolio/static/media/KaviLogos-06.14f4262f4ade748fdfd2.png",
-    "static/media/UmekoLogos-02.png": "/portfolio/static/media/UmekoLogos-02.b46e089ea38d29d7c767.png",
+    "static/media/logo1.png": "/portfolio/static/media/logo1.29351952a605ef5935ee.png",
+    "static/media/brandAsset2.png": "/portfolio/static/media/brandAsset2.beee6c0d387d72cc8e3b.png",
+    "static/media/logo2.png": "/portfolio/static/media/logo2.68df9bf5b7febc9d8577.png",
+    "static/media/brandAsset1.png": "/portfolio/static/media/brandAsset1.ab28488b138fe9f79af7.png",
+    "static/media/logo3.png": "/portfolio/static/media/logo3.dbb421c6d4485126c56d.png",
     "static/media/smartMockup1.jpg": "/portfolio/static/media/smartMockup1.8a945d62fb69230a07dc.jpg",
     "index.html": "/portfolio/index.html",
-    "main.f442bce3.css.map": "/portfolio/static/css/main.f442bce3.css.map",
-    "main.161acbf1.js.map": "/portfolio/static/js/main.161acbf1.js.map",
+    "main.7058cae8.css.map": "/portfolio/static/css/main.7058cae8.css.map",
+    "main.8b0dcc2c.js.map": "/portfolio/static/js/main.8b0dcc2c.js.map",
     "453.6264690d.chunk.js.map": "/portfolio/static/js/453.6264690d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f442bce3.css",
-    "static/js/main.161acbf1.js"
+    "static/css/main.7058cae8.css",
+    "static/js/main.8b0dcc2c.js"
   ]
 }
