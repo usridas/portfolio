@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7058cae8.css",
-    "main.js": "/portfolio/static/js/main.8b0dcc2c.js",
-    "static/js/453.6264690d.chunk.js": "/portfolio/static/js/453.6264690d.chunk.js",
+    "main.css": "/portfolio/static/css/main.0503f924.css",
+    "main.js": "/portfolio/static/js/main.2c6b8f76.js",
+    "static/js/453.ac9b7e2a.chunk.js": "/portfolio/static/js/453.ac9b7e2a.chunk.js",
     "static/media/mockup4.png": "/portfolio/static/media/mockup4.4e883e7a5e31d886385c.png",
     "static/media/mockup3.png": "/portfolio/static/media/mockup3.c298d1c6a85c101c9c72.png",
     "static/media/mockup2.png": "/portfolio/static/media/mockup2.afc63c5c6bba0aaec3e4.png",
     "static/media/mockup1.png": "/portfolio/static/media/mockup1.14f4262f4ade748fdfd2.png",
     "static/media/mockup5.png": "/portfolio/static/media/mockup5.a599faac8715f5e4b7a8.png",
     "static/media/brandAsset3.png": "/portfolio/static/media/brandAsset3.1b265b5cdbc5bc3b5f70.png",
+    "static/media/screenshot1.png": "/portfolio/static/media/screenshot1.034be4303dd2af90450f.png",
     "static/media/Daruma.jpg": "/portfolio/static/media/Daruma.ad79e52f6631038396f9.jpg",
     "static/media/HermitCrab.jpg": "/portfolio/static/media/HermitCrab.6439516f5f1304877282.jpg",
     "static/media/Fig1Lime.jpg": "/portfolio/static/media/Fig1Lime.92456edbf2241894f18d.jpg",
@@ -16,17 +17,28 @@
     "static/media/Fig2Pomegranate.jpg": "/portfolio/static/media/Fig2Pomegranate.99ba4be6d6474b175c93.jpg",
     "static/media/logo1.png": "/portfolio/static/media/logo1.29351952a605ef5935ee.png",
     "static/media/brandAsset2.png": "/portfolio/static/media/brandAsset2.beee6c0d387d72cc8e3b.png",
+    "static/media/screenshot2.png": "/portfolio/static/media/screenshot2.6692345b6c3bdc2fdc93.png",
     "static/media/logo2.png": "/portfolio/static/media/logo2.68df9bf5b7febc9d8577.png",
+    "static/media/screenshot3.png": "/portfolio/static/media/screenshot3.ea45f770610a02f2706c.png",
     "static/media/brandAsset1.png": "/portfolio/static/media/brandAsset1.ab28488b138fe9f79af7.png",
     "static/media/logo3.png": "/portfolio/static/media/logo3.dbb421c6d4485126c56d.png",
-    "static/media/smartMockup1.jpg": "/portfolio/static/media/smartMockup1.8a945d62fb69230a07dc.jpg",
+    "static/media/mockup1.jpg": "/portfolio/static/media/mockup1.8a945d62fb69230a07dc.jpg",
+    "static/media/mockup2.jpg": "/portfolio/static/media/mockup2.7373e13a85506cb62720.jpg",
+    "static/media/mockup3.jpg": "/portfolio/static/media/mockup3.f3919078da599c658cbc.jpg",
+    "static/media/mockup4.jpg": "/portfolio/static/media/mockup4.ab7b12f7542c269d4997.jpg",
+    "static/media/screen6.png": "/portfolio/static/media/screen6.cd196cc6a219aee3e421.png",
+    "static/media/screen1.png": "/portfolio/static/media/screen1.5fcf1b8ccc2eab88eaff.png",
+    "static/media/screen3.png": "/portfolio/static/media/screen3.6a4cdfba08d4e8ccfe83.png",
+    "static/media/screen4.png": "/portfolio/static/media/screen4.267255621527be5b9c6d.png",
+    "static/media/screen2.png": "/portfolio/static/media/screen2.b1cf7143427bd730fc6e.png",
+    "static/media/screen5.png": "/portfolio/static/media/screen5.19edb1fa185e26ef41fd.png",
     "index.html": "/portfolio/index.html",
-    "main.7058cae8.css.map": "/portfolio/static/css/main.7058cae8.css.map",
-    "main.8b0dcc2c.js.map": "/portfolio/static/js/main.8b0dcc2c.js.map",
-    "453.6264690d.chunk.js.map": "/portfolio/static/js/453.6264690d.chunk.js.map"
+    "main.0503f924.css.map": "/portfolio/static/css/main.0503f924.css.map",
+    "main.2c6b8f76.js.map": "/portfolio/static/js/main.2c6b8f76.js.map",
+    "453.ac9b7e2a.chunk.js.map": "/portfolio/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7058cae8.css",
-    "static/js/main.8b0dcc2c.js"
+    "static/css/main.0503f924.css",
+    "static/js/main.2c6b8f76.js"
   ]
 }
