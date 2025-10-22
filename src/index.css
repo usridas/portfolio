@@ -18,10 +18,10 @@ hr {
 }
 
 p {
-  font-family: "Plantin MT Pro";
+  font-family: plantin, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
   color: #33322A;
   line-height: normal;
   white-space: pre-wrap;
@@ -29,8 +29,8 @@ p {
 }
 
 a {
-  font-family: "Space Mono";
-  font-size: 12px;
+  font-family: "space-mono", mono;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   text-decoration-line: underline;
@@ -54,17 +54,17 @@ a:active {
 }
 
 h1 {
-  font-family: "Plantin MT Pro";
-  font-weight: 600;
+  font-family: "plantin", sans-serif;
+  font-weight: 500;
   font-style: normal;
-  font-size: 36px;
+  font-size: 40px;
   color: #E6E5E0;
   letter-spacing: -3.6px;
   margin: 0;
 }
 
 h2 {
-  font-family: "Plantin MT Pro";
+  font-family: "plantin", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
@@ -74,8 +74,8 @@ h2 {
 }
 
 h3 {
-  font-family: "Space Mono";
-  font-size: 12px;
+  font-family: "space-mono", mono;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -84,11 +84,22 @@ h3 {
 }
 
 h4 {
-  font-family: "Space Mono";
-  font-size: 12px;
+  font-family: "space-mono", mono;
+  font-size: 16px;
   font-style: italic;
   font-weight: 400;
   line-height: 8px;
   color: #95948E;
+  margin: 0;
+}
+
+h5 {
+  font-family: "plantin", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2px;
+  color: #E6E5E0;
   margin: 0;
 }

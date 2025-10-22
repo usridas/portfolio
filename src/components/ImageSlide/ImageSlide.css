@@ -49,10 +49,12 @@
 }
 
 .imageBox {
-    border: 1px solid #33322A;
+    border: 1px solid #E6E5E0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    width: -moz-available;
     width: -webkit-fill-available;
+    width: fill-available;
     aspect-ratio: 1/1;
 }

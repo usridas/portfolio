@@ -28,10 +28,12 @@ export const ImageSlide = ({titles, descriptions, imagePaths, imageTexts, imageL
 
   return (
     <div className="imageSlideContainer">
-        <div className='imageSlideTextContainer'>
-            <h3>{titles[imageIndex]}</h3>
-            <h4>{descriptions[imageIndex]}</h4>
-        </div>
+        {titles &&
+          <div className='imageSlideTextContainer'>
+              <h3>{titles[imageIndex]}</h3>
+              {descriptions && <h4>{descriptions[imageIndex]}</h4>}
+          </div>
+        }
         <div className='imageSlideContainer'>
           <div className='imageBox' style={{backgroundImage: `url(${imagePaths[imageIndex]})`}}>
             {imageLinks && <a className='imageSlideLink' onClick={onImageClick}>{imageTexts[imageIndex]}</a>}

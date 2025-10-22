@@ -5,6 +5,18 @@ import LargeContent from '../components/Content/LargeContent.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 import SmallContent from '../components/Content/SmallContent.js';
+import ImageSlide from '../components/ImageSlide/ImageSlide.js';
+import logo1 from './images/Umeko/logo1.png';
+import logo2 from './images/Umeko/logo2.png';
+import logo3 from './images/Umeko/logo3.png';
+import brandAsset1 from './images/Umeko/brandAsset1.png';
+import brandAsset2 from './images/Umeko/brandAsset2.png';
+import brandAsset3 from './images/Umeko/brandAsset3.png';
+import mockup1 from './images/Umeko/mockup1.png';
+import mockup2 from './images/Umeko/mockup2.png';
+import mockup3 from './images/Umeko/mockup3.png';
+import mockup4 from './images/Umeko/mockup4.png';
+import mockup5 from './images/Umeko/mockup5.png';
 
 export const Umeko = ({}) => {
 
@@ -20,8 +32,39 @@ export const Umeko = ({}) => {
   ];
 
   const fonts = [
-    {fontName: 'RAMPART ONE REGULAR', fontSubtitle: 'Use for all text', fontFamily: 'Rampart One', fontSize: '32'}
+    {fontName: 'RAMPART ONE REGULAR', fontSubtitle: 'Primary font', fontFamily: `"rampart-one", sans-serif`, fontWeight: '400', fontStyle: 'normal', fontSize: '32'},
+    {fontName: 'ROUNDED M+ 1C MEDIUM', fontSubtitle: 'Secondary font', fontFamily: `"m-plus-rounded-1c", sans-serif`, fontWeight: '500', fontStyle: 'normal', fontSize: '32'}  
   ]
+
+  const imagePaths = [
+    logo1,
+    logo2,
+    logo3,
+    brandAsset1,
+    brandAsset2,
+    brandAsset3,
+    mockup1,
+    mockup2,
+    mockup3,
+    mockup4,
+    mockup5
+  ];
+
+  const titles = [
+    "PRIMARY LOGO",
+    "SECONDARY LOGO",
+    "TERTIARY LOGO",
+    "BRAND ASSET 1",
+    "BRAND ASSET 2",
+    "ILLUSTRATIONS",
+    "MOCKUP",
+    "MOCKUP",
+    "MOCKUP",
+    "MOCKUP",
+    "MOCKUP"
+  ]
+
+  const imageSlide = <ImageSlide imagePaths={imagePaths} titles={titles}/>;
 
   return (
         <div className="sectionContainer">
@@ -29,7 +72,7 @@ export const Umeko = ({}) => {
             <hr className='divider'/>
             <ColorBoxSection title={'COLORS'} text={'Used cute, romantic pastels to create an inviting aesthetic. Pinks and purples will pay homage to the plum and plum blossom and give almost a 90s anime/vaporwave feel.'} isLarge={isLarge} colors = {colors}/>
             <FontBoxSection title={'TYPEFACES'} text={'These typefaces are bubbly, yet easy to read, to welcome an audience of all ages. The typeface also pairs well with the cute cat logo.'} isLarge={isLarge} fonts={fonts}/>
-            <ImageBoxSection title={'IMAGES'} text={'These typefaces are bubbly, yet easy to read, to welcome an audience of all ages. The typeface also pairs well with the cute cat logo.'} isLarge={isLarge}/>
+            <ImageBoxSection title={'IMAGES'} text={'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'} content={imageSlide} isLarge={isLarge}/>
         </div>
     );
 }
