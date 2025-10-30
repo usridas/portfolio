@@ -13,6 +13,7 @@ import ElfsterRedesign from './pages/ElfsterRedesign';
 import SmallContent from './components/Content/SmallContent.js';
 import SmallNav from './components/Nav/SmallNav.js';
 import SmallNavModal from './components/Nav/SmallNavModal.js';
+import Viasat from './pages/Viasat.js';
 
 function App() {
   const { isLarge, isMedium, isSmall } = useScreenResolution();
@@ -39,6 +40,9 @@ function App() {
   };
   if(tab === 'ElfsterRedesign') {
     currentPage = <ElfsterRedesign />
+  };
+  if(tab === 'Viasat') {
+    currentPage = <Viasat />
   };
 
   const isProject = tab !== 'AboutMe' && tab !== 'Experience' && tab !== 'Projects' && tab !== 'Artwork';

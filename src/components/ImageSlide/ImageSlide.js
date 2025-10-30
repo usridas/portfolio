@@ -39,10 +39,12 @@ export const ImageSlide = ({titles, descriptions, imagePaths, imageTexts, imageL
             {imageLinks && <a className='imageSlideLink' onClick={onImageClick}>{imageTexts[imageIndex]}</a>}
           </div>
         </div>
-        <div className='imageSlideTextContainer'>
+        {imagePaths.length > 1 &&
+          <div className='imageSlideTextContainer'>
             <a onClick={()=>onBackClick()}>BACK</a>
             <a onClick={()=>onNextClick()}>NEXT</a>
-        </div>
+          </div>
+        }
     </div>
   );
 }

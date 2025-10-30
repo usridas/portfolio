@@ -19,7 +19,7 @@ import mockup3 from './images/ElfsterRedesign/mockup3.jpg';
 import mockup4 from './images/ElfsterRedesign/mockup4.jpg';
 import TextBoxSection from '../components/ProjectDetails/TextBoxSection.js';
 
-export const Umeko = ({}) => {
+export const ElfsterRedesign = ({}) => {
 
   const { isLarge } = useScreenResolution();
   const content = 'Objective: Redesign the Elfster gift exchange mobile app to be more user friendly, intuitive, and versatile. Elfster is an app that allows users to create wishlists and groups with friends to organize gift exchanges. When a group exchange is made, a user can create a wishlist which friends can see and order from. Essentially this app should allow friends to get purposeful gifts and to avoid duplicates.';
@@ -77,4 +77,4 @@ export const Umeko = ({}) => {
     );
 }
 
-export default Umeko;
+export default ElfsterRedesign;

@@ -37,7 +37,15 @@ export const Artwork = ({setTab}) => {
     "Linocut with ink"
   ]
 
-  const artworkSlide = <ImageSlide titles={titles} descriptions={descriptions} imagePaths={imagePaths}/>;
+  const imageSizes = [
+    '75%',
+    '100%',
+    '100%',
+    '100%',
+    '65%'
+  ]
+
+  const artworkSlide = <ImageSlide titles={titles} descriptions={descriptions} imagePaths={imagePaths} imageSizes={imageSizes}/>;
   if (isLarge) {
     return (
       <LargeContent title={'ARTWORK'} content={artworkSlide} />
