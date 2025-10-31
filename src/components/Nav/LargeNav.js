@@ -10,7 +10,7 @@ export const LargeNav = ({setTab, isProject}) => {
           <a onClick={()=>{setTab('Experience')}}>EXPERIENCE</a>
           <a onClick={()=>{setTab('Projects')}}>PROJECTS</a>
           <a onClick={()=>{setTab('Artwork')}}>ARTWORK</a>
-          <a onClick={()=>{setTab('Contact')}}>CONTACT</a>
+          <a href="mailto:umaiyal.sridas@gmail.com">CONTACT</a>
         </div>
       }
       {isProject && <a onClick={()=>{setTab('Projects')}}>BACK TO PROJECTS</a>}

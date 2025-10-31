@@ -51,7 +51,7 @@ function App() {
     return (
       <div className="appContainer">
         {(isLarge || isMedium) && <LargeNav setTab={setTab} isProject={isProject}/>}
-        {isSmall && <SmallNav setTab={setTab} isProject={isProject} setIsModalOpen={setIsModalOpen}/>}
+        {isSmall && <SmallNav setIsModalOpen={setIsModalOpen}/>}
         {isSmall && isModalOpen && <SmallNavModal setTab={setTab} isProject={isProject} setIsModalOpen={setIsModalOpen}/>}
         <div className='pageContainer'>
           {!isProject &&

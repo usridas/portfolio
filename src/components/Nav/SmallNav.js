@@ -1,6 +1,6 @@
 import './Nav.css';
 
-export const SmallNav = ({setTab, isProject, setIsModalOpen}) => {
+export const SmallNav = ({setIsModalOpen}) => {
 
   return (
     <div className="smallNavContainer">
