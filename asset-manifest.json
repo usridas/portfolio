@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d1ef74da.css",
-    "main.js": "/portfolio/static/js/main.91d83b01.js",
+    "main.css": "/portfolio/static/css/main.996b4fcf.css",
+    "main.js": "/portfolio/static/js/main.59b7141d.js",
     "static/js/453.ac9b7e2a.chunk.js": "/portfolio/static/js/453.ac9b7e2a.chunk.js",
     "static/media/mockup4.png": "/portfolio/static/media/mockup4.4e883e7a5e31d886385c.png",
     "static/media/mockup3.png": "/portfolio/static/media/mockup3.c298d1c6a85c101c9c72.png",
     "static/media/mockup2.png": "/portfolio/static/media/mockup2.afc63c5c6bba0aaec3e4.png",
     "static/media/mockup1.png": "/portfolio/static/media/mockup1.14f4262f4ade748fdfd2.png",
+    "static/media/Kasugai.png": "/portfolio/static/media/Kasugai.293db4009490f57432bb.png",
     "static/media/mockup5.png": "/portfolio/static/media/mockup5.a599faac8715f5e4b7a8.png",
     "static/media/brandAsset3.png": "/portfolio/static/media/brandAsset3.1b265b5cdbc5bc3b5f70.png",
+    "static/media/ChrysolinaPerforata.jpg": "/portfolio/static/media/ChrysolinaPerforata.85ec325df89008e3e33f.jpg",
     "static/media/screenshot1.png": "/portfolio/static/media/screenshot1.034be4303dd2af90450f.png",
+    "static/media/DanausPlexippus.jpg": "/portfolio/static/media/DanausPlexippus.1d1b12a9735cca99f730.jpg",
     "static/media/Daruma.jpg": "/portfolio/static/media/Daruma.ad79e52f6631038396f9.jpg",
     "static/media/HermitCrab.jpg": "/portfolio/static/media/HermitCrab.6439516f5f1304877282.jpg",
     "static/media/Fig1Lime.jpg": "/portfolio/static/media/Fig1Lime.92456edbf2241894f18d.jpg",
@@ -38,12 +41,12 @@
     "static/media/screen5.png": "/portfolio/static/media/screen5.19edb1fa185e26ef41fd.png",
     "static/media/Navigation.png": "/portfolio/static/media/Navigation.ee194a73487fbc10d013.png",
     "index.html": "/portfolio/index.html",
-    "main.d1ef74da.css.map": "/portfolio/static/css/main.d1ef74da.css.map",
-    "main.91d83b01.js.map": "/portfolio/static/js/main.91d83b01.js.map",
+    "main.996b4fcf.css.map": "/portfolio/static/css/main.996b4fcf.css.map",
+    "main.59b7141d.js.map": "/portfolio/static/js/main.59b7141d.js.map",
     "453.ac9b7e2a.chunk.js.map": "/portfolio/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1ef74da.css",
-    "static/js/main.91d83b01.js"
+    "static/css/main.996b4fcf.css",
+    "static/js/main.59b7141d.js"
   ]
 }
