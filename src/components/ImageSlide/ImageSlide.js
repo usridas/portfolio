@@ -31,7 +31,7 @@ export const ImageSlide = ({titles, descriptions, imagePaths, imageTexts, imageL
         {titles &&
           <div className='imageSlideTextContainer'>
               <h3>{titles[imageIndex]}</h3>
-              {descriptions && <h4>{descriptions[imageIndex]}</h4>}
+              {descriptions && <h4 style={{textAlign: 'end'}}>{descriptions[imageIndex]}</h4>}
           </div>
         }
         <div className='imageSlideContainer'>

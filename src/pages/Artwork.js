@@ -7,6 +7,9 @@ import linocutPomegranate from './images/Artwork/Fig2Pomegranate.jpg';
 import linocutOnion from './images/Artwork/Fig3Onion.jpg';
 import linocutDaruma from './images/Artwork/Daruma.jpg';
 import paintedHermitCrab from './images/Artwork/HermitCrab.jpg';
+import kasugaiGummies from './images/Artwork/Kasugai.png';
+import chrysolinaPerforata from './images/Artwork/ChrysolinaPerforata.jpg';
+import danausPlexippus from './images/Artwork/DanausPlexippus.jpg';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 
 export const Artwork = ({setTab}) => {
@@ -15,6 +18,9 @@ export const Artwork = ({setTab}) => {
 
   const imagePaths = [
     paintedHermitCrab,
+    kasugaiGummies,
+    chrysolinaPerforata,
+    danausPlexippus,
     linocutLime,
     linocutPomegranate,
     linocutOnion,
@@ -23,6 +29,9 @@ export const Artwork = ({setTab}) => {
 
   const titles = [
     "HERMIT CRAB",
+    "KASUGAI GUMMIES",
+    "CHRYSOLINA PERFORATA",
+    "DANAUS PLEXIPPUS",
     "FIG. 1. CITRUS AURANTIIFOLIA",
     "FIG. 2. PUNICA GRANATUM",
     "FIG. 3. ALLIUM CEPA",
@@ -31,6 +40,9 @@ export const Artwork = ({setTab}) => {
 
   const descriptions = [
     "Acrylic on canvas",
+    "Watercolor and Prismacolor pencil",
+    "Watercolor and Prismacolor pencil",
+    "Watercolor and Prismacolor pencil",
     "Linocut with ink",
     "Linocut with ink",
     "Linocut with ink",
@@ -39,6 +51,9 @@ export const Artwork = ({setTab}) => {
 
   const imageSizes = [
     '75%',
+    '100%',
+    '100%',
+    '100%',
     '100%',
     '100%',
     '100%',
