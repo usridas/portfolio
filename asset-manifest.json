@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.996b4fcf.css",
-    "main.js": "/portfolio/static/js/main.59b7141d.js",
+    "main.js": "/portfolio/static/js/main.9fcb4473.js",
     "static/js/453.ac9b7e2a.chunk.js": "/portfolio/static/js/453.ac9b7e2a.chunk.js",
     "static/media/mockup4.png": "/portfolio/static/media/mockup4.4e883e7a5e31d886385c.png",
     "static/media/mockup3.png": "/portfolio/static/media/mockup3.c298d1c6a85c101c9c72.png",
@@ -9,6 +9,12 @@
     "static/media/mockup1.png": "/portfolio/static/media/mockup1.14f4262f4ade748fdfd2.png",
     "static/media/Kasugai.png": "/portfolio/static/media/Kasugai.293db4009490f57432bb.png",
     "static/media/mockup5.png": "/portfolio/static/media/mockup5.a599faac8715f5e4b7a8.png",
+    "static/media/Brain.png": "/portfolio/static/media/Brain.76329c797b1f89506324.png",
+    "static/media/Heart.png": "/portfolio/static/media/Heart.49f3964ecb1049bb8a6d.png",
+    "static/media/Eyeball.png": "/portfolio/static/media/Eyeball.1b8aba94404c2c94a579.png",
+    "static/media/Mushroom_3.png": "/portfolio/static/media/Mushroom_3.6f0c1476291b4188e896.png",
+    "static/media/Mushroom_1.png": "/portfolio/static/media/Mushroom_1.b59406ebbfcf0dfe2271.png",
+    "static/media/Mushroom_2.png": "/portfolio/static/media/Mushroom_2.f2136d0aff28b8b13713.png",
     "static/media/brandAsset3.png": "/portfolio/static/media/brandAsset3.1b265b5cdbc5bc3b5f70.png",
     "static/media/ChrysolinaPerforata.jpg": "/portfolio/static/media/ChrysolinaPerforata.85ec325df89008e3e33f.jpg",
     "static/media/screenshot1.png": "/portfolio/static/media/screenshot1.034be4303dd2af90450f.png",
@@ -42,11 +48,11 @@
     "static/media/Navigation.png": "/portfolio/static/media/Navigation.ee194a73487fbc10d013.png",
     "index.html": "/portfolio/index.html",
     "main.996b4fcf.css.map": "/portfolio/static/css/main.996b4fcf.css.map",
-    "main.59b7141d.js.map": "/portfolio/static/js/main.59b7141d.js.map",
+    "main.9fcb4473.js.map": "/portfolio/static/js/main.9fcb4473.js.map",
     "453.ac9b7e2a.chunk.js.map": "/portfolio/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.996b4fcf.css",
-    "static/js/main.59b7141d.js"
+    "static/js/main.9fcb4473.js"
   ]
 }
