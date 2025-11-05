@@ -10,6 +10,12 @@ import paintedHermitCrab from './images/Artwork/HermitCrab.jpg';
 import kasugaiGummies from './images/Artwork/Kasugai.png';
 import chrysolinaPerforata from './images/Artwork/ChrysolinaPerforata.jpg';
 import danausPlexippus from './images/Artwork/DanausPlexippus.jpg';
+import heart from './images/Artwork/Heart.png';
+import brain from './images/Artwork/Brain.png';
+import eyeball from './images/Artwork/Eyeball.png';
+import mushroom1 from './images/Artwork/Mushroom_1.png';
+import mushroom2 from './images/Artwork/Mushroom_2.png';
+import mushroom3 from './images/Artwork/Mushroom_3.png';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 
 export const Artwork = ({setTab}) => {
@@ -25,6 +31,12 @@ export const Artwork = ({setTab}) => {
     linocutPomegranate,
     linocutOnion,
     linocutDaruma,
+    heart,
+    brain,
+    eyeball,
+    mushroom1,
+    mushroom2,
+    mushroom3
   ];
 
   const titles = [
@@ -35,7 +47,13 @@ export const Artwork = ({setTab}) => {
     "FIG. 1. CITRUS AURANTIIFOLIA",
     "FIG. 2. PUNICA GRANATUM",
     "FIG. 3. ALLIUM CEPA",
-    "DARUMA"
+    "DARUMA",
+    "FIG. 1. HEART",
+    "FIG. 2. BRAIN",
+    "FIG. 3. EYEBALL",
+    "FIG. 1. OCULUS COPRINUS COMATUS",
+    "FIG. 2. OCULUS AMANITA MUSCARIA",
+    "FIG. 3. OCULUS FAVOLASCHIA CALOCERA"
   ]
 
   const descriptions = [
@@ -46,7 +64,13 @@ export const Artwork = ({setTab}) => {
     "Linocut with ink",
     "Linocut with ink",
     "Linocut with ink",
-    "Linocut with ink"
+    "Linocut with ink",
+    "Watercolor and ink",
+    "Watercolor and ink",
+    "Watercolor and ink",
+    "Watercolor and ink",
+    "Watercolor and ink",
+    "Watercolor and ink"
   ]
 
   const imageSizes = [
@@ -57,7 +81,13 @@ export const Artwork = ({setTab}) => {
     '100%',
     '100%',
     '100%',
-    '65%'
+    '65%',
+    '100%',
+    '100%',
+    '100%',
+    '65%',
+    '65%',
+    '65%',
   ]
 
   const artworkSlide = <ImageSlide titles={titles} descriptions={descriptions} imagePaths={imagePaths} imageSizes={imageSizes}/>;
