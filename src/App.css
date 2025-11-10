@@ -18,7 +18,7 @@
     align-items: flex-start;
     width: 100%;
     max-width: 766px;
-    padding-top: 156px;
+    padding-top: 168px;
     gap: 40px;
     @media (max-width: 479px) {
       padding-top: 40px;

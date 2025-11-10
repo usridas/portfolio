@@ -54,9 +54,13 @@ function App() {
         {isSmall && <SmallNav setIsModalOpen={setIsModalOpen}/>}
         {isSmall && isModalOpen && <SmallNavModal setTab={setTab} isProject={isProject} setIsModalOpen={setIsModalOpen}/>}
         <div className='pageContainer'>
-          {!isProject &&
+          {isLarge &&
             <div className='welcomeSection'>
-              {isLarge ? <LargeContent title={'WELCOME'} content={welcomeText} /> : <SmallContent title={'WELCOME'} content={welcomeText} />}
+              {isLarge && <LargeContent title={'WELCOME'} content={welcomeText} />}
+            </div>}
+          {!isLarge && tab==='AboutMe' &&
+            <div className='welcomeSection'>
+              <SmallContent title={'WELCOME'} content={welcomeText} />
               <hr className='divider'/>
             </div>}
           {currentPage}

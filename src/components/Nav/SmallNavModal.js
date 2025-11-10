@@ -7,6 +7,7 @@ export const SmallNavModal = ({setTab, isProject, setIsModalOpen}) => {
         <div className="smallNavModal">
         {!isProject &&
             <div className='smallNavList'>
+            <a onClick={()=>setIsModalOpen(false)} style={{color: '#2519D2'}}>CLOSE</a>
             <a onClick={()=>{setTab('AboutMe'); setIsModalOpen(false);}}>ABOUT ME</a>
             <a onClick={()=>{setTab('Experience'); setIsModalOpen(false);}}>EXPERIENCE</a>
             <a onClick={()=>{setTab('Projects'); setIsModalOpen(false);}}>PROJECTS</a>
