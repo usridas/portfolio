@@ -50,6 +50,7 @@
     right: 0;
     backdrop-filter: blur(10px);
     background-color: #E6E5E077;
+    z-index: 1000;
 }
 
 .smallNavModal {

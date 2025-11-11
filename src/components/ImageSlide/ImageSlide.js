@@ -1,10 +1,13 @@
 import './ImageSlide.css';
 import { useState } from 'react';
+import { useScreenResolution } from '../../utils/ScreenSize.tsx';
 
 
 export const ImageSlide = ({titles, descriptions, imagePaths, imageTexts, imageLinks, imageSizes, setTab}) => {
 
   const [imageIndex, setImageIndex] = useState(0);
+
+   const { isSmall } = useScreenResolution();
 
   function onBackClick() {
     if (imageIndex > 0 && imageIndex < imagePaths.length) {
@@ -36,7 +39,8 @@ export const ImageSlide = ({titles, descriptions, imagePaths, imageTexts, imageL
         }
         <div className='imageSlideContainer'>
           <div className='imageBox' style={{backgroundImage: `url(${imagePaths[imageIndex]})`, backgroundSize: `${imageSizes ? imageSizes[imageIndex] : '100%'}`}}>
-            {imageLinks && <a className='imageSlideLink' onClick={onImageClick}>{imageTexts[imageIndex]}</a>}
+            {imageLinks && !isSmall && <a className='imageSlideLink' onClick={onImageClick}>{imageTexts[imageIndex]}</a>}
+            {imageLinks && isSmall && <a className='imageSlideLinkSmallHover' onClick={onImageClick}>{imageTexts[imageIndex]}</a>}
           </div>
         </div>
         {imagePaths.length > 1 &&

@@ -16,7 +16,7 @@ import SmallNavModal from './components/Nav/SmallNavModal.js';
 import Viasat from './pages/Viasat.js';
 
 function App() {
-  const { isLarge, isMedium, isSmall } = useScreenResolution();
+  const { isLarge, isSmall } = useScreenResolution();
   const [tab, setTab] = useState('Projects');
   const [isModalOpen, setIsModalOpen] = useState(false);
   let currentPage;
@@ -50,13 +50,14 @@ function App() {
   
     return (
       <div className="appContainer">
-        {(isLarge || isMedium) && <LargeNav setTab={setTab} isProject={isProject}/>}
-        {isSmall && <SmallNav setIsModalOpen={setIsModalOpen}/>}
+        {!isSmall && <LargeNav setTab={setTab} isProject={isProject}/>}
+        {isSmall && <SmallNav setIsModalOpen={setIsModalOpen} setTab={setTab} tab={tab}/>}
         {isSmall && isModalOpen && <SmallNavModal setTab={setTab} isProject={isProject} setIsModalOpen={setIsModalOpen}/>}
         <div className='pageContainer'>
-          {isLarge &&
+          {isLarge && !isProject &&
             <div className='welcomeSection'>
-              {isLarge && <LargeContent title={'WELCOME'} content={welcomeText} />}
+              <LargeContent title={'WELCOME'} content={welcomeText} />
+              <hr className='divider'/>
             </div>}
           {!isLarge && tab==='AboutMe' &&
             <div className='welcomeSection'>
