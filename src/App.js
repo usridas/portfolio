@@ -14,6 +14,9 @@ import SmallContent from './components/Content/SmallContent.js';
 import SmallNav from './components/Nav/SmallNav.js';
 import SmallNavModal from './components/Nav/SmallNavModal.js';
 import Viasat from './pages/Viasat.js';
+import PlaylistHome from './pages/PlaylistHome.js';
+import IndividualPlaylist from './pages/IndividualPlaylist.js';
+import Vinyl from './pages/Vinyl.js';
 
 function App() {
   const { isLarge, isSmall } = useScreenResolution();
@@ -49,24 +52,25 @@ function App() {
   const welcomeText = <p>{'After graduating from my undergrad, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. I love the intersection between art and technology and aim to be a bridge between these two fields.\n\n​I am currently in a Masters program for User Experience Design and am searching for work in the UI/UX field.'}</p>;
   
     return (
-      <div className="appContainer">
-        {!isSmall && <LargeNav setTab={setTab} isProject={isProject}/>}
-        {isSmall && <SmallNav setIsModalOpen={setIsModalOpen} setTab={setTab} tab={tab}/>}
-        {isSmall && isModalOpen && <SmallNavModal setTab={setTab} isProject={isProject} setIsModalOpen={setIsModalOpen}/>}
-        <div className='pageContainer'>
-          {isLarge && !isProject &&
-            <div className='welcomeSection'>
-              <LargeContent title={'WELCOME'} content={welcomeText} />
-              <hr className='divider'/>
-            </div>}
-          {!isLarge && tab==='AboutMe' &&
-            <div className='welcomeSection'>
-              <SmallContent title={'WELCOME'} content={welcomeText} />
-              <hr className='divider'/>
-            </div>}
-          {currentPage}
-        </div>
-      </div>
+      // <div className="appContainer">
+      //   {!isSmall && <LargeNav setTab={setTab} isProject={isProject}/>}
+      //   {isSmall && <SmallNav setIsModalOpen={setIsModalOpen} setTab={setTab} tab={tab}/>}
+      //   {isSmall && isModalOpen && <SmallNavModal setTab={setTab} isProject={isProject} setIsModalOpen={setIsModalOpen}/>}
+      //   <div className='pageContainer'>
+      //     {isLarge && !isProject &&
+      //       <div className='welcomeSection'>
+      //         <LargeContent title={'WELCOME'} content={welcomeText} />
+      //         <hr className='divider'/>
+      //       </div>}
+      //     {!isLarge && tab==='AboutMe' &&
+      //       <div className='welcomeSection'>
+      //         <SmallContent title={'WELCOME'} content={welcomeText} />
+      //         <hr className='divider'/>
+      //       </div>}
+      //     {currentPage}
+      //   </div>
+      // </div>
+      <IndividualPlaylist />
     )
   
 }
