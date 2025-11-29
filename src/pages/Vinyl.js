@@ -1,40 +1,43 @@
 import './Playlist.css';
 
-export const Vinyl = ({}) => {
-    const hello = <div className='vinylContainer'>
-                        <div className='vinylLiquidGlassWrapper'>
-                            <div className='vinylLiquidGlassEffect'></div>
-                            <div className='centerImage'>
-                                <div className='vinylContainer'>
-                                    <div className='vinylLiquidGlassWrapper'>
-                                        <div className='vinylLiquidGlassEffect'></div>
-                                        <div className='centerImage'>
-                                            <div className='vinylContainer'>
-                                                <div className='vinylLiquidGlassWrapper'>
-                                                    <div className='vinylLiquidGlassEffect'></div>
-                                                    <div className='centerImage'>
-                                                        <div className='vinylContainer'>
-                                                           <div className='vinylLiquidGlassWrapper'>
-                                                            <div className='vinylLiquidGlassEffect'></div>
-                                                            <div className='centerImage'><div className='finalCenterImage'/></div>
-                                                            </div> 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+export const Vinyl = ({songCover, vinylAnimation, isPaused}) => {
+    const layeredVinyl =
+    <div className='vinylContainer'>
+        <div className='vinylLiquidGlassWrapper'>
+            <div className='vinylLiquidGlassEffect'/>
+            <div className='centerImage'>
+                <div className='vinylContainer'>
+                    <div className='vinylLiquidGlassWrapper'>
+                        <div className='vinylLiquidGlassEffect'/>
+                        <div className='centerImage'>
+                            <div className='vinylContainer'>
+                                <div className='vinylLiquidGlassWrapper'>
+                                    <div className='vinylLiquidGlassEffect'/>
+                                    <div className='centerImage'>
+                                        <div className='vinylContainer'>
+                                            <div className='vinylLiquidGlassWrapper'>
+                                            <div className='vinylLiquidGlassEffect'/>
+                                            <div className='centerImage'>
+                                                <div className='finalCenterImage' style={{backgroundImage: `url(${songCover})`}}/>
+                                            </div> 
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     return (
-        <div className='vinylContainer'>
+        <div className={vinylAnimation} style={{animationPlayState: `${isPaused ? 'paused': 'running'}`}}>
             <div className='vinylLiquidGlassWrapper'>
                 <div className='vinylLiquidGlassEffect'></div>
                 <div className='centerImage'>
-                    {hello}
+                    {layeredVinyl}
                 </div>
                 <svg>
                     <filter id='glassDistortion'>

@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
+    padding: 24px;
     justify-content: center;
     align-items: center;
     width: -moz-available;
@@ -22,6 +23,27 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
+}
+
+.link {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.link:hover {
+    all: unset;
+    cursor: pointer;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .randomText {
@@ -56,13 +78,14 @@
     height: 200px;
     border-radius: 24px;
     border: 1px solid rgba(255,255,255,0.5);
-    transition: all 0.4s ease;
     overflow: hidden;
-    top: 0;    
+    top: 0;
+    transition: all 0.4s ease;
 }
 
 .liquidGlassWrapper:hover {
     top: -100px;
+    cursor: pointer;
 }
 
 .liquidGlassEffect {
@@ -73,14 +96,51 @@
     overflow: hidden;
 }
 
+@keyframes vinyl-spin1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes vinyl-spin2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .vinylContainer {
     display: flex;
     max-width: 426px;
     width: -moz-available;
     width: -webkit-fill-available;
     width: stretch;
-    justify-content: space-around;
-    animation: App-logo-spin infinite 100s linear;
+    /* justify-content: space-around; */
+}
+
+.vinylContainer1 {
+    display: flex;
+    max-width: 426px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    /* justify-content: space-around; */
+    animation: vinyl-spin1 infinite 30s linear;
+}
+
+.vinylContainer2 {
+    display: flex;
+    max-width: 426px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    /* justify-content: space-around; */
+    animation: vinyl-spin2 infinite 30s linear;
 }
 
 .vinylLiquidGlassWrapper {
@@ -89,13 +149,11 @@
     width: -webkit-fill-available;
     width: stretch;
     aspect-ratio: 1/1;
-    min-width: 200px;
     border-radius: 50%;
     border: 1px solid rgba(255,255,255,0.5);
     transition: all 0.4s ease;
     overflow: hidden;
-    top: 0;    
-    margin: 10px;
+    padding: 10px;
 }
 
 .vinylLiquidGlassEffect {
@@ -106,6 +164,9 @@
     overflow: hidden;
     padding: 10px;
     border-radius: 50%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
 }
 
 .centerImage {
@@ -113,6 +174,9 @@
     position: relative;
     justify-content: center;
     align-items: center;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
 }
 
 .finalCenterImage {
@@ -124,10 +188,9 @@
     width: -webkit-fill-available;
     width: stretch;
     aspect-ratio: 1/1;
-    background-image: url('./images/OneSummerDay.png');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 50%;
+    background-size: 80%;
 }
 
 .individualPlaylistContainer {
@@ -147,19 +210,25 @@
 
 .individualVinylAndMusicListContainer {
     display: flex;
+    flex-direction: row;
     max-width: 924px;
     align-items: center;
     gap: 24px;
     align-self: stretch;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
 }
 
 .individualPlaylistButtonContainer {
     display: flex;
     position: relative;
-
     max-width: 924px;
     padding: 24px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     align-self: stretch;
     border-radius: 16px;
@@ -169,13 +238,17 @@
 
 .playlistDetailsContainer {
     display: flex;
-    min-width: 350px;
+    position: relative;
+    height: max-content;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex: 1 0 0;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
     align-self: stretch;
+    transition: top 0.4s ease;
 }
 
 .songTitle {
@@ -185,6 +258,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    white-space: nowrap;
 }
 
 .songArtistOrTime {
@@ -205,19 +279,137 @@
 
 .titleArtistAndTime {
     display: flex;
-    height: 44px;
+    position: relative; /* try this */
     padding: 0 16px;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+    height: 77px;
+    min-height: 77px;
+    gap: 24px;
 }
 
-.currentSongLiquidGlassWrapper {
+.songAndButtonLiquidGlassWrapper {
     position: relative;
     border-radius: 24px;
     border: 1px solid rgba(255,255,255,0.5);
     overflow: hidden;
     align-self: stretch;
+}
+
+.centerCurrentSongDetails {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainTitleAndArtist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 200px;
+    min-width: 200px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 12px;
+    margin: 0 24px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+}
+
+.playlistButton {
+    all: unset;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+.playlistButton:active {
+    all: unset;
+    cursor: pointer;
+}
+
+.playButton {
+    all: unset;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-image: url('./images/PlayButton.png');
+    width: 40px;
+    height: 40px;
+}
+
+.pauseButton {
+    all: unset;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-image: url('./images/PauseButton.png');
+    width: 40px;
+    height: 40px;
+}
+
+.previousSongButton {
+    all: unset;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-image: url('./images/PreviousSongButton.png');
+    width: 20px;
+    height: 20px;
+}
+
+.nextSongButton {
+    all: unset;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-image: url('./images/NextSongButton.png');
+    width: 20px;
+    height: 20px;
+}
+
+.volumeContainer {
+    width: 200px;
+    min-width: 200px;
+}
+
+.volumeButton {
+    background-image: url('./images/VolumeButton.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+}
+
+.currentSongLiquidGlassWrapper {
+    position: absolute;
+    border-radius: 24px;
+    border: 1px solid rgba(255,255,255,0.5);
+    overflow: hidden;
+    align-self: stretch;
+    height: 77px;
+    min-height: 77px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.4s ease;
 }
 
 .currentSongLiquidGlassEffect {
@@ -237,18 +429,25 @@
     padding: 16px;
 }
 
-.centerCurrentSongDetails {
+.buttonsAndProgressContainer {
     display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
 }
 
-.buttonContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    align-self: stretch;
-    border-radius: 12px;
+.progressBarContainer {
+    background-color: #585858;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.progressBar {
+    background-color: #FFFFFF;
+    height: 4px;
+    border-radius: 2px;
 }

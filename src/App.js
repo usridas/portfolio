@@ -51,26 +51,32 @@ function App() {
   const isProject = tab !== 'AboutMe' && tab !== 'Experience' && tab !== 'Projects' && tab !== 'Artwork';
   const welcomeText = <p>{'After graduating from my undergrad, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. I love the intersection between art and technology and aim to be a bridge between these two fields.\n\n​I am currently in a Masters program for User Experience Design and am searching for work in the UI/UX field.'}</p>;
   
+    if (tab === 'Music') {
+      return <PlaylistHome setTab={setTab}/>
+    }
+    if (tab === 'VideoGameVibes') {
+      return <IndividualPlaylist setTab={setTab}/>
+    }
     return (
-      // <div className="appContainer">
-      //   {!isSmall && <LargeNav setTab={setTab} isProject={isProject}/>}
-      //   {isSmall && <SmallNav setIsModalOpen={setIsModalOpen} setTab={setTab} tab={tab}/>}
-      //   {isSmall && isModalOpen && <SmallNavModal setTab={setTab} isProject={isProject} setIsModalOpen={setIsModalOpen}/>}
-      //   <div className='pageContainer'>
-      //     {isLarge && !isProject &&
-      //       <div className='welcomeSection'>
-      //         <LargeContent title={'WELCOME'} content={welcomeText} />
-      //         <hr className='divider'/>
-      //       </div>}
-      //     {!isLarge && tab==='AboutMe' &&
-      //       <div className='welcomeSection'>
-      //         <SmallContent title={'WELCOME'} content={welcomeText} />
-      //         <hr className='divider'/>
-      //       </div>}
-      //     {currentPage}
-      //   </div>
-      // </div>
-      <IndividualPlaylist />
+      <div className="appContainer">
+        {!isSmall && <LargeNav setTab={setTab} isProject={isProject}/>}
+        {isSmall && <SmallNav setIsModalOpen={setIsModalOpen} setTab={setTab} tab={tab}/>}
+        {isSmall && isModalOpen && <SmallNavModal setTab={setTab} isProject={isProject} setIsModalOpen={setIsModalOpen}/>}
+        <div className='pageContainer'>
+          {isLarge && !isProject &&
+            <div className='welcomeSection'>
+              <LargeContent title={'WELCOME'} content={welcomeText} />
+              <hr className='divider'/>
+            </div>}
+          {!isLarge && tab==='AboutMe' &&
+            <div className='welcomeSection'>
+              <SmallContent title={'WELCOME'} content={welcomeText} />
+              <hr className='divider'/>
+            </div>}
+          {currentPage}
+        </div>
+      </div>
+      // <IndividualPlaylist />
     )
   
 }

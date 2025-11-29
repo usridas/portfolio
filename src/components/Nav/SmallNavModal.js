@@ -13,6 +13,7 @@ export const SmallNavModal = ({setTab, isProject, setIsModalOpen}) => {
             <a onClick={()=>{setTab('Projects'); setIsModalOpen(false);}}>PROJECTS</a>
             <a onClick={()=>{setTab('Artwork'); setIsModalOpen(false);}}>ARTWORK</a>
             <a href="mailto:umaiyal.sridas@gmail.com" onClick={()=>{setIsModalOpen(false);}}>CONTACT</a>
+            <a onClick={()=>{setTab('Music'); setIsModalOpen(false);}}>SECRET TUNNEL</a>
             </div>
         }
         {isProject && <a onClick={()=>{setTab('Projects'); setIsModalOpen(false);}}>BACK TO PROJECTS</a>}

@@ -1,16 +1,15 @@
-import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Playlist.css';
 import { useState } from 'react';
 
-export const PlaylistHome = ({}) => {
-    const { isLarge } = useScreenResolution();
+export const PlaylistHome = ({setTab}) => {
     const [hoverText, setHoverText] = useState('Choose a playlist');
 
     return (
         <div className='fullPage'>
+            <a onClick={()=>{setTab('Projects')}} className='link'>Back to my portfolio</a>
             <div className='titleText'>{hoverText}</div>
             <div className='playlistArrayContainer'>
-                <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Video game vibes')} onMouseLeave={()=> setHoverText('Choose a playlist')}>
+                <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Video game vibes')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('VideoGameVibes')}>
                     <div className='liquidGlassEffect'/>
                     <div className='randomText'>Video game vibes</div>
                     <svg>
