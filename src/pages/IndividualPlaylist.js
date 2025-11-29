@@ -140,6 +140,7 @@ export const IndividualPlaylist = ({setTab}) => {
                     setCurrentSongIndex(videoGamePlaylist.length - 1);
                     setCurrentSong(videoGamePlaylist[videoGamePlaylist.length - 1]);
                     setIsPaused(false);
+                    videoGamePlaylist[videoGamePlaylist.length - 1].audio.time = 0;
                     videoGamePlaylist[videoGamePlaylist.length - 1].audio.play();
                 }
                 else {
@@ -147,6 +148,7 @@ export const IndividualPlaylist = ({setTab}) => {
                     setCurrentSongIndex(temp);
                     setCurrentSong(videoGamePlaylist[temp]);
                     setIsPaused(false);
+                    videoGamePlaylist[videoGamePlaylist.length - 1].audio.time = 0;
                     videoGamePlaylist[temp].audio.play();
                 }
             }}/>
@@ -207,7 +209,7 @@ export const IndividualPlaylist = ({setTab}) => {
 
     return (
         <div className='fullPage'>
-            <a onClick={()=>{setTab('Music')}} className='link'>Back to playlists</a>
+            <a onClick={()=>{setTab('Music'); currentSong.audio.pause(); currentSong.src = '';}} className='link'>Back to playlists</a>
             <div className='titleText'>Video game vibes</div>
             <div className='individualPlaylistContainer'>
                 <div className='individualVinylAndMusicListContainer'>
