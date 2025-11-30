@@ -1,5 +1,6 @@
 import './Playlist.css';
 import { useState, useEffect, useMemo, useRef } from 'react';
+import { isMobile } from '../utils/utils.js';
 import Vinyl from './Vinyl.js';
 import sleepItOffCover from './images/SleepItOff.png';
 import puzzlesCover from './images/Puzzles.png';
@@ -17,6 +18,7 @@ import lovelyCityFile from './music/LovelyCity.mp3';
 import baDaBaFile from './music/BaDaBa.mp3';
 
 export const IndividualPlaylist = ({setTab}) => {
+    const isMobileVar = isMobile();
     const [isPaused, setIsPaused] = useState(true);
     const [progressPercentage, setProgressPercentage] = useState(0);
 
@@ -208,7 +210,7 @@ export const IndividualPlaylist = ({setTab}) => {
 
 
     return (
-        <div className='fullPage'>
+        <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
             <a onClick={()=>{setTab('Music'); currentSong.audio.pause(); currentSong.src = '';}} className='link'>Back to playlists</a>
             <div className='titleText'>Video game vibes</div>
             <div className='individualPlaylistContainer'>

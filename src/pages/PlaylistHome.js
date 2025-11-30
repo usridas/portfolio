@@ -1,11 +1,13 @@
+import { isMobile } from '../utils/utils';
 import './Playlist.css';
 import { useState } from 'react';
 
 export const PlaylistHome = ({setTab}) => {
+    const isMobileVar = isMobile();
     const [hoverText, setHoverText] = useState('Choose a playlist');
 
     return (
-        <div className='fullPage'>
+        <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
             <a onClick={()=>{setTab('Projects')}} className='link'>Back to my portfolio</a>
             <div className='titleText'>{hoverText}</div>
             <div className='playlistArrayContainer'>

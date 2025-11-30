@@ -8,15 +8,32 @@
     width: -moz-available;
     width: -webkit-fill-available;
     width: stretch;
-    min-height: 100dvh;
+    height: 100dvh;
     background-color: #2B2B2B;
     background-image: url('./images/Bubble.png'), url('./images/Bubble.png'), url('./images/Bubble.png');
     background-size: 900px, 1000px, 500px;
     background-position: left -100px top 106px, right -300px top -300px, center bottom -100px;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    @media (pointer: coarse)  {
-	    height: unset;
-    }
+    background-attachment: fixed;
+}
+
+.fullPageMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 40px 24px;
+    justify-content: center;
+    align-items: center;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    height: unset;
+    background-color: #2B2B2B;
+    background-image: url('./images/Bubble.png'), url('./images/Bubble.png'), url('./images/Bubble.png');
+    background-size: 900px, 1000px, 500px;
+    background-position: left -100px top 106px, right -300px top -300px, center bottom -100px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed;
 }
 
 .titleText {
