@@ -7,7 +7,7 @@ import puzzlesCover from './images/Puzzles.png';
 import hotTeaAndFirmwareUpdatesCover from './images/HotTeaAndFirmwareUpdates.png';
 import oneSummerDayCover from './images/OneSummerDay.png';
 import songOfStormsCover from './images/SongOfStorms.png';
-import lovelyCItyCover from './images/LovelyCity.png';
+import lovelyCityCover from './images/LovelyCity.png';
 import baDaBaCover from './images/BaDaBa.png';
 import sleepItOffFile from './music/sleepitoff.mp3';
 import puzzlesFile from './music/Puzzles.mp3';
@@ -39,7 +39,7 @@ export const IndividualPlaylist = ({setTab}) => {
         {title: 'Hot Tea & Firmware Updates', artist: 'DJ Cutman', time: '3:13', audio: audioObjects.hotTea, songCover: hotTeaAndFirmwareUpdatesCover},
         {title: 'One Summer Day', artist: 'Joe Hisaishi', time: '3:09', audio: audioObjects.oneSummer, songCover: oneSummerDayCover},
         {title: 'Song of Storms', artist: 'MikEL, GameChops', time: '3:37', audio: audioObjects.songOfStorms, songCover: songOfStormsCover},
-        {title: 'Lovely City', artist: 'Calum Bowen', time: '2:42', audio: audioObjects.lovelyCity, songCover: lovelyCItyCover},
+        {title: 'Lovely City', artist: 'Calum Bowen', time: '2:42', audio: audioObjects.lovelyCity, songCover: lovelyCityCover},
         {title: 'Ba-Da-Ba', artist: '2 Mello', time: '3:56', audio: audioObjects.baDaBa, songCover: baDaBaCover}
     ];
 
