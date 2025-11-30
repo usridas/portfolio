@@ -27,7 +27,8 @@
     width: -moz-available;
     width: -webkit-fill-available;
     width: stretch;
-    height: unset;
+    height: auto;
+    min-height: 100dvh;
     background-color: #2B2B2B;
     background-image: url('./images/Bubble.png'), url('./images/Bubble.png'), url('./images/Bubble.png');
     background-size: 900px, 1000px, 500px;
