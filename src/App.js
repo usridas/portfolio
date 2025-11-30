@@ -16,10 +16,11 @@ import SmallNavModal from './components/Nav/SmallNavModal.js';
 import Viasat from './pages/Viasat.js';
 import PlaylistHome from './pages/PlaylistHome.js';
 import IndividualPlaylist from './pages/IndividualPlaylist.js';
-import Vinyl from './pages/Vinyl.js';
+import { isMobile } from './utils/utils.js';
 
 function App() {
   const { isLarge, isSmall } = useScreenResolution();
+  const isMobileVar = isMobile();
   const [tab, setTab] = useState('Projects');
   const [isModalOpen, setIsModalOpen] = useState(false);
   let currentPage;
@@ -58,7 +59,7 @@ function App() {
       return <IndividualPlaylist setTab={setTab}/>
     }
     return (
-      <div className="appContainer">
+      <div className={isMobileVar ? 'appContainerMobile' : 'appContainer'}>
         {!isSmall && <LargeNav setTab={setTab} isProject={isProject}/>}
         {isSmall && <SmallNav setIsModalOpen={setIsModalOpen} setTab={setTab} tab={tab}/>}
         {isSmall && isModalOpen && <SmallNavModal setTab={setTab} isProject={isProject} setIsModalOpen={setIsModalOpen}/>}
@@ -76,9 +77,7 @@ function App() {
           {currentPage}
         </div>
       </div>
-      // <IndividualPlaylist />
     )
-  
 }
 
 export default App;
