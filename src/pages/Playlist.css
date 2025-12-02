@@ -15,6 +15,9 @@
     background-position: left -100px top 106px, right -300px top -300px, center bottom -100px;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-attachment: fixed;
+    @media (max-width: 767px) {
+        height: unset;
+    }
 }
 
 .fullPageMobile {
@@ -342,8 +345,13 @@
     gap: 8px;
     width: 200px;
     min-width: 200px;
+    margin-right: 24px;
     @media (max-width: 767px) {
         align-items: center;
+        margin: 0;
+        width: -moz-available;
+        width: -webkit-fill-available;
+        width: stretch;
     }
 }
 
@@ -418,17 +426,70 @@
 }
 
 .volumeContainer {
-    width: 200px;
-    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 24px;
+    @media (max-width: 767px) {
+        margin: 0;
+        width: -moz-available;
+        width: -webkit-fill-available;
+        width: stretch;
+    }
 }
 
-.volumeButton {
+.volumeIcon {
     background-image: url('./images/VolumeButton.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
     width: 24px;
     height: 24px;
+}
+
+.volumeSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 2px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+        width: -moz-available;
+        width: -webkit-fill-available;
+        width: stretch;
+    }
+}
+
+.volumeSlider::-webkit-slider-runnable-track {
+    height: 4px;
+    background: #FFF;
+    border-radius: 2px;
+}
+
+.volumeSlider::-moz-range-track {
+    height: 4px;
+    background: #585858;
+    border-radius: 2px;
+}
+
+.volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -6px;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding-bottom: 8px;
+}
+
+.volumeSlider::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 .currentSongLiquidGlassWrapper {
@@ -475,16 +536,37 @@
 }
 
 .progressBarContainer {
+    display: flex;
+    flex-direction: column;
     background-color: #585858;
     width: -moz-available;
     width: -webkit-fill-available;
     width: stretch;
-    height: 4px;
     border-radius: 2px;
+    gap: 12px;
 }
 
 .progressBar {
     background-color: #FFFFFF;
     height: 4px;
     border-radius: 2px;
+}
+
+.progressBarTimestampContainer {
+    display: flex;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.timestamp {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
