@@ -39,15 +39,15 @@ export const PlaylistHome = ({setTab}) => {
                         </filter>
                     </svg>
                 </div>
-                <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('A night at the casino')} onMouseLeave={()=> setHoverText('Choose a playlist')}>
+                <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('A night at the casino')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('ANightAtTheCasino')}>
                     <div className='liquidGlassEffect'></div>
                     <div className='randomText'>A night at the casino</div>
                 </div>  
-                <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Oldies')} onMouseLeave={()=> setHoverText('Choose a playlist')}>
+                <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Oldies')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('Oldies')}>
                     <div className='liquidGlassEffect'></div>
                     <div className='randomText'>Oldies</div>
                 </div>  
-                <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Let\'s disco')} onMouseLeave={()=> setHoverText('Choose a playlist')}>
+                <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Let\'s disco')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('LetsDisco')}>
                     <div className='liquidGlassEffect'></div>
                     <div className='randomText'>Let's disco</div>
                 </div>   

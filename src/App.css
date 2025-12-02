@@ -36,10 +36,12 @@
     align-items: flex-start;
     width: 100%;
     max-width: 766px;
-    padding-top: 168px;
+    padding: 168px 0 72px 0;
     gap: 40px;
+    opacity: 0; /* Initially hide the element */
+    animation: fadeIn 1s forwards;
     @media (max-width: 479px) {
-      padding-top: 40px;
+      padding: 40px 0;
       max-width: 448px;
     }
 }
@@ -89,5 +91,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

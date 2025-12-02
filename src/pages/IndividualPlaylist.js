@@ -1,19 +1,44 @@
 import './Playlist.css';
 import { useState, useEffect, useMemo, useRef } from 'react';
-import { isMobile } from '../utils/utils.js';
 import Vinyl from './Vinyl.js';
-import { videoGamePlaylist } from '../utils/utils.js';
-import { secondsToTimestamp } from '../utils/utils.js';
+import { isMobile, secondsToTimestamp, videoGamePlaylist, casinoPlaylist, discoPlaylist, oldiesPlaylist } from '../utils/utils.js';
 
-export const IndividualPlaylist = ({setTab}) => {
+export const IndividualPlaylist = ({setTab, tab}) => {
     const isMobileVar = isMobile();
     const [isPaused, setIsPaused] = useState(true);
     const [progressPercentage, setProgressPercentage] = useState(0);
 
     const memoVideoGamePlaylist = useMemo(() => (videoGamePlaylist), []);
+    const memoCasinoPlaylist = useMemo(() => (casinoPlaylist), []);
+    const memoOldiesPlaylist = useMemo(() => (oldiesPlaylist), []);
+    const memoDiscoPlaylist = useMemo(() => (discoPlaylist), []);
+    let title;
+    let currentPlaylist;
+
+    switch (tab) {
+        case 'VideoGameVibes':
+            title = 'Video game vibes';
+            currentPlaylist = memoVideoGamePlaylist;
+            break;
+        case 'ANightAtTheCasino':
+            title = 'A night at the casino';
+            currentPlaylist = memoCasinoPlaylist;
+            break;
+        case 'Oldies':
+            title = 'Oldies';
+            currentPlaylist = memoOldiesPlaylist;
+            break;
+        case 'LetsDisco':
+            title = 'Let\'s disco';
+            currentPlaylist = memoDiscoPlaylist;
+            break;
+        default:
+            break;
+    }
+    
 
     const [currentSongIndex, setCurrentSongIndex] = useState(0);
-    const [currentSong, setCurrentSong] = useState(memoVideoGamePlaylist[currentSongIndex]);
+    const [currentSong, setCurrentSong] = useState(currentPlaylist[currentSongIndex]);
     const glassRef = useRef(null);
     const [glassOffset, setGlassOffset] = useState(0);
     const [vinylAnimation, setVinylAnimation] = useState('vinylContainer1');
@@ -67,19 +92,19 @@ export const IndividualPlaylist = ({setTab}) => {
         currentSong.audio.removeEventListener("timeupdate", timeUpdateFunction);
         currentSong.audio.addEventListener('timeupdate', timeUpdateFunction);
         setProgressPercentage(0);
-        if (currentSongIndex === memoVideoGamePlaylist.length - 1) {
+        if (currentSongIndex === currentPlaylist.length - 1) {
             setCurrentSongIndex(0);
-            setCurrentSong(memoVideoGamePlaylist[0]);
-            memoVideoGamePlaylist[0].audio.volume = volumeSlider.value/100;
+            setCurrentSong(currentPlaylist[0]);
+            currentPlaylist[0].audio.volume = volumeSlider.value/100;
             setIsPaused(false);
         }
         else {
             let temp = currentSongIndex + 1;
             setCurrentSongIndex(temp);
-            setCurrentSong(memoVideoGamePlaylist[temp]);
+            setCurrentSong(currentPlaylist[temp]);
             setIsPaused(false);
-            memoVideoGamePlaylist[temp].audio.volume = volumeSlider.value/100;
-            memoVideoGamePlaylist[temp].audio.play();
+            currentPlaylist[temp].audio.volume = volumeSlider.value/100;
+            currentPlaylist[temp].audio.play();
         }
     };
 
@@ -116,21 +141,21 @@ export const IndividualPlaylist = ({setTab}) => {
                 currentSong.src = '';
                 setProgressPercentage(0);
                 if (currentSongIndex === 0) {
-                    setCurrentSongIndex(memoVideoGamePlaylist.length - 1);
-                    setCurrentSong(memoVideoGamePlaylist[memoVideoGamePlaylist.length - 1]);
+                    setCurrentSongIndex(currentPlaylist.length - 1);
+                    setCurrentSong(currentPlaylist[currentPlaylist.length - 1]);
                     setIsPaused(false);
-                    memoVideoGamePlaylist[memoVideoGamePlaylist.length - 1].audio.currentTime = 0;
-                    memoVideoGamePlaylist[memoVideoGamePlaylist.length - 1].audio.volume = volumeSlider.value/100;
-                    memoVideoGamePlaylist[memoVideoGamePlaylist.length - 1].audio.play();
+                    currentPlaylist[currentPlaylist.length - 1].audio.currentTime = 0;
+                    currentPlaylist[currentPlaylist.length - 1].audio.volume = volumeSlider.value/100;
+                    currentPlaylist[currentPlaylist.length - 1].audio.play();
                 }
                 else {
                     let temp = currentSongIndex - 1;
                     setCurrentSongIndex(temp);
-                    setCurrentSong(memoVideoGamePlaylist[temp]);
+                    setCurrentSong(currentPlaylist[temp]);
                     setIsPaused(false);
-                    memoVideoGamePlaylist[temp].audio.currentTime = 0;
-                    memoVideoGamePlaylist[temp].audio.volume = volumeSlider.value/100;
-                    memoVideoGamePlaylist[temp].audio.play();
+                    currentPlaylist[temp].audio.currentTime = 0;
+                    currentPlaylist[temp].audio.volume = volumeSlider.value/100;
+                    currentPlaylist[temp].audio.play();
                 }
             }}/>
         {isPaused ?
@@ -152,21 +177,21 @@ export const IndividualPlaylist = ({setTab}) => {
                 currentSong.audio.pause();
                 currentSong.src = '';
                 setProgressPercentage(0);
-                if (currentSongIndex === memoVideoGamePlaylist.length - 1) {
+                if (currentSongIndex === currentPlaylist.length - 1) {
                     setCurrentSongIndex(0);
-                    setCurrentSong(memoVideoGamePlaylist[0]);
+                    setCurrentSong(currentPlaylist[0]);
                     setIsPaused(true);
-                    memoVideoGamePlaylist[0].audio.currentTime = 0;
-                    memoVideoGamePlaylist[0].audio.volume = volumeSlider.value/100;
+                    currentPlaylist[0].audio.currentTime = 0;
+                    currentPlaylist[0].audio.volume = volumeSlider.value/100;
                 }
                 else {
                     let temp = currentSongIndex + 1;
                     setCurrentSongIndex(temp);
-                    setCurrentSong(memoVideoGamePlaylist[temp]);
+                    setCurrentSong(currentPlaylist[temp]);
                     setIsPaused(false);
-                    memoVideoGamePlaylist[temp].audio.currentTime = 0;
-                     memoVideoGamePlaylist[temp].audio.volume = volumeSlider.value/100;
-                    memoVideoGamePlaylist[temp].audio.play();
+                    currentPlaylist[temp].audio.currentTime = 0;
+                     currentPlaylist[temp].audio.volume = volumeSlider.value/100;
+                    currentPlaylist[temp].audio.play();
                 }
             }}
         />
@@ -193,7 +218,7 @@ export const IndividualPlaylist = ({setTab}) => {
     const playlistDetails = 
         <div className='playlistDetailsContainer'>
         <GlassContainer />
-            {memoVideoGamePlaylist?.map((song, index) => (
+            {currentPlaylist?.map((song, index) => (
                 <Song title={song.title} artist={song.artist} time={song.time} id={index}/>
             ))}
         </div>
@@ -203,7 +228,7 @@ export const IndividualPlaylist = ({setTab}) => {
     return (
         <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
             <a onClick={()=>{currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; setTab('Music');}} className='link'>Back to playlists</a>
-            <div className='titleText'>Video game vibes</div>
+            <div className='titleText'>{title}</div>
             <div className='individualPlaylistContainer'>
                 <div className='individualVinylAndMusicListContainer'>
                     <Vinyl songCover={currentSong.songCover} vinylAnimation={vinylAnimation} isPaused={isPaused}/>

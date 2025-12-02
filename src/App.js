@@ -55,8 +55,8 @@ function App() {
     if (tab === 'Music') {
       return <PlaylistHome setTab={setTab}/>
     }
-    if (tab === 'VideoGameVibes') {
-      return <IndividualPlaylist setTab={setTab}/>
+    if (tab === 'VideoGameVibes' || tab === 'ANightAtTheCasino' || tab === 'Oldies' || tab === 'LetsDisco') {
+      return <IndividualPlaylist setTab={setTab} tab={tab}/>
     }
     return (
       <div className={isMobileVar ? 'appContainerMobile' : 'appContainer'}>

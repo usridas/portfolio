@@ -7,6 +7,9 @@
     position: sticky;
     top: 0;
     left: 0;
+    opacity: 0; /* Initially hide the element */
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
 }
 
 .largeNavList {
@@ -36,6 +39,8 @@
     gap: 40px;
     top: 0;
     left: 0;
+    opacity: 0; /* Initially hide the element */
+    animation: fadeIn 1s forwards;
 }
 
 .smallNavModalContainer {
@@ -84,4 +89,13 @@
     100% {
         transform: translateX(0);
     }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
