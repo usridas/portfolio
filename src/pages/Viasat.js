@@ -4,11 +4,13 @@ import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 import SmallContent from '../components/Content/SmallContent.js';
 import ImageSlide from '../components/ImageSlide/ImageSlide.js';
-import Navigation from './images/Viasat/Navigation.png';
-import Article from './images/Viasat/Article.png';
-import CommonQuestions from './images/Viasat/CommonQuestions.png';
-import ViasatStream from './images/Viasat/ViasatStream.png';
-import AddOns from './images/Viasat/AddOns.png';
+import {
+  ViasatNavigation,
+  ViasatArticle,
+  ViasatCommonQuestions,
+  ViasatStream,
+  ViasatAddOns
+} from '../assets/images';
 
 export const Viasat = ({}) => {
 
@@ -17,15 +19,15 @@ export const Viasat = ({}) => {
   const titleContent = isLarge ? <LargeContent title={'MY VIASAT APPLICATION'} content={<p>{content}</p>}/> : <SmallContent title={'MY VIASAT APPLICATION'} content={<p>{content}</p>}/>;
 
   const imagePaths1 = [
-    Navigation
+    ViasatNavigation
   ];
 
   const imagePaths2 = [
-    Article
+    ViasatArticle
   ];
 
   const imagePaths3 = [
-    CommonQuestions
+    ViasatCommonQuestions
   ];
 
   const imagePaths4 = [
@@ -33,7 +35,7 @@ export const Viasat = ({}) => {
   ];
 
   const imagePaths5 = [
-    AddOns
+    ViasatAddOns
   ];
 
   const imageSizes3 = [

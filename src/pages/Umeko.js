@@ -6,17 +6,19 @@ import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 import SmallContent from '../components/Content/SmallContent.js';
 import ImageSlide from '../components/ImageSlide/ImageSlide.js';
-import logo1 from './images/Umeko/logo1.png';
-import logo2 from './images/Umeko/logo2.png';
-import logo3 from './images/Umeko/logo3.png';
-import brandAsset1 from './images/Umeko/brandAsset1.png';
-import brandAsset2 from './images/Umeko/brandAsset2.png';
-import brandAsset3 from './images/Umeko/brandAsset3.png';
-import mockup1 from './images/Umeko/mockup1.png';
-import mockup2 from './images/Umeko/mockup2.png';
-import mockup3 from './images/Umeko/mockup3.png';
-import mockup4 from './images/Umeko/mockup4.png';
-import mockup5 from './images/Umeko/mockup5.png';
+import {
+  UmekoLogo1,
+  UmekoLogo2,
+  UmekoLogo3,
+  UmekoBrandAsset1,
+  UmekoBrandAsset2,
+  UmekoBrandAsset3,
+  UmekoMockup1,
+  UmekoMockup2,
+  UmekoMockup3,
+  UmekoMockup4,
+  UmekoMockup5
+} from '../assets/images';
 
 export const Umeko = ({}) => {
 
@@ -37,17 +39,17 @@ export const Umeko = ({}) => {
   ]
 
   const imagePaths = [
-    logo1,
-    logo2,
-    logo3,
-    brandAsset1,
-    brandAsset2,
-    brandAsset3,
-    mockup1,
-    mockup2,
-    mockup3,
-    mockup4,
-    mockup5
+    UmekoLogo1,
+    UmekoLogo2,
+    UmekoLogo3,
+    UmekoBrandAsset1,
+    UmekoBrandAsset2,
+    UmekoBrandAsset3,
+    UmekoMockup1,
+    UmekoMockup2,
+    UmekoMockup3,
+    UmekoMockup4,
+    UmekoMockup5
   ];
 
   const titles = [

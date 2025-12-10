@@ -10,7 +10,7 @@
     width: stretch;
     height: 100dvh;
     background-color: #2B2B2B;
-    background-image: url('./images/Bubble.png'), url('./images/Bubble.png'), url('./images/Bubble.png');
+    background-image: url('../assets/images/Music/Bubble.png'), url('../assets/images/Music/Bubble.png'), url('../assets/images/Music/Bubble.png');
     background-size: 900px, 1000px, 500px;
     background-position: left -100px top 106px, right -300px top -300px, center bottom -100px;
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -33,7 +33,7 @@
     height: auto;
     min-height: 100dvh;
     background-color: #2B2B2B;
-    background-image: url('./images/Bubble.png'), url('./images/Bubble.png'), url('./images/Bubble.png');
+    background-image: url('../assets/images/Music/Bubble.png'), url('../assets/images/Music/Bubble.png'), url('../assets/images/Music/Bubble.png');
     background-size: 900px, 1000px, 500px;
     background-position: left -100px top 106px, right -300px top -300px, center bottom -100px;
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -387,7 +387,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-    background-image: url('./images/PlayButton.png');
+    background-image: url('../assets/images/Music/PlayButton.png');
     width: 40px;
     height: 40px;
 }
@@ -398,7 +398,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-    background-image: url('./images/PauseButton.png');
+    background-image: url('../assets/images/Music/PauseButton.png');
     width: 40px;
     height: 40px;
 }
@@ -409,7 +409,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-    background-image: url('./images/PreviousSongButton.png');
+    background-image: url('../assets/images/Music/PreviousSongButton.png');
     width: 20px;
     height: 20px;
 }
@@ -420,7 +420,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-    background-image: url('./images/NextSongButton.png');
+    background-image: url('../assets/images/Music/NextSongButton.png');
     width: 20px;
     height: 20px;
 }
@@ -438,7 +438,7 @@
 }
 
 .volumeIcon {
-    background-image: url('./images/VolumeButton.png');
+    background-image: url('../assets/images/Music/VolumeButton.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;

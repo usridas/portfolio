@@ -2,41 +2,43 @@ import LargeContent from '../components/Content/LargeContent.js';
 import SmallContent from '../components/Content/SmallContent.js';
 import ImageSlide from '../components/ImageSlide/ImageSlide';
 import './Pages.css';
-import linocutLime from './images/Artwork/Fig1Lime.jpg';
-import linocutPomegranate from './images/Artwork/Fig2Pomegranate.jpg';
-import linocutOnion from './images/Artwork/Fig3Onion.jpg';
-import linocutDaruma from './images/Artwork/Daruma.jpg';
-import paintedHermitCrab from './images/Artwork/HermitCrab.jpg';
-import kasugaiGummies from './images/Artwork/Kasugai.png';
-import chrysolinaPerforata from './images/Artwork/ChrysolinaPerforata.jpg';
-import danausPlexippus from './images/Artwork/DanausPlexippus.jpg';
-import heart from './images/Artwork/Heart.png';
-import brain from './images/Artwork/Brain.png';
-import eyeball from './images/Artwork/Eyeball.png';
-import mushroom1 from './images/Artwork/Mushroom_1.png';
-import mushroom2 from './images/Artwork/Mushroom_2.png';
-import mushroom3 from './images/Artwork/Mushroom_3.png';
+import {
+  HermitCrab,
+  Kasugai,
+  ChrysolinaPerforata,
+  DanausPlexippus,
+  Lime,
+  Pomegranate,
+  Onion,
+  Daruma,
+  Heart,
+  Brain,
+  Eyeball,
+  Mushroom1,
+  Mushroom2,
+  Mushroom3
+} from '../assets/images';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 
-export const Artwork = ({setTab}) => {
+export const Artwork = ({}) => {
 
   const { isLarge } = useScreenResolution();
 
   const imagePaths = [
-    paintedHermitCrab,
-    kasugaiGummies,
-    chrysolinaPerforata,
-    danausPlexippus,
-    linocutLime,
-    linocutPomegranate,
-    linocutOnion,
-    linocutDaruma,
-    heart,
-    brain,
-    eyeball,
-    mushroom1,
-    mushroom2,
-    mushroom3
+    HermitCrab,
+    Kasugai,
+    ChrysolinaPerforata,
+    DanausPlexippus,
+    Lime,
+    Pomegranate,
+    Onion,
+    Daruma,
+    Heart,
+    Brain,
+    Eyeball,
+    Mushroom1,
+    Mushroom2,
+    Mushroom3
   ];
 
   const titles = [

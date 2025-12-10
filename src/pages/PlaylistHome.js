@@ -43,9 +43,9 @@ export const PlaylistHome = ({setTab}) => {
                     <div className='liquidGlassEffect'></div>
                     <div className='randomText'>A night at the casino</div>
                 </div>  
-                <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Oldies')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('Oldies')}>
+                <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Family road trip')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('FamilyRoadTrip')}>
                     <div className='liquidGlassEffect'></div>
-                    <div className='randomText'>Oldies</div>
+                    <div className='randomText'>Family road trip</div>
                 </div>  
                 <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Let\'s disco')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('LetsDisco')}>
                     <div className='liquidGlassEffect'></div>

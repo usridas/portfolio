@@ -1,7 +1,7 @@
 import './Playlist.css';
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Vinyl from './Vinyl.js';
-import { isMobile, secondsToTimestamp, videoGamePlaylist, casinoPlaylist, discoPlaylist, oldiesPlaylist } from '../utils/utils.js';
+import { isMobile, secondsToTimestamp, videoGamePlaylist, casinoPlaylist, discoPlaylist, familyRoadTripPlaylist } from '../utils/utils.js';
 
 export const IndividualPlaylist = ({setTab, tab}) => {
     const isMobileVar = isMobile();
@@ -10,7 +10,7 @@ export const IndividualPlaylist = ({setTab, tab}) => {
 
     const memoVideoGamePlaylist = useMemo(() => (videoGamePlaylist), []);
     const memoCasinoPlaylist = useMemo(() => (casinoPlaylist), []);
-    const memoOldiesPlaylist = useMemo(() => (oldiesPlaylist), []);
+    const memoFamilyRoadTripPlaylist = useMemo(() => (familyRoadTripPlaylist), []);
     const memoDiscoPlaylist = useMemo(() => (discoPlaylist), []);
     let title;
     let currentPlaylist;
@@ -24,9 +24,9 @@ export const IndividualPlaylist = ({setTab, tab}) => {
             title = 'A night at the casino';
             currentPlaylist = memoCasinoPlaylist;
             break;
-        case 'Oldies':
-            title = 'Oldies';
-            currentPlaylist = memoOldiesPlaylist;
+        case 'FamilyRoadTrip':
+            title = 'Family road trip';
+            currentPlaylist = memoFamilyRoadTripPlaylist;
             break;
         case 'LetsDisco':
             title = 'Let\'s disco';

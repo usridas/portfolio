@@ -4,19 +4,21 @@ import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 import SmallContent from '../components/Content/SmallContent.js';
 import ImageSlide from '../components/ImageSlide/ImageSlide.js';
-import screenshot1 from './images/ElfsterRedesign/screenshot1.png';
-import screenshot2 from './images/ElfsterRedesign/screenshot2.png';
-import screenshot3 from './images/ElfsterRedesign/screenshot3.png';
-import screen1 from './images/ElfsterRedesign/screen1.png';
-import screen2 from './images/ElfsterRedesign/screen2.png';
-import screen3 from './images/ElfsterRedesign/screen3.png';
-import screen4 from './images/ElfsterRedesign/screen4.png';
-import screen5 from './images/ElfsterRedesign/screen5.png';
-import screen6 from './images/ElfsterRedesign/screen6.png';
-import mockup1 from './images/ElfsterRedesign/mockup1.jpg';
-import mockup2 from './images/ElfsterRedesign/mockup2.jpg';
-import mockup3 from './images/ElfsterRedesign/mockup3.jpg';
-import mockup4 from './images/ElfsterRedesign/mockup4.jpg';
+import {
+  ElfsterScreenshot1,
+  ElfsterScreenshot2,
+  ElfsterScreenshot3,
+  ElfsterScreen1,
+  ElfsterScreen2,
+  ElfsterScreen3,
+  ElfsterScreen4,
+  ElfsterScreen5,
+  ElfsterScreen6,
+  ElfsterMockup1,
+  ElfsterMockup2,
+  ElfsterMockup3,
+  ElfsterMockup4
+} from '../assets/images';
 import TextBoxSection from '../components/ProjectDetails/TextBoxSection.js';
 
 export const ElfsterRedesign = ({}) => {
@@ -26,22 +28,22 @@ export const ElfsterRedesign = ({}) => {
   const titleContent = isLarge ? <LargeContent title={'ELFSTER REDESIGN'} content={<p>{content}</p>}/> : <SmallContent title={'ELFSTER REDESIGN'} content={<p>{content}</p>}/>;
 
   const imagePaths1 = [
-    screenshot1,
-    screenshot2,
-    screenshot3
+    ElfsterScreenshot1,
+    ElfsterScreenshot2,
+    ElfsterScreenshot3
   ];
 
   const imagePaths2 = [
-    screen1,
-    screen2,
-    screen3,
-    screen4,
-    screen5,
-    screen6,
-    mockup1,
-    mockup2,
-    mockup3,
-    mockup4
+    ElfsterScreen1,
+    ElfsterScreen2,
+    ElfsterScreen3,
+    ElfsterScreen4,
+    ElfsterScreen5,
+    ElfsterScreen6,
+    ElfsterMockup1,
+    ElfsterMockup2,
+    ElfsterMockup3,
+    ElfsterMockup4
   ];
 
   const imageSizes1 = [

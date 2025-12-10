@@ -55,7 +55,7 @@ function App() {
     if (tab === 'Music') {
       return <PlaylistHome setTab={setTab}/>
     }
-    if (tab === 'VideoGameVibes' || tab === 'ANightAtTheCasino' || tab === 'Oldies' || tab === 'LetsDisco') {
+    if (tab === 'VideoGameVibes' || tab === 'ANightAtTheCasino' || tab === 'FamilyRoadTrip' || tab === 'LetsDisco') {
       return <IndividualPlaylist setTab={setTab} tab={tab}/>
     }
     return (

@@ -6,16 +6,18 @@ import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 import SmallContent from '../components/Content/SmallContent.js';
 import ImageSlide from '../components/ImageSlide/ImageSlide.js';
-import logo1 from './images/Kavi/logo1.png';
-import logo2 from './images/Kavi/logo2.png';
-import logo3 from './images/Kavi/logo3.png';
-import brandAsset1 from './images/Kavi/brandAsset1.png';
-import brandAsset2 from './images/Kavi/brandAsset2.png';
-import mockup1 from './images/Kavi/mockup1.png';
-import mockup2 from './images/Kavi/mockup2.png';
-import mockup3 from './images/Kavi/mockup3.png';
-import mockup4 from './images/Kavi/mockup4.png';
-import mockup5 from './images/Kavi/mockup5.png';
+import {
+  KaviLogo1,
+  KaviLogo2,
+  KaviLogo3,
+  KaviBrandAsset1,
+  KaviBrandAsset2,
+  KaviMockup1,
+  KaviMockup2,
+  KaviMockup3,
+  KaviMockup4,
+  KaviMockup5
+} from '../assets/images'
 
 export const Kavi = ({}) => {
 
@@ -38,16 +40,16 @@ export const Kavi = ({}) => {
   ];
 
   const imagePaths = [
-    logo1,
-    logo2,
-    logo3,
-    brandAsset1,
-    brandAsset2,
-    mockup1,
-    mockup2,
-    mockup3,
-    mockup4,
-    mockup5
+    KaviLogo1,
+    KaviLogo2,
+    KaviLogo3,
+    KaviBrandAsset1,
+    KaviBrandAsset2,
+    KaviMockup1,
+    KaviMockup2,
+    KaviMockup3,
+    KaviMockup4,
+    KaviMockup5
   ];
 
   const titles = [
