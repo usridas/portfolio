@@ -18,35 +18,11 @@ export const Viasat = ({}) => {
   const content = 'Objective: Update the My Viasat application user interface to provide the most useful data to clients while simultaneously being intuitive and aesthetic. I worked on both frontend and backend tasks to achieve this, but leaned more into frontend. To name a few, as a team, we used React, TypeScript, and Redux for web and mobile development. This project was done during my time working at Viasat Inc. as a software engineer.';
   const titleContent = isLarge ? <LargeContent title={'MY VIASAT APPLICATION'} content={<p>{content}</p>}/> : <SmallContent title={'MY VIASAT APPLICATION'} content={<p>{content}</p>}/>;
 
-  const imagePaths1 = [
-    ViasatNavigation
-  ];
-
-  const imagePaths2 = [
-    ViasatArticle
-  ];
-
-  const imagePaths3 = [
-    ViasatCommonQuestions
-  ];
-
-  const imagePaths4 = [
-    ViasatStream
-  ];
-
-  const imagePaths5 = [
-    ViasatAddOns
-  ];
-
-  const imageSizes3 = [
-    '80%'
-  ]
-
-  const imageSlide1 = <ImageSlide imagePaths={imagePaths1}/>;
-  const imageSlide2 = <ImageSlide imagePaths={imagePaths2}/>;
-  const imageSlide3 = <ImageSlide imagePaths={imagePaths3} imageSizes={imageSizes3}/>;
-  const imageSlide4 = <ImageSlide imagePaths={imagePaths4}/>;
-  const imageSlide5 = <ImageSlide imagePaths={imagePaths5}/>;
+  const imageSlide1 = <ImageSlide imageSlideProps={[{imagePath: ViasatNavigation}]}/>;
+  const imageSlide2 = <ImageSlide imageSlideProps={[{imagePath: ViasatArticle}]}/>;
+  const imageSlide3 = <ImageSlide imageSlideProps={[{imagePath: ViasatCommonQuestions, imageSize: '80%'}]}/>;
+  const imageSlide4 = <ImageSlide imageSlideProps={[{imagePath: ViasatStream}]}/>;
+  const imageSlide5 = <ImageSlide imageSlideProps={[{imagePath: ViasatAddOns}]}/>;
 
   return (
         <div className="sectionContainer">

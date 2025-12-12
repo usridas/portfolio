@@ -27,46 +27,27 @@ export const ElfsterRedesign = ({}) => {
   const content = 'Objective: Redesign the Elfster gift exchange mobile app to be more user friendly, intuitive, and versatile. Elfster is an app that allows users to create wishlists and groups with friends to organize gift exchanges. When a group exchange is made, a user can create a wishlist which friends can see and order from. Essentially this app should allow friends to get purposeful gifts and to avoid duplicates.';
   const titleContent = isLarge ? <LargeContent title={'ELFSTER REDESIGN'} content={<p>{content}</p>}/> : <SmallContent title={'ELFSTER REDESIGN'} content={<p>{content}</p>}/>;
 
-  const imagePaths1 = [
-    ElfsterScreenshot1,
-    ElfsterScreenshot2,
-    ElfsterScreenshot3
+  const imageSlideProps1 = [
+    {imagePath: ElfsterScreenshot1, imageSize: '40%'},
+    {imagePath: ElfsterScreenshot2, imageSize: '40%'},
+    {imagePath: ElfsterScreenshot3, imageSize: '40%'},
   ];
 
-  const imagePaths2 = [
-    ElfsterScreen1,
-    ElfsterScreen2,
-    ElfsterScreen3,
-    ElfsterScreen4,
-    ElfsterScreen5,
-    ElfsterScreen6,
-    ElfsterMockup1,
-    ElfsterMockup2,
-    ElfsterMockup3,
-    ElfsterMockup4
+  const imageSlideProps2 = [
+    {imagePath: ElfsterScreen1, imageSize: '40%'},
+    {imagePath: ElfsterScreen2, imageSize: '40%'},
+    {imagePath: ElfsterScreen3, imageSize: '40%'},
+    {imagePath: ElfsterScreen4, imageSize: '40%'},
+    {imagePath: ElfsterScreen5, imageSize: '40%'},
+    {imagePath: ElfsterScreen6, imageSize: '40%'},
+    {imagePath: ElfsterMockup1, imageSize: '100%'},
+    {imagePath: ElfsterMockup2, imageSize: '100%'},
+    {imagePath: ElfsterMockup3, imageSize: '100%'},
+    {imagePath: ElfsterMockup4, imageSize: '100%'}
   ];
 
-  const imageSizes1 = [
-    '40%',
-    '40%',
-    '40%',
-  ]
-
-  const imageSizes2 = [
-    '40%',
-    '40%',
-    '40%',
-    '40%',
-    '40%',
-    '40%',
-    '100%',
-    '100%',
-    '100%',
-    '100%',
-  ]
-
-  const imageSlide1 = <ImageSlide imagePaths={imagePaths1} imageSizes={imageSizes1}/>;
-  const imageSlide2 = <ImageSlide imagePaths={imagePaths2} imageSizes={imageSizes2}/>;
+  const imageSlide1 = <ImageSlide imageSlideProps={imageSlideProps1}/>;
+  const imageSlide2 = <ImageSlide imageSlideProps={imageSlideProps2}/>;
 
   return (
         <div className="sectionContainer">

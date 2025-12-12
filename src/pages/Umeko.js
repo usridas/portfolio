@@ -36,37 +36,23 @@ export const Umeko = ({}) => {
   const fonts = [
     {fontName: 'RAMPART ONE REGULAR', fontSubtitle: 'Primary font', fontFamily: `"rampart-one", sans-serif`, fontWeight: '400', fontStyle: 'normal', fontSize: '32'},
     {fontName: 'ROUNDED M+ 1C MEDIUM', fontSubtitle: 'Secondary font', fontFamily: `"m-plus-rounded-1c", sans-serif`, fontWeight: '500', fontStyle: 'normal', fontSize: '32'}  
-  ]
-
-  const imagePaths = [
-    UmekoLogo1,
-    UmekoLogo2,
-    UmekoLogo3,
-    UmekoBrandAsset1,
-    UmekoBrandAsset2,
-    UmekoBrandAsset3,
-    UmekoMockup1,
-    UmekoMockup2,
-    UmekoMockup3,
-    UmekoMockup4,
-    UmekoMockup5
   ];
 
-  const titles = [
-    "PRIMARY LOGO",
-    "SECONDARY LOGO",
-    "TERTIARY LOGO",
-    "BRAND ASSET 1",
-    "BRAND ASSET 2",
-    "ILLUSTRATIONS",
-    "MOCKUP",
-    "MOCKUP",
-    "MOCKUP",
-    "MOCKUP",
-    "MOCKUP"
-  ]
+  const imageSlideProps = [
+    {imagePath: UmekoLogo1, title: "PRIMARY LOGO"},
+    {imagePath: UmekoLogo2, title: "SECONDARY LOGO"},
+    {imagePath: UmekoLogo3, title: "TERTIARY LOGO"},
+    {imagePath: UmekoBrandAsset1, title: "BRAND ASSET 1"},
+    {imagePath: UmekoBrandAsset2, title: "BRAND ASSET 2"},
+    {imagePath: UmekoBrandAsset3, title: "ILLUSTRATIONS"},
+    {imagePath: UmekoMockup1, title: "MOCKUP"},
+    {imagePath: UmekoMockup2, title: "MOCKUP"},
+    {imagePath: UmekoMockup3, title: "MOCKUP"},
+    {imagePath: UmekoMockup4, title: "MOCKUP"},
+    {imagePath: UmekoMockup5, title: "MOCKUP"},
+  ];
 
-  const imageSlide = <ImageSlide imagePaths={imagePaths} titles={titles}/>;
+  const imageSlide = <ImageSlide imageSlideProps={imageSlideProps}/>;
 
   return (
         <div className="sectionContainer">

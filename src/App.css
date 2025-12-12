@@ -11,6 +11,7 @@
   @media (max-width: 479px) {
     flex-direction: column;
     padding: 0 16px 40px 16px;
+    justify-content: flex-start;
   }
 }
 

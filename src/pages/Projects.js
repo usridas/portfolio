@@ -14,42 +14,14 @@ export const Projects = ({setTab}) => {
 
   const { isLarge } = useScreenResolution();
 
-  const imagePaths = [
-    UmekoLogo2,
-    KaviLogo1,
-    ElfsterMockup1,
-    ViasatMockup1
-  ];
-
-  const titles = [
-    "UMEKO",
-    "KAVI",
-    "ELFSTER REDESIGN",
-    "VIASAT"
+  const imageSlideProps = [
+    {imagePath: UmekoLogo2, title: "UMEKO", description: "July 2024", imageText: "SEE FULL UMEKO PROJECT", imageLink: "Umeko", caption: "Umeko is a fictional business project made for design purposes. Umeko is a fun, light-hearted Japanese style cafe which sources tea from Japan. They serve classic teas, as well as unique blends, and boba to cater to both younger and older aficionados."},
+    {imagePath: KaviLogo1, title: "KAVI", description: "July 2024", imageText: "SEE FULL KAVI PROJECT", imageLink: "Kavi", caption: "KAVI is a fictional business project made for design purposes. KAVI is a South Asian women owned luxury beauty and self care brand. Rooted in South Asian culture and ayurvedic practices, KAVI strives to make the beauty and self care routine enjoyable and relaxing through all-natural ingredients."},
+    {imagePath: ElfsterMockup1, title: "ELFSTER REDESIGN", description: "XXX - XXX", imageText: "SEE FULL ELFSTER REDESIGN PROJECT", imageLink: "ElfsterRedesign", caption: "My objective for this project was to redesign the Elfster gift exchange mobile app to be more user friendly, intuitive, and versatile. Elfster is an app that allows users to create wishlists and groups with friends to organize gift exchanges."},
+    {imagePath: ViasatMockup1, title: "VIASAT", description: "June 2021 - November 2023", imageText: "SEE FULL MY VIASAT PROJECT", imageLink: "Viasat", caption: "While I worked at Viasat, my objective was to update the My Viasat application user interface to provide the most useful data to clients while simultaneously being intuitive and aesthetic."},
   ]
 
-  const descriptions = [
-    "July 2024",
-    "July 2024",
-    "XXX - XXX",
-    "June 2021 - November 2023"
-  ]
-
-  const imageTexts = [
-    "SEE FULL UMEKO PROJECT",
-    "SEE FULL KAVI PROJECT",
-    "SEE FULL ELFSTER REDESIGN PROJECT",
-    "SEE FULL MY VIASAT PROJECT"
-  ]
-
-  const imageLinks = [
-    "Umeko",
-    "Kavi",
-    "ElfsterRedesign",
-    "Viasat"
-  ]
-
-  const projectSlide = <ImageSlide titles={titles} descriptions={descriptions} imagePaths={imagePaths} imageTexts={imageTexts} imageLinks={imageLinks} setTab={setTab}/>;
+  const projectSlide = <ImageSlide imageSlideProps={imageSlideProps} setTab={setTab}/>;
   if (isLarge) {
     return (
       <LargeContent title={'PROJECTS'} content={projectSlide} />

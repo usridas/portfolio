@@ -24,75 +24,24 @@ export const Artwork = ({}) => {
 
   const { isLarge } = useScreenResolution();
 
-  const imagePaths = [
-    HermitCrab,
-    Kasugai,
-    ChrysolinaPerforata,
-    DanausPlexippus,
-    Lime,
-    Pomegranate,
-    Onion,
-    Daruma,
-    Heart,
-    Brain,
-    Eyeball,
-    Mushroom1,
-    Mushroom2,
-    Mushroom3
-  ];
-
-  const titles = [
-    "HERMIT CRAB",
-    "KASUGAI GUMMIES",
-    "CHRYSOLINA PERFORATA",
-    "DANAUS PLEXIPPUS",
-    "FIG. 1. CITRUS AURANTIIFOLIA",
-    "FIG. 2. PUNICA GRANATUM",
-    "FIG. 3. ALLIUM CEPA",
-    "DARUMA",
-    "FIG. 1. HEART",
-    "FIG. 2. BRAIN",
-    "FIG. 3. EYEBALL",
-    "FIG. 1. OCULUS COPRINUS COMATUS",
-    "FIG. 2. OCULUS AMANITA MUSCARIA",
-    "FIG. 3. OCULUS FAVOLASCHIA CALOCERA"
+  const imageSlideProps = [
+    {imagePath: HermitCrab, title: "HERMIT CRAB", description: "Acrylic on canvas", imageSize: '75%'},
+    {imagePath: Kasugai, title: "KASUGAI GUMMIES", description: "Watercolor and Prismacolor pencil", imageSize: '100%'},
+    {imagePath: ChrysolinaPerforata, title: "CHRYSOLINA PERFORATA", description: "Watercolor and Prismacolor pencil", imageSize: '100%'},
+    {imagePath: DanausPlexippus, title: "DANAUS PLEXIPPUS", description: "Watercolor and Prismacolor pencil", imageSize: '100%'},
+    {imagePath: Lime, title: "FIG. 1. CITRUS AURANTIIFOLIA", description: "Linocut with ink", imageSize: '100%'},
+    {imagePath: Pomegranate, title: "FIG. 2. PUNICA GRANATUM", description: "Linocut with ink", imageSize: '100%'},
+    {imagePath: Onion, title: "FIG. 3. ALLIUM CEPA", description: "Linocut with ink", imageSize: '100%'},
+    {imagePath: Daruma, title: "DARUMA", description: "Linocut with ink", imageSize: '65%'},
+    {imagePath: Heart, title: "FIG. 1. HEART", description: "Watercolor and ink", imageSize: '100%'},
+    {imagePath: Brain, title: "FIG. 2. BRAIN", description: "Watercolor and ink", imageSize: '100%'},
+    {imagePath: Eyeball, title: "FIG. 3. EYEBALL", description: "Watercolor and ink", imageSize: '100%'},
+    {imagePath: Mushroom1, title: "FIG. 1. OCULUS COPRINUS COMATUS", description: "Watercolor and ink", imageSize: '65%'},
+    {imagePath: Mushroom2, title: "FIG. 2. OCULUS AMANITA MUSCARIA", description: "Watercolor and ink", imageSize: '65%'},
+    {imagePath: Mushroom3, title: "FIG. 3. OCULUS FAVOLASCHIA CALOCERA", description: "Watercolor and ink", imageSize: '65%'},
   ]
 
-  const descriptions = [
-    "Acrylic on canvas",
-    "Watercolor and Prismacolor pencil",
-    "Watercolor and Prismacolor pencil",
-    "Watercolor and Prismacolor pencil",
-    "Linocut with ink",
-    "Linocut with ink",
-    "Linocut with ink",
-    "Linocut with ink",
-    "Watercolor and ink",
-    "Watercolor and ink",
-    "Watercolor and ink",
-    "Watercolor and ink",
-    "Watercolor and ink",
-    "Watercolor and ink"
-  ]
-
-  const imageSizes = [
-    '75%',
-    '100%',
-    '100%',
-    '100%',
-    '100%',
-    '100%',
-    '100%',
-    '65%',
-    '100%',
-    '100%',
-    '100%',
-    '65%',
-    '65%',
-    '65%',
-  ]
-
-  const artworkSlide = <ImageSlide titles={titles} descriptions={descriptions} imagePaths={imagePaths} imageSizes={imageSizes}/>;
+  const artworkSlide = <ImageSlide imageSlideProps={imageSlideProps}/>;
   if (isLarge) {
     return (
       <LargeContent title={'ARTWORK'} content={artworkSlide} />

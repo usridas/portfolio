@@ -39,33 +39,20 @@ export const Kavi = ({}) => {
     {fontName: 'CORMORANT GARAMOND SEMIBOLD ITALIC', fontSubtitle: 'For quotes and extra information', fontFamily: `"cormorant-garamond", serif`, fontWeight: '600', fontStyle: 'italic'},
   ];
 
-  const imagePaths = [
-    KaviLogo1,
-    KaviLogo2,
-    KaviLogo3,
-    KaviBrandAsset1,
-    KaviBrandAsset2,
-    KaviMockup1,
-    KaviMockup2,
-    KaviMockup3,
-    KaviMockup4,
-    KaviMockup5
+  const imageSlideProps = [
+    {imagePath: KaviLogo1, title: "PRIMARY LOGO"},
+    {imagePath: KaviLogo2, title: "SECONDARY LOGO"},
+    {imagePath: KaviLogo3, title: "TERTIARY LOGO"},
+    {imagePath: KaviBrandAsset1, title: "BRAND ASSET 1"},
+    {imagePath: KaviBrandAsset2, title: "BRAND ASSET 2"},
+    {imagePath: KaviMockup1, title: "MOCKUP"},
+    {imagePath: KaviMockup2, title: "MOCKUP"},
+    {imagePath: KaviMockup3, title: "MOCKUP"},
+    {imagePath: KaviMockup4, title: "MOCKUP"},
+    {imagePath: KaviMockup5, title: "MOCKUP"},
   ];
 
-  const titles = [
-    "PRIMARY LOGO",
-    "SECONDARY LOGO",
-    "TERTIARY LOGO",
-    "BRAND ASSET 1",
-    "BRAND ASSET 2",
-    "MOCKUP",
-    "MOCKUP",
-    "MOCKUP",
-    "MOCKUP",
-    "MOCKUP"
-  ]
-
-  const imageSlide = <ImageSlide imagePaths={imagePaths} titles={titles}/>;
+  const imageSlide = <ImageSlide imageSlideProps={imageSlideProps}/>;
 
   return (
         <div className="sectionContainer">
