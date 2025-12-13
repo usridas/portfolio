@@ -17,6 +17,7 @@ import Viasat from './pages/Viasat.js';
 import PlaylistHome from './pages/PlaylistHome.js';
 import IndividualPlaylist from './pages/IndividualPlaylist.js';
 import { isMobile } from './utils/utils.js';
+import TraderJoesResearch from './pages/TraderJoesResearch.js';
 
 function App() {
   const { isLarge, isSmall } = useScreenResolution();
@@ -47,6 +48,9 @@ function App() {
   };
   if(tab === 'Viasat') {
     currentPage = <Viasat />
+  };
+  if(tab === 'TraderJoesResearch') {
+    currentPage = <TraderJoesResearch />
   };
 
   const isProject = tab !== 'AboutMe' && tab !== 'Experience' && tab !== 'Projects' && tab !== 'Artwork';

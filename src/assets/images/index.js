@@ -87,6 +87,13 @@ import SongOfStormsCover from './Music/SongOfStorms.png';
 import StillAliveCover from './Music/StillAlive.png';
 import TheGamblerCover from './Music/TheGambler.png';
 import TheVillainIAppearToBeCover from './Music/TheVillainIAppearToBe.png';
+import TraderJoesAffinityDiagram from './TraderJoesResearch/AffinityDiagram.png';
+import TraderJoesCover from './TraderJoesResearch/Cover.png';
+import TraderJoesJessJourneyMap from './TraderJoesResearch/JessJourneyMap.png';
+import TraderJoesJessPersonality from './TraderJoesResearch/JessPersonality.png';
+import TraderJoesMayaJourneyMap from './TraderJoesResearch/MayaJourneyMap.png';
+import TraderJoesMayaPersonality from './TraderJoesResearch/MayaPersonality.png';
+import TraderJoesParticipants from './TraderJoesResearch/Participants.png';
 import VolumeButton from './Music/VolumeButton.png';
 
 export {
@@ -179,5 +186,12 @@ export {
     StillAliveCover,
     TheGamblerCover,
     TheVillainIAppearToBeCover,
+    TraderJoesAffinityDiagram,
+    TraderJoesCover,
+    TraderJoesJessJourneyMap,
+    TraderJoesJessPersonality,
+    TraderJoesMayaJourneyMap,
+    TraderJoesMayaPersonality,
+    TraderJoesParticipants,
     VolumeButton
 };
