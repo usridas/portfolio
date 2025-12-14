@@ -8,12 +8,12 @@ export const PlaylistHome = ({setTab}) => {
 
     return (
         <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
-            <a onClick={()=>{setTab('Projects')}} className='link'>Back to my portfolio</a>
-            <div className='titleText'>{hoverText}</div>
+            <a onClick={()=>{setTab('Projects')}} style={{color: '#FFFFFF'}}>Back to my portfolio</a>
+            <h1 style={{color: '#FFFFFF'}}>{hoverText}</h1>
             <div className='playlistArrayContainer'>
                 <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Video game vibes')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('VideoGameVibes')}>
                     <div className='liquidGlassEffect'/>
-                    <div className='randomText'>Video game vibes</div>
+                    <h3 className='playlistTitle'>VIDEO GAME VIBES</h3>
                     <svg>
                         <filter id='glassDistortion'>
                             <feTurbulence
@@ -41,15 +41,15 @@ export const PlaylistHome = ({setTab}) => {
                 </div>
                 <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('A night at the casino')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('ANightAtTheCasino')}>
                     <div className='liquidGlassEffect'></div>
-                    <div className='randomText'>A night at the casino</div>
+                    <h3 className='playlistTitle'>A NIGHT AT THE CASINO</h3>
                 </div>  
                 <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Family road trip')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('FamilyRoadTrip')}>
                     <div className='liquidGlassEffect'></div>
-                    <div className='randomText'>Family road trip</div>
+                    <h3 className='playlistTitle'>FAMILY ROAD TRIP</h3>
                 </div>  
                 <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Let\'s disco')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('LetsDisco')}>
                     <div className='liquidGlassEffect'></div>
-                    <div className='randomText'>Let's disco</div>
+                    <h3 className='playlistTitle'>LET'S DISCO</h3>
                 </div>   
             </div>
         </div>

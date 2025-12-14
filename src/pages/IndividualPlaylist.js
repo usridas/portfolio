@@ -51,7 +51,7 @@ export const IndividualPlaylist = ({setTab, tab}) => {
     useEffect(() => {
         //animate the glass highlight
         let start = glassOffset;
-        let end = currentSongIndex * 77;
+        let end = currentSongIndex * 90;
         let startTime;
 
         function animate(time) {
@@ -115,10 +115,10 @@ export const IndividualPlaylist = ({setTab, tab}) => {
         return (
             <div className={`titleArtistAndTime ${currentSong.title === title ? "currentSong" : ""}`}>
                 <div className='titleAndArtist'>
-                    <div className='songTitle'>{title}</div>
-                    <div className='songArtistOrTime'>{artist}</div>
+                    <h3 style={{color: '#FFFFFF'}}>{title}</h3>
+                    <h4>{artist}</h4>
                 </div>
-                <div className='songArtistOrTime'>{time}</div>
+                <h3 style={{color: '#FFFFFF'}}>{time}</h3>
             </div>
         );
     };
@@ -204,8 +204,8 @@ export const IndividualPlaylist = ({setTab, tab}) => {
                 <div className='progressBar' style={{width: `${progressPercentage}%`}}/>
             </div>
             <div className='progressBarTimestampContainer'>
-                <div className='timestamp'>{secondsToTimestamp(currentSong.audio.currentTime ?? 0)}</div>
-                <div className='timestamp'>{`-${secondsToTimestamp((currentSong.audio.duration - currentSong.audio.currentTime) ?? 0)}`}</div>
+                <h4>{secondsToTimestamp(currentSong.audio.currentTime ?? 0)}</h4>
+                <h4>{`-${secondsToTimestamp((currentSong.audio.duration - currentSong.audio.currentTime) ?? 0)}`}</h4>
             </div>
         </div>;
 
@@ -227,8 +227,8 @@ export const IndividualPlaylist = ({setTab, tab}) => {
 
     return (
         <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
-            <a onClick={()=>{currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; setTab('Music');}} className='link'>Back to playlists</a>
-            <div className='titleText'>{title}</div>
+            <a onClick={()=>{currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; setTab('Music');}} style={{color: '#FFFFFF'}}>Back to playlists</a>
+            <h1 style={{color: '#FFFFFF'}}>{title}</h1>
             <div className='individualPlaylistContainer'>
                 <div className='individualVinylAndMusicListContainer'>
                     <Vinyl songCover={currentSong.songCover} vinylAnimation={vinylAnimation} isPaused={isPaused}/>
@@ -238,8 +238,8 @@ export const IndividualPlaylist = ({setTab, tab}) => {
                     <div className='liquidGlassEffect'/>
                     <div className='individualPlaylistButtonContainer'>
                         <div className='mainTitleAndArtist'>
-                            <div className='songTitle'>{currentSong.title}</div>
-                            <div className='songArtistOrTime'>{currentSong.artist}</div>
+                            <h3 style={{color: '#FFFFFF'}}>{currentSong.title}</h3>
+                            <h4>{currentSong.artist}</h4>
                         </div>
                         {buttonsAndProgressContainer}
                         {volumeContainer}

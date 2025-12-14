@@ -19,6 +19,8 @@ import IndividualPlaylist from './pages/IndividualPlaylist.js';
 import { isMobile } from './utils/utils.js';
 import TraderJoesResearch from './pages/TraderJoesResearch.js';
 import RollWithIt from './pages/RollWithIt.js';
+import Button from './components/Button/Button.js';
+import Resume from './assets/documents/Resume.pdf';
 
 function App() {
   const { isLarge, isSmall } = useScreenResolution();
@@ -58,7 +60,11 @@ function App() {
   };
 
   const isProject = tab !== 'AboutMe' && tab !== 'Experience' && tab !== 'Projects' && tab !== 'Artwork';
-  const welcomeText = <p>{'After graduating from my undergrad, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. I love the intersection between art and technology and aim to be a bridge between these two fields.\n\n​I am currently in a Masters program for User Experience Design and am searching for work in the UI/UX field.'}</p>;
+  const welcomeText = 
+  <div>
+    <p style={{marginBottom: '24px'}}>{'After graduating from my undergrad, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. I love the intersection between art and technology and aim to be a bridge between these two fields.\n\n​I am currently in a Masters program for User Experience Design and am searching for work in the UI/UX field.'}</p>
+    <Button type='Primary' text='VIEW MY RESUME' link={Resume}/>
+  </div>
   
     if (tab === 'Music') {
       return <PlaylistHome setTab={setTab}/>
