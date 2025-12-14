@@ -80,6 +80,33 @@ import PeurDesFillesCover from './Music/PeurDesFilles.png';
 import PlayButton from './Music/PlayButton.png';
 import PreviousSongButton from './Music/PreviousSongButton.png';
 import PuzzlesCover from './Music/Puzzles.png';
+import RollWithItButton from './RollWithIt/Button.png';
+import RollWithItColors from './RollWithIt/Colors.png';
+import RollWithItCounter from './RollWithIt/Counter.png';
+import RollWithItCover from './RollWithIt/Cover.png';
+import RollWithItFilter from './RollWithIt/Filter.png';
+import RollWithItMoodBoard from './RollWithIt/MoodBoard.png';
+import RollWithItSketchbookComponents from './RollWithIt/SketchbookComponents.png';
+import RollWithItSketchbookDrawing1 from './RollWithIt/SketchbookDrawing1.png';
+import RollWithItSketchbookDrawing2 from './RollWithIt/SketchbookDrawing2.png';
+import RollWithItSketchbookIdeation from './RollWithIt/SketchbookIdeation.png';
+import RollWithItSketchbookWireframe1 from './RollWithIt/SketchbookWireframe1.png';
+import RollWithItSketchbookWireframe2 from './RollWithIt/SketchbookWireframe2.png';
+import RollWithItSketchbookWireframe3 from './RollWithIt/SketchbookWireframe3.png';
+import RollWithItSketchbookWireframe4 from './RollWithIt/SketchbookWireframe4.png';
+import RollWithItTextInput from './RollWithIt/TextInput.png';
+import RollWithItTypography from './RollWithIt/Typography.png';
+import RollWithItWireframe1 from './RollWithIt/Wireframe1.png';
+import RollWithItWireframe2 from './RollWithIt/Wireframe2.png';
+import RollWithItWireframe3 from './RollWithIt/Wireframe3.png';
+import RollWithItWireframe4 from './RollWithIt/Wireframe4.png';
+import RollWithItWireframe5 from './RollWithIt/Wireframe5.png';
+import RollWithItWireframe6 from './RollWithIt/Wireframe6.png';
+import RollWithItWireframe7 from './RollWithIt/Wireframe7.png';
+import RollWithItWireframe8 from './RollWithIt/Wireframe8.png';
+import RollWithItWireframe9 from './RollWithIt/Wireframe9.png';
+import RollWithItWireframe10 from './RollWithIt/Wireframe10.png';
+import RollWithItWireframe11 from './RollWithIt/Wireframe11.png';
 import RosmarinaCover from './Music/Rosmarina.png';
 import SingSingSingCover from './Music/SingSingSing.png';
 import SleepItOffCover from './Music/SleepItOff.png';
@@ -179,6 +206,33 @@ export {
     PlayButton,
     PreviousSongButton,
     PuzzlesCover,
+    RollWithItButton,
+    RollWithItColors,
+    RollWithItCounter,
+    RollWithItCover,
+    RollWithItFilter,
+    RollWithItMoodBoard,
+    RollWithItSketchbookComponents,
+    RollWithItSketchbookDrawing1,
+    RollWithItSketchbookDrawing2,
+    RollWithItSketchbookIdeation,
+    RollWithItSketchbookWireframe1,
+    RollWithItSketchbookWireframe2,
+    RollWithItSketchbookWireframe3,
+    RollWithItSketchbookWireframe4,
+    RollWithItWireframe1,
+    RollWithItWireframe2,
+    RollWithItWireframe3,
+    RollWithItWireframe4,
+    RollWithItWireframe5,
+    RollWithItWireframe6,
+    RollWithItWireframe7,
+    RollWithItWireframe8,
+    RollWithItWireframe9,
+    RollWithItWireframe10,
+    RollWithItWireframe11,
+    RollWithItTextInput,
+    RollWithItTypography,
     RosmarinaCover,
     SingSingSingCover,
     SleepItOffCover,

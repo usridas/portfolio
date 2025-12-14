@@ -18,6 +18,7 @@ import PlaylistHome from './pages/PlaylistHome.js';
 import IndividualPlaylist from './pages/IndividualPlaylist.js';
 import { isMobile } from './utils/utils.js';
 import TraderJoesResearch from './pages/TraderJoesResearch.js';
+import RollWithIt from './pages/RollWithIt.js';
 
 function App() {
   const { isLarge, isSmall } = useScreenResolution();
@@ -51,6 +52,9 @@ function App() {
   };
   if(tab === 'TraderJoesResearch') {
     currentPage = <TraderJoesResearch />
+  };
+  if(tab === 'RollWithIt') {
+    currentPage = <RollWithIt />
   };
 
   const isProject = tab !== 'AboutMe' && tab !== 'Experience' && tab !== 'Projects' && tab !== 'Artwork';

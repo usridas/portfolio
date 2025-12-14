@@ -35,17 +35,6 @@
     }
 }
 
-.imageBox {
-    border: 1px solid #E6E5E0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    width: -moz-available;
-    width: -webkit-fill-available;
-    width: stretch;
-    aspect-ratio: 1/1;
-}
-
 .projectDetailContainer {
     display: flex;
     flex-direction: column;

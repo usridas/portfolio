@@ -37,11 +37,9 @@ export const ImageSlide = ({imageSlideProps, setTab}) => {
               {imageSlideProps[imageIndex].description && <h4 style={{textAlign: 'end'}}>{imageSlideProps[imageIndex].description}</h4>}
           </div>
         }
-        <div className='imageSlideContainer'>
-          <div className='imageBox' style={{backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : '100%'}`}}>
-            {imageSlideProps[imageIndex].imageLink && !isSmall && <a className='imageSlideLink' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</a>}
-            {imageSlideProps[imageIndex].imageLink && isSmall && <a className='imageSlideLinkSmallHover' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</a>}
-          </div>
+        <div className='imageBox' style={{backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : 'contain'}`}}>
+          {imageSlideProps[imageIndex].imageLink && !isSmall && <a className='imageSlideLink' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</a>}
+          {imageSlideProps[imageIndex].imageLink && isSmall && <a className='imageSlideLinkSmallHover' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</a>}
         </div>
         {imageSlideProps[imageIndex].caption && <p>{imageSlideProps[imageIndex].caption}</p>}
         {imageSlideProps.length > 1 &&

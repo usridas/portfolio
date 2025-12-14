@@ -1,4 +1,5 @@
 import './Nav.css';
+import Resume from '../../assets/documents/Resume.pdf';
 
 export const SmallNavModal = ({setTab, isProject, setIsModalOpen}) => {
 
@@ -12,6 +13,7 @@ export const SmallNavModal = ({setTab, isProject, setIsModalOpen}) => {
             <a onClick={()=>{setTab('Experience'); setIsModalOpen(false);}}>EXPERIENCE</a>
             <a onClick={()=>{setTab('Projects'); setIsModalOpen(false);}}>PROJECTS</a>
             <a onClick={()=>{setTab('Artwork'); setIsModalOpen(false);}}>ARTWORK</a>
+            <a href={Resume} onClick={()=>{setIsModalOpen(false);}}>RESUME</a>
             <a href="mailto:umaiyal.sridas@gmail.com" onClick={()=>{setIsModalOpen(false);}}>CONTACT</a>
             <a onClick={()=>{setTab('Music'); setIsModalOpen(false);}}>SECRET TUNNEL</a>
             </div>

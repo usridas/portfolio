@@ -5,7 +5,7 @@ import LargeContent from '../components/Content/LargeContent.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 import SmallContent from '../components/Content/SmallContent.js';
-import ImageSlide from '../components/ImageSlide/ImageSlide.js';
+import ImageSlide from '../components/Images/ImageSlide.js';
 import {
   KaviLogo1,
   KaviLogo2,

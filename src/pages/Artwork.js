@@ -1,6 +1,6 @@
 import LargeContent from '../components/Content/LargeContent.js';
 import SmallContent from '../components/Content/SmallContent.js';
-import ImageSlide from '../components/ImageSlide/ImageSlide';
+import ImageSlide from '../components/Images/ImageSlide.js';
 import './Pages.css';
 import {
   HermitCrab,
