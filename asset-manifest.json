@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c793162.css",
-    "main.js": "/static/js/main.d5c57e0b.js",
+    "main.css": "/static/css/main.d7059280.css",
+    "main.js": "/static/js/main.280f1edc.js",
     "static/js/453.ac9b7e2a.chunk.js": "/static/js/453.ac9b7e2a.chunk.js",
     "static/media/mockup4.png": "/static/media/mockup4.4e883e7a5e31d886385c.png",
     "static/media/mockup3.png": "/static/media/mockup3.8a6b4c0488704ae6db2c.png",
@@ -10,6 +10,7 @@
     "static/media/Kasugai.png": "/static/media/Kasugai.293db4009490f57432bb.png",
     "static/media/SingSingSing.mp3": "/static/media/SingSingSing.554bebde7ddf92bbbc4f.mp3",
     "static/media/mockup5.png": "/static/media/mockup5.a599faac8715f5e4b7a8.png",
+    "static/media/TraderJoesSlideDeck.pdf": "/static/media/TraderJoesSlideDeck.b26036e16736a0c65fcf.pdf",
     "static/media/MoodBoard.png": "/static/media/MoodBoard.a161baca8d8419a66f6b.png",
     "static/media/AmericanPie.mp3": "/static/media/AmericanPie.4eee48b76da6e3931b38.mp3",
     "static/media/LetsGroove.mp3": "/static/media/LetsGroove.191baf701c7fa85074cf.mp3",
@@ -138,12 +139,12 @@
     "static/media/Navigation.png": "/static/media/Navigation.ee194a73487fbc10d013.png",
     "static/media/MayaPersonality.png": "/static/media/MayaPersonality.9ad423c0947eb7d8a932.png",
     "index.html": "/index.html",
-    "main.8c793162.css.map": "/static/css/main.8c793162.css.map",
-    "main.d5c57e0b.js.map": "/static/js/main.d5c57e0b.js.map",
+    "main.d7059280.css.map": "/static/css/main.d7059280.css.map",
+    "main.280f1edc.js.map": "/static/js/main.280f1edc.js.map",
     "453.ac9b7e2a.chunk.js.map": "/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c793162.css",
-    "static/js/main.d5c57e0b.js"
+    "static/css/main.d7059280.css",
+    "static/js/main.280f1edc.js"
   ]
 }
