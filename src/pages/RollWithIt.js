@@ -33,6 +33,7 @@ import {
     RollWithItWireframe11
 } from '../assets/images';
 import { PlainImage } from '../components/Images/PlainImage.js';
+import Button from '../components/Button/Button.js';
 
 export const RollWithIt = ({}) => {
 
@@ -65,8 +66,10 @@ export const RollWithIt = ({}) => {
         {title: 'CONTACT US', imagePath: RollWithItWireframe11},
     ]}/>;
     const components = <ImageSlide imageSlideProps={[{title: 'BUTTON SET', imagePath: RollWithItButton}, {title: 'COUNTER SET',imagePath: RollWithItCounter}, {title: 'FILTER SET',imagePath: RollWithItFilter}, {title: 'TEXT INPUT SET', imagePath: RollWithItTextInput}]}/>;
-    const prototype = <iframe className='rollWithItPrototype' src="https://embed.figma.com/proto/2AQTimF0QrG3lk8lXFX05C/UXDE5100--Final-Project?node-id=467-223&scaling=scale-down-width&content-scaling=fixed&page-id=467%3A222&starting-point-node-id=467%3A223&embed-host=share" allowfullscreen></iframe>
-
+    const prototype = <div>
+        <iframe className='rollWithItPrototype' src="https://embed.figma.com/proto/2AQTimF0QrG3lk8lXFX05C/UXDE5100--Final-Project?node-id=467-223&scaling=scale-down-width&content-scaling=fixed&page-id=467%3A222&starting-point-node-id=467%3A223&embed-host=share" allowfullscreen></iframe>
+        <Button type='Primary' text='SEE PROTOTYPE IN FULL SCREEN' link='https://www.figma.com/proto/2AQTimF0QrG3lk8lXFX05C/UXDE5100--Final-Project?node-id=467-223&t=JzKuZj0eoi342NHi-1&scaling=scale-down-width&content-scaling=fixed&page-id=467%3A222&starting-point-node-id=467%3A223'/>
+    </div>
     return (
         <div className="sectionContainer">
             {titleContent}

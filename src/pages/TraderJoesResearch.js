@@ -3,7 +3,6 @@ import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 import SmallContent from '../components/Content/SmallContent.js';
 import TextContainer from '../components/Text/TextContainer.js';
-import ImageSlide from '../components/Images/ImageSlide.js';
 import {
     TraderJoesParticipants,
     TraderJoesAffinityDiagram,
@@ -12,12 +11,17 @@ import {
     TraderJoesJessJourneyMap,
     TraderJoesJessPersonality
 } from '../assets/images';
+import TraderJoesSlideDeck from '../assets/documents/TraderJoesSlideDeck.pdf'
 import PlainImage from '../components/Images/PlainImage.js';
+import Button from '../components/Button/Button.js';
 
 export const TraderJoesResearch = ({}) => {
 
     const { isLarge } = useScreenResolution();
-    const content = 'Although grocery shopping is a seemingly simple and regular task, there are ways the in-store and online shopping experience can be improved and optimized for the customer. In this research, we will focus on the experience of Trader Joe\'s shoppers and develop an understanding of customer needs and pain points during the grocery shopping process in order to define some opportunity spaces.';
+    const content = <div>
+        <p style={{marginBottom: '24px'}}>Although grocery shopping is a seemingly simple and regular task, there are ways the in-store and online shopping experience can be improved and optimized for the customer. In this research, we will focus on the experience of Trader Joe\'s shoppers and develop an understanding of customer needs and pain points during the grocery shopping process in order to define some opportunity spaces.</p>
+        <Button type='Primary' text='SEE FULL SLIDE DECK' link={TraderJoesSlideDeck}/>
+    </div>
     const titleContent = isLarge ? <LargeContent title={'TRADER JOE\'S RESEARCH'} content={<p>{content}</p>}/> : <SmallContent title={'TRADER JOE\'S EXPERIENCE RESEARCH'} content={<p>{content}</p>}/>;
 
     const researchPlan1 = <TextContainer title={'OBJECTIVES'} text={'Learning Goals:\n• What does Trader Joe\'s offer in terms of products and services?\n• What are some strengths of Trader Joe\'s and what attracts customers?\n• What are some pain points within the shopping experience?\n• Can a digital avenue help increase interest in Trader Joe\'s (such as an app or online ordering)?\n• Can a membership increase interest in Trader Joe\'s?'} />;
