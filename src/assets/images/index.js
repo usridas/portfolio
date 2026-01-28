@@ -69,6 +69,21 @@ import HotTeaCover from './Music/HotTeaAndFirmwareUpdates.png';
 import IJustCalledToSayILoveYouCover from './Music/IJustCalledToSayILoveYou.png';
 import IkoIkoCover from './Music/IkoIko.png';
 import ItsBeenALongLongTimeCover from './Music/ItsBeenALongLongTime.png';
+import KohiToKochaColors from './KohiToKocha/Colors.png';
+import KohiToKochaCover from './KohiToKocha/Logo.png';
+import KohiToKochaFlowchart from './KohiToKocha/Flowchart.png';
+import KohiToKochaMoodboard from './KohiToKocha/Moodboard.png';
+import KohiToKochaPrototype1 from './KohiToKocha/Prototype1.png';
+import KohiToKochaPrototype2 from './KohiToKocha/Prototype2.png';
+import KohiToKochaPrototype3 from './KohiToKocha/Prototype3.png';
+import KohiToKochaPrototype4 from './KohiToKocha/Prototype4.png';
+import KohiToKochaPrototype5 from './KohiToKocha/Prototype5.png';
+import KohiToKochaPrototype6 from './KohiToKocha/Prototype6.png';
+import KohiToKochaPrototype7 from './KohiToKocha/Prototype7.png';
+import KohiToKochaPrototype8 from './KohiToKocha/Prototype8.png';
+import KohiToKochaPrototype9 from './KohiToKocha/Prototype9.png';
+import KohiToKochaTypography from './KohiToKocha/Typography.png';
+import KohiToKochaWireframes from './KohiToKocha/Wireframes.png';
 import LetsGrooveCover from './Music/LetsGroove.png';
 import LovelyCityCover from './Music/LovelyCity.png';
 import NextSongButton from './Music/NextSongButton.png';
@@ -161,6 +176,21 @@ export {
     KaviMockup3,
     KaviMockup4,
     KaviMockup5,
+    KohiToKochaColors,
+    KohiToKochaCover,
+    KohiToKochaFlowchart,
+    KohiToKochaMoodboard,
+    KohiToKochaPrototype1,
+    KohiToKochaPrototype2,
+    KohiToKochaPrototype3,
+    KohiToKochaPrototype4,
+    KohiToKochaPrototype5,
+    KohiToKochaPrototype6,
+    KohiToKochaPrototype7,
+    KohiToKochaPrototype8,
+    KohiToKochaPrototype9,
+    KohiToKochaTypography,
+    KohiToKochaWireframes,
     UmekoBrandAsset1,
     UmekoBrandAsset2,
     UmekoBrandAsset3,

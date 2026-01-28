@@ -2,7 +2,6 @@ import LargeContent from '../components/Content/LargeContent.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 import SmallContent from '../components/Content/SmallContent.js';
-import TextContainer from '../components/Text/TextContainer.js';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import {
     RollWithItMoodBoard,

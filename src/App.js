@@ -19,6 +19,7 @@ import IndividualPlaylist from './pages/IndividualPlaylist.js';
 import { isMobile } from './utils/utils.js';
 import TraderJoesResearch from './pages/TraderJoesResearch.js';
 import RollWithIt from './pages/RollWithIt.js';
+import KohiToKocha from './pages/KohiToKocha.js';
 import Button from './components/Button/Button.js';
 import Resume from './assets/documents/Resume.pdf';
 
@@ -57,6 +58,9 @@ function App() {
   };
   if(tab === 'RollWithIt') {
     currentPage = <RollWithIt />
+  };
+  if(tab === 'KohiToKocha') {
+    currentPage = <KohiToKocha />
   };
 
   const isProject = tab !== 'AboutMe' && tab !== 'Experience' && tab !== 'Projects' && tab !== 'Artwork';
