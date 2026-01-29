@@ -11,7 +11,8 @@ export const AboutMe = ({}) => {
     const education1 = <TextContainer title={'COLUMBUS COLLEGE OF ART & DESIGN'} subtitle={'2025 - 2027'} text={'M.P.S. in User Experience Design'} />;
     const education2 = <TextContainer title={'BUSINESS ANALYST AT UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN'} subtitle={'2016 - 2020'} text={'B.S. in Computer Engineering with a Minor in Art & Design'}/>;
     const skills1 = <TextContainer title={'DESIGN'} text={'Figma, Adobe Illustrator, Adobe InDesign, Adobe XD, Drawing, Painting, Photography'} />;
-    const skills2 = <TextContainer title={'SOFTWARE'} text={'JavaScript/TypeScript, HTML/CSS/SCSS, React, Node.js, GitHub, Jira/Confluence, Postman'}/>;
+    const skills2 = <TextContainer title={'RESEARCH'} text={'User Interviewing, Affinity Diagramming, Journey Mapping, Persona Development'} />;
+    const skills3 = <TextContainer title={'SOFTWARE'} text={'JavaScript/TypeScript, HTML/CSS/SCSS, React, Node.js, GitHub, Jira/Confluence, Postman'}/>;
     const quote4 = <QuoteContainer title={'-MARK FAMINI, SOFTWARE ENGINEER'} text={'"Uma is our multi-talented/scrum master/software engineer/designer. She was a big asset to our team, she\'s not afraid to wear multiple hats. She started on our team as a fresh graduate, and we saw her blossom into her role, very technical person, prolific with the arts and a lot of leadership potential. She is very easy to work with and very easy to talk to."'}/>
     const quote3 = <QuoteContainer title={'-ROHAN PATEL, SOFTWARE ENGINEER'} text={'"She was always willing to work together on complicated tickets and was my go to person to ask for any front-end related work. She was always approachable and willing to help. Whatever team that has her next is lucky to have a developer with such a keen eye for designs and the ability to implement them."'}/>
     const quote2 = <QuoteContainer title={'-MADISON MATECUN, PRODUCT DESIGNER'} text={'"As a developer, Uma has a really incredible design-oriented mindset. When I was partnered with her I could always count on her to fill in the blanks of an early-stage design with sensible and thoughtful interactions. She is reliable and accountable— picking up work when others are out on vacation, or filling in for the scrummaster (and doing a great job at it!). Her versatility is unmatched and she is an invaluable asset to any team."'}/>
@@ -27,6 +28,7 @@ export const AboutMe = ({}) => {
         <div className='sectionContainer'>
             {skills1}
             {skills2}
+            {skills3}
         </div>;
 
     const allQuotes =
