@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5cf2132a.css",
-    "main.js": "/static/js/main.0a99d828.js",
+    "main.css": "/static/css/main.f8308b87.css",
+    "main.js": "/static/js/main.10e4beb8.js",
     "static/js/453.ac9b7e2a.chunk.js": "/static/js/453.ac9b7e2a.chunk.js",
     "static/media/mockup4.png": "/static/media/mockup4.4e883e7a5e31d886385c.png",
     "static/media/mockup3.png": "/static/media/mockup3.8a6b4c0488704ae6db2c.png",
@@ -109,6 +109,7 @@
     "static/media/Wireframe3.png": "/static/media/Wireframe3.29af33e69dc7ed453d89.png",
     "static/media/screenshot2.png": "/static/media/screenshot2.6692345b6c3bdc2fdc93.png",
     "static/media/AmericanPie.png": "/static/media/AmericanPie.537868ef8f0fe1d1793d.png",
+    "static/media/material-icons-two-tone.woff": "/static/media/material-icons-two-tone.3baa5b8f3469222b822d.woff",
     "static/media/Wireframe2.png": "/static/media/Wireframe2.ce922800d16d849d2238.png",
     "static/media/SingSingSing.png": "/static/media/SingSingSing.2abee7ed41c666f9c28c.png",
     "static/media/logo2.png": "/static/media/logo2.68df9bf5b7febc9d8577.png",
@@ -121,16 +122,25 @@
     "static/media/brandAsset1.png": "/static/media/brandAsset1.ab28488b138fe9f79af7.png",
     "static/media/FeelingGood.png": "/static/media/FeelingGood.875fe596e44ac4cf29f4.png",
     "static/media/GetLucky.png": "/static/media/GetLucky.a034bfdebd3eeed67094.png",
+    "static/media/material-icons-two-tone.woff2": "/static/media/material-icons-two-tone.4ef4218c522f1eb6b5b1.woff2",
+    "static/media/material-icons-round.woff": "/static/media/material-icons-round.5d681e2edae8c60630db.woff",
     "static/media/Typography.png": "/static/media/Typography.dd19ad31b6eb2a73c54c.png",
     "static/media/Wireframe7.png": "/static/media/Wireframe7.711a61ca3565c0eb6db2.png",
     "static/media/Colors.png": "/static/media/Colors.6f5771f785fb67e110d6.png",
     "static/media/Wireframe5.png": "/static/media/Wireframe5.0cc7b2be3a8bb8db7bde.png",
     "static/media/Participants.png": "/static/media/Participants.11e5889770ffc738052b.png",
+    "static/media/material-icons-outlined.woff": "/static/media/material-icons-outlined.f882956fd323fd322f31.woff",
+    "static/media/material-icons-round.woff2": "/static/media/material-icons-round.c380809fd3677d7d6903.woff2",
     "static/media/logo3.png": "/static/media/logo3.dbb421c6d4485126c56d.png",
+    "static/media/material-icons.woff": "/static/media/material-icons.4d73cb90e394b34b7670.woff",
+    "static/media/material-icons-sharp.woff": "/static/media/material-icons-sharp.3a4004a46a653d4b2166.woff",
+    "static/media/material-icons-outlined.woff2": "/static/media/material-icons-outlined.6f420cf17cc0d7676fad.woff2",
     "static/media/ViasatStream.png": "/static/media/ViasatStream.9308688b01edadb7dfb1.png",
     "static/media/Wireframe4.png": "/static/media/Wireframe4.4389875c959f74881924.png",
     "static/media/Wireframe6.png": "/static/media/Wireframe6.544c3ad7d80b32423490.png",
     "static/media/mockup1.jpg": "/static/media/mockup1.8a945d62fb69230a07dc.jpg",
+    "static/media/material-icons-sharp.woff2": "/static/media/material-icons-sharp.219aa9140e099e6c72ed.woff2",
+    "static/media/material-icons.woff2": "/static/media/material-icons.0c35d18bf06992036b69.woff2",
     "static/media/mockup2.jpg": "/static/media/mockup2.7373e13a85506cb62720.jpg",
     "static/media/Wireframe11.png": "/static/media/Wireframe11.d77c9d7203856716b862.png",
     "static/media/mockup3.jpg": "/static/media/mockup3.f3919078da599c658cbc.jpg",
@@ -152,12 +162,12 @@
     "static/media/Navigation.png": "/static/media/Navigation.ee194a73487fbc10d013.png",
     "static/media/MayaPersonality.png": "/static/media/MayaPersonality.9ad423c0947eb7d8a932.png",
     "index.html": "/index.html",
-    "main.5cf2132a.css.map": "/static/css/main.5cf2132a.css.map",
-    "main.0a99d828.js.map": "/static/js/main.0a99d828.js.map",
+    "main.f8308b87.css.map": "/static/css/main.f8308b87.css.map",
+    "main.10e4beb8.js.map": "/static/js/main.10e4beb8.js.map",
     "453.ac9b7e2a.chunk.js.map": "/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cf2132a.css",
-    "static/js/main.0a99d828.js"
+    "static/css/main.f8308b87.css",
+    "static/js/main.10e4beb8.js"
   ]
 }
