@@ -25,7 +25,7 @@ export const SmallNavModal = ({setTab, isProject, setIsModalOpen}) => {
           </div>
         </div>
       </div>
-      <p className='smallNavFooter'>Website designed and developed by Umaiyal Sridas. 2025.</p>
+      <p className='smallNavFooter'>Website designed and developed by Umaiyal Sridas. 2026.</p>
     </div>
   );
 }

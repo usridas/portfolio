@@ -21,7 +21,7 @@ export const LargeNav = ({setTab, isProject}) => {
         }
         {isProject && <a onClick={()=>{setTab('Projects')}}>BACK TO PROJECTS</a>}
       </div>
-      <p className='largeNavFooter'>Website designed and developed by Umaiyal Sridas. 2025.</p>
+      <p className='largeNavFooter'>Website designed and developed by Umaiyal Sridas. 2026.</p>
     </div>
   );
 }
