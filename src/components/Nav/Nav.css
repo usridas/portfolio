@@ -20,6 +20,20 @@
     gap: 8px;
 }
 
+.largeNavWithFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.largeNavFooter {
+    width: 134px;
+    position: fixed;
+    bottom: 72px;
+}
+
 .navTitle {
     font-family: "plantin", sans-serif;
     font-size: 24px;
@@ -28,6 +42,14 @@
     line-height: normal;
     letter-spacing: -1.8px;
     color: #2519D2;
+}
+
+.smallNavWithFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
 }
 
 .smallNavContainer {
@@ -80,6 +102,18 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 8px;
+}
+
+.smallNavFooter {
+    width: 134px;
+    padding: 0 16px;
+    text-align: right;
+    position: fixed;
+    bottom: 72px;
+    right: 0;
+    z-index: 1001;
+    animation-name: slideInFromRight;
+    animation-duration: 0.5s;
 }
 
 @keyframes slideInFromRight {
