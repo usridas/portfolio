@@ -19,10 +19,12 @@ export const SmallNavModal = ({setTab, isProject, setIsModalOpen}) => {
               <a onClick={()=>{setTab('Music'); setIsModalOpen(false);}}>SECRET TUNNEL</a>
             </div>
           }
-          <div className='smallNavList'>
-            <a onClick={()=>setIsModalOpen(false)} style={{color: '#2519D2'}}>CLOSE</a>
-            {isProject && <a onClick={()=>{setTab('Projects'); setIsModalOpen(false);}} style={{textAlign: 'right'}}>BACK TO PROJECTS</a>}
-          </div>
+          {isProject &&
+            <div className='smallNavList'>
+              <a onClick={()=>setIsModalOpen(false)} style={{color: '#2519D2'}}>CLOSE</a>
+              <a onClick={()=>{setTab('Projects'); setIsModalOpen(false);}} style={{textAlign: 'right'}}>BACK TO PROJECTS</a>
+            </div>
+          }
         </div>
       </div>
       <p className='smallNavFooter'>Website designed and developed by Umaiyal Sridas. 2026.</p>

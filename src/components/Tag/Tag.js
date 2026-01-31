@@ -2,10 +2,10 @@ import './Tag.css';
 import 'material-icons/iconfont/material-icons.css';
 
 export const Tag = ({type, text}) => {
-    let icon = <span class="material-icons-outlined">design_services</span>;
+    let icon = <span class="material-icons-outlined">palette</span>;
     switch (type) {
         case 'Design':
-            icon = <span class="material-icons-outlined">design_services</span>;
+            icon = <span class="material-icons-outlined">palette</span>;
             break;
         case 'Software':
             icon = <span class="material-icons-outlined">code</span>;
