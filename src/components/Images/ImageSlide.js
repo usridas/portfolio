@@ -1,6 +1,7 @@
 import './ImageSlide.css';
 import { useState } from 'react';
 import { useScreenResolution } from '../../utils/ScreenSize.tsx';
+import Button from '../Button/Button.js';
 
 
 export const ImageSlide = ({imageSlideProps, setTab}) => {
@@ -32,7 +33,7 @@ export const ImageSlide = ({imageSlideProps, setTab}) => {
   return (
     <div className="imageSlideContainer">
         {imageSlideProps[imageIndex].title &&
-          <div className='imageSlideTextContainer'>
+          <div className='imageSlideTitleContainer'>
               <h3>{imageSlideProps[imageIndex].title}</h3>
               {imageSlideProps[imageIndex].description && <h4 style={{textAlign: 'end'}}>{imageSlideProps[imageIndex].description}</h4>}
           </div>
@@ -41,13 +42,13 @@ export const ImageSlide = ({imageSlideProps, setTab}) => {
           {imageSlideProps[imageIndex].imageLink && !isSmall && <a className='imageSlideLink' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</a>}
           {imageSlideProps[imageIndex].imageLink && isSmall && <a className='imageSlideLinkSmallHover' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</a>}
         </div>
-        {imageSlideProps[imageIndex].caption && <p>{imageSlideProps[imageIndex].caption}</p>}
+        {imageSlideProps[imageIndex].caption && <p className='captionHeight'>{imageSlideProps[imageIndex].caption}</p>}
         {imageSlideProps.length > 1 &&
           <div className='imageSlideTextContainer'>
-            <a onClick={()=>onBackClick()}>BACK</a>
-            <a onClick={()=>onNextClick()}>NEXT</a>
+            <Button type='Secondary' text='BACK' onClick={onBackClick}/>
+            <Button type='Secondary' text='NEXT' onClick={(onNextClick)}/>
           </div>
-        }
+        } 
     </div>
   );
 }

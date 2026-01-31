@@ -2,8 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    gap: 12px;
     max-width: 608px;
+}
+
+.imageSlideTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 44px;
 }
 
 .imageSlideTextContainer {
@@ -64,4 +72,14 @@
     border: 1px solid #E6E5E0;
     width: 100%;
     max-width: 608px;
+}
+
+.captionHeight {
+    height: 95px;
+    @media (max-width: 767px) and (min-width: 480px) {
+        height: 152px;
+    }
+    @media (max-width: 479px) {
+        height: 152px;
+    }
 }

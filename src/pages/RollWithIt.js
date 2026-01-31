@@ -31,13 +31,17 @@ import {
     RollWithItWireframe10,
     RollWithItWireframe11
 } from '../assets/images';
+import RollWithItSlideDeck from '../assets/documents/RollWithItSlideDeck.pdf'
 import { PlainImage } from '../components/Images/PlainImage.js';
 import Button from '../components/Button/Button.js';
 
 export const RollWithIt = ({}) => {
 
     const { isLarge } = useScreenResolution();
-    const content = 'This website will be the touchpoint of Roll With It. Roll With It offers Asian baked goods and pastries as well as coffee and tea drinks. They focus on highlighting Asian culture and uplifting the Asian communities and diasporas through food.\n\nThis website’s main features will include:\n• A home page with main features and overview information\n• An “About Us” page\n• A blog page about coffee, tea, baked goods, and Asian culture\n• A menu of in store products with descriptions\n• A checkout system for ordering products online\n• A contact us form';
+    const content = <div>
+        <p style={{marginBottom: '24px'}}>{'This website will be the touchpoint of Roll With It. Roll With It offers Asian baked goods and pastries as well as coffee and tea drinks. They focus on highlighting Asian culture and uplifting the Asian communities and diasporas through food.\n\nThis website’s main features will include:\n• A home page with main features and overview information\n• An “About Us” page\n• A blog page about coffee, tea, baked goods, and Asian culture\n• A menu of in store products with descriptions\n• A checkout system for ordering products online\n• A contact us form'}</p>
+        <Button type='Primary' text='SEE FULL SLIDE DECK' link={RollWithItSlideDeck}/>
+    </div>
     const titleContent = isLarge ? <LargeContent title={'ROLL WITH IT DESIGN'} content={<p>{content}</p>}/> : <SmallContent title={'ROLL WITH IT DESIGN'} content={<p>{content}</p>}/>;
 
     const sketches = <ImageSlide imageSlideProps={[{title: 'IDEATION', imagePath: RollWithItSketchbookIdeation}, {title: 'DRAWINGS',imagePath: RollWithItSketchbookDrawing1}, {title: 'DRAWINGS',imagePath: RollWithItSketchbookDrawing2}]}/>;

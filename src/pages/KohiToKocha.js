@@ -19,13 +19,17 @@ import {
     KohiToKochaPrototype9,
     KohiToKochaWireframes
 } from '../assets/images';
+import KohiToKochaSlideDeck from '../assets/documents/KohiToKochaSlideDeck.pdf'
 import { PlainImage } from '../components/Images/PlainImage.js';
 import Button from '../components/Button/Button.js';
 
 export const KohiToKocha = ({}) => {
 
     const { isLarge } = useScreenResolution();
-    const content = 'This app is made for learning about Japanese culture and language through cafe settings. It will cover different types of cafes and their history, vocabulary, phrases and expressions, and etiquette. The explore portion of the app allows you to build up knowledge and confidence of Japanese cafes without the fear of making mistakes; this part of the app will be applicable to anyone all over the world as it will be a fictional setting. The planning portion of the app will help you prepare for real-world interactions; this part of the app is used for planning visits and preparing dialogues for cafes in Japan.';
+    const content =<div>
+        <p style={{marginBottom: '24px'}}>{'This app is made for learning about Japanese culture and language through cafe settings. It will cover different types of cafes and their history, vocabulary, phrases and expressions, and etiquette. The explore portion of the app allows you to build up knowledge and confidence of Japanese cafes without the fear of making mistakes; this part of the app will be applicable to anyone all over the world as it will be a fictional setting. The planning portion of the app will help you prepare for real-world interactions; this part of the app is used for planning visits and preparing dialogues for cafes in Japan.'}</p>
+        <Button type='Primary' text='SEE FULL SLIDE DECK' link={KohiToKochaSlideDeck}/>
+    </div>
     const titleContent = isLarge ? <LargeContent title={'KŌHĪ TO KŌCHA DESIGN'} content={<p>{content}</p>}/> : <SmallContent title={'KŌHĪ TO KŌCHA DESIGN'} content={<p>{content}</p>}/>;
 
     const moodboard = <PlainImage plainImageProps={{imagePath: KohiToKochaMoodboard, caption: 'Some of my main inspirations were lush greenery and blue skies, especially how it is portrayed in Studio Ghibli films, and the openness of Nintendo games, like Animal Crossing.'}}/>;
