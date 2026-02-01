@@ -16,7 +16,7 @@ export const LargeNav = ({setTab, isProject}) => {
             <a onClick={()=>{setTab('Artwork')}}>ARTWORK</a>
             {!isLarge && <a href={Resume} target="blank">RESUME</a>}
             <a href="mailto:umaiyal.sridas@gmail.com">CONTACT</a>
-            <a onClick={()=>{setTab('Music')}}>SECRET TUNNEL</a>
+            <a onClick={()=>{setTab('Music')}}>SURPRISE</a>
           </div>
         }
         {isProject && <a onClick={()=>{setTab('Projects')}}>BACK TO PROJECTS</a>}
