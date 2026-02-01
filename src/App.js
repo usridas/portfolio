@@ -25,7 +25,7 @@ import Resume from './assets/documents/Resume.pdf';
 
 function App() {
   const { isLarge, isSmall } = useScreenResolution();
-  const isMobileVar = isMobile();
+  const isMobileVar = isMobile() || isSmall;
   const [tab, setTab] = useState('Projects');
   const [isModalOpen, setIsModalOpen] = useState(false);
   let currentPage;
