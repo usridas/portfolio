@@ -90,13 +90,9 @@
     align-items: flex-start;
     gap: 12px;
     max-width: 608px;
-    position: absolute;
     width: -moz-available;
     width: -webkit-fill-available;
     width: stretch;
-    @media (max-width: 767px) {
-        padding-top: 48px;
-    }
 }
 
 .projectPreviewTitleContainer {
