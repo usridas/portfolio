@@ -17,13 +17,13 @@ export const AboutMe = ({}) => {
     const quote1 = <QuoteContainer title={'-ROBERT ALLEN, LEAD DEVELOPER'} text={'"While she has worn many hats during our couple of years working together, she shows a particular aptitude for front-end development and design. Her unique skillset allows her to understand the design and development required for any feature. She\'s a CSS master and often mentors even her seniors on best practices for developing UI."'}/>
 
     const skills1 = <div className='skillsContainer'>
-        <Tag type='Design' text='FIGMA'/> <Tag type='Design' text='ADOBE ILLUSTRATOR'/> <Tag type='Design' text='ADOBE INDESIGN'/> <Tag type='Design' text='ADOBE XD'/> <Tag type='Design' text='DRAWING'/> <Tag type='Design' text='PAINTING'/> <Tag type='Design' text='PHOTOGRAPHY'/>
+        <Tag iconBool={true} type='Design' text='FIGMA'/> <Tag iconBool={true} type='Design' text='ADOBE ILLUSTRATOR'/> <Tag iconBool={true} type='Design' text='ADOBE INDESIGN'/> <Tag iconBool={true} type='Design' text='ADOBE XD'/> <Tag iconBool={true} type='Design' text='DRAWING'/> <Tag iconBool={true} type='Design' text='PAINTING'/> <Tag iconBool={true} type='Design' text='PHOTOGRAPHY'/>
     </div>;
     const skills2 = <div className='skillsContainer'>
-        <Tag type='Software' text='JAVASCRIPT/TYPESCRIPT'/> <Tag type='Software' text='HTML/CSS/SCSS'/> <Tag type='Software' text='REACT'/> <Tag type='Software' text='NODE.JS'/> <Tag type='Software' text='GITHUB'/> <Tag type='Software' text='JIRA/CONFLUENCE'/> <Tag type='Software' text='POSTMAN'/>
+        <Tag iconBool={true} type='Software' text='JAVASCRIPT/TYPESCRIPT'/> <Tag iconBool={true} type='Software' text='HTML/CSS/SCSS'/> <Tag iconBool={true} type='Software' text='REACT'/> <Tag iconBool={true} type='Software' text='NODE.JS'/> <Tag iconBool={true} type='Software' text='GITHUB'/> <Tag iconBool={true} type='Software' text='JIRA/CONFLUENCE'/> <Tag iconBool={true} type='Software' text='POSTMAN'/>
     </div>;
     const skills3 = <div className='skillsContainer'>
-        <Tag type='Research' text='USER INTERVIEWING'/> <Tag type='Research' text='AFFINITY DIAGRAMMING'/> <Tag type='Research' text='JOURNEY MAPPING'/> <Tag type='Research' text='PERSONA DEVELOPMENT'/>
+        <Tag iconBool={true} type='Research' text='USER INTERVIEWING'/> <Tag iconBool={true} type='Research' text='AFFINITY DIAGRAMMING'/> <Tag iconBool={true} type='Research' text='JOURNEY MAPPING'/> <Tag iconBool={true} type='Research' text='PERSONA DEVELOPMENT'/>
     </div>;
 
     const allEducation =

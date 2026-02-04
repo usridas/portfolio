@@ -20,11 +20,14 @@ import {
   UmekoMockup4,
   UmekoMockup5
 } from '../assets/images';
+import Tag from '../components/Tag/Tag.js';
 
 export const Umeko = ({}) => {
 
   const { isLarge } = useScreenResolution();
-  const content = <div>
+  const umekoTags = <div className='tags'><Tag type='Design' text='ADOBE ILLUSTRATOR'/></div>
+  const content = <div className='summaryContent'>
+    {umekoTags}
     <p style={{marginBottom: '24px'}}>{'Umeko is a fun, light-hearted Japanese style cafe which sources tea from Japan. They serve classic teas, as well as unique blends, and boba to cater to both younger and older aficionados. The pastel, calm aesthetic is inspired by the Japanese plum (ume) and blossom. Umeko means ‘plum child’ in Japanese and plum blossoms are associated with good fortune and health.\n\n*This is a fictional business project made for design purposes.'}</p>
     <Button type='Primary' text='SEE FULL PROJECT ON BEHANCE' link={'https://www.behance.net/gallery/242576285/Umeko-Brand-Identity-and-Guidelines'}/>
   </div>

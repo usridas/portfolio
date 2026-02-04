@@ -83,3 +83,33 @@
         height: 152px;
     }
 }
+
+.projectPreviewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 608px;
+    position: absolute;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    @media (max-width: 767px) {
+        padding-top: 48px;
+    }
+}
+
+.projectPreviewTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.projectPreviewTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}

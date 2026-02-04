@@ -78,9 +78,9 @@ function App() {
     }
     return (
       <div className={isMobileVar ? 'appContainerMobile' : 'appContainer'}>
-        {!isSmall && <LargeNav setTab={setTab} isProject={isProject}/>}
+        {!isSmall && <LargeNav setTab={setTab} tab={tab} isProject={isProject}/>}
         {isSmall && <SmallNav setIsModalOpen={setIsModalOpen} setTab={setTab} tab={tab}/>}
-        {isSmall && isModalOpen && <SmallNavModal setTab={setTab} isProject={isProject} setIsModalOpen={setIsModalOpen}/>}
+        {isSmall && isModalOpen && <SmallNavModal setTab={setTab} tab={tab} isProject={isProject} setIsModalOpen={setIsModalOpen}/>}
         <div className='pageContainer'>
           {isLarge && !isProject &&
             <div className='welcomeSection'>

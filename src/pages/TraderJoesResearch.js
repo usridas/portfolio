@@ -14,11 +14,19 @@ import {
 import TraderJoesSlideDeck from '../assets/documents/TraderJoesSlideDeck.pdf'
 import PlainImage from '../components/Images/PlainImage.js';
 import Button from '../components/Button/Button.js';
+import Tag from '../components/Tag/Tag.js';
 
 export const TraderJoesResearch = ({}) => {
 
     const { isLarge } = useScreenResolution();
-    const content = <div>
+    const traderJoesTags = <div className='tags'>
+        <Tag type='Research' text='USER INTERVIEWING'/>
+        <Tag type='Research' text='AFFINITY DIAGRAMMING'/>
+        <Tag type='Research' text='JOURNEY MAPPING'/>
+        <Tag type='Research' text='PERSONA DEVELOPMENT'/>
+      </div>
+    const content = <div className='summaryContent'>
+        {traderJoesTags}
         <p style={{marginBottom: '24px'}}>Although grocery shopping is a seemingly simple and regular task, there are ways the in-store and online shopping experience can be improved and optimized for the customer. In this research, we will focus on the experience of Trader Joe\'s shoppers and develop an understanding of customer needs and pain points during the grocery shopping process in order to define some opportunity spaces.</p>
         <Button type='Primary' text='SEE FULL SLIDE DECK' link={TraderJoesSlideDeck}/>
     </div>

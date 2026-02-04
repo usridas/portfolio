@@ -20,12 +20,17 @@ import {
   ElfsterMockup4
 } from '../assets/images';
 import TextBoxSection from '../components/ProjectDetails/TextBoxSection.js';
+import Tag from '../components/Tag/Tag.js';
 
 export const ElfsterRedesign = ({}) => {
 
   const { isLarge } = useScreenResolution();
-  const content = 'Objective: Redesign the Elfster gift exchange mobile app to be more user friendly, intuitive, and versatile. Elfster is an app that allows users to create wishlists and groups with friends to organize gift exchanges. When a group exchange is made, a user can create a wishlist which friends can see and order from. Essentially this app should allow friends to get purposeful gifts and to avoid duplicates.';
-  const titleContent = isLarge ? <LargeContent title={'ELFSTER REDESIGN'} content={<p>{content}</p>}/> : <SmallContent title={'ELFSTER REDESIGN'} content={<p>{content}</p>}/>;
+  const elfsterTags = <div className='tags'><Tag type='Design' text='FIGMA'/></div>
+  const content = <div className='summaryContent'>
+    {elfsterTags}
+    <p>Objective: Redesign the Elfster gift exchange mobile app to be more user friendly, intuitive, and versatile. Elfster is an app that allows users to create wishlists and groups with friends to organize gift exchanges. When a group exchange is made, a user can create a wishlist which friends can see and order from. Essentially this app should allow friends to get purposeful gifts and to avoid duplicates.</p>
+  </div>
+  const titleContent = isLarge ? <LargeContent title={'ELFSTER REDESIGN'} content={content}/> : <SmallContent title={'ELFSTER REDESIGN'} content={content}/>;
 
   const imageSlideProps1 = [
     {imagePath: ElfsterScreenshot1, imageSize: '40%'},

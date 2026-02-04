@@ -12,6 +12,7 @@ import Kasugai from './Artwork/Kasugai.png';
 import Mushroom1 from './Artwork/Mushroom_1.png';
 import Mushroom2 from './Artwork/Mushroom_2.png';
 import Mushroom3 from './Artwork/Mushroom_3.png';
+import ElfsterCover from './ElfsterRedesign/cover.png';
 import ElfsterMockup1 from './ElfsterRedesign/mockup1.jpg';
 import ElfsterMockup2 from './ElfsterRedesign/mockup2.jpg';
 import ElfsterMockup3 from './ElfsterRedesign/mockup3.jpg';
@@ -49,6 +50,7 @@ import UmekoMockup5 from './Umeko/mockup5.png';
 import ViasatAddOns from './Viasat/AddOns.png';
 import ViasatArticle from './Viasat/Article.png';
 import ViasatCommonQuestions from './Viasat/CommonQuestions.png';
+import ViasatCover from './Viasat/cover.png';
 import ViasatMockup1 from './Viasat/mockup1.png';
 import ViasatMockup2 from './Viasat/mockup2.png';
 import ViasatMockup3 from './Viasat/mockup3.png';
@@ -153,6 +155,7 @@ export {
     Mushroom1,
     Mushroom2,
     Mushroom3,
+    ElfsterCover,
     ElfsterMockup1,
     ElfsterMockup2,
     ElfsterMockup3,
@@ -205,6 +208,7 @@ export {
     ViasatAddOns,
     ViasatArticle,
     ViasatCommonQuestions,
+    ViasatCover,
     ViasatMockup1,
     ViasatMockup2,
     ViasatMockup3,

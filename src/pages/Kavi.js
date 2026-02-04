@@ -19,11 +19,14 @@ import {
   KaviMockup4,
   KaviMockup5
 } from '../assets/images'
+import Tag from '../components/Tag/Tag.js';
 
 export const Kavi = ({}) => {
 
   const { isLarge } = useScreenResolution();
-  const content = <div>
+  const kaviTags = <div className='tags'><Tag type='Design' text='ADOBE ILLUSTRATOR'/></div>
+  const content = <div className='summaryContent'>
+    {kaviTags}
     <p style={{marginBottom: '24px'}}>{'KAVI is a South Asian women owned luxury beauty and self care brand. Rooted in South Asian culture and ayurvedic practices, KAVI strives to make the beauty and self care routine enjoyable and relaxing through all-natural ingredients.'}</p>
     <Button type='Primary' text='SEE FULL PROJECT ON BEHANCE' link={'https://www.behance.net/gallery/242576537/KAVI-Brand-Identity-and-Guidelines'}/>
   </div>

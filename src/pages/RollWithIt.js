@@ -34,11 +34,17 @@ import {
 import RollWithItSlideDeck from '../assets/documents/RollWithItSlideDeck.pdf'
 import { PlainImage } from '../components/Images/PlainImage.js';
 import Button from '../components/Button/Button.js';
+import Tag from '../components/Tag/Tag.js';
 
 export const RollWithIt = ({}) => {
 
     const { isLarge } = useScreenResolution();
-    const content = <div>
+    const rollWithItTags = <div className='tags'>
+        <Tag type='Design' text='FIGMA'/>
+        <Tag type='Design' text='WEB APP'/>
+      </div>
+    const content = <div className='summaryContent'>
+        {rollWithItTags}
         <p style={{marginBottom: '24px'}}>{'This website will be the touchpoint of Roll With It. Roll With It offers Asian baked goods and pastries as well as coffee and tea drinks. They focus on highlighting Asian culture and uplifting the Asian communities and diasporas through food.\n\nThis website’s main features will include:\n• A home page with main features and overview information\n• An “About Us” page\n• A blog page about coffee, tea, baked goods, and Asian culture\n• A menu of in store products with descriptions\n• A checkout system for ordering products online\n• A contact us form'}</p>
         <Button type='Primary' text='SEE FULL SLIDE DECK' link={RollWithItSlideDeck}/>
     </div>
