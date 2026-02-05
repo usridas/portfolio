@@ -8,6 +8,7 @@
     border-radius: 4px;
     background: #FFBCA9;
     color: #DD2F00;
+    border: 1px solid #DD2F00;
     text-align: right;
     font-family: "space-mono", mono;
     font-size: 12px;
@@ -26,6 +27,7 @@
     border-radius: 4px;
     background: #FFE2ED;
     color: #94003D;
+    border: 1px solid #94003D;
     text-align: right;
     font-family: "space-mono", mono;
     font-size: 12px;
@@ -44,6 +46,7 @@
     border-radius: 4px;
     background: #E4F3A8;
     color: #4B5D00;
+    border: 1px solid #4B5D00;
     text-align: right;
     font-family: "space-mono", mono;
     font-size: 12px;
