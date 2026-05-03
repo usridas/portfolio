@@ -40,6 +40,15 @@
     background-attachment: fixed;
 }
 
+.individualPlaylistTitle {
+    display: flex;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .playlistTitle {
     display: flex;
     height: 100%;

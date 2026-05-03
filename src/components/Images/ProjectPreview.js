@@ -47,6 +47,11 @@ export const ProjectPreview = ({imageSlideProps, setTab}) => {
         {imageSlideProps.length > 1 &&
           <div className='imageSlideTextContainer'>
             <Button type='Secondary' text='BACK' onClick={onBackClick}/>
+            <div className='circleContainer'>
+              {imageSlideProps?.map((item, index) => (
+                  <div className='circle' style={{backgroundColor: imageIndex === index ? '#33322A' : '#E6E5E0'}}/>
+              ))}
+            </div>
             <Button type='Secondary' text='NEXT' onClick={(onNextClick)}/>
           </div>
         } 

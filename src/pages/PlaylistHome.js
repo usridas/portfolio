@@ -9,7 +9,7 @@ export const PlaylistHome = ({setTab}) => {
     return (
         <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
             <a onClick={()=>{setTab('Projects')}} style={{color: '#FFFFFF'}}>Back to my portfolio</a>
-            <h1 style={{color: '#FFFFFF'}}>{hoverText}</h1>
+            <h1 className='individualPlaylistTitle'>{hoverText}</h1>
             <div className='playlistArrayContainer'>
                 <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Video game vibes')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('VideoGameVibes')}>
                     <div className='liquidGlassEffect'/>

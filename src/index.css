@@ -9,13 +9,17 @@ html, body {
   background-color: #FDFCF8;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 hr {
-  border: 1px solid #FFA600;
+  border: 1px solid #E6E5E0;
 }
 
 p {
@@ -24,9 +28,10 @@ p {
   font-style: normal;
   font-size: 16px;
   color: #33322A;
-  line-height: normal;
+  line-height: 1.5;
   white-space: pre-wrap;
   margin: 0;
+  text-align: left;
 }
 
 a {
@@ -58,17 +63,20 @@ h1 {
   font-family: "plantin", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 40px;
+  font-size: 36px;
   color: #E6E5E0;
   letter-spacing: -3.6px;
   margin: 0;
+  min-width: stretch;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 h2 {
   font-family: "plantin", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
-  font-size: 20px;
+  font-size: 24px;
   color: #E6E5E0;
   letter-spacing: -2px;
   margin: 0;

@@ -8,7 +8,8 @@ export const ImageSlide = ({imageSlideProps, setTab}) => {
 
   const [imageIndex, setImageIndex] = useState(0);
 
-   const { isSmall } = useScreenResolution();
+   const { isSmall, isXSmall } = useScreenResolution();
+    const isMobileVar = isSmall || isXSmall;
 
   function onBackClick() {
     if (imageIndex > 0 && imageIndex < imageSlideProps.length) {
@@ -39,13 +40,18 @@ export const ImageSlide = ({imageSlideProps, setTab}) => {
           </div>
         }
         <div className='imageBox' style={{backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : 'contain'}`}}>
-          {imageSlideProps[imageIndex].imageLink && !isSmall && <a className='imageSlideLink' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</a>}
-          {imageSlideProps[imageIndex].imageLink && isSmall && <a className='imageSlideLinkSmallHover' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</a>}
+          {imageSlideProps[imageIndex].imageLink && (!isSmall && !isXSmall) && <a className='imageSlideLink' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</a>}
+          {imageSlideProps[imageIndex].imageLink && (isSmall || isXSmall) && <a className='imageSlideLinkSmallHover' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</a>}
         </div>
-        {imageSlideProps[imageIndex].caption && <p className='captionHeight'>{imageSlideProps[imageIndex].caption}</p>}
+        {imageSlideProps[imageIndex].caption && <p>{imageSlideProps[imageIndex].caption}</p>}
         {imageSlideProps.length > 1 &&
           <div className='imageSlideTextContainer'>
             <Button type='Secondary' text='BACK' onClick={onBackClick}/>
+            <div className='circleContainer'>
+              {imageSlideProps?.map((item, index) => (
+                  <div className='circle' style={{backgroundColor: imageIndex === index ? '#33322A' : '#E6E5E0'}}/>
+              ))}
+            </div>
             <Button type='Secondary' text='NEXT' onClick={(onNextClick)}/>
           </div>
         } 

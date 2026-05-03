@@ -1,7 +1,5 @@
-import LargeContent from '../components/Content/LargeContent.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
-import SmallContent from '../components/Content/SmallContent.js';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import {
     KohiToKochaMoodboard,
@@ -23,6 +21,7 @@ import KohiToKochaSlideDeck from '../assets/documents/KohiToKochaSlideDeck.pdf'
 import { PlainImage } from '../components/Images/PlainImage.js';
 import Button from '../components/Button/Button.js';
 import Tag from '../components/Tag/Tag.js';
+import Grid from '../components/Grid/Grid.js';
 
 export const KohiToKocha = ({}) => {
 
@@ -38,8 +37,6 @@ export const KohiToKocha = ({}) => {
         <Button type='Primary' text='SEE FULL SLIDE DECK' link={KohiToKochaSlideDeck}/>
     </div>
     
-    const titleContent = isLarge ? <LargeContent title={'KŌHĪ TO KŌCHA DESIGN'} content={<p>{content}</p>}/> : <SmallContent title={'KŌHĪ TO KŌCHA DESIGN'} content={<p>{content}</p>}/>;
-
     const moodboard = <PlainImage plainImageProps={{imagePath: KohiToKochaMoodboard, caption: 'Some of my main inspirations were lush greenery and blue skies, especially how it is portrayed in Studio Ghibli films, and the openness of Nintendo games, like Animal Crossing.'}}/>;
     const flowchart = <PlainImage plainImageProps={{imagePath: KohiToKochaFlowchart, caption: 'There were four basic tabs for the app: Learn, Explore, Notes, and Account. The Notes and Account tab would follow the typical format of other Notes and Account UIs, but the Learn and Explore tabs were new. This is the basic flow I wanted to follow:\n\nLearn:\n1. Choose a café type: Modern, Themed, Kissaten, Bakery\n2. Learn: History, Vocabulary, Phrases/Expressions, Etiquette\n3. Interact\n4. Earn Points\n\nExplore:\n1. Choose a café location\n2. Get a summary of the cafe\n3. See the menu\n4. Plan order/dialogue\n5. Notes on experience'}}/>;
     const colors = <PlainImage plainImageProps={{imagePath: KohiToKochaColors}}/>;
@@ -61,24 +58,19 @@ export const KohiToKocha = ({}) => {
             <Button type='Primary' text='SEE PROTOTYPE IN FULL SCREEN' link='https://www.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=531-19001&t=0Lucuy2WHfprI1dN-1&scaling=contain&content-scaling=fixed&page-id=72%3A1269&starting-point-node-id=531%3A19001'/>
         </div>;
 
+    const gridArray = [
+        {title: 'KOHI TO KOCHA', content: content},
+        {title: 'MOODBOARD', content: moodboard},
+        {title: 'FLOWCHART', content: flowchart},
+        {title: 'COLORS', content: colors},
+        {title: 'TYPOGRAPHY', content: typography},
+        {title: 'WIREFRAMES', content: wireframes},
+        {title: 'SCREENS', content: screens},
+        {title: 'PROTOTYPE', content: prototype}
+    ]
+
     return (
-        <div className="sectionContainer">
-            {titleContent}
-            <hr className='divider'/>
-            {isLarge ? <LargeContent title={'MOOD BOARD'} content={moodboard}/> : <SmallContent title={'MOOD BOARD'} content={moodboard}/>}
-            <hr className='divider'/>
-            {isLarge ? <LargeContent title={'FLOW CHART'} content={flowchart}/> : <SmallContent title={'MOOD BOARD'} content={flowchart}/>}
-            <hr className='divider'/>
-            {isLarge ? <LargeContent title={'COLORS'} content={colors}/> : <SmallContent title={'COLORS'} content={colors}/>}
-            <hr className='divider'/>
-            {isLarge ? <LargeContent title={'TYPOGRAPHY'} content={typography}/> : <SmallContent title={'TYPOGRAPHY'} content={typography}/>}
-            <hr className='divider'/>
-            {isLarge ? <LargeContent title={'WIREFRAMES'} content={wireframes}/> : <SmallContent title={'WIREFRAMES'} content={wireframes}/>}
-            <hr className='divider'/>
-            {isLarge ? <LargeContent title={'SCREENS'} content={screens}/> : <SmallContent title={'SCREENS'} content={screens}/>}
-            <hr className='divider'/>
-            {isLarge ? <LargeContent title={'PROTOTYPE'} content={prototype}/> : <SmallContent title={'PROTOTYPE'} content={prototype}/>}
-        </div>
+        <Grid gridProps={gridArray} removeBio={true}/>
     );
 }
 

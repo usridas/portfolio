@@ -1,32 +1,12 @@
-.colorBox {
+.box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: -moz-available;
     width: -webkit-fill-available;
     width: stretch;
-    max-width: 568px;
     gap: 16px;
     padding: 20px;
-    @media (max-width: 767px) {
-        max-width: none;
-        width: -moz-available;
-        width: -webkit-fill-available;
-        width: stretch;
-    }
-}
-
-.fontBox {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: -moz-available;
-    width: -webkit-fill-available;
-    width: stretch;
-    max-width: 568px;
-    gap: 16px;
-    padding: 20px;
-    border: 1px solid #33322A;
     @media (max-width: 767px) {
         max-width: none;
         width: -moz-available;

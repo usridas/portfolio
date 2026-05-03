@@ -1,24 +1,30 @@
 import { useState, useEffect } from 'react';
 
 export const useScreenResolution = () => {
+    const [isXSmall, setIsXSmall] = useState(false);
     const [isSmall, setIsSmall] = useState(false);
     const [isMedium, setIsMedium] = useState(false);
     const [isLarge, setIsLarge] = useState(false);
   
     useEffect(() => {
       const windowResized = () => {
-        setIsSmall(
+        setIsXSmall(
           window.matchMedia(`screen and (max-width: 479px)`)
             .matches
         );
-        setIsMedium(
+        setIsSmall(
           window.matchMedia(
             `screen and (min-width: 480px) and (max-width: 767px)`
           ).matches
         );
+        setIsMedium(
+          window.matchMedia(
+            `screen and (min-width: 768px) and (max-width: 1043px)`
+          ).matches
+        );
         setIsLarge(
           window.matchMedia(
-            `screen and (min-width: 768px)`
+            `screen and (min-width: 1044px)`
           ).matches
         );
       };
@@ -28,5 +34,5 @@ export const useScreenResolution = () => {
       return () => window.removeEventListener('resize', windowResized);
     }, []);
   
-    return { isSmall, isMedium, isLarge };
+    return { isXSmall, isSmall, isMedium, isLarge };
   };

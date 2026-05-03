@@ -1,37 +1,25 @@
 .largeNavContainer {
     display: flex;
-    flex-direction: column;
-    width: 134px;
-    padding-top: 72px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
     gap: 40px;
-    position: fixed;
     top: 0;
     opacity: 0; /* Initially hide the element */
     animation: fadeIn 1s forwards;
     animation-delay: 0.5s;
+    max-width: 996px;
+    margin-bottom: 40px;
+    z-index: 1000;
 }
 
 .largeNavList {
     display: flex;
-    width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    gap: 8px;
-}
-
-.largeNavWithFooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-self: stretch;
-    width: 134px;
-}
-
-.largeNavFooter {
-    width: 134px;
-    position: fixed;
-    bottom: 72px;
+    gap: 24px;
 }
 
 .navTitle {
@@ -44,25 +32,21 @@
     color: #2519D2;
 }
 
-.smallNavWithFooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    align-self: stretch;
-}
-
 .smallNavContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    padding-top: 48px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    max-width: 996px;
     gap: 40px;
     top: 0;
     left: 0;
     opacity: 0; /* Initially hide the element */
     animation: fadeIn 1s forwards;
+    margin-bottom: 24px;
+    z-index: 1000;
 }
 
 .smallNavModalContainer {
@@ -77,7 +61,7 @@
     right: 0;
     backdrop-filter: blur(10px);
     background-color: #E6E5E077;
-    z-index: 1000;
+    z-index: 1002;
 }
 
 .smallNavModal {
@@ -104,16 +88,9 @@
     gap: 8px;
 }
 
-.smallNavFooter {
-    width: 134px;
-    padding: 0 16px;
-    text-align: right;
-    position: fixed;
-    bottom: 72px;
-    right: 0;
-    z-index: 1001;
-    animation-name: slideInFromRight;
-    animation-duration: 0.5s;
+.footer {
+    padding-top: 80px;
+    color: #C4C3BD;
 }
 
 @keyframes slideInFromRight {

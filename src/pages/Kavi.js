@@ -1,10 +1,5 @@
-import ColorBoxSection from '../components/ProjectDetails/ColorBoxSection';
-import FontBoxSection from '../components/ProjectDetails/FontBoxSection';
-import ImageBoxSection from '../components/ProjectDetails/ImageBoxSection';
-import LargeContent from '../components/Content/LargeContent.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
-import SmallContent from '../components/Content/SmallContent.js';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import Button from '../components/Button/Button.js';
 import {
@@ -20,6 +15,9 @@ import {
   KaviMockup5
 } from '../assets/images'
 import Tag from '../components/Tag/Tag.js';
+import { ColorPalette } from '../components/ProjectDetails/ColorPalette.js';
+import Grid from '../components/Grid/Grid.js';
+import Fonts from '../components/ProjectDetails/Fonts.js';
 
 export const Kavi = ({}) => {
 
@@ -30,7 +28,6 @@ export const Kavi = ({}) => {
     <p style={{marginBottom: '24px'}}>{'KAVI is a South Asian women owned luxury beauty and self care brand. Rooted in South Asian culture and ayurvedic practices, KAVI strives to make the beauty and self care routine enjoyable and relaxing through all-natural ingredients.'}</p>
     <Button type='Primary' text='SEE FULL PROJECT ON BEHANCE' link={'https://www.behance.net/gallery/242576537/KAVI-Brand-Identity-and-Guidelines'}/>
   </div>
-  const titleContent = isLarge ? <LargeContent title={'KAVI'} content={<p>{content}</p>}/> : <SmallContent title={'KAVI'} content={<p>{content}</p>}/>;
 
   const colors = [
     {colorName: 'RANI PINK', color: '#E42776', text: 'Hex Code: #E42776\nRGB: 228 39 118\nCMYK: 4% 96% 25% 0%'},
@@ -47,29 +44,30 @@ export const Kavi = ({}) => {
   ];
 
   const imageSlideProps = [
-    {imagePath: KaviLogo1, title: "PRIMARY LOGO"},
-    {imagePath: KaviLogo2, title: "SECONDARY LOGO"},
-    {imagePath: KaviLogo3, title: "TERTIARY LOGO"},
-    {imagePath: KaviBrandAsset1, title: "BRAND ASSET 1"},
-    {imagePath: KaviBrandAsset2, title: "BRAND ASSET 2"},
-    {imagePath: KaviMockup1, title: "MOCKUP"},
-    {imagePath: KaviMockup2, title: "MOCKUP"},
-    {imagePath: KaviMockup3, title: "MOCKUP"},
-    {imagePath: KaviMockup4, title: "MOCKUP"},
-    {imagePath: KaviMockup5, title: "MOCKUP"},
+    {imagePath: KaviLogo1, title: "PRIMARY LOGO", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: KaviLogo2, title: "SECONDARY LOGO", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: KaviLogo3, title: "TERTIARY LOGO", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: KaviBrandAsset1, title: "BRAND ASSET 1", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: KaviBrandAsset2, title: "BRAND ASSET 2", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: KaviMockup1, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: KaviMockup2, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: KaviMockup3, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: KaviMockup4, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: KaviMockup5, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
   ];
 
   const imageSlide = <ImageSlide imageSlideProps={imageSlideProps}/>;
 
+  const gridArray = [
+        {title: 'KAVI', content: content},
+        {title: 'COLORS', content: <ColorPalette colors={colors} text={'This brand should use bold, tropical colors to imitate bright saree/textile colors. I also took inspiration from colors applied in Pichwai or Mughal art with lotuses and peacocks.'}/>},
+        {title: 'FONTS', content: <Fonts fonts={fonts} text={'These typefaces are mature and elegant. The Cormorant Garamond Medium is the primary typeface while the DM Sans Regular is the secondary typeface. For quotes and extra information, use the Cormorant Garamond Semibold Italic.'}/>},
+        {title: 'IMAGES', content: imageSlide}
+  ]
+
   return (
-        <div className="sectionContainer">
-            {titleContent}
-            <hr className='divider'/>
-            <ColorBoxSection number={'1'} title={'COLORS'} text={'This brand should use bold, tropical colors to imitate bright saree/textile colors. I also took inspiration from colors applied in Pichwai or Mughal art with lotuses and peacocks.'} isLarge={isLarge} colors={colors}/>
-            <FontBoxSection number={'2'} title={'TYPEFACES'} text={'These typefaces are mature and elegant. The Cormorant Garamond Medium is the primary typeface while the DM Sans Regular is the secondary typeface. For quotes and extra information, use the Cormorant Garamond Semibold Italic.'} isLarge={isLarge} fonts={fonts}/>
-            <ImageBoxSection number={'3'} title={'IMAGES'} text={'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'} content={imageSlide} isLarge={isLarge}/>
-        </div>
-    );
+      <Grid gridProps={gridArray} removeBio={true}/>
+  );
 }
 
 export default Kavi;

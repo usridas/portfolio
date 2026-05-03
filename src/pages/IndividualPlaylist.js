@@ -228,7 +228,7 @@ export const IndividualPlaylist = ({setTab, tab}) => {
     return (
         <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
             <a onClick={()=>{currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; setTab('Music');}} style={{color: '#FFFFFF'}}>Back to playlists</a>
-            <h1 style={{color: '#FFFFFF'}}>{title}</h1>
+            <h1 className='individualPlaylistTitle'>{title}</h1>
             <div className='individualPlaylistContainer'>
                 <div className='individualVinylAndMusicListContainer'>
                     <Vinyl songCover={currentSong.songCover} vinylAnimation={vinylAnimation} isPaused={isPaused}/>

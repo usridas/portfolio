@@ -1,5 +1,4 @@
-import LargeContent from '../components/Content/LargeContent.js';
-import SmallContent from '../components/Content/SmallContent.js';
+import Grid from '../components/Grid/Grid.js';
 import Tag from '../components/Tag/Tag.js';
 import QuoteContainer from '../components/Text/QuoteContainer.js';
 import TextContainer from '../components/Text/TextContainer.js';
@@ -16,15 +15,34 @@ export const AboutMe = ({}) => {
     const quote2 = <QuoteContainer title={'-MADISON MATECUN, PRODUCT DESIGNER'} text={'"As a developer, Uma has a really incredible design-oriented mindset. When I was partnered with her I could always count on her to fill in the blanks of an early-stage design with sensible and thoughtful interactions. She is reliable and accountable— picking up work when others are out on vacation, or filling in for the scrummaster (and doing a great job at it!). Her versatility is unmatched and she is an invaluable asset to any team."'}/>
     const quote1 = <QuoteContainer title={'-ROBERT ALLEN, LEAD DEVELOPER'} text={'"While she has worn many hats during our couple of years working together, she shows a particular aptitude for front-end development and design. Her unique skillset allows her to understand the design and development required for any feature. She\'s a CSS master and often mentors even her seniors on best practices for developing UI."'}/>
 
-    const skills1 = <div className='skillsContainer'>
-        <Tag iconBool={true} type='Design' text='FIGMA'/> <Tag iconBool={true} type='Design' text='ADOBE ILLUSTRATOR'/> <Tag iconBool={true} type='Design' text='ADOBE INDESIGN'/> <Tag iconBool={true} type='Design' text='ADOBE XD'/> <Tag iconBool={true} type='Design' text='DRAWING'/> <Tag iconBool={true} type='Design' text='PAINTING'/> <Tag iconBool={true} type='Design' text='PHOTOGRAPHY'/>
+    const skills1 = 
+    <div className='skillsContainer'>
+        <h3>{'DESIGN'}</h3>
+        <div className='skills'>
+            <Tag type='Design' text='FIGMA'/> <Tag type='Design' text='ADOBE ILLUSTRATOR'/> <Tag type='Design' text='ADOBE INDESIGN'/> <Tag type='Design' text='ADOBE XD'/> <Tag type='Design' text='DRAWING'/> <Tag type='Design' text='PAINTING'/> <Tag type='Design' text='PHOTOGRAPHY'/>
+        </div>
     </div>;
-    const skills2 = <div className='skillsContainer'>
-        <Tag iconBool={true} type='Software' text='JAVASCRIPT/TYPESCRIPT'/> <Tag iconBool={true} type='Software' text='HTML/CSS/SCSS'/> <Tag iconBool={true} type='Software' text='REACT'/> <Tag iconBool={true} type='Software' text='NODE.JS'/> <Tag iconBool={true} type='Software' text='GITHUB'/> <Tag iconBool={true} type='Software' text='JIRA/CONFLUENCE'/> <Tag iconBool={true} type='Software' text='POSTMAN'/>
+    const skills2 = 
+    <div className='skillsContainer'>
+        <h3>{'SOFTWARE'}</h3>
+        <div className='skills'>
+            <Tag type='Software' text='JAVASCRIPT/TYPESCRIPT'/> <Tag type='Software' text='HTML/CSS/SCSS'/> <Tag type='Software' text='REACT'/> <Tag type='Software' text='NODE.JS'/> <Tag  type='Software' text='GITHUB'/> <Tag  type='Software' text='JIRA/CONFLUENCE'/> <Tag  type='Software' text='POSTMAN'/>
+        </div>
     </div>;
-    const skills3 = <div className='skillsContainer'>
-        <Tag iconBool={true} type='Research' text='USER INTERVIEWING'/> <Tag iconBool={true} type='Research' text='AFFINITY DIAGRAMMING'/> <Tag iconBool={true} type='Research' text='JOURNEY MAPPING'/> <Tag iconBool={true} type='Research' text='PERSONA DEVELOPMENT'/>
+    const skills3 =
+    <div className='skillsContainer'>
+        <h3>{'SOFTWARE'}</h3>
+        <div className='skills'>
+            <Tag  type='Research' text='USER INTERVIEWING'/> <Tag  type='Research' text='AFFINITY DIAGRAMMING'/> <Tag  type='Research' text='JOURNEY MAPPING'/> <Tag  type='Research' text='PERSONA DEVELOPMENT'/>
+        </div>
     </div>;
+
+    const experience1 = <TextContainer title={'BRAND DESIGNER AT SERENIMIND'} subtitle={'October 2024'} text={'Established full brand identities including logos, color palettes, typefaces, and condensed web development component libraries through iterative design research and development.\nKey contributions:\n• Creating in depth design handoff files which include detailed instructions of how to utilize elements, colors, typefaces, logos, etc. to present a cohesive brand identity\n• Maintaining a line of constant communication to appropriately represent a client’s aesthetic goals'} />;
+    const experience2 = <TextContainer title={'BUSINESS ANALYST AT CONNECTBASE'} subtitle={'September 2024 - November 2024'} text={'Analyzed serviceability and quoting APIs from telecommunication suppliers and produced product specifications for the Connectbase integration.\nKey contributions:\n• Created Postman automations and developed a JSON/XML parser using React and JavaScript to quickly extract information from supplier APIs\n• Wrote robust product specification manuals outlining supplier API calls, responses, and mappings to Connectbase products'}/>;
+    const experience3 = <TextContainer title={'FOUNDER OF PAPER DOSAI'} subtitle={'May 2024 - Present'} text={'Created full stack wedding collateral business to assist couples with the aesthetics of their wedding and to provide documents that make the planning process easier and more enjoyable.\nKey contributions:\n• Designing custom wedding stationery suites, including invitation and planning logistics\n• Developing a 50+ page wedding planner PDF and 30+ page spreadsheet detailing timeline, aesthetics, vendors, contact lists, legalities, scheduling, and more'}/>;
+    const experience4 = <TextContainer title={'SOFTWARE ENGINEER AND SCRUM MASTER AT VIASAT INC.'} subtitle={'June 2021 - November 2023'} text={'Developed full stack components using JavaScript/TypeScript, React, and Redux for the residential “My Viasat” website and mobile application, while serving as team scrum master.\nKey contributions:\n• Developed and designed the “My Viasat” profile page to edit customer personal information\n• Developed “Viasat Stream” (Disney+) advertisement integration and refined purchase flow, resulting in an increase of 10k+ sales\n• Wrote 22 pages of technical documentation of key features and pages on the “My Viasat” website\n• Created an interactive workflow board and documented our deployments to decrease the number of missed tickets, resulting in an increased team velocity of 22.8 points over 9 sprints'}/>;
+    const experience5 = <TextContainer title={'GRAPHIC DESIGN INTERN AT THE UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN'} subtitle={'September 2019 - May 2020'} text={'Designed event graphics and established a social media presence for ECE ILLINOIS and designed project and research brochures to educate incoming students about possible pathways.'}/>;
+    const experience6 = <TextContainer title={'IT SOFTWARE ENGINEERING AND DESIGN INTERN AT VIASAT INC.'} subtitle={'May 2019 - August 2019'} text={'Designed Viasat 404 error page to reduce unnecessary cost of long customer calls and engineering team infographics to prevent excess cost of testing and rebuilding far into the production process.'}/>;
 
     const allEducation =
         <div className='sectionContainer'>
@@ -39,6 +57,16 @@ export const AboutMe = ({}) => {
             {skills3}
         </div>;
 
+    const allExperiences =
+        <div className='sectionContainer'>
+            {experience1}
+            {experience2}
+            {experience3}
+            {experience4}
+            {experience5}
+            {experience6}
+        </div>;
+
     const allQuotes =
         <div className='sectionContainer'>
             {quote1}
@@ -47,27 +75,16 @@ export const AboutMe = ({}) => {
             {quote4}
         </div>;
 
-    if (isLarge) {
+    const gridArray = [
+        {title: 'EDUCATION', content: allEducation},
+        {title: 'SKILLS', content: allSkills},
+        {title: 'EXPERIENCE', content: allExperiences},
+        {title: 'QUOTES', content: allQuotes}
+    ]
+
     return (
-        <div className="sectionContainer">
-            <LargeContent title={'EDUCATION'} content={allEducation}></LargeContent>
-            <hr className='divider'/>
-            <LargeContent title={'SKILLS'} content={allSkills}></LargeContent>
-            <hr className='divider'/>
-            <LargeContent title={'RECOMMENDATIONS'} content={allQuotes}></LargeContent> 
-        </div>
-        );
-    }
-    else
-        return (
-        <div className="sectionContainer">
-            <SmallContent title={'EDUCATION'} content={allEducation}></SmallContent>
-            <hr className='divider'/>
-            <SmallContent title={'SKILLS'} content={allSkills}></SmallContent>
-            <hr className='divider'/>
-            <SmallContent title={'RECOMMENDATIONS'} content={allQuotes}></SmallContent> 
-        </div>
-        );
+        <Grid gridProps={gridArray}/>
+    )
 }
 
 export default AboutMe;

@@ -1,10 +1,5 @@
-import ColorBoxSection from '../components/ProjectDetails/ColorBoxSection';
-import FontBoxSection from '../components/ProjectDetails/FontBoxSection';
-import ImageBoxSection from '../components/ProjectDetails/ImageBoxSection';
-import LargeContent from '../components/Content/LargeContent.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
-import SmallContent from '../components/Content/SmallContent.js';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import Button from '../components/Button/Button.js';
 import {
@@ -21,6 +16,9 @@ import {
   UmekoMockup5
 } from '../assets/images';
 import Tag from '../components/Tag/Tag.js';
+import Grid from '../components/Grid/Grid.js';
+import ColorPalette from '../components/ProjectDetails/ColorPalette.js';
+import Fonts from '../components/ProjectDetails/Fonts.js';
 
 export const Umeko = ({}) => {
 
@@ -31,7 +29,6 @@ export const Umeko = ({}) => {
     <p style={{marginBottom: '24px'}}>{'Umeko is a fun, light-hearted Japanese style cafe which sources tea from Japan. They serve classic teas, as well as unique blends, and boba to cater to both younger and older aficionados. The pastel, calm aesthetic is inspired by the Japanese plum (ume) and blossom. Umeko means ‘plum child’ in Japanese and plum blossoms are associated with good fortune and health.\n\n*This is a fictional business project made for design purposes.'}</p>
     <Button type='Primary' text='SEE FULL PROJECT ON BEHANCE' link={'https://www.behance.net/gallery/242576285/Umeko-Brand-Identity-and-Guidelines'}/>
   </div>
-  const titleContent = isLarge ? <LargeContent title={'UMEKO'} content={<p>{content}</p>}/> : <SmallContent title={'UMEKO'} content={<p>{content}</p>}/>;
 
   const colors = [
     {colorName: 'CHERRY BLOSSOM', color: '#FDDBDA', text: 'Hex Code: #FDDBDA\nRGB: 253 219 218\nCMYK: 0% 16.29% 7.55% 0%'},
@@ -46,30 +43,31 @@ export const Umeko = ({}) => {
   ];
 
   const imageSlideProps = [
-    {imagePath: UmekoLogo1, title: "PRIMARY LOGO"},
-    {imagePath: UmekoLogo2, title: "SECONDARY LOGO"},
-    {imagePath: UmekoLogo3, title: "TERTIARY LOGO"},
-    {imagePath: UmekoBrandAsset1, title: "BRAND ASSET 1"},
-    {imagePath: UmekoBrandAsset2, title: "BRAND ASSET 2"},
-    {imagePath: UmekoBrandAsset3, title: "ILLUSTRATIONS"},
-    {imagePath: UmekoMockup1, title: "MOCKUP"},
-    {imagePath: UmekoMockup2, title: "MOCKUP"},
-    {imagePath: UmekoMockup3, title: "MOCKUP"},
-    {imagePath: UmekoMockup4, title: "MOCKUP"},
-    {imagePath: UmekoMockup5, title: "MOCKUP"},
+    {imagePath: UmekoLogo1, title: "PRIMARY LOGO", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: UmekoLogo2, title: "SECONDARY LOGO", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: UmekoLogo3, title: "TERTIARY LOGO", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: UmekoBrandAsset1, title: "BRAND ASSET 1", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: UmekoBrandAsset2, title: "BRAND ASSET 2", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: UmekoBrandAsset3, title: "ILLUSTRATIONS", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: UmekoMockup1, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: UmekoMockup2, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: UmekoMockup3, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: UmekoMockup4, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: UmekoMockup5, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
   ];
 
   const imageSlide = <ImageSlide imageSlideProps={imageSlideProps}/>;
 
+  const gridArray = [
+        {title: 'UMEKO', content: content},
+        {title: 'COLORS', content: <ColorPalette colors={colors} text={'Used cute, romantic pastels to create an inviting aesthetic. Pinks and purples will pay homage to the plum and plum blossom and give almost a 90s anime/vaporwave feel.'}/>},
+        {title: 'FONTS', content: <Fonts fonts={fonts} text={'These typefaces are bubbly, yet easy to read, to welcome an audience of all ages. The typeface also pairs well with the cute cat logo.'}/>},
+        {title: 'IMAGES', content: imageSlide}
+  ]
+
   return (
-        <div className="sectionContainer">
-            {titleContent}
-            <hr className='divider'/>
-            <ColorBoxSection number={'1'} title={'COLORS'} text={'Used cute, romantic pastels to create an inviting aesthetic. Pinks and purples will pay homage to the plum and plum blossom and give almost a 90s anime/vaporwave feel.'} isLarge={isLarge} colors = {colors}/>
-            <FontBoxSection number={'2'} title={'TYPEFACES'} text={'These typefaces are bubbly, yet easy to read, to welcome an audience of all ages. The typeface also pairs well with the cute cat logo.'} isLarge={isLarge} fonts={fonts}/>
-            <ImageBoxSection number={'3'} title={'IMAGES'} text={'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'} content={imageSlide} isLarge={isLarge}/>
-        </div>
-    );
+      <Grid gridProps={gridArray} removeBio={true}/>
+  );
 }
 
 export default Umeko;
