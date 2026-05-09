@@ -16,13 +16,11 @@ import { isMobile } from './utils/utils.js';
 import TraderJoesResearch from './pages/TraderJoesResearch.js';
 import RollWithIt from './pages/RollWithIt.js';
 import KohiToKocha from './pages/KohiToKocha.js';
-import Button from './components/Button/Button.js';
-import Resume from './assets/documents/Resume.pdf';
-import Grid from './components/Grid/Grid.js';
 import Footer from './components/Nav/Footer.js';
+import AlaskaAirlinesResearch from './pages/AlaskaAirlinesResearch.js';
 
 function App() {
-  const { isLarge, isSmall, isXSmall } = useScreenResolution();
+  const { isSmall, isXSmall } = useScreenResolution();
   const isMobileVar = isMobile() || isSmall || isXSmall;
   const [tab, setTab] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -60,6 +58,9 @@ function App() {
       break;
     case 'KohiToKocha':
       currentPage = <KohiToKocha />;
+      break;
+    case 'AlaskaAirlinesResearch':
+      currentPage = <AlaskaAirlinesResearch />;
       break;
     case 'Music':
       return <PlaylistHome setTab={setTab}/>;

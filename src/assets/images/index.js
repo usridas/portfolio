@@ -71,6 +71,12 @@ import HotTeaCover from './Music/HotTeaAndFirmwareUpdates.png';
 import IJustCalledToSayILoveYouCover from './Music/IJustCalledToSayILoveYou.png';
 import IkoIkoCover from './Music/IkoIko.png';
 import ItsBeenALongLongTimeCover from './Music/ItsBeenALongLongTime.png';
+import AlaskaAirlinesResearchCover from './AlaskaAirlinesResearch/Cover.png';
+import AlaskaAirlinesAffinityDiagram from './AlaskaAirlinesResearch/AffinityDiagram.png';
+import AlaskaAirlinesParticipants from './AlaskaAirlinesResearch/Participants.png';
+import AlaskaAirlinesCompetitiveFeatureMatrix from './AlaskaAirlinesResearch/CompetitiveFeatureMatrix.png';
+import AlaskaAirlinesSWOTAnalysis from './AlaskaAirlinesResearch/SWOTAnalysis.png';
+import AlaskaAirlinesKanoAnalysis from './AlaskaAirlinesResearch/KanoAnalysis.png';
 import KohiToKochaColors from './KohiToKocha/Colors.png';
 import KohiToKochaCover from './KohiToKocha/Logo.png';
 import KohiToKochaFlowchart from './KohiToKocha/Flowchart.png';
@@ -155,6 +161,12 @@ export {
     Mushroom1,
     Mushroom2,
     Mushroom3,
+    AlaskaAirlinesResearchCover,
+    AlaskaAirlinesAffinityDiagram,
+    AlaskaAirlinesParticipants,
+    AlaskaAirlinesCompetitiveFeatureMatrix,
+    AlaskaAirlinesSWOTAnalysis,
+    AlaskaAirlinesKanoAnalysis,
     ElfsterCover,
     ElfsterMockup1,
     ElfsterMockup2,

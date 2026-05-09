@@ -1,4 +1,3 @@
-import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 import TextContainer from '../components/Text/TextContainer.js';
 import {
@@ -15,9 +14,7 @@ import Button from '../components/Button/Button.js';
 import Tag from '../components/Tag/Tag.js';
 import Grid from '../components/Grid/Grid.js';
 
-export const TraderJoesResearch = ({}) => {
-
-    const { isLarge } = useScreenResolution();
+export const TraderJoesResearch = () => {
     const traderJoesTags = <div className='tags'>
         <Tag type='Research' text='USER INTERVIEWING'/>
         <Tag type='Research' text='AFFINITY DIAGRAMMING'/>
@@ -26,7 +23,7 @@ export const TraderJoesResearch = ({}) => {
       </div>
     const content = <div className='summaryContent'>
         {traderJoesTags}
-        <p style={{marginBottom: '24px'}}>Although grocery shopping is a seemingly simple and regular task, there are ways the in-store and online shopping experience can be improved and optimized for the customer. In this research, we will focus on the experience of Trader Joe\'s shoppers and develop an understanding of customer needs and pain points during the grocery shopping process in order to define some opportunity spaces.</p>
+        <p style={{marginBottom: '24px'}}>{'Although grocery shopping is a seemingly simple and regular task, there are ways the in-store and online shopping experience can be improved and optimized for the customer. In this research, we will focus on the experience of Trader Joe\'s shoppers and develop an understanding of customer needs and pain points during the grocery shopping process in order to define some opportunity spaces.'}</p>
         <Button type='Primary' text='SEE FULL SLIDE DECK' link={TraderJoesSlideDeck}/>
     </div>
 
@@ -92,7 +89,7 @@ export const TraderJoesResearch = ({}) => {
         {title: 'RESEARCH PLAN', content: researchPlan},
         {title: 'KEY FINDINGS', content: affinityDiagram},
         {title: 'PERSONAS', content: personas},
-        {title: 'OPPPORTUNITIES', content: opportunities}
+        {title: 'RECOMMENDATIONS & PRIORITIES', content: opportunities}
     ]
 
     return (
