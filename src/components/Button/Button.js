@@ -1,14 +1,14 @@
-import './Button.css';
+import './Button.scss';
 
 export const Button = ({type, text, link, onClick}) => {
     if (link) {
         return (
-            <a className={`buttonContainer${type}`} href={link} target='blank'>{text}</a>
+            <a tabIndex={0} className={`buttonContainer${type}`} href={link} target='blank'>{text}</a>
         )
     }
     else {
         return (
-            <a className={`buttonContainer${type}`} onClick={onClick} target='blank'>{text}</a>
+            <button tabIndex={0} className={`buttonContainer${type}`} onClick={onClick} onKeyDown={(event)=>{if (event.key === 'Enter') {onClick()}}} target='blank'>{text}</button>
         )
     }
     

@@ -1,4 +1,3 @@
-import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import {
@@ -23,9 +22,8 @@ import Button from '../components/Button/Button.js';
 import Tag from '../components/Tag/Tag.js';
 import Grid from '../components/Grid/Grid.js';
 
-export const KohiToKocha = ({}) => {
+export const KohiToKocha = () => {
 
-    const { isLarge } = useScreenResolution();
     const kohiToKochaTags = <div className='tags'>
         <Tag type='Design' text='FIGMA'/>
         <Tag type='Design' text='MOBILE APP'/>
@@ -54,7 +52,7 @@ export const KohiToKocha = ({}) => {
         {title: 'ACCOUNT', imagePath: KohiToKochaPrototype9},
     ]}/>;
     const prototype = <div>
-            <iframe className='kohiToKochaPrototype' src="https://embed.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=531-19001&scaling=contain&content-scaling=fixed&page-id=72%3A1269&starting-point-node-id=531%3A19001&embed-host=share" allowfullscreen></iframe>
+            <iframe title='Kohi To Kocha Prototype' className='kohiToKochaPrototype' src="https://embed.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=531-19001&scaling=contain&content-scaling=fixed&page-id=72%3A1269&starting-point-node-id=531%3A19001&embed-host=share" allowfullscreen></iframe>
             <Button type='Primary' text='SEE PROTOTYPE IN FULL SCREEN' link='https://www.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=531-19001&t=0Lucuy2WHfprI1dN-1&scaling=contain&content-scaling=fixed&page-id=72%3A1269&starting-point-node-id=531%3A19001'/>
         </div>;
 

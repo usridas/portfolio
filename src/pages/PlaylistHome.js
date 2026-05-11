@@ -1,5 +1,5 @@
 import { isMobile } from '../utils/utils';
-import './Playlist.css';
+import './Playlist.scss';
 import { useState } from 'react';
 
 export const PlaylistHome = ({setTab}) => {
@@ -8,10 +8,10 @@ export const PlaylistHome = ({setTab}) => {
 
     return (
         <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
-            <a onClick={()=>{setTab('Projects')}} style={{color: '#FFFFFF'}}>Back to my portfolio</a>
+            <button tabIndex={0} onClick={()=>{setTab('Projects')}} onKeyDown={(event)=>{if (event.key === 'Enter') {setTab('Projects')}}} style={{color: '#FFFFFF'}}>Back to my portfolio</button>
             <h1 className='individualPlaylistTitle'>{hoverText}</h1>
             <div className='playlistArrayContainer'>
-                <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Video game vibes')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('VideoGameVibes')}>
+                <div tabIndex={0} className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Video game vibes')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('VideoGameVibes')} onKeyDown={(event)=>{if (event.key === 'Enter') {setTab('VideoGameVibes')}}}>
                     <div className='liquidGlassEffect'/>
                     <h3 className='playlistTitle'>VIDEO GAME VIBES</h3>
                     <svg>
@@ -39,15 +39,15 @@ export const PlaylistHome = ({setTab}) => {
                         </filter>
                     </svg>
                 </div>
-                <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('A night at the casino')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('ANightAtTheCasino')}>
+                <div tabIndex={0} className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('A night at the casino')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('ANightAtTheCasino')} onKeyDown={(event)=>{if (event.key === 'Enter') {setTab('ANightAtTheCasino')}}}>
                     <div className='liquidGlassEffect'></div>
                     <h3 className='playlistTitle'>A NIGHT AT THE CASINO</h3>
                 </div>  
-                <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Family road trip')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('FamilyRoadTrip')}>
+                <div tabIndex={0} className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Family road trip')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('FamilyRoadTrip')} onKeyDown={(event)=>{if (event.key === 'Enter') {setTab('FamilyRoadTrip')}}}>
                     <div className='liquidGlassEffect'></div>
                     <h3 className='playlistTitle'>FAMILY ROAD TRIP</h3>
                 </div>  
-                <div className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Let\'s disco')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('LetsDisco')}>
+                <div tabIndex={0} className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Let\'s disco')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('LetsDisco')} onKeyDown={(event)=>{if (event.key === 'Enter') {setTab('LetsDisco')}}}>
                     <div className='liquidGlassEffect'></div>
                     <h3 className='playlistTitle'>LET'S DISCO</h3>
                 </div>   

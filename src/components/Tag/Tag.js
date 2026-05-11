@@ -1,4 +1,4 @@
-import './Tag.css';
+import './Tag.scss';
 
 export const Tag = ({type, text, iconBool}) => {
     return (

@@ -1,4 +1,4 @@
-import './ImageSlide.css';
+import './ImageSlide.scss';
 import { useState } from 'react';
 import { useScreenResolution } from '../../utils/ScreenSize.tsx';
 import Button from '../Button/Button.js';
@@ -8,7 +8,8 @@ export const ProjectPreview = ({imageSlideProps, setTab}) => {
 
   const [imageIndex, setImageIndex] = useState(0);
 
-   const { isSmall } = useScreenResolution();
+   const { isXSmall, isSmall } = useScreenResolution();
+   const isMobileVar = isXSmall || isSmall;
 
   function onBackClick() {
     if (imageIndex > 0 && imageIndex < imageSlideProps.length) {
@@ -40,8 +41,8 @@ export const ProjectPreview = ({imageSlideProps, setTab}) => {
         }
         {imageSlideProps[imageIndex].tags}
         <div className='imageBox' style={{backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : 'contain'}`}}>
-          {imageSlideProps[imageIndex].imageLink && !isSmall && <a className='imageSlideLink' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</a>}
-          {imageSlideProps[imageIndex].imageLink && isSmall && <a className='imageSlideLinkSmallHover' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</a>}
+          {imageSlideProps[imageIndex].imageLink && !isMobileVar && <button className='imageSlideLink' tabIndex={0} onClick={onImageClick} onKeyDown={(event)=>{if (event.key === 'Enter') {onImageClick()}}}>{imageSlideProps[imageIndex].imageText}</button>}
+          {imageSlideProps[imageIndex].imageLink && isMobileVar && <button className='imageSlideLinkSmallHover' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</button>}
         </div>
         {imageSlideProps[imageIndex].caption && <p>{imageSlideProps[imageIndex].caption}</p>}
         {imageSlideProps.length > 1 &&

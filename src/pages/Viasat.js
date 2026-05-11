@@ -1,6 +1,4 @@
-import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
-import ImageSlide from '../components/Images/ImageSlide.js';
 import {
   ViasatNavigation,
   ViasatArticle,
@@ -12,9 +10,8 @@ import Tag from '../components/Tag/Tag.js';
 import PlainImage from '../components/Images/PlainImage.js';
 import Grid from '../components/Grid/Grid.js';
 
-export const Viasat = ({}) => {
+export const Viasat = () => {
 
-  const { isLarge } = useScreenResolution();
   const viasatTags = <div className='tags'>
       <Tag type='Design' text='FIGMA'/>
       <Tag type='Software' text='JAVASCRIPT/TYPESCRIPT'/>

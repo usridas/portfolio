@@ -1,4 +1,3 @@
-import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import {
@@ -20,9 +19,8 @@ import Tag from '../components/Tag/Tag.js';
 import TextContainer from '../components/Text/TextContainer.js';
 import Grid from '../components/Grid/Grid.js';
 
-export const ElfsterRedesign = ({}) => {
+export const ElfsterRedesign = () => {
 
-  const { isLarge } = useScreenResolution();
   const elfsterTags = <div className='tags'><Tag type='Design' text='FIGMA'/></div>
   const content = <div className='summaryContent'>
     {elfsterTags}

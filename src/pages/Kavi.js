@@ -1,4 +1,3 @@
-import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import Button from '../components/Button/Button.js';
@@ -19,9 +18,8 @@ import { ColorPalette } from '../components/ProjectDetails/ColorPalette.js';
 import Grid from '../components/Grid/Grid.js';
 import Fonts from '../components/ProjectDetails/Fonts.js';
 
-export const Kavi = ({}) => {
+export const Kavi = () => {
 
-  const { isLarge } = useScreenResolution();
   const kaviTags = <div className='tags'><Tag type='Design' text='ADOBE ILLUSTRATOR'/></div>
   const content = <div className='summaryContent'>
     {kaviTags}

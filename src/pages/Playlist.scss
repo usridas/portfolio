@@ -86,11 +86,10 @@
     transition: all 0.4s ease;
     padding: 24px;
     aspect-ratio: 1/1;
-}
-
-.liquidGlassWrapper:hover {
-    top: -100px;
-    cursor: pointer;
+    &:hover {
+        top: -100px;
+        cursor: pointer;
+    }
 }
 
 .liquidGlassEffect {
@@ -125,7 +124,6 @@
     width: -moz-available;
     width: -webkit-fill-available;
     width: stretch;
-    /* justify-content: space-around; */
 }
 
 .vinylContainer1 {
@@ -134,7 +132,6 @@
     width: -moz-available;
     width: -webkit-fill-available;
     width: stretch;
-    /* justify-content: space-around; */
     animation: vinyl-spin1 infinite 30s linear;
 }
 
@@ -144,7 +141,6 @@
     width: -moz-available;
     width: -webkit-fill-available;
     width: stretch;
-    /* justify-content: space-around; */
     animation: vinyl-spin2 infinite 30s linear;
 }
 
@@ -329,11 +325,10 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-}
-
-.playlistButton:active {
-    all: unset;
-    cursor: pointer;
+    &:active {
+        all: unset;
+        cursor: pointer;
+    }
 }
 
 .playButton {
@@ -413,38 +408,34 @@
         width: -webkit-fill-available;
         width: stretch;
     }
-}
-
-.volumeSlider::-webkit-slider-runnable-track {
-    height: 4px;
-    background: #FFF;
-    border-radius: 2px;
-}
-
-.volumeSlider::-moz-range-track {
-    height: 4px;
-    background: #585858;
-    border-radius: 2px;
-}
-
-.volumeSlider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    margin-top: -6px;
-    height: 16px;
-    width: 16px;
-    background-color: #fff;
-    border-radius: 50%;
-    padding-bottom: 8px;
-}
-
-.volumeSlider::-moz-range-thumb {
-    -moz-appearance: none;
-    appearance: none;
-    height: 16px;
-    width: 16px;
-    background-color: #fff;
-    border-radius: 50%;
+    &::-webkit-slider-runnable-track {
+        height: 4px;
+        background: #FFF;
+        border-radius: 2px;
+    }
+    &::-moz-range-track {
+        height: 4px;
+        background: #585858;
+        border-radius: 2px;
+    }
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        margin-top: -6px;
+        height: 16px;
+        width: 16px;
+        background-color: #fff;
+        border-radius: 50%;
+        padding-bottom: 8px;
+    }
+    &::-moz-range-thumb {
+        -moz-appearance: none;
+        appearance: none;
+        height: 16px;
+        width: 16px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
 }
 
 .currentSongLiquidGlassWrapper {

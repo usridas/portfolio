@@ -2,11 +2,9 @@ import Grid from '../components/Grid/Grid.js';
 import Tag from '../components/Tag/Tag.js';
 import QuoteContainer from '../components/Text/QuoteContainer.js';
 import TextContainer from '../components/Text/TextContainer.js';
-import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 
-export const AboutMe = ({}) => {
-    const { isLarge } = useScreenResolution();
+export const AboutMe = () => {
 
     const education1 = <TextContainer title={'COLUMBUS COLLEGE OF ART & DESIGN'} subtitle={'2025 - 2027'} text={'M.P.S. in User Experience Design'} />;
     const education2 = <TextContainer title={'BUSINESS ANALYST AT UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN'} subtitle={'2016 - 2020'} text={'B.S. in Computer Engineering with a Minor in Art & Design'}/>;

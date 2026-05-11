@@ -1,4 +1,4 @@
-import './ImageSlide.css';
+import './ImageSlide.scss';
 import { useState } from 'react';
 import { useScreenResolution } from '../../utils/ScreenSize.tsx';
 import Button from '../Button/Button.js';
@@ -31,7 +31,7 @@ export const ImageSlide = ({imageSlideProps, setTab}) => {
     setTab(imageSlideProps[imageIndex].imageLink);
   }
 
-  return (
+  return (        
     <div className="imageSlideContainer">
         {imageSlideProps[imageIndex].title &&
           <div className='imageSlideTitleContainer'>
@@ -40,8 +40,8 @@ export const ImageSlide = ({imageSlideProps, setTab}) => {
           </div>
         }
         <div className='imageBox' style={{backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : 'contain'}`}}>
-          {imageSlideProps[imageIndex].imageLink && (!isSmall && !isXSmall) && <a className='imageSlideLink' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</a>}
-          {imageSlideProps[imageIndex].imageLink && (isSmall || isXSmall) && <a className='imageSlideLinkSmallHover' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</a>}
+          {imageSlideProps[imageIndex].imageLink && (!isMobileVar) && <button className='imageSlideLink' tabIndex={0} onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</button>}
+          {imageSlideProps[imageIndex].imageLink && (isMobileVar) && <button className='imageSlideLinkSmallHover' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</button>}
         </div>
         {imageSlideProps[imageIndex].caption && <p>{imageSlideProps[imageIndex].caption}</p>}
         {imageSlideProps.length > 1 &&

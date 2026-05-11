@@ -27,17 +27,17 @@
     align-items: center;
     width: 100%;
     height: 100%;
-}
-
-.imageSlideLink:hover {
-    display: flex;
-    opacity: 1;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(10px);
-    background-color: #E6E5E077;
+    &:hover {
+        opacity: 1;
+        backdrop-filter: blur(10px);
+        background-color: #E6E5E077;
+    }
+    &:focus {
+        border: 1px solid #6D6C65;
+        opacity: 1;
+        backdrop-filter: blur(10px);
+        background-color: #E6E5E077;
+    }
 }
 
 .imageSlideLinkSmallHover {
@@ -49,6 +49,9 @@
     height: 100%;
     backdrop-filter: blur(4px);
     background-color: #E6E5E077;
+    &:focus {
+        border: 1px solid #6D6C65;
+    }
 }
 
 .imageSlideContainer {

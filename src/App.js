@@ -24,7 +24,7 @@ function App() {
   const isMobileVar = isMobile() || isSmall || isXSmall;
   const [tab, setTab] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  
   const welcomeText = 
     <div className='welcomeContainer'>
       <p className='welcomeText'>{'After graduating from my undergrad, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. I love the intersection between art and technology and aim to be a bridge between these two fields.\n\n​I am currently in a Masters program for User Experience Design and am searching for work in the UI/UX field.'}</p>
@@ -74,13 +74,13 @@ function App() {
       break;
   }
 
-  const isProject = tab && tab !== 'AboutMe' && tab !== 'Experience' && tab !== 'Projects' && tab !== 'Artwork';
+  const isProject = tab && tab !== 'AboutMe' && tab !== 'Experience' && tab !== 'Projects';
   
   
     return (
       <div className='appContainer'>
         {!isMobileVar && <LargeNav setTab={setTab} tab={tab} isProject={isProject}/>}
-        {isMobileVar && <SmallNav setIsModalOpen={setIsModalOpen} setTab={setTab} tab={tab}/>}
+        {isMobileVar && <SmallNav setIsModalOpen={setIsModalOpen} setTab={setTab} tab={tab} isProject={isProject}/>}
         {isMobileVar && isModalOpen && <SmallNavModal setTab={setTab} tab={tab} isProject={isProject} setIsModalOpen={setIsModalOpen}/>}
         {currentPage}
         <Footer />

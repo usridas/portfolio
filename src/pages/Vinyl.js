@@ -1,4 +1,4 @@
-import './Playlist.css';
+import './Playlist.scss';
 
 export const Vinyl = ({songCover, vinylAnimation, isPaused}) => {
     const layeredVinyl =

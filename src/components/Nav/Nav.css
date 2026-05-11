@@ -7,7 +7,7 @@
     width: stretch;
     gap: 40px;
     top: 0;
-    opacity: 0; /* Initially hide the element */
+    opacity: 0;
     animation: fadeIn 1s forwards;
     animation-delay: 0.5s;
     max-width: 996px;
@@ -43,7 +43,7 @@
     gap: 40px;
     top: 0;
     left: 0;
-    opacity: 0; /* Initially hide the element */
+    opacity: 0;
     animation: fadeIn 1s forwards;
     margin-bottom: 24px;
     z-index: 1000;
@@ -91,6 +91,16 @@
 .footer {
     padding-top: 80px;
     color: #C4C3BD;
+}
+
+.link {
+    &:focus {
+        outline: 2px solid #6D6C65;
+        outline-offset: 2px;
+    }
+    &:focus:not(:focus-visible) {
+        outline: none;
+    }
 }
 
 @keyframes slideInFromRight {

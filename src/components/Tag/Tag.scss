@@ -1,0 +1,36 @@
+.tag {
+    all: initial;
+    display: inline-flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    text-align: right;
+    font-family: "space-mono", mono;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tagDesign {
+    @extend .tag;
+    background: #FFBCA9;
+    color: #DD2F00;
+    border: 1px solid #DD2F00;
+}
+
+.tagResearch {
+    @extend .tag;
+    background: #FFE2ED;
+    color: #94003D;
+    border: 1px solid #94003D;
+}
+
+.tagSoftware {
+    @extend .tag;
+    background: #E4F3A8;
+    color: #4B5D00;
+    border: 1px solid #4B5D00;
+}

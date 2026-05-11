@@ -1,4 +1,3 @@
-import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import Button from '../components/Button/Button.js';
@@ -20,9 +19,8 @@ import Grid from '../components/Grid/Grid.js';
 import ColorPalette from '../components/ProjectDetails/ColorPalette.js';
 import Fonts from '../components/ProjectDetails/Fonts.js';
 
-export const Umeko = ({}) => {
+export const Umeko = () => {
 
-  const { isLarge } = useScreenResolution();
   const umekoTags = <div className='tags'><Tag type='Design' text='ADOBE ILLUSTRATOR'/></div>
   const content = <div className='summaryContent'>
     {umekoTags}

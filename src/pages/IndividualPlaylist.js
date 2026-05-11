@@ -1,4 +1,4 @@
-import './Playlist.css';
+import './Playlist.scss';
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Vinyl from './Vinyl.js';
 import { isMobile, secondsToTimestamp, videoGamePlaylist, casinoPlaylist, discoPlaylist, familyRoadTripPlaylist } from '../utils/utils.js';
@@ -43,6 +43,21 @@ export const IndividualPlaylist = ({setTab, tab}) => {
     const [glassOffset, setGlassOffset] = useState(0);
     const [vinylAnimation, setVinylAnimation] = useState('vinylContainer1');
     const volumeSlider = document.getElementById('volumeSlider');
+
+    document.addEventListener('keydown', (event) => {
+    if (event.code === 'Space') {
+        event.preventDefault(); 
+        if (isPaused) {
+            currentSong.audio.volume = volumeSlider.value / 100;
+            currentSong.audio.play();
+            setIsPaused(false);
+        }
+        else {
+            currentSong.audio.pause();
+            setIsPaused(true);
+        }
+    }
+    });
 
     volumeSlider?.addEventListener('input', function() {
         currentSong.audio.volume = this.value / 100;
@@ -123,7 +138,7 @@ export const IndividualPlaylist = ({setTab, tab}) => {
         );
     };
 
-    const GlassContainer = ({}) =>
+    const GlassContainer = () =>
     {
         return (
             <div id='glassContainer' ref={glassRef} className='currentSongLiquidGlassWrapper' style={{transform: `translateY(${glassOffset}px)`}}>
@@ -227,7 +242,7 @@ export const IndividualPlaylist = ({setTab, tab}) => {
 
     return (
         <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
-            <a onClick={()=>{currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; setTab('Music');}} style={{color: '#FFFFFF'}}>Back to playlists</a>
+            <button tabIndex={0} onClick={()=>{currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; setTab('Music');}} onKeyDown={(event)=>{if (event.key === 'Enter') {currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; setTab('Music');}}} style={{color: '#FFFFFF'}}>Back to playlists</button>
             <h1 className='individualPlaylistTitle'>{title}</h1>
             <div className='individualPlaylistContainer'>
                 <div className='individualVinylAndMusicListContainer'>

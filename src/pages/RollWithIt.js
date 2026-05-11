@@ -1,4 +1,3 @@
-import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import './Pages.css';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import {
@@ -35,9 +34,8 @@ import Button from '../components/Button/Button.js';
 import Tag from '../components/Tag/Tag.js';
 import Grid from '../components/Grid/Grid.js';
 
-export const RollWithIt = ({}) => {
+export const RollWithIt = () => {
 
-    const { isLarge } = useScreenResolution();
     const rollWithItTags = <div className='tags'>
         <Tag type='Design' text='FIGMA'/>
         <Tag type='Design' text='WEB APP'/>
@@ -74,7 +72,7 @@ export const RollWithIt = ({}) => {
     ]}/>;
     const components = <ImageSlide imageSlideProps={[{title: 'BUTTON SET', imagePath: RollWithItButton}, {title: 'COUNTER SET',imagePath: RollWithItCounter}, {title: 'FILTER SET',imagePath: RollWithItFilter}, {title: 'TEXT INPUT SET', imagePath: RollWithItTextInput}]}/>;
     const prototype = <div>
-        <iframe className='rollWithItPrototype' src="https://embed.figma.com/proto/2AQTimF0QrG3lk8lXFX05C/UXDE5100--Final-Project?node-id=467-223&scaling=scale-down-width&content-scaling=fixed&page-id=467%3A222&starting-point-node-id=467%3A223&embed-host=share" allowfullscreen></iframe>
+        <iframe title='Roll With It Prototype' className='rollWithItPrototype' src="https://embed.figma.com/proto/2AQTimF0QrG3lk8lXFX05C/UXDE5100--Final-Project?node-id=467-223&scaling=scale-down-width&content-scaling=fixed&page-id=467%3A222&starting-point-node-id=467%3A223&embed-host=share" allowfullscreen></iframe>
         <Button type='Primary' text='SEE PROTOTYPE IN FULL SCREEN' link='https://www.figma.com/proto/2AQTimF0QrG3lk8lXFX05C/UXDE5100--Final-Project?node-id=467-223&t=JzKuZj0eoi342NHi-1&scaling=scale-down-width&content-scaling=fixed&page-id=467%3A222&starting-point-node-id=467%3A223'/>
     </div>
 
