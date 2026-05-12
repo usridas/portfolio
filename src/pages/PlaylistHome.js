@@ -1,12 +1,22 @@
+import GradientBackground from '../components/GradientBackground/GradientBackground.js';
 import { isMobile } from '../utils/utils';
 import './Playlist.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const PlaylistHome = ({setTab}) => {
     const isMobileVar = isMobile();
     const [hoverText, setHoverText] = useState('Choose a playlist');
 
+    useEffect(() => {
+        document.body.style.backgroundColor = "transparent";
+        return () => {
+            document.body.style.backgroundColor = ""; // restores the CSS rule
+        };
+    }, []);
+
     return (
+        <>
+        <GradientBackground />
         <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
             <button tabIndex={0} onClick={()=>{setTab('Projects')}} onKeyDown={(event)=>{if (event.key === 'Enter') {setTab('Projects')}}} style={{color: '#FFFFFF'}}>Back to my portfolio</button>
             <h1 className='individualPlaylistTitle'>{hoverText}</h1>
@@ -53,6 +63,7 @@ export const PlaylistHome = ({setTab}) => {
                 </div>   
             </div>
         </div>
+        </>
     );
 }
 

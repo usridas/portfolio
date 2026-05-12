@@ -60,7 +60,6 @@ import AceOfAcesCover from './Music/AceOfAces.png';
 import AmericanPieCover from './Music/AmericanPie.png';
 import BaDaBaCover from './Music/BaDaBa.png';
 import BlueMoonCover from './Music/BlueMoon.png';
-import Bubble from './Music/Bubble.png';
 import CalifasCover from './Music/Califas.png';
 import CasinoNightZoneCover from './Music/CasinoNightZone.png';
 import ChiquititaCover from './Music/Chiquitita.png';
@@ -230,7 +229,6 @@ export {
     AmericanPieCover,
     BaDaBaCover,
     BlueMoonCover,
-    Bubble,
     CalifasCover,
     CasinoNightZoneCover,
     ChiquititaCover,

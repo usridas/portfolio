@@ -9,12 +9,6 @@
     width: -webkit-fill-available;
     width: stretch;
     height: 100dvh;
-    background-color: #2B2B2B;
-    background-image: url('../assets/images/Music/Bubble.png'), url('../assets/images/Music/Bubble.png'), url('../assets/images/Music/Bubble.png');
-    background-size: 900px, 1000px, 500px;
-    background-position: left -100px top 106px, right -300px top -300px, center bottom -100px;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-attachment: fixed;
     @media (max-width: 767px) {
         height: unset;
     }
@@ -32,12 +26,6 @@
     width: stretch;
     height: auto;
     min-height: 100dvh;
-    background-color: #2B2B2B;
-    background-image: url('../assets/images/Music/Bubble.png'), url('../assets/images/Music/Bubble.png'), url('../assets/images/Music/Bubble.png');
-    background-size: 900px, 1000px, 500px;
-    background-position: left -100px top 106px, right -300px top -300px, center bottom -100px;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-attachment: fixed;
 }
 
 .individualPlaylistTitle {

@@ -2,6 +2,7 @@ import './Playlist.scss';
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Vinyl from './Vinyl.js';
 import { isMobile, secondsToTimestamp, videoGamePlaylist, casinoPlaylist, discoPlaylist, familyRoadTripPlaylist } from '../utils/utils.js';
+import GradientBackground from '../components/GradientBackground/GradientBackground.js';
 
 export const IndividualPlaylist = ({setTab, tab}) => {
     const isMobileVar = isMobile();
@@ -64,6 +65,7 @@ export const IndividualPlaylist = ({setTab, tab}) => {
     });
 
     useEffect(() => {
+        document.body.style.backgroundColor = "transparent";
         //animate the glass highlight
         let start = glassOffset;
         let end = currentSongIndex * 90;
@@ -89,6 +91,9 @@ export const IndividualPlaylist = ({setTab, tab}) => {
             }
         }
         restartAnimation();
+        return () => {
+            document.body.style.backgroundColor = ""; // restores the CSS rule
+        };
     }, [currentSongIndex]);
 
     function timeUpdateFunction(e) {
@@ -241,6 +246,8 @@ export const IndividualPlaylist = ({setTab, tab}) => {
 
 
     return (
+        <>
+        <GradientBackground />
         <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
             <button tabIndex={0} onClick={()=>{currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; setTab('Music');}} onKeyDown={(event)=>{if (event.key === 'Enter') {currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; setTab('Music');}}} style={{color: '#FFFFFF'}}>Back to playlists</button>
             <h1 className='individualPlaylistTitle'>{title}</h1>
@@ -262,6 +269,7 @@ export const IndividualPlaylist = ({setTab, tab}) => {
                 </div>  
             </div>
         </div>
+        </>
     );
 }
 
