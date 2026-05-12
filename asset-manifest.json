@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0cf96be1.css",
-    "main.js": "/static/js/main.50639cfa.js",
+    "main.js": "/static/js/main.cdffbf92.js",
     "static/js/453.ac9b7e2a.chunk.js": "/static/js/453.ac9b7e2a.chunk.js",
     "static/media/mockup4.png": "/static/media/mockup4.4e883e7a5e31d886385c.png",
     "static/media/mockup3.png": "/static/media/mockup3.8a6b4c0488704ae6db2c.png",
@@ -72,7 +72,7 @@
     "static/media/Prototype9.png": "/static/media/Prototype9.e192400492efc692b1b3.png",
     "static/media/Prototype3.png": "/static/media/Prototype3.7c301d2c683ff4ac7ac1.png",
     "static/media/screenshot1.png": "/static/media/screenshot1.034be4303dd2af90450f.png",
-    "static/media/Resume.pdf": "/static/media/Resume.03bbf4e241b8f81d8ecb.pdf",
+    "static/media/Resume.pdf": "/static/media/Resume.46251da9c49e4b0e706b.pdf",
     "static/media/DanausPlexippus.jpg": "/static/media/DanausPlexippus.1d1b12a9735cca99f730.jpg",
     "static/media/Daruma.jpg": "/static/media/Daruma.ad79e52f6631038396f9.jpg",
     "static/media/Cover.png": "/static/media/Cover.9a3c18a3a24e12e086c9.png",
@@ -159,11 +159,11 @@
     "static/media/MayaPersonality.png": "/static/media/MayaPersonality.9ad423c0947eb7d8a932.png",
     "index.html": "/index.html",
     "main.0cf96be1.css.map": "/static/css/main.0cf96be1.css.map",
-    "main.50639cfa.js.map": "/static/js/main.50639cfa.js.map",
+    "main.cdffbf92.js.map": "/static/js/main.cdffbf92.js.map",
     "453.ac9b7e2a.chunk.js.map": "/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0cf96be1.css",
-    "static/js/main.50639cfa.js"
+    "static/js/main.cdffbf92.js"
   ]
 }
