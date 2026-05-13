@@ -518,3 +518,11 @@
     font-weight: 500;
     line-height: normal;
 }
+
+.backToProjects {
+    color: #FFF;
+    &:focus {
+        outline: 2px solid #FFF;
+        outline-offset: 2px;
+    }
+}

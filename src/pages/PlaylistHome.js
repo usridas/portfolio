@@ -18,7 +18,7 @@ export const PlaylistHome = ({setTab}) => {
         <>
         <GradientBackground />
         <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
-            <button tabIndex={0} onClick={()=>{setTab('Projects')}} onKeyDown={(event)=>{if (event.key === 'Enter') {setTab('Projects')}}} style={{color: '#FFFFFF'}}>Back to my portfolio</button>
+            <button tabIndex={0} className='backToProjects' onClick={()=>{setTab('Projects')}} onKeyDown={(event)=>{if (event.key === 'Enter') {setTab('Projects')}}}>BACK TO MY PORTFOLIO</button>
             <h1 className='individualPlaylistTitle'>{hoverText}</h1>
             <div className='playlistArrayContainer'>
                 <div tabIndex={0} className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Video game vibes')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>setTab('VideoGameVibes')} onKeyDown={(event)=>{if (event.key === 'Enter') {setTab('VideoGameVibes')}}}>
