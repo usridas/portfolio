@@ -63,7 +63,7 @@ h1 {
   font-weight: 500;
   font-style: normal;
   font-size: 36px;
-  color: #E6E5E0;
+  color: #8B83FF;
   letter-spacing: -3.6px;
   margin: 0;
   min-width: stretch;
@@ -76,7 +76,7 @@ h2 {
   font-weight: 500;
   font-style: normal;
   font-size: 24px;
-  color: #E6E5E0;
+  color: #8B83FF;
   letter-spacing: -2px;
   margin: 0;
 }
@@ -87,7 +87,7 @@ h3 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  color: #95948E;
+  color: #6D6C65;
   margin: 0;
 }
 
@@ -97,7 +97,7 @@ h4 {
   font-style: italic;
   font-weight: 400;
   line-height: normal;
-  color: #95948E;
+  color: #6D6C65;
   margin: 0;
 }
 

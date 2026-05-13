@@ -13,7 +13,7 @@ export const PlainImage = ({plainImageProps}) => {
               {plainImageProps.description && <h4 style={{textAlign: 'end'}}>{plainImageProps.description}</h4>}
           </div>
         }
-        <img alt={toSentenceCase(plainImageProps.title)} className='plainImage' src={plainImageProps.imagePath}/>
+        <img alt={toSentenceCase(plainImageProps.title)} aria-label={toSentenceCase(plainImageProps.title)} className='plainImage' src={plainImageProps.imagePath}/>
         {plainImageProps.caption && <p>{plainImageProps.caption}</p>}
     </div>
   );

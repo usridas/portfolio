@@ -136,7 +136,7 @@ export const IndividualPlaylist = ({setTab, tab}) => {
             <div className={`titleArtistAndTime ${currentSong.title === title ? "currentSong" : ""}`}>
                 <div className='titleAndArtist'>
                     <h3 style={{color: '#FFFFFF'}}>{title}</h3>
-                    <h4>{artist}</h4>
+                    <h4 style={{color: '#FFFFFF'}}>{artist}</h4>
                 </div>
                 <h3 style={{color: '#FFFFFF'}}>{time}</h3>
             </div>
@@ -224,8 +224,8 @@ export const IndividualPlaylist = ({setTab, tab}) => {
                 <div className='progressBar' style={{width: `${progressPercentage}%`}}/>
             </div>
             <div className='progressBarTimestampContainer'>
-                <h4>{secondsToTimestamp(currentSong.audio.currentTime ?? 0)}</h4>
-                <h4>{`-${secondsToTimestamp((currentSong.audio.duration - currentSong.audio.currentTime) ?? 0)}`}</h4>
+                <h4 style={{color: '#FFFFFF'}}>{secondsToTimestamp(currentSong.audio.currentTime ?? 0)}</h4>
+                <h4 style={{color: '#FFFFFF'}}>{`-${secondsToTimestamp((currentSong.audio.duration - currentSong.audio.currentTime) ?? 0)}`}</h4>
             </div>
         </div>;
 
@@ -261,7 +261,7 @@ export const IndividualPlaylist = ({setTab, tab}) => {
                     <div className='individualPlaylistButtonContainer'>
                         <div className='mainTitleAndArtist'>
                             <h3 style={{color: '#FFFFFF'}}>{currentSong.title}</h3>
-                            <h4>{currentSong.artist}</h4>
+                            <h4 style={{color: '#FFFFFF'}}>{currentSong.artist}</h4>
                         </div>
                         {buttonsAndProgressContainer}
                         {volumeContainer}

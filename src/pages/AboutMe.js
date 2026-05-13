@@ -31,7 +31,7 @@ export const AboutMe = () => {
     <div className='skillsContainer'>
         <h3>{'SOFTWARE'}</h3>
         <div className='skills'>
-            <Tag  type='Research' text='USER INTERVIEWING'/> <Tag  type='Research' text='AFFINITY DIAGRAMMING'/> <Tag  type='Research' text='JOURNEY MAPPING'/> <Tag  type='Research' text='PERSONA DEVELOPMENT'/>
+            <Tag  type='Research' text='USER INTERVIEWING'/> <Tag  type='Research' text='USABILITY TESTING'/> <Tag  type='Research' text='COMPETITIVE ANALYSIS'/> <Tag  type='Research' text='AFFINITY DIAGRAMMING'/> <Tag  type='Research' text='JOURNEY MAPPING'/> <Tag  type='Research' text='PERSONA DEVELOPMENT'/>
         </div>
     </div>;
 
