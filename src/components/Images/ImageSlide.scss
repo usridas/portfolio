@@ -70,9 +70,30 @@
     aspect-ratio: 1/1;
 }
 
+.imageBoxLoading {
+    border: 1px solid #E6E5E0;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .plainImage {
     border: 1px solid #E6E5E0;
     width: 100%;
+}
+
+.plainImageLoading {
+    border: 1px solid #E6E5E0;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
 }
 
 .projectPreviewContainer {

@@ -1,12 +1,14 @@
 import './ImageSlide.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useScreenResolution } from '../../utils/ScreenSize.tsx';
 import Button from '../Button/Button.js';
+import Spinner from '../Spinner/Spinner.js';
 
 
 export const ImageSlide = ({imageSlideProps, setTab}) => {
 
   const [imageIndex, setImageIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
    const { isSmall, isXSmall } = useScreenResolution();
     const isMobileVar = isSmall || isXSmall;
@@ -31,6 +33,14 @@ export const ImageSlide = ({imageSlideProps, setTab}) => {
     setTab(imageSlideProps[imageIndex].imageLink);
   }
 
+  useEffect(() => {
+    setIsLoading(true);
+    const img = new Image();
+    img.src = imageSlideProps[imageIndex].imagePath;
+    img.onload = () => setIsLoading(false);
+    img.onerror = () => setIsLoading(false);
+  }, [imageSlideProps, imageIndex]);
+
   return (        
     <div className="imageSlideContainer">
         {imageSlideProps[imageIndex].title &&
@@ -39,7 +49,8 @@ export const ImageSlide = ({imageSlideProps, setTab}) => {
               {imageSlideProps[imageIndex].description && <h4 style={{textAlign: 'end'}}>{imageSlideProps[imageIndex].description}</h4>}
           </div>
         }
-        <div className='imageBox' style={{backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : 'contain'}`}}>
+        {isLoading && <div className='imageBoxLoading'><Spinner /></div>}
+        <div className='imageBox' style={{display: isLoading ? 'none':'', backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : 'contain'}`}}>
           {imageSlideProps[imageIndex].imageLink && (!isMobileVar) && <button className='imageSlideLink' tabIndex={0} onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</button>}
           {imageSlideProps[imageIndex].imageLink && (isMobileVar) && <button className='imageSlideLinkSmallHover' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</button>}
         </div>
