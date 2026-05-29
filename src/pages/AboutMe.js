@@ -17,7 +17,7 @@ export const AboutMe = () => {
     <div className='skillsContainer'>
         <h3>{'DESIGN'}</h3>
         <div className='skills'>
-            <Tag type='Design' text='FIGMA'/> <Tag type='Design' text='ADOBE ILLUSTRATOR'/> <Tag type='Design' text='ADOBE INDESIGN'/> <Tag type='Design' text='ADOBE XD'/> <Tag type='Design' text='DRAWING'/> <Tag type='Design' text='PAINTING'/> <Tag type='Design' text='PHOTOGRAPHY'/>
+            <Tag type='Design' text='FIGMA'/> <Tag type='Design' text='ADOBE ILLUSTRATOR'/> <Tag type='Design' text='ADOBE INDESIGN'/> <Tag type='Design' text='ADOBE XD'/>
         </div>
     </div>;
     const skills2 = 
@@ -29,7 +29,7 @@ export const AboutMe = () => {
     </div>;
     const skills3 =
     <div className='skillsContainer'>
-        <h3>{'SOFTWARE'}</h3>
+        <h3>{'RESEARCH'}</h3>
         <div className='skills'>
             <Tag  type='Research' text='USER INTERVIEWING'/> <Tag  type='Research' text='USABILITY TESTING'/> <Tag  type='Research' text='COMPETITIVE ANALYSIS'/> <Tag  type='Research' text='AFFINITY DIAGRAMMING'/> <Tag  type='Research' text='JOURNEY MAPPING'/> <Tag  type='Research' text='PERSONA DEVELOPMENT'/>
         </div>
