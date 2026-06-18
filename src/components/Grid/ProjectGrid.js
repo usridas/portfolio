@@ -2,18 +2,12 @@ import './ProjectGrid.scss';
 import { useScreenResolution } from '../../utils/ScreenSize.tsx';
 import Button from '../Button/Button.js';
 import Resume from '../../assets/documents/Resume.pdf';
-import { useEffect, useRef } from 'react';
 
 export const ProjectGrid = ({gridProps, removeBio=false}) => {
     const { isLarge, isMedium } = useScreenResolution();
-    const containerRef = useRef(null);
-
-    useEffect(() => {
-        containerRef.current?.classList.add('projectGrid-animated');
-    }, []);
 
     return (
-        <div className='projectGrid-gridContainer' ref={containerRef}>
+        <div className='projectGrid-gridContainer'>
             {(isLarge || isMedium) && !removeBio &&
             <div className='projectGrid-rowOuter'>
                 <div className='projectGrid-stickyRow'>
