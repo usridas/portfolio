@@ -15,9 +15,9 @@ import {
   UmekoMockup5
 } from '../assets/images';
 import Tag from '../components/Tag/Tag.js';
-import Grid from '../components/Grid/Grid.js';
 import ColorPalette from '../components/ProjectDetails/ColorPalette.js';
 import Fonts from '../components/ProjectDetails/Fonts.js';
+import ProjectGrid from '../components/Grid/ProjectGrid.js';
 
 export const Umeko = () => {
 
@@ -64,7 +64,7 @@ export const Umeko = () => {
   ]
 
   return (
-      <Grid gridProps={gridArray} removeBio={true}/>
+      <ProjectGrid gridProps={gridArray} removeBio={true}/>
   );
 }
 

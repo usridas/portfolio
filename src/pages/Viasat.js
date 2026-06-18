@@ -8,7 +8,7 @@ import {
 } from '../assets/images';
 import Tag from '../components/Tag/Tag.js';
 import PlainImage from '../components/Images/PlainImage.js';
-import Grid from '../components/Grid/Grid.js';
+import ProjectGrid from '../components/Grid/ProjectGrid.js';
 
 export const Viasat = () => {
 
@@ -41,7 +41,7 @@ export const Viasat = () => {
   ]
 
   return (
-      <Grid gridProps={gridArray} removeBio={true}/>
+      <ProjectGrid gridProps={gridArray} removeBio={true}/>
   );
 }
 

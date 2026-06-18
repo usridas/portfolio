@@ -32,7 +32,7 @@ import RollWithItSlideDeck from '../assets/documents/RollWithItSlideDeck.pdf'
 import { PlainImage } from '../components/Images/PlainImage.js';
 import Button from '../components/Button/Button.js';
 import Tag from '../components/Tag/Tag.js';
-import Grid from '../components/Grid/Grid.js';
+import ProjectGrid from '../components/Grid/ProjectGrid.js';
 
 export const RollWithIt = () => {
 
@@ -89,7 +89,7 @@ export const RollWithIt = () => {
     ]
 
     return (
-        <Grid gridProps={gridArray} removeBio={true}/>
+        <ProjectGrid gridProps={gridArray} removeBio={true}/>
     );
 }
 

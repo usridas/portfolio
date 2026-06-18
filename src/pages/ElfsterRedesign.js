@@ -17,7 +17,7 @@ import {
 } from '../assets/images';
 import Tag from '../components/Tag/Tag.js';
 import TextContainer from '../components/Text/TextContainer.js';
-import Grid from '../components/Grid/Grid.js';
+import ProjectGrid from '../components/Grid/ProjectGrid.js';
 
 export const ElfsterRedesign = () => {
 
@@ -57,7 +57,7 @@ export const ElfsterRedesign = () => {
   ]
 
   return (
-      <Grid gridProps={gridArray} removeBio={true}/>
+      <ProjectGrid gridProps={gridArray} removeBio={true}/>
   );
 }
 

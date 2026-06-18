@@ -12,7 +12,7 @@ import TraderJoesSlideDeck from '../assets/documents/TraderJoesSlideDeck.pdf'
 import PlainImage from '../components/Images/PlainImage.js';
 import Button from '../components/Button/Button.js';
 import Tag from '../components/Tag/Tag.js';
-import Grid from '../components/Grid/Grid.js';
+import ProjectGrid from '../components/Grid/ProjectGrid.js';
 
 export const TraderJoesResearch = () => {
     const traderJoesTags = <div className='tags'>
@@ -93,7 +93,7 @@ export const TraderJoesResearch = () => {
     ]
 
     return (
-        <Grid gridProps={gridArray} removeBio={true}/>
+        <ProjectGrid gridProps={gridArray} removeBio={true}/>
     );
 }
 

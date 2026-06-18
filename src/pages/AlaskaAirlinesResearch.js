@@ -11,9 +11,10 @@ import AlaskaAirlinesSlideDeck from '../assets/documents/AlaskaAirlinesSlideDeck
 import PlainImage from '../components/Images/PlainImage.js';
 import Button from '../components/Button/Button.js';
 import Tag from '../components/Tag/Tag.js';
-import Grid from '../components/Grid/Grid.js';
+import ProjectGrid from '../components/Grid/ProjectGrid.js';
 
 export const AlaskaAirlinesResearch = () => {
+
     const alaskaAirlinesTags = <div className='tags'>
         <Tag type='Research' text='USER INTERVIEWING'/>
         <Tag type='Research' text='AFFINITY DIAGRAMMING'/>
@@ -82,7 +83,7 @@ export const AlaskaAirlinesResearch = () => {
     ]
 
     return (
-        <Grid gridProps={gridArray} removeBio={true}/>
+        <ProjectGrid gridProps={gridArray} removeBio={true}/>
     );
 }
 

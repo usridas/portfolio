@@ -15,7 +15,7 @@ import {
 } from '../assets/images'
 import Tag from '../components/Tag/Tag.js';
 import { ColorPalette } from '../components/ProjectDetails/ColorPalette.js';
-import Grid from '../components/Grid/Grid.js';
+import ProjectGrid from '../components/Grid/ProjectGrid.js';
 import Fonts from '../components/ProjectDetails/Fonts.js';
 
 export const Kavi = () => {
@@ -64,7 +64,7 @@ export const Kavi = () => {
   ]
 
   return (
-      <Grid gridProps={gridArray} removeBio={true}/>
+      <ProjectGrid gridProps={gridArray} removeBio={true}/>
   );
 }
 
