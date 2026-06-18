@@ -48,11 +48,11 @@
   top: 80px;
   padding: 40px 0;
   align-self: start;
-  opacity: 1;
+  
   @supports (animation-timeline: view()) {
     animation: fadeInOut linear both;
     animation-timeline: view();
-    animation-range: entry 0% exit 100%;
+    animation-range: entry -50% exit 100%;
   }
 
   @media (max-width: 767px) {
@@ -64,11 +64,11 @@
 
 .projectGrid-rightCol {
   padding-block: 40px;
-  opacity: 1;
+  
   @supports (animation-timeline: view()) {
     animation: fadeInOut linear both;
     animation-timeline: view();
-    animation-range: entry 0% exit 100%;
+    animation-range: entry -50% exit 100%;
   }
 }
 
