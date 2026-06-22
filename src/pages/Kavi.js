@@ -13,16 +13,13 @@ import {
   KaviMockup4,
   KaviMockup5
 } from '../assets/images'
-import Tag from '../components/Tag/Tag.js';
 import { ColorPalette } from '../components/ProjectDetails/ColorPalette.js';
 import ProjectGrid from '../components/Grid/ProjectGrid.js';
 import Fonts from '../components/ProjectDetails/Fonts.js';
 
 export const Kavi = () => {
 
-  const kaviTags = <div className='tags'><Tag type='Design' text='ADOBE ILLUSTRATOR'/></div>
   const content = <div className='summaryContent'>
-    {kaviTags}
     <p style={{marginBottom: '24px'}}>{'KAVI is a South Asian women owned luxury beauty and self care brand. Rooted in South Asian culture and ayurvedic practices, KAVI strives to make the beauty and self care routine enjoyable and relaxing through all-natural ingredients.'}</p>
     <Button type='Primary' text='SEE FULL PROJECT ON BEHANCE' link={'https://www.behance.net/gallery/242576537/KAVI-Brand-Identity-and-Guidelines'}/>
   </div>
@@ -54,7 +51,7 @@ export const Kavi = () => {
     {imagePath: KaviMockup5, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
   ];
 
-  const imageSlide = <ImageSlide imageSlideProps={imageSlideProps}/>;
+  const imageSlide = <div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}><ImageSlide imageSlideProps={imageSlideProps} imageMaxWidth={true}/></div>;
 
   const gridArray = [
         {title: 'KAVI', content: content},

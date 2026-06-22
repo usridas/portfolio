@@ -64,7 +64,6 @@ h1 {
   font-style: normal;
   font-size: 36px;
   color: #8B83FF;
-  letter-spacing: -3.6px;
   margin: 0;
   min-width: stretch;
   overflow-wrap: break-word;
@@ -77,8 +76,8 @@ h2 {
   font-style: normal;
   font-size: 24px;
   color: #8B83FF;
-  letter-spacing: -2px;
   margin: 0;
+  line-height: 1.5;
 }
 
 h3 {
@@ -107,7 +106,6 @@ h5 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: -2px;
   color: #E6E5E0;
   margin: 0;
 }

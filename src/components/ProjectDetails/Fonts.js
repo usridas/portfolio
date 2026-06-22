@@ -8,7 +8,7 @@ export const Fonts = ({fonts, text}) => {
     const fullFontBox = 
         <div className='projectDetailContent'>
             {fonts?.map(font => (
-            <div className="box">
+            <div className="fontBox">
                 <TextContainer title={font.fontName} subtitle={font.fontSubtitle} text={fontText} fontFamily={font.fontFamily} textSize={font.fontSize} fontWeight={font.fontWeight} fontStyle={font.fontStyle}/>
             </div>
             ))}

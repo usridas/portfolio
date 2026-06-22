@@ -15,15 +15,12 @@ import {
   ElfsterMockup3,
   ElfsterMockup4
 } from '../assets/images';
-import Tag from '../components/Tag/Tag.js';
 import TextContainer from '../components/Text/TextContainer.js';
 import ProjectGrid from '../components/Grid/ProjectGrid.js';
 
 export const ElfsterRedesign = () => {
 
-  const elfsterTags = <div className='tags'><Tag type='Design' text='FIGMA'/><Tag type='Design' text='MOBILE APP'/></div>
   const content = <div className='summaryContent'>
-    {elfsterTags}
     <p>Objective: Redesign the Elfster gift exchange mobile app to be more user friendly, intuitive, and versatile. Elfster is an app that allows users to create wishlists and groups with friends to organize gift exchanges. When a group exchange is made, a user can create a wishlist which friends can see and order from. Essentially this app should allow friends to get purposeful gifts and to avoid duplicates.</p>
   </div>
 

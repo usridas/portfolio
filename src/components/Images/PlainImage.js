@@ -2,7 +2,7 @@ import Spinner from '../Spinner/Spinner';
 import './ImageSlide.scss';
 import { useState } from 'react';
 
-export const PlainImage = ({plainImageProps}) => {
+export const PlainImage = ({plainImageProps, imageMaxWidth=false}) => {
   const [isLoading, setIsLoading] = useState(true);
   function toSentenceCase(str) {
     if (!str) return "";
@@ -10,7 +10,7 @@ export const PlainImage = ({plainImageProps}) => {
   }
 
   return (
-    <div className="imageSlideContainer">
+    <div className="imageSlideContainer" style={{maxWidth: imageMaxWidth ? '700px' : 'none'}}>
         {plainImageProps.title &&
           <div className='imageSlideTextContainer'>
               <h3>{plainImageProps.title}</h3>

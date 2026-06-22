@@ -3,11 +3,14 @@ import { useState, useEffect, useMemo, useRef } from 'react';
 import Vinyl from './Vinyl.js';
 import { isMobile, secondsToTimestamp, videoGamePlaylist, casinoPlaylist, discoPlaylist, familyRoadTripPlaylist } from '../utils/utils.js';
 import GradientBackground from '../components/GradientBackground/GradientBackground.js';
+import { useLocation, useNavigate } from 'react-router-dom';
 
-export const IndividualPlaylist = ({setTab, tab}) => {
+export const IndividualPlaylist = () => {
     const isMobileVar = isMobile();
     const [isPaused, setIsPaused] = useState(true);
     const [progressPercentage, setProgressPercentage] = useState(0);
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const memoVideoGamePlaylist = useMemo(() => (videoGamePlaylist), []);
     const memoCasinoPlaylist = useMemo(() => (casinoPlaylist), []);
@@ -16,20 +19,20 @@ export const IndividualPlaylist = ({setTab, tab}) => {
     let title;
     let currentPlaylist;
 
-    switch (tab) {
-        case 'VideoGameVibes':
+    switch (location.pathname) {
+        case '/VideoGameVibes':
             title = 'Video game vibes';
             currentPlaylist = memoVideoGamePlaylist;
             break;
-        case 'ANightAtTheCasino':
+        case '/ANightAtTheCasino':
             title = 'A night at the casino';
             currentPlaylist = memoCasinoPlaylist;
             break;
-        case 'FamilyRoadTrip':
+        case '/FamilyRoadTrip':
             title = 'Family road trip';
             currentPlaylist = memoFamilyRoadTripPlaylist;
             break;
-        case 'LetsDisco':
+        case '/LetsDisco':
             title = 'Let\'s disco';
             currentPlaylist = memoDiscoPlaylist;
             break;
@@ -249,7 +252,7 @@ export const IndividualPlaylist = ({setTab, tab}) => {
         <>
         <GradientBackground />
         <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
-            <button tabIndex={0} onClick={()=>{currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; setTab('Music');}} onKeyDown={(event)=>{if (event.key === 'Enter') {currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; setTab('Music');}}} style={{color: '#FFFFFF'}}>BACK TO PLAYLISTS</button>
+            <button tabIndex={0} onClick={()=>{currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; navigate('/Music');}} onKeyDown={(event)=>{if (event.key === 'Enter') {currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; navigate('/Music');}}} style={{color: '#FFFFFF'}}>BACK TO PLAYLISTS</button>
             <h1 className='individualPlaylistTitle'>{title}</h1>
             <div className='individualPlaylistContainer'>
                 <div className='individualVinylAndMusicListContainer'>

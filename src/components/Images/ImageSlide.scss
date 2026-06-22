@@ -3,6 +3,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
 }
 
 .imageSlideTitleContainer {

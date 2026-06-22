@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useScreenResolution } from './utils/ScreenSize.tsx';
 import LargeNav from './components/Nav/LargeNav';
 import AboutMe from './pages/AboutMe';
@@ -18,72 +18,50 @@ import RollWithIt from './pages/RollWithIt.js';
 import KohiToKocha from './pages/KohiToKocha.js';
 import Footer from './components/Nav/Footer.js';
 import AlaskaAirlinesResearch from './pages/AlaskaAirlinesResearch.js';
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 function App() {
   const { isSmall, isXSmall } = useScreenResolution();
   const isMobileVar = isMobile() || isSmall || isXSmall;
-  const [tab, setTab] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMusic, setIsMusic] = useState(false);
+  const location = useLocation();
   window.scrollTo(0, 0);
+  useEffect(() => {
+    setIsMusic(location.pathname === '/Music' || location.pathname === '/VideoGameVibes' || location.pathname === '/ANightAtTheCasino' || location.pathname === '/FamilyRoadTrip' || location.pathname === '/LetsDisco');
+  }, [location]);
+  
   const welcomeText = 
     <div className='welcomeContainer'>
-      <p className='welcomeText'>{'After graduating from my undergrad, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. I love the intersection between art and technology and aim to be a bridge between these two fields.\n\n​I am currently in a Masters program for User Experience Design and am searching for work in the UI/UX field.'}</p>
+      <h1 style={{color: '#EC2B7A', fontSize: '48px'}}>Hi, I'm Umaiyal.</h1>
+      <h2 className='welcomeText'>{'I am a UI/UX designer with a software development background aiming to bridge the gap between design and engineering in order to empower users through intuitive interfaces.\n\nAfter graduating with a Bachelor\'s in Computer Engineering and a minor in Art & Design, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. ​I am currently in a Master\'s program for User Experience Design and am searching for work in the UI/UX field.'}</h2>
     </div>
   
-  let currentPage = welcomeText;
-  switch (tab) {
-    case 'AboutMe':
-      currentPage = <AboutMe />;
-      break;
-    case 'Projects':
-      currentPage = <Projects setTab={setTab}/>;
-      break;
-    case 'Umeko':
-      currentPage = <Umeko />;
-      break;
-    case 'Kavi':
-      currentPage = <Kavi />;
-      break;
-    case 'ElfsterRedesign':
-      currentPage = <ElfsterRedesign />;
-      break;
-    case 'Viasat':
-      currentPage = <Viasat />;
-      break;
-    case 'TraderJoesResearch':
-      currentPage = <TraderJoesResearch />;
-      break;
-    case 'RollWithIt':
-      currentPage = <RollWithIt />;
-      break;
-    case 'KohiToKocha':
-      currentPage = <KohiToKocha />;
-      break;
-    case 'AlaskaAirlinesResearch':
-      currentPage = <AlaskaAirlinesResearch />;
-      break;
-    case 'Music':
-      return <PlaylistHome setTab={setTab}/>;
-    case 'VideoGameVibes':
-    case 'ANightAtTheCasino':
-    case 'FamilyRoadTrip':
-    case 'LetsDisco':
-      return <IndividualPlaylist setTab={setTab} tab={tab}/>;
-    default:
-      currentPage = welcomeText;
-      break;
-  }
-
-  const isProject = tab && tab !== 'AboutMe' && tab !== 'Experience' && tab !== 'Projects';
-  
-  
-    return (
-      <div className='appContainer'>
-        {!isMobileVar && <LargeNav setTab={setTab} tab={tab} isProject={isProject}/>}
-        {isMobileVar && <SmallNav setIsModalOpen={setIsModalOpen} setTab={setTab} tab={tab} isProject={isProject}/>}
-        {isMobileVar && isModalOpen && <SmallNavModal setTab={setTab} tab={tab} isProject={isProject} setIsModalOpen={setIsModalOpen}/>}
-        {currentPage}
-        <Footer />
+  return (
+      <div className={isMusic ? '':'appContainer'}>
+        {!isMusic && !isMobileVar && <LargeNav />}
+        {!isMusic && isMobileVar && <SmallNav setIsModalOpen={setIsModalOpen}/>}
+        {!isMusic && isMobileVar && isModalOpen && <SmallNavModal setIsModalOpen={setIsModalOpen}/>}
+        <Routes>
+          <Route path="/" element={welcomeText} />
+          <Route path="/AboutMe" element={<AboutMe />} />
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Music" element={<PlaylistHome />} />
+          <Route path="/AlaskaAirlinesResearch" element={<AlaskaAirlinesResearch />} />
+          <Route path="/KohiToKocha" element={<KohiToKocha />} />
+          <Route path="/RollWithIt" element={<RollWithIt />} />
+          <Route path="/TraderJoesResearch" element={<TraderJoesResearch />} />
+          <Route path="/Umeko" element={<Umeko />} />
+          <Route path="/Kavi" element={<Kavi />} />
+          <Route path="/ElfsterRedesign" element={<ElfsterRedesign />} />
+          <Route path="/Viasat" element={<Viasat />} />
+          <Route path="/Music" element={<PlaylistHome />} />
+          <Route path="/VideoGameVibes" element={<IndividualPlaylist />} />
+          <Route path="/ANightAtTheCasino" element={<IndividualPlaylist />} />
+          <Route path="/FamilyRoadTrip" element={<IndividualPlaylist />} />
+          <Route path="/LetsDisco" element={<IndividualPlaylist />} />
+        </Routes>
+        {!isMusic && <Footer />}
       </div>
     )
 }

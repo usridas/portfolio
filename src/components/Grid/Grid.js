@@ -14,7 +14,7 @@ export const Grid = ({gridProps, removeBio=false}) => {
                     {(isLarge || isMedium) && <h1>{'ABOUT ME'}</h1>}
                     {!isLarge && !isMedium && <h2>{'ABOUT ME'}</h2>}
                     <div>
-                        <p style={{marginBottom: '24px'}}>{'After graduating from my undergrad, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. I love the intersection between art and technology and aim to be a bridge between these two fields.\n\n​I am currently in a Masters program for User Experience Design and am searching for work in the UI/UX field.'}</p>
+                        <p style={{marginBottom: '24px'}}>{'I am a UI/UX designer with a software development background aiming to bridge the gap between design and engineering in order to empower users through intuitive interfaces.\n\nAfter graduating with a Bachelor\'s in Computer Engineering and a minor in Art & Design, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. ​I am currently in a Master\'s program for User Experience Design and am searching for work in the UI/UX field.'}</p>
                         <Button type='Primary' text='VIEW MY RESUME' link={Resume}/>
                     </div>
                 </div>

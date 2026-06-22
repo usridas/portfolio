@@ -6,22 +6,12 @@ import {
   ViasatStream,
   ViasatAddOns
 } from '../assets/images';
-import Tag from '../components/Tag/Tag.js';
 import PlainImage from '../components/Images/PlainImage.js';
 import ProjectGrid from '../components/Grid/ProjectGrid.js';
 
 export const Viasat = () => {
 
-  const viasatTags = <div className='tags'>
-      <Tag type='Design' text='FIGMA'/>
-      <Tag type='Software' text='JAVASCRIPT/TYPESCRIPT'/>
-      <Tag type='Software' text='HTML/CSS/SCSS'/>
-      <Tag type='Software' text='REACT'/>
-      <Tag type='Software' text='NODE.JS'/>
-      <Tag type='Software' text='GITHUB'/>
-    </div>
   const content = <div className='summaryContent'>
-    {viasatTags}
     <p>Objective: Update the My Viasat application user interface to provide the most useful data to clients while simultaneously being intuitive and aesthetic. I worked on both frontend and backend tasks to achieve this, but leaned more into frontend. To name a few, as a team, we used React, TypeScript, and Redux for web and mobile development. This project was done during my time working at Viasat Inc. as a software engineer.</p>
   </div>
 

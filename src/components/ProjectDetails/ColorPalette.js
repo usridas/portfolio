@@ -1,24 +1,18 @@
 import './ProjectDetailBox.css';
 
-export const ColorPalette = ({colors, text}) => {
+export const ColorPalette = ({colors}) => {
 
     const fullColorBox = 
         <div className='projectDetailContent'>
           {colors?.map(color => (
             <div className="box" style={{background: `${color.color}`}}>
-                <h3>{color.colorName}</h3>
-                <p>{color.text}</p>
+                <h3 style={{color: color.textColor==='light'?'#ffffff':'#33322A'}}>{color.colorName}</h3>
+                <p style={{color: color.textColor==='light'?'#ffffff':'#33322A'}}>{color.text}</p>
             </div>
           ))}
         </div>;
 
-    const colorSection =
-        <div className='projectDetailContainer'>
-            <p>{text}</p>
-            {fullColorBox}
-        </div>;
-
-    return (colorSection);
+    return (fullColorBox);
 }
 
 export default ColorPalette;

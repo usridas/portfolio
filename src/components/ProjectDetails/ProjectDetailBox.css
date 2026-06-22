@@ -15,11 +15,32 @@
     }
 }
 
+.fontBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    gap: 16px;
+    padding: 20px;
+    border: 1px solid #E6E5E0;
+    @media (max-width: 767px) {
+        max-width: none;
+        width: -moz-available;
+        width: -webkit-fill-available;
+        width: stretch;
+    }
+}
+
 .projectDetailContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
 }
 
 .projectDetailContent {

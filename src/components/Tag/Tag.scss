@@ -12,6 +12,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    width: min-content;
+    white-space: nowrap;
 }
 
 .tagDesign {
@@ -33,4 +35,25 @@
     background: #E4F3A8;
     color: #4B5D00;
     border: 1px solid #4B5D00;
+}
+
+.tagP0 {
+    @extend .tag;
+    background: #FFAFAF;
+    color: #E50000;
+    border: 1px solid #E50000;
+}
+
+.tagP1 {
+    @extend .tag;
+    background: #FFF0D4;
+    color: #FF8000;
+    border: 1px solid #FF8000;
+}
+
+.tagP2 {
+    @extend .tag;
+    background: #C3BFFF;
+    color: #2519D2;
+    border: 1px solid #2519D2;
 }

@@ -19,15 +19,13 @@ export const ProjectGrid = ({gridProps, removeBio=false}) => {
                 </div>
             </div>}
             {gridProps?.map((item, index) => (
-                <div key={index} className='projectGrid-rowOuter'>
-                    <div className='projectGrid-stickyRow'>
-                        {(isLarge || isMedium) && <h1 className='projectGrid-leftCol'>{item.title}</h1>}
-                        {!isLarge && !isMedium && <h2 className='projectGrid-leftCol'>{item.title}</h2>}
-                        <div className='projectGrid-rightCol'>
-                            {item.content}
-                        </div>
+                <div className='projectGrid-stickyRow'>
+                    <h1 className='projectGrid-leftCol'>{item.title}</h1>
+                    <div className='projectGrid-rightCol'>
+                        {item.content}
                     </div>
                 </div>
+                
             ))}
         </div>
     );

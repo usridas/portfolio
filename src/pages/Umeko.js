@@ -14,16 +14,13 @@ import {
   UmekoMockup4,
   UmekoMockup5
 } from '../assets/images';
-import Tag from '../components/Tag/Tag.js';
 import ColorPalette from '../components/ProjectDetails/ColorPalette.js';
 import Fonts from '../components/ProjectDetails/Fonts.js';
 import ProjectGrid from '../components/Grid/ProjectGrid.js';
 
 export const Umeko = () => {
 
-  const umekoTags = <div className='tags'><Tag type='Design' text='ADOBE ILLUSTRATOR'/></div>
   const content = <div className='summaryContent'>
-    {umekoTags}
     <p style={{marginBottom: '24px'}}>{'Umeko is a fun, light-hearted Japanese style cafe which sources tea from Japan. They serve classic teas, as well as unique blends, and boba to cater to both younger and older aficionados. The pastel, calm aesthetic is inspired by the Japanese plum (ume) and blossom. Umeko means ‘plum child’ in Japanese and plum blossoms are associated with good fortune and health.\n\n*This is a fictional business project made for design purposes.'}</p>
     <Button type='Primary' text='SEE FULL PROJECT ON BEHANCE' link={'https://www.behance.net/gallery/242576285/Umeko-Brand-Identity-and-Guidelines'}/>
   </div>
@@ -31,8 +28,8 @@ export const Umeko = () => {
   const colors = [
     {colorName: 'CHERRY BLOSSOM', color: '#FDDBDA', text: 'Hex Code: #FDDBDA\nRGB: 253 219 218\nCMYK: 0% 16.29% 7.55% 0%'},
     {colorName: 'KIRBY', color: '#F693B0', text: 'Hex Code: #F693B0\nRGB: 246 17 176\nCMYK: 0% 53.08% 8.67% 0%'},
-    {colorName: 'RISING SUN', color: '#F53A31', text: 'Hex Code: #F53A31\nRGB: 245 58 49\nCMYK: 0% 91.28% 86.97% 0%'},
-    {colorName: 'PLUM', color: '#5440AC', text: 'Hex Code: #5440AC\nRGB: 84 64 172\nCMYK: 79.3% 84.8% 0% 0%'},
+    {colorName: 'RISING SUN', color: '#F53A31', text: 'Hex Code: #F53A31\nRGB: 245 58 49\nCMYK: 0% 91.28% 86.97% 0%', textColor: 'light'},
+    {colorName: 'PLUM', color: '#5440AC', text: 'Hex Code: #5440AC\nRGB: 84 64 172\nCMYK: 79.3% 84.8% 0% 0%', textColor: 'light'},
   ];
 
   const fonts = [
@@ -54,7 +51,7 @@ export const Umeko = () => {
     {imagePath: UmekoMockup5, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
   ];
 
-  const imageSlide = <ImageSlide imageSlideProps={imageSlideProps}/>;
+  const imageSlide = <div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}><ImageSlide imageSlideProps={imageSlideProps} imageMaxWidth={true}/></div>;
 
   const gridArray = [
         {title: 'UMEKO', content: content},

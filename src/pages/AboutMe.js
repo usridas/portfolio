@@ -14,21 +14,21 @@ export const AboutMe = () => {
     const quote1 = <QuoteContainer title={'-ROBERT ALLEN, LEAD DEVELOPER'} text={'"While she has worn many hats during our couple of years working together, she shows a particular aptitude for front-end development and design. Her unique skillset allows her to understand the design and development required for any feature. She\'s a CSS master and often mentors even her seniors on best practices for developing UI."'}/>
 
     const skills1 = 
-    <div className='skillsContainer'>
+    <div className='columnWith12Gap'>
         <h3>{'DESIGN'}</h3>
         <div className='skills'>
             <Tag type='Design' text='FIGMA'/> <Tag type='Design' text='ADOBE ILLUSTRATOR'/> <Tag type='Design' text='ADOBE INDESIGN'/> <Tag type='Design' text='ADOBE XD'/>
         </div>
     </div>;
     const skills2 = 
-    <div className='skillsContainer'>
+    <div className='columnWith12Gap'>
         <h3>{'SOFTWARE'}</h3>
         <div className='skills'>
             <Tag type='Software' text='JAVASCRIPT/TYPESCRIPT'/> <Tag type='Software' text='HTML/CSS/SCSS'/> <Tag type='Software' text='REACT'/> <Tag type='Software' text='NODE.JS'/> <Tag  type='Software' text='GITHUB'/> <Tag  type='Software' text='JIRA/CONFLUENCE'/> <Tag  type='Software' text='POSTMAN'/>
         </div>
     </div>;
     const skills3 =
-    <div className='skillsContainer'>
+    <div className='columnWith12Gap'>
         <h3>{'RESEARCH'}</h3>
         <div className='skills'>
             <Tag  type='Research' text='USER INTERVIEWING'/> <Tag  type='Research' text='USABILITY TESTING'/> <Tag  type='Research' text='COMPETITIVE ANALYSIS'/> <Tag  type='Research' text='AFFINITY DIAGRAMMING'/> <Tag  type='Research' text='JOURNEY MAPPING'/> <Tag  type='Research' text='PERSONA DEVELOPMENT'/>

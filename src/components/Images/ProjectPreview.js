@@ -2,10 +2,11 @@ import './ImageSlide.scss';
 import { useState } from 'react';
 import { useScreenResolution } from '../../utils/ScreenSize.tsx';
 import Button from '../Button/Button.js';
+import { useNavigate } from 'react-router-dom';
 
 
-export const ProjectPreview = ({imageSlideProps, setTab}) => {
-
+export const ProjectPreview = ({imageSlideProps}) => {
+  const navigate = useNavigate();
   const [imageIndex, setImageIndex] = useState(0);
 
    const { isXSmall, isSmall } = useScreenResolution();
@@ -27,10 +28,6 @@ export const ProjectPreview = ({imageSlideProps, setTab}) => {
     }
   }
 
-  function onImageClick() {
-    setTab(imageSlideProps[imageIndex].imageLink);
-  }
-
   return (
     <div className="projectPreviewContainer">
         {imageSlideProps[imageIndex].title &&
@@ -41,8 +38,8 @@ export const ProjectPreview = ({imageSlideProps, setTab}) => {
         }
         {imageSlideProps[imageIndex].tags}
         <div className='imageBox' style={{backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : 'contain'}`}}>
-          {imageSlideProps[imageIndex].imageLink && !isMobileVar && <button className='imageSlideLink' tabIndex={0} onClick={onImageClick} onKeyDown={(event)=>{if (event.key === 'Enter') {onImageClick()}}}>{imageSlideProps[imageIndex].imageText}</button>}
-          {imageSlideProps[imageIndex].imageLink && isMobileVar && <button className='imageSlideLinkSmallHover' onClick={onImageClick}>{imageSlideProps[imageIndex].imageText}</button>}
+          {imageSlideProps[imageIndex].imageLink && !isMobileVar && <button className='imageSlideLink' tabIndex={0} onClick={()=>{navigate(imageSlideProps[imageIndex].imageLink)}} onKeyDown={(event)=>{if (event.key === 'Enter') {navigate(imageSlideProps[imageIndex].imageLink)}}}>{imageSlideProps[imageIndex].imageText}</button>}
+          {imageSlideProps[imageIndex].imageLink && isMobileVar && <button className='imageSlideLinkSmallHover' onClick={()=>{navigate(imageSlideProps[imageIndex].imageLink)}}>{imageSlideProps[imageIndex].imageText}</button>}
         </div>
         {imageSlideProps[imageIndex].caption && <p>{imageSlideProps[imageIndex].caption}</p>}
         {imageSlideProps.length > 1 &&
