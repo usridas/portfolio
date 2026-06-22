@@ -26,8 +26,9 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMusic, setIsMusic] = useState(false);
   const location = useLocation();
-  window.scrollTo(0, 0);
+
   useEffect(() => {
+    window.scrollTo(0, 0);
     setIsMusic(location.pathname === '/Music' || location.pathname === '/VideoGameVibes' || location.pathname === '/ANightAtTheCasino' || location.pathname === '/FamilyRoadTrip' || location.pathname === '/LetsDisco');
   }, [location]);
   
@@ -46,7 +47,6 @@ function App() {
           <Route path="/" element={welcomeText} />
           <Route path="/AboutMe" element={<AboutMe />} />
           <Route path="/Projects" element={<Projects />} />
-          <Route path="/Music" element={<PlaylistHome />} />
           <Route path="/AlaskaAirlinesResearch" element={<AlaskaAirlinesResearch />} />
           <Route path="/KohiToKocha" element={<KohiToKocha />} />
           <Route path="/RollWithIt" element={<RollWithIt />} />
