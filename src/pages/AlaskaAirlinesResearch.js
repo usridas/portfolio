@@ -5,6 +5,10 @@ import {
     AlaskaAirlinesCompetitiveFeatureMatrix,
     AlaskaAirlinesSWOTAnalysis,
     AlaskaAirlinesKanoAnalysis,
+    AlaskaAirlinesFlightSearch,
+    AlaskaAirlinesFlightTierOptions,
+    AlaskaAirlinesSeatAssignment,
+    AlaskaAirlinesTripSummary,
 } from '../assets/images/index.js';
 import AlaskaAirlinesSlideDeck from '../assets/documents/AlaskaAirlinesSlideDeck.pdf'
 import PlainImage from '../components/Images/PlainImage.js';
@@ -26,14 +30,14 @@ export const AlaskaAirlinesResearch = () => {
                 {!isMobile && <div className='stepNumber'><h1>1</h1></div>}
                 <div className='journeyCard'>
                     <h2 style={{color: '#FF90BE', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>1. </span>DISCOVERY</h2>
-                    <p>I conducted a <span style={{fontWeight: 'bold', color: '#94003D'}}>competitive analysis against 3 airlines:</span><br/>• Delta Airlines<br/>• American Airlines<br/>• Qatar Airways.<br/><br/>I also held <span style={{fontWeight: 'bold', color: '#94003D'}}>6 usability tests:</span><br/>• 2 moderated<br/>• 4 unmoderated</p>
+                    <p>I conducted a <span style={{fontWeight: 'bold', color: '#94003D'}}>competitive analysis against 3 airlines:</span><br/>• Delta Airlines<br/>• American Airlines<br/>• Qatar Airways<br/><br/>I also held <span style={{fontWeight: 'bold', color: '#94003D'}}>6 usability tests:</span><br/>• 2 moderated<br/>• 4 unmoderated</p>
                 </div>
             </div>
             <div className='step'>
                 {!isMobile && <div className='stepNumber'><h1>2</h1></div>}
                 <div className='journeyCard'>
                     <h2 style={{color: '#FF90BE', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>2. </span>INSIGHTS</h2>
-                    <p>Users face friction throughout the booking flow due to <span style={{fontWeight: 'bold', color: '#94003D'}}>poor navigation and unclear flight information</span>, often causing them to miss or overlook important details. Users are also reluctant to purchase add-ons unless they feel confident they're getting a good deal.</p>
+                    <p>Users face friction throughout the booking flow due to <span style={{fontWeight: 'bold', color: '#94003D'}}>poor navigation and unclear flight information</span>, often causing them to miss or overlook important details. Users are also <span style={{fontWeight: 'bold', color: '#94003D'}}>reluctant to purchase add-ons</span> unless they feel confident they're getting a good deal.</p>
                 </div>
             </div>
             <div className='step'>
@@ -50,11 +54,15 @@ export const AlaskaAirlinesResearch = () => {
         {imagePath: AlaskaAirlinesCompetitiveFeatureMatrix},
         {imagePath: AlaskaAirlinesSWOTAnalysis},
         {imagePath: AlaskaAirlinesKanoAnalysis},
+        {imagePath: AlaskaAirlinesFlightSearch},
+        {imagePath: AlaskaAirlinesFlightTierOptions},
+        {imagePath: AlaskaAirlinesSeatAssignment},
+        {imagePath: AlaskaAirlinesTripSummary}
     ];
 
     const problem1 = <TextContainer title={'WHAT DO I WANT TO LEARN HERE?'} text={'• What are the experiences of Alaska Airlines customers?\n• What part of the booking flow is most confusing or difficult to complete?\n• What discourages or limits customers from completing a booking or attaching add-ons?\n• What does the customer like or want to see more of in the booking flow?\n• What does the ideal booking flow look like?'} />;
     const problem2 = <TextContainer title={'HOW CAN I GET THIS INFORMATION?'} text={'To start my research, I conducted a competitive analysis against Delta Air Lines, American Airlines, and Qatar Airways. The main factors I decided to hone in one when choosing competitors was price and places the airline serviced. I chose Delta Air Lines and American Airlines to be two direct competitors to Alaska Airlines, as they all seem to serve similar populations. Alaska, Delta, and American are approximately the same price, but Delta and American service a lot more locations than Alaska. I hope to gain some insight as to where Alaska might be falling short and how to ensure they can maintain a large presence over the West Coast. I chose Qatar Airways to be an aspirational competitor to Alaska Airlines, since Qatar is known for its luxury experience and technological excellence and innovation. I hope to gain inspiration from some of Qatar\'s luxury design features and apply them to Alaska.\n\nAfter understanding my competitors, I created a usability test consisting of three task scenarios: choosing flights, choosing seats, and choosing add-ons. These scenarios seemed to be the most relevant areas to hone in on according to my cognitive task analysis, red routes, competitive analysis, and Alaska\'s business priorities. I ended up conducting 6 usability tests, 2 moderated and 4 unmoderated tests via Userbrain. This was my first time conducting unmoderated tests! I got better over time, but making a detailed script without leading users was quite the task.\n'} />;
-    const problem3 = <div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}><ImageSlide imageSlideProps={problemSlideProps} imageMaxWidth={true}/></div>;
+    const problem3 = <ImageSlide imageSlideProps={problemSlideProps}/>;
 
     const insight1 = <div className='columnWith12Gap'><Tag type='P0' text='P1 (ALMOST P0): HIGH PRIORITY'/> <TextContainer title={'USERS NEED TO EXPEND MORE EFFORT AND GO BACK AND FORTH TO SEE FLIGHT DETAILS AND COMPARE FLIGHT INFORMATION.'} text={'During flight selection, users used back and forth navigation and trial and error to view and understand all their flight options. The average time was 4 minutes 36 seconds, by far the longest of all tasks. Friction during the flight choice step is causing frustration among users and increases the risk of booking abandonment, leading to lost sales.'}/></div>;
     const insight2 = <div className='columnWith12Gap'><Tag type='P1' text='P1: HIGH PRIORITY'/><TextContainer title={'LACK OF CLARITY AND VISIBILITY OF INFORMATION ABOUT FLIGHT TIERS LEADS TO CONFUSION AND LACK OF CONFIDENCE IN FLIGHT DECISIONS.'} text={'During flight selection, users were not confident in their decision and expressed confusion. Furthermore, some 2/6 users failed the task by choosing non-refundable flights, making this the task with the lowest success rate. This lack of confidence could be the cause of booking abandonment during the flight choice step, leading to lost sales and decreased trust.'}/></div>;

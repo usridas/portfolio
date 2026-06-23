@@ -38,17 +38,17 @@ export const Umeko = () => {
   ];
 
   const imageSlideProps = [
-    {imagePath: UmekoLogo1, title: "PRIMARY LOGO", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
-    {imagePath: UmekoLogo2, title: "SECONDARY LOGO", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
-    {imagePath: UmekoLogo3, title: "TERTIARY LOGO", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
-    {imagePath: UmekoBrandAsset1, title: "BRAND ASSET 1", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
-    {imagePath: UmekoBrandAsset2, title: "BRAND ASSET 2", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
-    {imagePath: UmekoBrandAsset3, title: "ILLUSTRATIONS", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
-    {imagePath: UmekoMockup1, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
-    {imagePath: UmekoMockup2, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
-    {imagePath: UmekoMockup3, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
-    {imagePath: UmekoMockup4, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
-    {imagePath: UmekoMockup5, title: "MOCKUP", caption: 'These are some images of logos, brand assets, and mockups to show how this branding can be utilized.'},
+    {imagePath: UmekoLogo1, title: "PRIMARY LOGO"},
+    {imagePath: UmekoLogo2, title: "SECONDARY LOGO"},
+    {imagePath: UmekoLogo3, title: "TERTIARY LOGO"},
+    {imagePath: UmekoBrandAsset1, title: "BRAND ASSET 1"},
+    {imagePath: UmekoBrandAsset2, title: "BRAND ASSET 2"},
+    {imagePath: UmekoBrandAsset3, title: "ILLUSTRATIONS"},
+    {imagePath: UmekoMockup1, title: "MOCKUP"},
+    {imagePath: UmekoMockup2, title: "MOCKUP"},
+    {imagePath: UmekoMockup3, title: "MOCKUP"},
+    {imagePath: UmekoMockup4, title: "MOCKUP"},
+    {imagePath: UmekoMockup5, title: "MOCKUP"},
   ];
 
   const imageSlide = <div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}><ImageSlide imageSlideProps={imageSlideProps} imageMaxWidth={true}/></div>;

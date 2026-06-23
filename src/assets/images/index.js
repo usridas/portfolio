@@ -13,6 +13,7 @@ import Mushroom1 from './Artwork/Mushroom_1.png';
 import Mushroom2 from './Artwork/Mushroom_2.png';
 import Mushroom3 from './Artwork/Mushroom_3.png';
 import ElfsterCover from './ElfsterRedesign/cover.png';
+import ElfsterFeedback from './ElfsterRedesign/feedback.png';
 import ElfsterMockup1 from './ElfsterRedesign/mockup1.jpg';
 import ElfsterMockup2 from './ElfsterRedesign/mockup2.jpg';
 import ElfsterMockup3 from './ElfsterRedesign/mockup3.jpg';
@@ -23,9 +24,14 @@ import ElfsterScreen3 from './ElfsterRedesign/screen3.png';
 import ElfsterScreen4 from './ElfsterRedesign/screen4.png';
 import ElfsterScreen5 from './ElfsterRedesign/screen5.png';
 import ElfsterScreen6 from './ElfsterRedesign/screen6.png';
+import ElfsterScreenshots from './ElfsterRedesign/screenshots.png';
 import ElfsterScreenshot1 from './ElfsterRedesign/screenshot1.png';
 import ElfsterScreenshot2 from './ElfsterRedesign/screenshot2.png';
 import ElfsterScreenshot3 from './ElfsterRedesign/screenshot3.png';
+import ElfsterExchangeScreens from './ElfsterRedesign/exchangeScreens.png';
+import ElfsterFriendScreens from './ElfsterRedesign/friendScreen.png';
+import ElfsterProfileScreens from './ElfsterRedesign/profileScreen.png';
+import ElfsterWishlistScreens from './ElfsterRedesign/wishlistScreens.png';
 import KaviBrandAsset1 from './Kavi/brandAsset1.png';
 import KaviBrandAsset2 from './Kavi/brandAsset2.png';
 import KaviLogo1 from './Kavi/logo1.png';
@@ -76,6 +82,10 @@ import AlaskaAirlinesParticipants from './AlaskaAirlinesResearch/Participants.pn
 import AlaskaAirlinesCompetitiveFeatureMatrix from './AlaskaAirlinesResearch/CompetitiveFeatureMatrix.png';
 import AlaskaAirlinesSWOTAnalysis from './AlaskaAirlinesResearch/SWOTAnalysis.png';
 import AlaskaAirlinesKanoAnalysis from './AlaskaAirlinesResearch/KanoAnalysis.png';
+import AlaskaAirlinesFlightSearch from './AlaskaAirlinesResearch/FlightSearch.png';
+import AlaskaAirlinesFlightTierOptions from './AlaskaAirlinesResearch/FlightTierOptions.png';
+import AlaskaAirlinesSeatAssignment from './AlaskaAirlinesResearch/SeatAssignment.png';
+import AlaskaAirlinesTripSummary from './AlaskaAirlinesResearch/TripSummary.png';
 import KohiToKochaColors from './KohiToKocha/Colors.png';
 import KohiToKochaCover from './KohiToKocha/Logo.png';
 import KohiToKochaFlowchart from './KohiToKocha/Flowchart.png';
@@ -166,7 +176,12 @@ export {
     AlaskaAirlinesCompetitiveFeatureMatrix,
     AlaskaAirlinesSWOTAnalysis,
     AlaskaAirlinesKanoAnalysis,
+    AlaskaAirlinesFlightSearch,
+    AlaskaAirlinesFlightTierOptions,
+    AlaskaAirlinesSeatAssignment,
+    AlaskaAirlinesTripSummary,
     ElfsterCover,
+    ElfsterFeedback,
     ElfsterMockup1,
     ElfsterMockup2,
     ElfsterMockup3,
@@ -177,9 +192,14 @@ export {
     ElfsterScreen4,
     ElfsterScreen5,
     ElfsterScreen6,
+    ElfsterScreenshots,
     ElfsterScreenshot1,
     ElfsterScreenshot2,
     ElfsterScreenshot3,
+    ElfsterExchangeScreens,
+    ElfsterFriendScreens,
+    ElfsterProfileScreens,
+    ElfsterWishlistScreens,
     KaviBrandAsset1,
     KaviBrandAsset2,
     KaviLogo1,
