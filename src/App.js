@@ -34,7 +34,7 @@ function App() {
   
   const welcomeText = 
     <div className='welcomeContainer'>
-      <h1 style={{color: '#EC2B7A', fontSize: '48px'}}>Hi, I'm Umaiyal.</h1>
+      <h1 style={{color: '#94003D', fontSize: '48px'}}>Hi, I'm Umaiyal.</h1>
       <h2 className='welcomeText'>{'I am a UI/UX designer with a software development background aiming to bridge the gap between design and engineering in order to empower users through intuitive interfaces.\n\nAfter graduating with a Bachelor\'s in Computer Engineering and a minor in Art & Design, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. ​I am currently in a Master\'s program for User Experience Design and am searching for work in the UI/UX field.'}</h2>
     </div>
   
@@ -43,7 +43,7 @@ function App() {
         {!isMusic && !isMobileVar && <LargeNav />}
         {!isMusic && isMobileVar && <SmallNav setIsModalOpen={setIsModalOpen}/>}
         {!isMusic && isMobileVar && isModalOpen && <SmallNavModal setIsModalOpen={setIsModalOpen}/>}
-        <Routes>
+        <Routes role='main'>
           <Route path="/" element={welcomeText} />
           <Route path="/AboutMe" element={<AboutMe />} />
           <Route path="/Projects" element={<Projects />} />

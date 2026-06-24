@@ -4,6 +4,7 @@ import {
     TraderJoesAffinityDiagram,
     TraderJoesMayaJourneyMap,
     TraderJoesJessJourneyMap,
+    TraderJoesBanner,
 } from '../assets/images';
 import TraderJoesSlideDeck from '../assets/documents/TraderJoesSlideDeck.pdf'
 import PlainImage from '../components/Images/PlainImage.js';
@@ -24,21 +25,21 @@ export const TraderJoesResearch = () => {
             <div className='step'>
                 {!isMobile && <div className='stepNumber'><h1>1</h1></div>}
                 <div className='journeyCard'>
-                    <h2 style={{color: '#FF90BE', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>1. </span>DISCOVERY</h2>
+                    <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>1. </span>DISCOVERY</h2>
                     <p>I held <span style={{fontWeight: 'bold', color: '#94003D'}}>5 user interviews followed by online and in-person shadowing sessions.</span> During online shadowing sessions, I had each user complete a few tasks on Trader Joe's website and during in-person shadowing sessions, I followed each user during a normal Trader Joe's trip.</p>
                 </div>
             </div>
             <div className='step'>
                 {!isMobile && <div className='stepNumber'><h1>2</h1></div>}
                 <div className='journeyCard'>
-                    <h2 style={{color: '#FF90BE', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>2. </span>INSIGHTS</h2>
+                    <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>2. </span>INSIGHTS</h2>
                     <p>Customers appreciate Trader Joe's for their unique snacks, frozen food, and seasonal items, but <span style={{fontWeight: 'bold', color: '#94003D'}}>don't use Trader Joe's as their primary grocery store.</span> Customers also <span style={{fontWeight: 'bold', color: '#94003D'}}>lament the parking situation</span> at Trader Joe's.</p>
                 </div>
             </div>
             <div className='step'>
                 {!isMobile && <div className='stepNumber'><h1>3</h1></div>}
                 <div className='journeyCard'>
-                    <h2 style={{color: '#FF90BE', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>NEXT STEPS</h2>
+                    <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>NEXT STEPS</h2>
                     <p>I would prioritize finding a way to <span style={{fontWeight: 'bold', color: '#94003D'}}>make Trader Joe's people's grocery store, rather than a supplement.</span> By focusing efforts on becoming a primary grocery store, Trader Joe's can increase revenue through more regularly purchased items, like fresh produce. I would also recommend <span style={{fontWeight: 'bold', color: '#94003D'}}>addressing the insufficient parking.</span>  This would remove an obstacle for potential customers, hopefully increasing the customer base.</p>
                 </div>
             </div>
@@ -75,12 +76,12 @@ export const TraderJoesResearch = () => {
             {affinityDiagram2}
             {affinityDiagram3}
             <div className='columnWith12Gap'>
-                <h2 style={{color: '#FF90BE', textAlign: 'left'}}>PERSONA #1: MAYA AKA THE 'SNACK SEEKER'</h2>
+                <h2 style={{color: '#EC2B7A', textAlign: 'left'}}>PERSONA #1: MAYA AKA THE 'SNACK SEEKER'</h2>
                 {persona1}
                 {persona2}
             </div>
             <div className='columnWith12Gap'>
-                <h2 style={{color: '#FF90BE', textAlign: 'left'}}>PERSONA #2: JESS AKA THE 'CONVENIENCE CONSUMER'</h2>
+                <h2 style={{color: '#EC2B7A', textAlign: 'left'}}>PERSONA #2: JESS AKA THE 'CONVENIENCE CONSUMER'</h2>
                 {persona3}
                 {persona4}
             </div>
@@ -104,6 +105,9 @@ export const TraderJoesResearch = () => {
 
     return (
         <div>
+            <div className='bannerWrapper'>
+                <img src={TraderJoesBanner} alt='Alaska Airlines aircraft'/>
+            </div>
             <h1 className='title'>TRADER JOE'S RESEARCH</h1>
             <ProjectGrid gridProps={gridArray} removeBio={true}/>
         </div>

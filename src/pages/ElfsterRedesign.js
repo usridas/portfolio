@@ -27,21 +27,21 @@ export const ElfsterRedesign = () => {
           <div className='step'>
               {!isMobile && <div className='stepNumber'><h1>1</h1></div>}
               <div className='journeyCard'>
-                  <h2 style={{color: '#FF90BE', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>1. </span>IDENTIFY</h2>
+                  <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>1. </span>IDENTIFY</h2>
                   <p>I collected feedback from myself and other Elfster users after using the app for a Christmas exchange. A lot of the criticism of the app rose from <span style={{fontWeight: 'bold', color: '#94003D'}}>difficult navigation, the functionality of wishlists, and excess information or advertising</span>.</p>
               </div>
           </div>
           <div className='step'>
               {!isMobile && <div className='stepNumber'><h1>2</h1></div>}
               <div className='journeyCard'>
-                  <h2 style={{color: '#FF90BE', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>2. </span>DESIGN RESEARCH</h2>
+                  <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>2. </span>DESIGN RESEARCH</h2>
                   <p>Here I took screenshots of the entire app and <span style={{fontWeight: 'bold', color: '#94003D'}}>extracted essential information, navigation, and interactions</span> in order to optimize the mobile app experience.</p>
               </div>
           </div>
           <div className='step'>
               {!isMobile && <div className='stepNumber'><h1>3</h1></div>}
               <div className='journeyCard'>
-                  <h2 style={{color: '#FF90BE', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>EXECUTE</h2>
+                  <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>EXECUTE</h2>
                   <p>Finally, I used the existing framework of the app and essential ideas to <span style={{fontWeight: 'bold', color: '#94003D'}}>redesign the mobile Elfster app.</span></p>
               </div>
           </div>

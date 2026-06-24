@@ -4,7 +4,7 @@
   padding: 40px 24px;
   justify-content: flex-start;
   align-items: center;
-  gap: 24px;
+  /* gap: 24px; */
   min-width: 288px;
   background-color: #FDFCF8;
   height: 100dvh;

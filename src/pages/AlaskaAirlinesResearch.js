@@ -1,7 +1,7 @@
 import './Pages.css';
 import TextContainer from '../components/Text/TextContainer.js';
 import {
-    AlaskaAirlinesAffinityDiagram,
+    AlaskaAirlinesBanner,
     AlaskaAirlinesCompetitiveFeatureMatrix,
     AlaskaAirlinesSWOTAnalysis,
     AlaskaAirlinesKanoAnalysis,
@@ -11,7 +11,6 @@ import {
     AlaskaAirlinesTripSummary,
 } from '../assets/images/index.js';
 import AlaskaAirlinesSlideDeck from '../assets/documents/AlaskaAirlinesSlideDeck.pdf'
-import PlainImage from '../components/Images/PlainImage.js';
 import Button from '../components/Button/Button.js';
 import Tag from '../components/Tag/Tag.js';
 import ProjectGrid from '../components/Grid/ProjectGrid.js';
@@ -27,23 +26,23 @@ export const AlaskaAirlinesResearch = () => {
         <div style={{marginBottom: '24px'}}><Button type='Primary' text='VIEW FULL SLIDE DECK' link={AlaskaAirlinesSlideDeck}/></div>
         <div className='steps'>
             <div className='step'>
-                {!isMobile && <div className='stepNumber'><h1>1</h1></div>}
+                {!isMobile && <div className='stepNumber'><h1 style={{color: '#E6E5E0'}}>1</h1></div>}
                 <div className='journeyCard'>
-                    <h2 style={{color: '#FF90BE', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>1. </span>DISCOVERY</h2>
+                    <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>1. </span>DISCOVERY</h2>
                     <p>I conducted a <span style={{fontWeight: 'bold', color: '#94003D'}}>competitive analysis against 3 airlines:</span><br/>• Delta Airlines<br/>• American Airlines<br/>• Qatar Airways<br/><br/>I also held <span style={{fontWeight: 'bold', color: '#94003D'}}>6 usability tests:</span><br/>• 2 moderated<br/>• 4 unmoderated</p>
                 </div>
             </div>
             <div className='step'>
-                {!isMobile && <div className='stepNumber'><h1>2</h1></div>}
+                {!isMobile && <div className='stepNumber'><h1 style={{color: '#E6E5E0'}}>2</h1></div>}
                 <div className='journeyCard'>
-                    <h2 style={{color: '#FF90BE', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>2. </span>INSIGHTS</h2>
+                    <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>2. </span>INSIGHTS</h2>
                     <p>Users face friction throughout the booking flow due to <span style={{fontWeight: 'bold', color: '#94003D'}}>poor navigation and unclear flight information</span>, often causing them to miss or overlook important details. Users are also <span style={{fontWeight: 'bold', color: '#94003D'}}>reluctant to purchase add-ons</span> unless they feel confident they're getting a good deal.</p>
                 </div>
             </div>
             <div className='step'>
-                {!isMobile && <div className='stepNumber'><h1>3</h1></div>}
+                {!isMobile && <div className='stepNumber'><h1 style={{color: '#E6E5E0'}}>3</h1></div>}
                 <div className='journeyCard'>
-                    <h2 style={{color: '#FF90BE', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>NEXT STEPS</h2>
+                    <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>NEXT STEPS</h2>
                     <p>I would prioritize providing a <span style={{fontWeight: 'bold', color: '#94003D'}}>clear navigation component to address repeated navigation issues</span> and <span style={{fontWeight: 'bold', color: '#94003D'}}>reconfirming chosen flight details in a transitional modal for transparency.</span> These actions would help increase customer confidence, which will lead to an upturn of completed bookings and boost trust among the customer base.</p>
                 </div>
             </div>
@@ -68,7 +67,6 @@ export const AlaskaAirlinesResearch = () => {
     const insight2 = <div className='columnWith12Gap'><Tag type='P1' text='P1: HIGH PRIORITY'/><TextContainer title={'LACK OF CLARITY AND VISIBILITY OF INFORMATION ABOUT FLIGHT TIERS LEADS TO CONFUSION AND LACK OF CONFIDENCE IN FLIGHT DECISIONS.'} text={'During flight selection, users were not confident in their decision and expressed confusion. Furthermore, some 2/6 users failed the task by choosing non-refundable flights, making this the task with the lowest success rate. This lack of confidence could be the cause of booking abandonment during the flight choice step, leading to lost sales and decreased trust.'}/></div>;
     const insight3 = <div className='columnWith12Gap'><Tag type='P2' text='P2: FUTURE ROADMAP'/><TextContainer title={'USERS DO NOT WANT TO EXPEND EXTRA MENTAL EFFORT TO FIND UNCLEAR OR HIDDEN INFORMATION AND TEND TO OVERLOOK DETAILS THROUGHOUT THE BOOKING PROCESS.'} text={'For seat selection and add-ons, users were confident and quick in decision making, even if they missed or overlooked details. 2/6 users were confident in their seats but missed seat selection for one leg of their flight and 4/6 users overlooked the Atmos Rewards card. Users risk overlooking details throughout the booking process due to the high cognitive load, reducing potential attachments.'}/></div>;
     const insight4 = <div className='columnWith12Gap'><Tag type='P2' text='P2: FUTURE ROADMAP'/><TextContainer title={'USERS PRIORITIZE PRICE AND DEFAULT TO HABITS WHEN MAKING DECISIONS; THEY WILL AVOID EXTRA COSTS UNLESS THEY ARE CONFIDENT THEY ARE GETTING A GOOD DEAL.'} text={'All users stated price as a deciding factor for their decisions, looking for the “best deal”, “cheapest”, or “cost effective” options. Furthermore, users were confident in their seat selection and add-on selection and made quick decisions during these steps. Average time for choosing add-ons was 1 minute 9 seconds, the shortest of all tasks and all 6 users opted “NO” for travel insurance. Without clear benefits of purchasing add-ons, users are less confident and therefore not incentivized to increase attach rate.'}/></div>;
-    const insight5 = <div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}><PlainImage plainImageProps={{imagePath: AlaskaAirlinesAffinityDiagram}} imageMaxWidth={true}/></div>;
 
     const opportunity1 = <div className='columnWith12Gap'><Tag type='P0' text='P1 (ALMOST P0): HIGH PRIORITY'/><TextContainer title={'HOW MIGHT WE ENABLE USERS TO VIEW AND COMPARE FLIGHT INFORMATION WITHOUT UNNECESSARY STEPS OR NAVIGATION?'} text={'I recommend providing a clear navigation component in order to address repeated navigation issues during the flight choice step. This will help us reduce frustration and flight choice step duration so we can increase completed bookings.'}/></div>;
     const opportunity2 = <div className='columnWith12Gap'><Tag type='P1' text='P1: HIGH PRIORITY'/><TextContainer title={'HOW MIGHT WE CREATE CLARITY DURING THE FLIGHT CHOICE STEP IN ORDER TO BOOST CONFIDENCE IN DECISIONS?'} text={'I recommend editing the content of the transitional modal to provide details of the chosen flight tier because users could not find basic tier information when comparing flights. This will help increase customer confidence and lower booking abandonment so we can increase completed bookings and trust among our customer base.'}/></div>;
@@ -88,7 +86,6 @@ export const AlaskaAirlinesResearch = () => {
             {insight2}
             {insight3}
             {insight4}
-            {insight5}
         </div>;            
 
     const opportunities = 
@@ -108,6 +105,9 @@ export const AlaskaAirlinesResearch = () => {
 
     return (
         <div>
+            <div className='bannerWrapper'>
+                <img src={AlaskaAirlinesBanner} alt='Alaska Airlines aircraft'/>
+            </div>
             <h1 className='title'>ALASKA AIRLINES RESEARCH</h1>
             <ProjectGrid gridProps={gridArray} removeBio={true}/>
         </div>

@@ -28,7 +28,7 @@ p {
   font-style: normal;
   font-size: 16px;
   color: #33322A;
-  line-height: 1.5;
+  line-height: 2;
   white-space: pre-wrap;
   margin: 0;
   text-align: left;
@@ -82,7 +82,7 @@ h2 {
 
 h3 {
   font-family: "space-mono", mono;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -97,15 +97,5 @@ h4 {
   font-weight: 400;
   line-height: normal;
   color: #6D6C65;
-  margin: 0;
-}
-
-h5 {
-  font-family: "plantin", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  color: #E6E5E0;
   margin: 0;
 }

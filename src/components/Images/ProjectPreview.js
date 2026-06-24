@@ -33,11 +33,11 @@ export const ProjectPreview = ({imageSlideProps}) => {
         {imageSlideProps[imageIndex].title &&
             <div className='projectPreviewTitleContainer'>
                 <h3>{imageSlideProps[imageIndex].title}</h3>
-                {imageSlideProps[imageIndex].description && <h4>{imageSlideProps[imageIndex].description}</h4>}
+                {imageSlideProps[imageIndex].description && <h4 style={{textAlign: 'end'}}>{imageSlideProps[imageIndex].description}</h4>}
             </div>  
         }
-        {imageSlideProps[imageIndex].tags}
         <div className='imageBox' style={{backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : 'contain'}`}}>
+          {imageSlideProps[imageIndex].tags}
           {imageSlideProps[imageIndex].imageLink && !isMobileVar && <button className='imageSlideLink' tabIndex={0} onClick={()=>{navigate(imageSlideProps[imageIndex].imageLink)}} onKeyDown={(event)=>{if (event.key === 'Enter') {navigate(imageSlideProps[imageIndex].imageLink)}}}>{imageSlideProps[imageIndex].imageText}</button>}
           {imageSlideProps[imageIndex].imageLink && isMobileVar && <button className='imageSlideLinkSmallHover' onClick={()=>{navigate(imageSlideProps[imageIndex].imageLink)}}>{imageSlideProps[imageIndex].imageText}</button>}
         </div>

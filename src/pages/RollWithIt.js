@@ -25,7 +25,8 @@ import {
     RollWithItWireframe8,
     RollWithItWireframe9,
     RollWithItWireframe10,
-    RollWithItWireframe11
+    RollWithItWireframe11,
+    RollWithItBanner
 } from '../assets/images';
 import RollWithItSlideDeck from '../assets/documents/RollWithItSlideDeck.pdf'
 import { PlainImage } from '../components/Images/PlainImage.js';
@@ -93,6 +94,9 @@ export const RollWithIt = () => {
 
     return (
         <div>
+            <div className='bannerWrapper'>
+                <img src={RollWithItBanner} alt='Alaska Airlines aircraft'/>
+            </div>
             <h1 className='title'>ROLL WITH IT</h1>
             <ProjectGrid gridProps={gridArray} removeBio={true}/>
         </div>

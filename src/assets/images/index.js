@@ -76,6 +76,7 @@ import HotTeaCover from './Music/HotTeaAndFirmwareUpdates.png';
 import IJustCalledToSayILoveYouCover from './Music/IJustCalledToSayILoveYou.png';
 import IkoIkoCover from './Music/IkoIko.png';
 import ItsBeenALongLongTimeCover from './Music/ItsBeenALongLongTime.png';
+import AlaskaAirlinesBanner from './AlaskaAirlinesResearch/AlaskaAirlinesBanner.webp';
 import AlaskaAirlinesResearchCover from './AlaskaAirlinesResearch/Cover.png';
 import AlaskaAirlinesAffinityDiagram from './AlaskaAirlinesResearch/AffinityDiagram.png';
 import AlaskaAirlinesParticipants from './AlaskaAirlinesResearch/Participants.png';
@@ -87,6 +88,7 @@ import AlaskaAirlinesFlightTierOptions from './AlaskaAirlinesResearch/FlightTier
 import AlaskaAirlinesSeatAssignment from './AlaskaAirlinesResearch/SeatAssignment.png';
 import AlaskaAirlinesTripSummary from './AlaskaAirlinesResearch/TripSummary.png';
 import KohiToKochaColors from './KohiToKocha/Colors.png';
+import KohiToKochaBanner from './KohiToKocha/KohiToKochaBanner.png';
 import KohiToKochaCover from './KohiToKocha/Logo.png';
 import KohiToKochaFlowchart from './KohiToKocha/Flowchart.png';
 import KohiToKochaMoodboard from './KohiToKocha/Moodboard.png';
@@ -112,6 +114,7 @@ import PeurDesFillesCover from './Music/PeurDesFilles.png';
 import PlayButton from './Music/PlayButton.png';
 import PreviousSongButton from './Music/PreviousSongButton.png';
 import PuzzlesCover from './Music/Puzzles.png';
+import RollWithItBanner from './RollWithIt/RollWithItBanner.png';
 import RollWithItButton from './RollWithIt/Button.png';
 import RollWithItColors from './RollWithIt/Colors.png';
 import RollWithItCounter from './RollWithIt/Counter.png';
@@ -146,6 +149,7 @@ import SongOfStormsCover from './Music/SongOfStorms.png';
 import StillAliveCover from './Music/StillAlive.png';
 import TheGamblerCover from './Music/TheGambler.png';
 import TheVillainIAppearToBeCover from './Music/TheVillainIAppearToBe.png';
+import TraderJoesBanner from './TraderJoesResearch/TraderJoesBanner.png';
 import TraderJoesAffinityDiagram from './TraderJoesResearch/AffinityDiagram.png';
 import TraderJoesCover from './TraderJoesResearch/Cover.png';
 import TraderJoesJessJourneyMap from './TraderJoesResearch/JessJourneyMap.png';
@@ -170,6 +174,7 @@ export {
     Mushroom1,
     Mushroom2,
     Mushroom3,
+    AlaskaAirlinesBanner,
     AlaskaAirlinesResearchCover,
     AlaskaAirlinesAffinityDiagram,
     AlaskaAirlinesParticipants,
@@ -210,6 +215,7 @@ export {
     KaviMockup3,
     KaviMockup4,
     KaviMockup5,
+    KohiToKochaBanner,
     KohiToKochaColors,
     KohiToKochaCover,
     KohiToKochaFlowchart,
@@ -270,6 +276,7 @@ export {
     PlayButton,
     PreviousSongButton,
     PuzzlesCover,
+    RollWithItBanner,
     RollWithItButton,
     RollWithItColors,
     RollWithItCounter,
@@ -304,6 +311,7 @@ export {
     StillAliveCover,
     TheGamblerCover,
     TheVillainIAppearToBeCover,
+    TraderJoesBanner,
     TraderJoesAffinityDiagram,
     TraderJoesCover,
     TraderJoesJessJourneyMap,

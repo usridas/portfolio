@@ -19,8 +19,8 @@
 .tagDesign {
     @extend .tag;
     background: #FFBCA9;
-    color: #DD2F00;
-    border: 1px solid #DD2F00;
+    color: #841C00;
+    border: 1px solid #841C00;
 }
 
 .tagResearch {
@@ -40,20 +40,20 @@
 .tagP0 {
     @extend .tag;
     background: #FFAFAF;
-    color: #E50000;
-    border: 1px solid #E50000;
+    color: #930000;
+    border: 1px solid #930000;
 }
 
 .tagP1 {
     @extend .tag;
-    background: #FFF0D4;
-    color: #FF8000;
-    border: 1px solid #FF8000;
+    background: #FFE0C2;
+    color: #7B3D00;
+    border: 1px solid #7B3D00;
 }
 
 .tagP2 {
     @extend .tag;
     background: #C3BFFF;
-    color: #2519D2;
-    border: 1px solid #2519D2;
+    color: #1A0088;
+    border: 1px solid #1A0088;
 }

@@ -13,7 +13,8 @@ import {
     KohiToKochaPrototype7,
     KohiToKochaPrototype8,
     KohiToKochaPrototype9,
-    KohiToKochaWireframes
+    KohiToKochaWireframes,
+    KohiToKochaBanner
 } from '../assets/images/index.js';
 import KohiToKochaSlideDeck from '../assets/documents/KohiToKochaSlideDeck.pdf'
 import { PlainImage } from '../components/Images/PlainImage.js';
@@ -85,6 +86,9 @@ export const KohiToKocha = () => {
 
     return (
         <div>
+            <div className='bannerWrapper'>
+                <img src={KohiToKochaBanner} alt='Kohi To Kocha app screens'/>
+            </div>
             <h1 className='title'>KOHI TO KOCHA</h1>
             <ProjectGrid gridProps={gridArray} removeBio={true}/>
         </div>
