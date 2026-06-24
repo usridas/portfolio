@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.64c4b4a3.css",
-    "main.js": "/static/js/main.41ba4dfb.js",
+    "main.css": "/static/css/main.50250eaa.css",
+    "main.js": "/static/js/main.83d4b5f0.js",
     "static/js/453.ac9b7e2a.chunk.js": "/static/js/453.ac9b7e2a.chunk.js",
     "static/media/mockup4.png": "/static/media/mockup4.4e883e7a5e31d886385c.png",
     "static/media/mockup3.png": "/static/media/mockup3.8a6b4c0488704ae6db2c.png",
@@ -19,7 +19,9 @@
     "static/media/LetsGroove.mp3": "/static/media/LetsGroove.191baf701c7fa85074cf.mp3",
     "static/media/Chiquitita.mp3": "/static/media/Chiquitita.6f84131c71f3f08a59fa.mp3",
     "static/media/screenshots.png": "/static/media/screenshots.ac9c75af2c0d411c12d1.png",
+    "static/media/KohiToKochaBanner.png": "/static/media/KohiToKochaBanner.baa321e6b5c3ae248727.png",
     "static/media/AffinityDiagram.png": "/static/media/AffinityDiagram.38ac49a7f816a6b011c7.png",
+    "static/media/TraderJoesBanner.png": "/static/media/TraderJoesBanner.f0ec63c4db6f2d0bb0d6.png",
     "static/media/IJustCalledToSayILoveYou.mp3": "/static/media/IJustCalledToSayILoveYou.d8db95dd913d4a452985.mp3",
     "static/media/Rosmarina.mp3": "/static/media/Rosmarina.9183b1ec9918495c394b.mp3",
     "static/media/RollWithItSlideDeck.pdf": "/static/media/RollWithItSlideDeck.3b79571f21abdb9eaebe.pdf",
@@ -70,6 +72,7 @@
     "static/media/SketchbookWireframe3.png": "/static/media/SketchbookWireframe3.e437dbf41664923621a7.png",
     "static/media/Prototype5.png": "/static/media/Prototype5.9363dc51b24aff5c44ec.png",
     "static/media/SeatAssignment.png": "/static/media/SeatAssignment.645b7d040d842c932388.png",
+    "static/media/AlaskaAirlinesBanner.webp": "/static/media/AlaskaAirlinesBanner.c56f6157e5b3439ed6dc.webp",
     "static/media/Logo.png": "/static/media/Logo.aa3af76feba6685e685b.png",
     "static/media/Prototype1.png": "/static/media/Prototype1.8b82b2080a0363f77172.png",
     "static/media/brandAsset3.png": "/static/media/brandAsset3.1b265b5cdbc5bc3b5f70.png",
@@ -84,6 +87,7 @@
     "static/media/Daruma.jpg": "/static/media/Daruma.ad79e52f6631038396f9.jpg",
     "static/media/Cover.png": "/static/media/Cover.9a3c18a3a24e12e086c9.png",
     "static/media/wishlistScreens.png": "/static/media/wishlistScreens.2fa43d96d6c5cba9399a.png",
+    "static/media/RollWithItBanner.png": "/static/media/RollWithItBanner.780546ff93c78415286d.png",
     "static/media/PeurDesFilles.png": "/static/media/PeurDesFilles.00ea4cf572dab52624f4.png",
     "static/media/CasinoNightZone.png": "/static/media/CasinoNightZone.81e4f50202d21c62b807.png",
     "static/media/OneSummerDay.png": "/static/media/OneSummerDay.82615c2aaef5bb04e2ed.png",
@@ -168,12 +172,12 @@
     "static/media/Navigation.png": "/static/media/Navigation.ee194a73487fbc10d013.png",
     "static/media/MayaPersonality.png": "/static/media/MayaPersonality.9ad423c0947eb7d8a932.png",
     "index.html": "/index.html",
-    "main.64c4b4a3.css.map": "/static/css/main.64c4b4a3.css.map",
-    "main.41ba4dfb.js.map": "/static/js/main.41ba4dfb.js.map",
+    "main.50250eaa.css.map": "/static/css/main.50250eaa.css.map",
+    "main.83d4b5f0.js.map": "/static/js/main.83d4b5f0.js.map",
     "453.ac9b7e2a.chunk.js.map": "/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64c4b4a3.css",
-    "static/js/main.41ba4dfb.js"
+    "static/css/main.50250eaa.css",
+    "static/js/main.83d4b5f0.js"
   ]
 }
