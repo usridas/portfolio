@@ -62,6 +62,8 @@
   font-size: 20px;
   color: #33322A;
   white-space: pre-line;
+  font-weight: 400;
+  font-family: "neue-haas-grotesk-text", sans-serif;
   @media (max-width: 767px) {
     font-size: 16px;
   }

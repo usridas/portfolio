@@ -16,13 +16,66 @@
 
 .grid {
     display: grid;
+    grid-template-columns: 1fr;
+    
+    @media (max-width: 767px) {
+      gap: 12px;
+    }
+}
+
+.gridRow {
+    display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 40px 20px;
+    gap: 0px 24px;
     
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
-      gap: 20px;
     }
+}
+
+.gridColumn {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+}
+
+.gridRowWithDivider {
+    @extend .gridRow;
+    &:not(:last-child)::after {
+    content: "";
+    grid-column: 1 / -1;
+    border-bottom: 2px solid #C3BFFF;
+  }
+}
+
+.gridColumnWithDivider {
+    @extend .gridColumn;
+    &:not(:last-child)::after {
+    content: "";
+    grid-column: 1 / -1;
+    border-bottom: 2px solid #C3BFFF;
+  }
+}
+
+.gridRowWithGrayDivider {
+    @extend .gridRow;
+    &:not(:last-child)::after {
+    content: "";
+    grid-column: 1 / -1;
+    border-bottom: 1px solid #C4C3BD;
+  }
+}
+
+.gridColumnWithGrayDivider {
+    @extend .gridColumn;
+    &:not(:last-child)::after {
+    content: "";
+    grid-column: 1 / -1;
+    border-bottom: 1px solid #C4C3BD;
+  }
 }
 
 .row {
@@ -30,15 +83,66 @@
   &:not(:last-child)::after {
     content: "";
     grid-column: 1 / -1;
-    border-bottom: 1px solid #FFA600;
+    border-bottom: 1px solid #C3BFFF;
   }
 }
 
-.rowLast {
-  display: contents;
-  &::after {
-    content: "";
-    grid-column: 1 / -1;
-    border-bottom: 1px solid #FFA600;
+
+
+.leftCol {
+  background: linear-gradient(to bottom, #fdfcf8 90%, #fdfcf800);
+  position: sticky;
+  top: 0px;
+  padding: 24px 0;
+  align-self: start;
+  z-index: 2;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: stretch;
+}
+
+.rightCol {
+  padding: 24px 0;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: stretch;
+  @media (max-width: 767px) {
+    padding: 0px 0px 24px 0px;
+  }
+}
+
+@supports (animation-timeline: view()) {
+  .leftCol {
+    animation: fadeInOut linear;
+    animation-timeline: view() !important;
+    animation-range: entry 0% exit 100%;
+  }
+
+  .rightCol {
+    animation: fadeInOut linear;
+    animation-timeline: view() !important;
+    animation-range: entry 0% exit 100%;
+
+  }
+
+ .projectGrid-stickyRow:nth-last-child(2) {
+    animation: borderFade linear;
+    animation-timeline: view() !important;
+    animation-range: entry 0% exit 100%;
+  }
+
+  @keyframes fadeInOut {
+    0%   { opacity: 0; transform: translateY(32px); }
+    8%   { opacity: 0; transform: translateY(32px); }
+    15%   { opacity: 1; transform: translateY(0); }
+    85%  { opacity: 1; transform: translateY(0); }
+    92%  { opacity: 0; transform: translateY(-32px); }
+    100% { opacity: 0; transform: translateY(-32px); }
+  }
+
+  @keyframes borderFade {
+    0% { border-bottom-color: #C3BFFF; }
+    90%   { border-bottom-color: transparent; }
+    100%   { border-bottom-color: transparent; }
   }
 }

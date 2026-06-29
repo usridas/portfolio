@@ -38,19 +38,19 @@ export const ProjectPreview = ({imageSlideProps}) => {
         }
         <div className='imageBox' style={{backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : 'contain'}`}}>
           {imageSlideProps[imageIndex].tags}
-          {imageSlideProps[imageIndex].imageLink && !isMobileVar && <button className='imageSlideLink' tabIndex={0} onClick={()=>{navigate(imageSlideProps[imageIndex].imageLink)}} onKeyDown={(event)=>{if (event.key === 'Enter') {navigate(imageSlideProps[imageIndex].imageLink)}}}>{imageSlideProps[imageIndex].imageText}</button>}
+          {imageSlideProps[imageIndex].imageLink && !isMobileVar && <button className='imageSlideLink' tabIndex={0} onClick={()=>{navigate(imageSlideProps[imageIndex].imageLink)}} onKeyDown={(event)=>{if (event.key === 'Enter') {navigate(imageSlideProps[imageIndex].imageLink)}}}>{'See full project'}</button>}
           {imageSlideProps[imageIndex].imageLink && isMobileVar && <button className='imageSlideLinkSmallHover' onClick={()=>{navigate(imageSlideProps[imageIndex].imageLink)}}>{imageSlideProps[imageIndex].imageText}</button>}
         </div>
         {imageSlideProps[imageIndex].caption && <p>{imageSlideProps[imageIndex].caption}</p>}
         {imageSlideProps.length > 1 &&
           <div className='imageSlideTextContainer'>
-            <Button type='Secondary' text='BACK' onClick={onBackClick}/>
+            <Button type='Secondary' text='Back' onClick={onBackClick}/>
             <div className='circleContainer'>
               {imageSlideProps?.map((item, index) => (
                   <div className='circle' style={{backgroundColor: imageIndex === index ? '#33322A' : '#E6E5E0'}}/>
               ))}
             </div>
-            <Button type='Secondary' text='NEXT' onClick={(onNextClick)}/>
+            <Button type='Secondary' text='Next' onClick={(onNextClick)}/>
           </div>
         } 
     </div>

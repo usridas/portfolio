@@ -79,6 +79,7 @@ import ItsBeenALongLongTimeCover from './Music/ItsBeenALongLongTime.png';
 import AlaskaAirlinesBanner from './AlaskaAirlinesResearch/AlaskaAirlinesBanner.webp';
 import AlaskaAirlinesResearchCover from './AlaskaAirlinesResearch/Cover.png';
 import AlaskaAirlinesAffinityDiagram from './AlaskaAirlinesResearch/AffinityDiagram.png';
+import AlaskaAirlinesCTA from './AlaskaAirlinesResearch/CTA.png';
 import AlaskaAirlinesParticipants from './AlaskaAirlinesResearch/Participants.png';
 import AlaskaAirlinesCompetitiveFeatureMatrix from './AlaskaAirlinesResearch/CompetitiveFeatureMatrix.png';
 import AlaskaAirlinesSWOTAnalysis from './AlaskaAirlinesResearch/SWOTAnalysis.png';
@@ -87,6 +88,10 @@ import AlaskaAirlinesFlightSearch from './AlaskaAirlinesResearch/FlightSearch.pn
 import AlaskaAirlinesFlightTierOptions from './AlaskaAirlinesResearch/FlightTierOptions.png';
 import AlaskaAirlinesSeatAssignment from './AlaskaAirlinesResearch/SeatAssignment.png';
 import AlaskaAirlinesTripSummary from './AlaskaAirlinesResearch/TripSummary.png';
+import AlaskaAirlinesSolution2 from './AlaskaAirlinesResearch/Solution2.png';
+import AlaskaAirlinesOriginal2 from './AlaskaAirlinesResearch/Original2.png';
+import AlaskaAirlinesSolution3 from './AlaskaAirlinesResearch/Solution3.png';
+import AlaskaAirlinesOriginal3 from './AlaskaAirlinesResearch/Original3.png';
 import KohiToKochaColors from './KohiToKocha/Colors.png';
 import KohiToKochaBanner from './KohiToKocha/KohiToKochaBanner.png';
 import KohiToKochaCover from './KohiToKocha/Logo.png';
@@ -158,6 +163,7 @@ import TraderJoesMayaJourneyMap from './TraderJoesResearch/MayaJourneyMap.png';
 import TraderJoesMayaPersonality from './TraderJoesResearch/MayaPersonality.png';
 import TraderJoesParticipants from './TraderJoesResearch/Participants.png';
 import VolumeButton from './Music/VolumeButton.png';
+import Rotate from './rotate.svg';
 
 export {
     Brain,
@@ -177,6 +183,7 @@ export {
     AlaskaAirlinesBanner,
     AlaskaAirlinesResearchCover,
     AlaskaAirlinesAffinityDiagram,
+    AlaskaAirlinesCTA,
     AlaskaAirlinesParticipants,
     AlaskaAirlinesCompetitiveFeatureMatrix,
     AlaskaAirlinesSWOTAnalysis,
@@ -185,6 +192,10 @@ export {
     AlaskaAirlinesFlightTierOptions,
     AlaskaAirlinesSeatAssignment,
     AlaskaAirlinesTripSummary,
+    AlaskaAirlinesOriginal2,
+    AlaskaAirlinesSolution2,
+    AlaskaAirlinesOriginal3,
+    AlaskaAirlinesSolution3,
     ElfsterCover,
     ElfsterFeedback,
     ElfsterMockup1,
@@ -319,5 +330,6 @@ export {
     TraderJoesMayaJourneyMap,
     TraderJoesMayaPersonality,
     TraderJoesParticipants,
-    VolumeButton
+    VolumeButton,
+    Rotate
 };

@@ -12,9 +12,9 @@ import {
   ElfsterWishlistScreens
 } from '../assets/images';
 import TextContainer from '../components/Text/TextContainer.js';
-import ProjectGrid from '../components/Grid/ProjectGrid.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import PlainImage from '../components/Images/PlainImage.js';
+import Grid from '../components/Grid/Grid.js';
 
 export const ElfsterRedesign = () => {
 
@@ -27,22 +27,22 @@ export const ElfsterRedesign = () => {
           <div className='step'>
               {!isMobile && <div className='stepNumber'><h1>1</h1></div>}
               <div className='journeyCard'>
-                  <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>1. </span>IDENTIFY</h2>
-                  <p>I collected feedback from myself and other Elfster users after using the app for a Christmas exchange. A lot of the criticism of the app rose from <span style={{fontWeight: 'bold', color: '#94003D'}}>difficult navigation, the functionality of wishlists, and excess information or advertising</span>.</p>
+                  <h2 style={{textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>1. </span>Identify</h2>
+                  <p>I collected feedback from myself and other Elfster users after using the app for a Christmas exchange. A lot of the criticism of the app rose from <span style={{fontWeight: 'bold', color: '#2519D2'}}>difficult navigation, the functionality of wishlists, and excess information or advertising</span>.</p>
               </div>
           </div>
           <div className='step'>
               {!isMobile && <div className='stepNumber'><h1>2</h1></div>}
               <div className='journeyCard'>
-                  <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>2. </span>DESIGN RESEARCH</h2>
-                  <p>Here I took screenshots of the entire app and <span style={{fontWeight: 'bold', color: '#94003D'}}>extracted essential information, navigation, and interactions</span> in order to optimize the mobile app experience.</p>
+                  <h2 style={{textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>2. </span>Design Research</h2>
+                  <p>Here I took screenshots of the entire app and <span style={{fontWeight: 'bold', color: '#2519D2'}}>extracted essential information, navigation, and interactions</span> in order to optimize the mobile app experience.</p>
               </div>
           </div>
           <div className='step'>
               {!isMobile && <div className='stepNumber'><h1>3</h1></div>}
               <div className='journeyCard'>
-                  <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>EXECUTE</h2>
-                  <p>Finally, I used the existing framework of the app and essential ideas to <span style={{fontWeight: 'bold', color: '#94003D'}}>redesign the mobile Elfster app.</span></p>
+                  <h2 style={{textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>Execute</h2>
+                  <p>Finally, I used the existing framework of the app and essential ideas to <span style={{fontWeight: 'bold', color: '#2519D2'}}>redesign the mobile Elfster app.</span></p>
               </div>
           </div>
       </div>
@@ -68,10 +68,10 @@ export const ElfsterRedesign = () => {
     </div>;
 
   const imageSlideProps2 = [
-    {title: 'EXCHANGES', imagePath: ElfsterExchangeScreens},
-    {title: 'WISHLISTS', imagePath: ElfsterWishlistScreens},
-    {title: 'FRIENDS', imagePath: ElfsterFriendScreens},
-    {title: 'PROFILE', imagePath: ElfsterProfileScreens},
+    {title: 'Exchanges', imagePath: ElfsterExchangeScreens},
+    {title: 'Wishlists', imagePath: ElfsterWishlistScreens},
+    {title: 'Friends', imagePath: ElfsterFriendScreens},
+    {title: 'Profile', imagePath: ElfsterProfileScreens},
   ];
 
   const execute =
@@ -81,16 +81,16 @@ export const ElfsterRedesign = () => {
     </div>;
 
   const gridArray = [
-      {title: 'OVERVIEW', content: summaryContent},
-      {title: 'IDENTIFY', content: identify},
-      {title: 'DESIGN RESEARCH', content: research},
-      {title: 'EXECUTE', content: execute}
+      {title: 'Overview', content: summaryContent,  rowType: 'Column'},
+      {title: 'Identify', content: identify,  rowType: 'Column'},
+      {title: 'Design research', content: research,  rowType: 'Column'},
+      {title: 'Execute', content: execute,  rowType: 'Column'}
   ]
 
   return (
       <div>
-          <h1 className='title'>ELFSTER REDESIGN</h1>
-          <ProjectGrid gridProps={gridArray} removeBio={true}/>
+          <h1 className='title'>Elfster Redesign</h1>
+          <Grid gridProps={gridArray}/>
       </div>
   );
 }

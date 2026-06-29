@@ -46,13 +46,13 @@ export const ImageSlide = ({imageSlideProps, imageMaxWidth=false}) => {
         {imageSlideProps[imageIndex].caption && <p>{imageSlideProps[imageIndex].caption}</p>}
         {imageSlideProps.length > 1 &&
           <div className='imageSlideTextContainer'>
-            <Button type='Secondary' text='BACK' onClick={onBackClick}/>
+            <Button type='Secondary' text='Back' onClick={onBackClick}/>
             <div className='circleContainer'>
               {imageSlideProps?.map((item, index) => (
                   <div className='circle' style={{backgroundColor: imageIndex === index ? '#33322A' : '#E6E5E0'}}/>
               ))}
             </div>
-            <Button type='Secondary' text='NEXT' onClick={(onNextClick)}/>
+            <Button type='Secondary' text='Next' onClick={(onNextClick)}/>
           </div>
         } 
     </div>

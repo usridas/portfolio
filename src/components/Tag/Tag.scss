@@ -7,13 +7,14 @@
     gap: 4px;
     border-radius: 4px;
     text-align: right;
-    font-family: "space-mono", mono;
+    font-family: "neue-haas-grotesk-text", sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     width: min-content;
     white-space: nowrap;
+    height: min-content;
 }
 
 .tagDesign {
@@ -56,4 +57,22 @@
     background: #C3BFFF;
     color: #1A0088;
     border: 1px solid #1A0088;
+}
+
+.tagNeutral {
+    @extend .tag;
+    color: #33322A;
+    border: 1px solid #33322A;
+}
+
+.tagLight {
+    @extend .tag;
+    color: #FDFCF8;
+    border: 1px solid #FDFCF8;
+}
+
+.tagDark {
+    @extend .tag;
+    background-color: #33322A;
+    color: #FDFCF8;
 }

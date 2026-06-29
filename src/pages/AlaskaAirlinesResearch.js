@@ -4,103 +4,148 @@ import {
     AlaskaAirlinesBanner,
     AlaskaAirlinesCompetitiveFeatureMatrix,
     AlaskaAirlinesSWOTAnalysis,
-    AlaskaAirlinesKanoAnalysis,
-    AlaskaAirlinesFlightSearch,
-    AlaskaAirlinesFlightTierOptions,
-    AlaskaAirlinesSeatAssignment,
-    AlaskaAirlinesTripSummary,
+    AlaskaAirlinesCTA,
+    AlaskaAirlinesOriginal2,
+    AlaskaAirlinesSolution2,
+    AlaskaAirlinesOriginal3,
+    AlaskaAirlinesSolution3,
 } from '../assets/images/index.js';
 import AlaskaAirlinesSlideDeck from '../assets/documents/AlaskaAirlinesSlideDeck.pdf'
 import Button from '../components/Button/Button.js';
-import Tag from '../components/Tag/Tag.js';
-import ProjectGrid from '../components/Grid/ProjectGrid.js';
+import Grid from '../components/Grid/Grid.js';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
+import { useState } from 'react';
+import FlippingImageSlide from '../components/Images/FlippingImageSlide.js';
 
 export const AlaskaAirlinesResearch = () => {
     const { isSmall, isXSmall } = useScreenResolution();
+    const [isFlipped1, setIsFlipped1] = useState(false);
+    const [isFlipped2, setIsFlipped2] = useState(false);
+    const [isFlipped3, setIsFlipped3] = useState(false);
     const isMobile = isSmall || isXSmall;
+
+    const insightRecommendationArray = [
+        {
+            insightTitle: '4 minutes 36 seconds to make a decision on flights',
+            insightCaption: 'During flight selection, participants used back and forth navigation and trial and error to view and understand all their flight options. The average time was 4 minutes 36 seconds, by far the longest of all tasks within the usability test.',
+            recommendationTitle: 'How might we enable users to view and compare flight information without unnecessary steps or navigation?',
+            recommendationCaption: 'I recommend providing a clear navigation component in order to address repeated navigation issues during the flight choice step. This will help us reduce frustration and flight choice step duration so we can increase completed bookings.'
+        },
+        {
+            insightTitle: '2/6 participants failed to choose refundable flights',
+            insightCaption: 'During flight selection, participants were not confident in their decision and expressed confusion and 2/6 participants failed the task by choosing non-refundable flights, making this the task with the lowest success rate. Furthermore, none of the participants clicked on the "Compare fare" button, which would describe the differences in flight tiers.',
+            recommendationTitle: 'How might we create clarity during the flight choice step in order to boost confidence in decisions?',
+            recommendationCaption: 'I recommend highlighting the "Compare fare" button and also editing the content of the modal to provide details of their chosen flights, because participants had difficulty finding flight tier information. This will help increase customer confidence and lower booking abandonment so we can increase completed bookings and trust among our customer base.'
+        },
+        {
+            insightTitle: '2/6 participants missed seat selection for one leg of their flight',
+            insightCaption: 'For seat selection and add-ons, participants were confident and quick in decision making, even if they missed or overlooked details. 2/6 participants were confident in their seats but missed seat selection for one leg of their flight and 4/6 participants overlooked the Atmos Rewards card.',
+            recommendationTitle: 'How might we reduce cognitive load and increase visibility of attachments so they are not overlooked?',
+            recommendationCaption: 'I recommend emphasizing the leg of the flight a user is choosing seats for and adding a seat confirmation component in order to improve visibility and address accidentally missed seat selection. This will help us see an increased rate of completed seat selection so we can increase attachment rate.'
+        },
+        {
+            insightTitle: 'All participants opted "NO" for travel insurance',
+            insightCaption: 'All participants stated price as a deciding factor for their decisions, looking for the “best deal”, “cheapest”, or “cost effective” options. The average time for choosing add-ons was 1 minute 9 seconds, the shortest of all tasks and all 6 participants opted “NO” for travel insurance. Without clear benefits of purchasing add-ons, users are less confident and therefore not incentivized to increase attach rate.',
+            recommendationTitle: 'How might we highlight add-ons and show their value clearly so that users are willing to explore options outside of their habitual choices?',
+            recommendationCaption: 'I recommend moving add-ons like travel insurance (with clear, contextual information such as weather and international travel indicators) and the Atmos Rewards card to a dedicated pre-checkout step, because users overlooked add-ons when it was interspersed with payment details. This will improve add-on visibility and consideration so we can increase attachment rate and Atmos Rewards plan enrollment.'
+        },
+    ]
 
     const summaryContent = <div className='summaryContent'>
         <p>This research was conducted to develop an understanding of the experience of an Alaska Airlines customer and identify pain points of the Alaska Airlines website booking flow. Using this information, we can seek out ways to increase completed bookings, improve attach rate, and reduce confusion when comparing fares and add-ons.</p>
-        <div style={{marginBottom: '24px'}}><Button type='Primary' text='VIEW FULL SLIDE DECK' link={AlaskaAirlinesSlideDeck}/></div>
+        <div style={{marginBottom: '24px'}}><Button type='Primary' text='View full slide deck' link={AlaskaAirlinesSlideDeck}/></div>
         <div className='steps'>
             <div className='step'>
-                {!isMobile && <div className='stepNumber'><h1 style={{color: '#E6E5E0'}}>1</h1></div>}
+                {!isMobile && <div className='stepNumber'><h1>1</h1></div>}
                 <div className='journeyCard'>
-                    <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>1. </span>DISCOVERY</h2>
-                    <p>I conducted a <span style={{fontWeight: 'bold', color: '#94003D'}}>competitive analysis against 3 airlines:</span><br/>• Delta Airlines<br/>• American Airlines<br/>• Qatar Airways<br/><br/>I also held <span style={{fontWeight: 'bold', color: '#94003D'}}>6 usability tests:</span><br/>• 2 moderated<br/>• 4 unmoderated</p>
+                    <h2 style={{textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>1. </span>Identifying The Problem</h2>
+                    <p>I conducted a <span style={{fontWeight: 'bold', color: '#2519D2'}}>competitive analysis against 3 airlines:</span><br/>• Delta Airlines<br/>• American Airlines<br/>• Qatar Airways<br/><br/>I also used a <span style={{fontWeight: 'bold', color: '#2519D2'}}>SWOT analysis and cognitive task analysis</span> to understand pain points of Alaska Airlines as a company and which tasks within the booking flow may have the heaviest cognitive load.</p>
                 </div>
             </div>
             <div className='step'>
-                {!isMobile && <div className='stepNumber'><h1 style={{color: '#E6E5E0'}}>2</h1></div>}
+                {!isMobile && <div className='stepNumber'><h1>2</h1></div>}
                 <div className='journeyCard'>
-                    <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>2. </span>INSIGHTS</h2>
-                    <p>Users face friction throughout the booking flow due to <span style={{fontWeight: 'bold', color: '#94003D'}}>poor navigation and unclear flight information</span>, often causing them to miss or overlook important details. Users are also <span style={{fontWeight: 'bold', color: '#94003D'}}>reluctant to purchase add-ons</span> unless they feel confident they're getting a good deal.</p>
+                    <h2 style={{textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>2. </span>Insights & Recommendations</h2>
+                    <p>Users face friction throughout the booking flow due to <span style={{fontWeight: 'bold', color: '#2519D2'}}>poor navigation and unclear flight information</span>, often causing them to miss or overlook important details. Users are also <span style={{fontWeight: 'bold', color: '#2519D2'}}>reluctant to purchase add-ons</span> unless they feel confident they're getting a good deal.</p>
                 </div>
             </div>
             <div className='step'>
-                {!isMobile && <div className='stepNumber'><h1 style={{color: '#E6E5E0'}}>3</h1></div>}
+                {!isMobile && <div className='stepNumber'><h1>3</h1></div>}
                 <div className='journeyCard'>
-                    <h2 style={{color: '#EC2B7A', textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>NEXT STEPS</h2>
-                    <p>I would prioritize providing a <span style={{fontWeight: 'bold', color: '#94003D'}}>clear navigation component to address repeated navigation issues</span> and <span style={{fontWeight: 'bold', color: '#94003D'}}>reconfirming chosen flight details in a transitional modal for transparency.</span> These actions would help increase customer confidence, which will lead to an upturn of completed bookings and boost trust among the customer base.</p>
+                    <h2 style={{textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>Next Steps</h2>
+                    <p>I would prioritize <span style={{fontWeight: 'bold', color: '#2519D2'}}>providing a clear navigation component</span> and <span style={{fontWeight: 'bold', color: '#2519D2'}}>clarifying flight tier options</span> in order to increase customer confidence. This will lead to an upturn of completed bookings and boosted trust among the customer base.</p>
                 </div>
             </div>
         </div>
     </div>
 
     const problemSlideProps = [
-        {imagePath: AlaskaAirlinesCompetitiveFeatureMatrix},
-        {imagePath: AlaskaAirlinesSWOTAnalysis},
-        {imagePath: AlaskaAirlinesKanoAnalysis},
-        {imagePath: AlaskaAirlinesFlightSearch},
-        {imagePath: AlaskaAirlinesFlightTierOptions},
-        {imagePath: AlaskaAirlinesSeatAssignment},
-        {imagePath: AlaskaAirlinesTripSummary}
+        {title: 'Competitive feature matrix', imagePath: AlaskaAirlinesCompetitiveFeatureMatrix, caption: 'One glaring issue with Alaska\'s booking flow was its flight choice step: tier comparison was barely visible and navigation was subpar. Qatar on the other hand, had a clean, spacious layout which was easy to sift through.'},
+        {title: 'SWOT analysis', imagePath: AlaskaAirlinesSWOTAnalysis, caption: 'Some big opportunities for Alaska included clearer flight options, clearer error messaging, more language capabilities, highlighting add-ons, and leveraging their acquirement of Hawaiian Airlines.'},
+        {title: 'Cognitive task analysis', imagePath: AlaskaAirlinesCTA, caption: 'Tasks within the booking flow with the highest cognitive load included choosing flights, choosing seats, and reviewing payment, which included add-on options.'},
     ];
 
-    const problem1 = <TextContainer title={'WHAT DO I WANT TO LEARN HERE?'} text={'• What are the experiences of Alaska Airlines customers?\n• What part of the booking flow is most confusing or difficult to complete?\n• What discourages or limits customers from completing a booking or attaching add-ons?\n• What does the customer like or want to see more of in the booking flow?\n• What does the ideal booking flow look like?'} />;
-    const problem2 = <TextContainer title={'HOW CAN I GET THIS INFORMATION?'} text={'To start my research, I conducted a competitive analysis against Delta Air Lines, American Airlines, and Qatar Airways. The main factors I decided to hone in one when choosing competitors was price and places the airline serviced. I chose Delta Air Lines and American Airlines to be two direct competitors to Alaska Airlines, as they all seem to serve similar populations. Alaska, Delta, and American are approximately the same price, but Delta and American service a lot more locations than Alaska. I hope to gain some insight as to where Alaska might be falling short and how to ensure they can maintain a large presence over the West Coast. I chose Qatar Airways to be an aspirational competitor to Alaska Airlines, since Qatar is known for its luxury experience and technological excellence and innovation. I hope to gain inspiration from some of Qatar\'s luxury design features and apply them to Alaska.\n\nAfter understanding my competitors, I created a usability test consisting of three task scenarios: choosing flights, choosing seats, and choosing add-ons. These scenarios seemed to be the most relevant areas to hone in on according to my cognitive task analysis, red routes, competitive analysis, and Alaska\'s business priorities. I ended up conducting 6 usability tests, 2 moderated and 4 unmoderated tests via Userbrain. This was my first time conducting unmoderated tests! I got better over time, but making a detailed script without leading users was quite the task.\n'} />;
-    const problem3 = <ImageSlide imageSlideProps={problemSlideProps}/>;
+    const problem1 = <TextContainer title={'What did my competitive analysis and task analysis tell me?'} insert={<p>• <span style={{fontWeight: 'bold', color: '#2519D2'}}>Intuitive flight tier options</span> was a big pain point among direct competitors. Creating a clearer comparison of flight tier options through coherent messaging, spacious design, and intuitive navigation will reduce confusion and increase confidence when choosing flights.<br/>• <span style={{fontWeight: 'bold', color: '#2519D2'}}>Higlighting add-ons and upgrades</span> through its own page will allow users to focus on all add-ons at once without distractions and will remove clutter from other pages. This will also allow a clear comparison of all add-on options.<br/>• <span style={{fontWeight: 'bold', color: '#2519D2'}}>Choosing flights, seats, and add-ons</span> are the tasks with the heaviest cognitive load within the booking flow.</p>} />;
+    const problem2 = <ImageSlide imageSlideProps={problemSlideProps}/>;
 
-    const insight1 = <div className='columnWith12Gap'><Tag type='P0' text='P1 (ALMOST P0): HIGH PRIORITY'/> <TextContainer title={'USERS NEED TO EXPEND MORE EFFORT AND GO BACK AND FORTH TO SEE FLIGHT DETAILS AND COMPARE FLIGHT INFORMATION.'} text={'During flight selection, users used back and forth navigation and trial and error to view and understand all their flight options. The average time was 4 minutes 36 seconds, by far the longest of all tasks. Friction during the flight choice step is causing frustration among users and increases the risk of booking abandonment, leading to lost sales.'}/></div>;
-    const insight2 = <div className='columnWith12Gap'><Tag type='P1' text='P1: HIGH PRIORITY'/><TextContainer title={'LACK OF CLARITY AND VISIBILITY OF INFORMATION ABOUT FLIGHT TIERS LEADS TO CONFUSION AND LACK OF CONFIDENCE IN FLIGHT DECISIONS.'} text={'During flight selection, users were not confident in their decision and expressed confusion. Furthermore, some 2/6 users failed the task by choosing non-refundable flights, making this the task with the lowest success rate. This lack of confidence could be the cause of booking abandonment during the flight choice step, leading to lost sales and decreased trust.'}/></div>;
-    const insight3 = <div className='columnWith12Gap'><Tag type='P2' text='P2: FUTURE ROADMAP'/><TextContainer title={'USERS DO NOT WANT TO EXPEND EXTRA MENTAL EFFORT TO FIND UNCLEAR OR HIDDEN INFORMATION AND TEND TO OVERLOOK DETAILS THROUGHOUT THE BOOKING PROCESS.'} text={'For seat selection and add-ons, users were confident and quick in decision making, even if they missed or overlooked details. 2/6 users were confident in their seats but missed seat selection for one leg of their flight and 4/6 users overlooked the Atmos Rewards card. Users risk overlooking details throughout the booking process due to the high cognitive load, reducing potential attachments.'}/></div>;
-    const insight4 = <div className='columnWith12Gap'><Tag type='P2' text='P2: FUTURE ROADMAP'/><TextContainer title={'USERS PRIORITIZE PRICE AND DEFAULT TO HABITS WHEN MAKING DECISIONS; THEY WILL AVOID EXTRA COSTS UNLESS THEY ARE CONFIDENT THEY ARE GETTING A GOOD DEAL.'} text={'All users stated price as a deciding factor for their decisions, looking for the “best deal”, “cheapest”, or “cost effective” options. Furthermore, users were confident in their seat selection and add-on selection and made quick decisions during these steps. Average time for choosing add-ons was 1 minute 9 seconds, the shortest of all tasks and all 6 users opted “NO” for travel insurance. Without clear benefits of purchasing add-ons, users are less confident and therefore not incentivized to increase attach rate.'}/></div>;
+    const insightOverview = <TextContainer insert={<p>After understanding my competitors, I created a usability test consisting of three task scenarios: choosing flights, choosing seats, and choosing add-ons. I ended up conducting <span style={{fontWeight: 'bold', color: '#2519D2'}}>6 usability tests, 2 moderated and 4 unmoderated tests via Userbrain.</span></p>} />;
 
-    const opportunity1 = <div className='columnWith12Gap'><Tag type='P0' text='P1 (ALMOST P0): HIGH PRIORITY'/><TextContainer title={'HOW MIGHT WE ENABLE USERS TO VIEW AND COMPARE FLIGHT INFORMATION WITHOUT UNNECESSARY STEPS OR NAVIGATION?'} text={'I recommend providing a clear navigation component in order to address repeated navigation issues during the flight choice step. This will help us reduce frustration and flight choice step duration so we can increase completed bookings.'}/></div>;
-    const opportunity2 = <div className='columnWith12Gap'><Tag type='P1' text='P1: HIGH PRIORITY'/><TextContainer title={'HOW MIGHT WE CREATE CLARITY DURING THE FLIGHT CHOICE STEP IN ORDER TO BOOST CONFIDENCE IN DECISIONS?'} text={'I recommend editing the content of the transitional modal to provide details of the chosen flight tier because users could not find basic tier information when comparing flights. This will help increase customer confidence and lower booking abandonment so we can increase completed bookings and trust among our customer base.'}/></div>;
-    const opportunity3 = <div className='columnWith12Gap'><Tag type='P2' text='P2: FUTURE ROADMAP'/><TextContainer title={'HOW MIGHT WE REDUCE COGNITIVE LOAD AND INCREASE VISIBILITY OF ATTACHMENTS SO THEY ARE NOT OVERLOOKED?'} text={'I recommend emphasizing the leg of the flight a user is choosing seats for and adding a seat confirmation component in order to improve visibility and address accidentally missed seat selection. This will help us see an increased rate of completed seat selection so we can increase attachment rate.'}/></div>;
-    const opportunity4 = <div className='columnWith12Gap'><Tag type='P2' text='P2: FUTURE ROADMAP'/><TextContainer title={'HOW MIGHT WE HIGHLIGHT ADD-ONS AND SHOW THEIR VALUE CLEARLY SO THAT USERS ARE WILLING TO EXPLORE OPTIONS OUTSIDE OF THEIR HABITUAL CHOICES?'} text={'I recommend moving add-ons like travel insurance (with clear, contextual information such as weather and international travel indicators) and the Atmos Rewards card to a dedicated pre-checkout step, because users overlooked add-ons when it was interspersed with payment details. This will improve add-on visibility and consideration so we can increase attachment rate and Atmos Rewards plan enrollment.'}/></div>;
+    const flippingSlideProps = [
+        {title1: 'Redesigned Saver modal', imagePath1: AlaskaAirlinesSolution2, title2: 'Original Saver modal', imagePath2: AlaskaAirlinesOriginal2, flipButtonFunction: setIsFlipped2, flipButtonState: isFlipped2, caption1: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.', caption2: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.'},
+        {title1: 'Redesigned Main modal', imagePath1: AlaskaAirlinesSolution3, title2: 'Original Main modal', imagePath2: AlaskaAirlinesOriginal3, flipButtonFunction: setIsFlipped3, flipButtonState: isFlipped3, caption1: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.', caption2: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.'},
+    ];
+    const nextStepsOverview = <TextContainer title={'What should we prioritize?'} insert={<p>Out of the three tasks provided in the usability test, choosing flights seemed to stand out as a particularly difficult task; participants had low confidence, taking a long time to review options and constantly expressing confusion or frustration. With this in mind, I would prioritize providing a clear navigation component and editing the content of the modal to provide details of their chosen flights. This will lead to an upturn of completed bookings and boosted trust among the customer base.</p>}/>;
 
     const researchPlan =
         <div className='sectionContainer'>
             {problem1}
             {problem2}
-            {problem3}
         </div>;
 
-    const insights = 
-        <div className='sectionContainer'>
-            {insight1}
-            {insight2}
-            {insight3}
-            {insight4}
-        </div>;            
+    const insight1Container =
+    <div className='insightRecommendation2'>
+        <p>{insightRecommendationArray[0].insightCaption}</p>
+        <p style={{width: 'stretch', textAlign: 'left', fontWeight: 'bold', color: '#2519D2'}}>{insightRecommendationArray[0].recommendationTitle}</p>
+        <p>{insightRecommendationArray[0].recommendationCaption}</p>
+    </div>;
 
-    const opportunities = 
+    const insight2Container =
+    <div className='insightRecommendation2'>
+        <p>{insightRecommendationArray[1].insightCaption}</p>
+        <p style={{width: 'stretch', textAlign: 'left', fontWeight: 'bold', color: '#2519D2'}}>{insightRecommendationArray[1].recommendationTitle}</p>
+        <p>{insightRecommendationArray[1].recommendationCaption}</p>
+        <FlippingImageSlide imageSlideProps={flippingSlideProps}/>
+    </div>;
+    
+    const insight3Container =
+    <div className='insightRecommendation2'>
+        <p>{insightRecommendationArray[2].insightCaption}</p>
+        <p style={{width: 'stretch', textAlign: 'left', fontWeight: 'bold', color: '#2519D2'}}>{insightRecommendationArray[2].recommendationTitle}</p>
+        <p>{insightRecommendationArray[2].recommendationCaption}</p>
+    </div>;
+
+    const insight4Container =
+    <div className='insightRecommendation2'>
+        <p>{insightRecommendationArray[3].insightCaption}</p>
+        <p style={{width: 'stretch', textAlign: 'left', fontWeight: 'bold', color: '#2519D2'}}>{insightRecommendationArray[3].recommendationTitle}</p>
+        <p>{insightRecommendationArray[3].recommendationCaption}</p>
+    </div>;         
+
+    const nextSteps = 
         <div className='sectionContainer'>
-            {opportunity1}
-            {opportunity2}
-            {opportunity3}
-            {opportunity4}
+            {nextStepsOverview}
         </div>;
 
     const gridArray = [
-        {title: 'OVERVIEW', content: summaryContent},
-        {title: 'DISCOVERY', content: researchPlan},
-        {title: 'INSIGHTS', content: insights},
-        {title: 'NEXT STEPS', content: opportunities},
+        {title: 'Overview', content: summaryContent, rowType: 'Column'},
+        {title: 'Identifying The Problem', content: researchPlan, rowType: 'Column'},
+        {title: 'Insights & Recommendations', content: insightOverview, rowType: 'Column', divider: 'none'},
+        {title: insightRecommendationArray[0].insightTitle, titleType: 'small', content: insight1Container,  rowType: 'Row', divider: 'gray'},
+        {title: insightRecommendationArray[1].insightTitle, titleType: 'small', content: insight2Container,  rowType: 'Row', divider: 'gray'},
+        {title: insightRecommendationArray[2].insightTitle, titleType: 'small', content: insight3Container,  rowType: 'Row', divider: 'gray'},
+        {title: insightRecommendationArray[3].insightTitle, titleType: 'small', content: insight4Container,  rowType: 'Row'},
+        {title: 'Next Steps', content: nextSteps, rowType: 'Column'},
     ]
 
     return (
@@ -108,8 +153,8 @@ export const AlaskaAirlinesResearch = () => {
             <div className='bannerWrapper'>
                 <img src={AlaskaAirlinesBanner} alt='Alaska Airlines aircraft'/>
             </div>
-            <h1 className='title'>ALASKA AIRLINES RESEARCH</h1>
-            <ProjectGrid gridProps={gridArray} removeBio={true}/>
+            <h1 className='title'>Alaska Airlines Case Study</h1>
+            <Grid gridProps={gridArray}/>
         </div>
     );
 }

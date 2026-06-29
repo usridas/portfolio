@@ -7,8 +7,8 @@ import {
   ViasatAddOns
 } from '../assets/images';
 import PlainImage from '../components/Images/PlainImage.js';
-import ProjectGrid from '../components/Grid/ProjectGrid.js';
 import TextContainer from '../components/Text/TextContainer.js';
+import Grid from '../components/Grid/Grid.js';
 
 export const Viasat = () => {
 
@@ -59,16 +59,20 @@ const addOns =
     </div>;
 
   const gridArray = [
-      {title: 'MY VIASAT APP', content: content},
-      {title: 'NAVIGATION', content: navigation},
-      {title: 'ARTICLES', content: articles},
-      {title: 'COMMON QUESTIONS', content: commonQuestions},
-      {title: 'VIASAT STREAM', content: viasatStream},
-      {title: 'ADD ONS', content: addOns}
+      {title: 'Overview', content: content, rowType: 'Column'},
+      {title: 'Navigation', content: navigation},
+      {title: 'Articles', content: articles},
+      {title: 'Common Questions', content: commonQuestions},
+      {title: 'Viasat Stream', content: viasatStream},
+      {title: 'Add Ons', content: addOns}
   ]
 
   return (
-      <ProjectGrid gridProps={gridArray} removeBio={true}/>
+    <div>
+        <h1 className='title'>My Viasat Application</h1>
+        <Grid gridProps={gridArray}/>
+    </div>
+
   );
 }
 

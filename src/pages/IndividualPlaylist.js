@@ -252,7 +252,7 @@ export const IndividualPlaylist = () => {
         <>
         <GradientBackground />
         <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
-            <button tabIndex={0} onClick={()=>{currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; navigate('/Music');}} onKeyDown={(event)=>{if (event.key === 'Enter') {currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; navigate('/Music');}}} style={{color: '#FFFFFF'}}>BACK TO PLAYLISTS</button>
+            <button tabIndex={0} onClick={()=>{currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; navigate('/Music');}} onKeyDown={(event)=>{if (event.key === 'Enter') {currentSong.audio.pause(); currentSong.src = ''; setProgressPercentage(0); currentSong.audio.currentTime = 0; navigate('/Music');}}} style={{color: '#FFFFFF'}}>Back to playlists</button>
             <h1 className='individualPlaylistTitle'>{title}</h1>
             <div className='individualPlaylistContainer'>
                 <div className='individualVinylAndMusicListContainer'>

@@ -71,6 +71,7 @@
     width: -webkit-fill-available;
     width: stretch;
     aspect-ratio: 1/1;
+    max-height: 50vh;
 }
 
 .imageBoxLoading {
@@ -135,4 +136,49 @@
     height: 8px;
     background-color: black;
     border-radius: 50%;
+}
+
+.imageSlideFlipCard {
+  width: stretch;
+  height: min-content;
+  perspective: 5000px; /* Remove this if you don't want the 3D effect */
+  align-content: center;
+  @media (max-width: 767px) {
+      height: unset;
+    }
+}
+
+/* This container is needed to position the front and back side */
+.imageSlideFlipCardInner {
+  display: grid;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+}
+
+/* Position the front and back side */
+.imageSlideFlipCardFront, .imageSlideFlipCardBack {
+    grid-area: 1 / 1;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  justify-content: center;
+}
+
+/* Style the front side (fallback if image is missing) */
+.imageSlideFlipCardFront {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Style the back side */
+.imageSlideFlipCardBack {
+    display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transform: rotateY(180deg);
+}
+
+.imageSlideFlipCardInner.imageSlideIsFlipped {
+  transform: rotateY(180deg);
 }
