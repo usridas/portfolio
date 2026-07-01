@@ -71,7 +71,7 @@
     width: -webkit-fill-available;
     width: stretch;
     aspect-ratio: 1/1;
-    max-height: 50vh;
+    max-height: 60vh;
 }
 
 .imageBoxLoading {
@@ -138,9 +138,9 @@
     border-radius: 50%;
 }
 
-.imageSlideFlipCard {
-  width: stretch;
-  height: min-content;
+.imageSlideFlipCard { 
+    aspect-ratio: 1/1;
+    max-height: 60vh;
   perspective: 5000px; /* Remove this if you don't want the 3D effect */
   align-content: center;
   @media (max-width: 767px) {

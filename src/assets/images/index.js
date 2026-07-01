@@ -76,7 +76,10 @@ import HotTeaCover from './Music/HotTeaAndFirmwareUpdates.png';
 import IJustCalledToSayILoveYouCover from './Music/IJustCalledToSayILoveYou.png';
 import IkoIkoCover from './Music/IkoIko.png';
 import ItsBeenALongLongTimeCover from './Music/ItsBeenALongLongTime.png';
-import AlaskaAirlinesBanner from './AlaskaAirlinesResearch/AlaskaAirlinesBanner.webp';
+import AlaskaAirlinesBanner from './AlaskaAirlinesResearch/Banner.png';
+import AlaskaAirlinesBanner2 from './AlaskaAirlinesResearch/Banner2.png';
+import AlaskaAirlinesBanner3 from './AlaskaAirlinesResearch/Banner3.png';
+import AlaskaAirlinesBanner4 from './AlaskaAirlinesResearch/Banner4.png';
 import AlaskaAirlinesResearchCover from './AlaskaAirlinesResearch/Cover.png';
 import AlaskaAirlinesAffinityDiagram from './AlaskaAirlinesResearch/AffinityDiagram.png';
 import AlaskaAirlinesCTA from './AlaskaAirlinesResearch/CTA.png';
@@ -88,6 +91,8 @@ import AlaskaAirlinesFlightSearch from './AlaskaAirlinesResearch/FlightSearch.pn
 import AlaskaAirlinesFlightTierOptions from './AlaskaAirlinesResearch/FlightTierOptions.png';
 import AlaskaAirlinesSeatAssignment from './AlaskaAirlinesResearch/SeatAssignment.png';
 import AlaskaAirlinesTripSummary from './AlaskaAirlinesResearch/TripSummary.png';
+import AlaskaAirlinesSolution1 from './AlaskaAirlinesResearch/Solution1.png';
+import AlaskaAirlinesOriginal1 from './AlaskaAirlinesResearch/Original1.png';
 import AlaskaAirlinesSolution2 from './AlaskaAirlinesResearch/Solution2.png';
 import AlaskaAirlinesOriginal2 from './AlaskaAirlinesResearch/Original2.png';
 import AlaskaAirlinesSolution3 from './AlaskaAirlinesResearch/Solution3.png';
@@ -181,6 +186,9 @@ export {
     Mushroom2,
     Mushroom3,
     AlaskaAirlinesBanner,
+    AlaskaAirlinesBanner2,
+    AlaskaAirlinesBanner3,
+    AlaskaAirlinesBanner4,
     AlaskaAirlinesResearchCover,
     AlaskaAirlinesAffinityDiagram,
     AlaskaAirlinesCTA,
@@ -192,6 +200,8 @@ export {
     AlaskaAirlinesFlightTierOptions,
     AlaskaAirlinesSeatAssignment,
     AlaskaAirlinesTripSummary,
+    AlaskaAirlinesOriginal1,
+    AlaskaAirlinesSolution1,
     AlaskaAirlinesOriginal2,
     AlaskaAirlinesSolution2,
     AlaskaAirlinesOriginal3,

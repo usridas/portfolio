@@ -1,6 +1,6 @@
 import './Grid.scss';
 
-export const Grid = ({gridProps}) => {
+export const Grid = ({gridProps, gridMargin='40px 0'}) => {
 
     function getClassName(rowType, divider) {
         if (divider === 'none') {
@@ -22,12 +22,12 @@ export const Grid = ({gridProps}) => {
     }
     
     return (
-        <div className='gridContainer'>
+        <div className='gridContainer' style={{margin: gridMargin}}>
             <div className='grid'>
                 {gridProps?.map((item, index) => (
                     <div key={index} className={getClassName(item.rowType, item.divider)}>
-                        {item.titleType !== 'small' && <h1 className='leftCol'>{item.title}</h1>}
-                        {item.titleType === 'small' && <h2 className='leftCol'>{item.title}</h2>}
+                        {item.titleType !== 'small' && item.title && <h1 className='leftCol'>{item.title}</h1>}
+                        {item.titleType === 'small' && item.title && <h2 className='leftCol'>{item.title}</h2>}
                         {item.content && <div className='rightCol'>{item.content}</div>}
                     </div>
                 ))}

@@ -41,7 +41,7 @@ export const RollWithIt = () => {
         <Button type='Primary' text='See full slide deck' link={RollWithItSlideDeck}/>
     </div>
 
-    const sketches = <ImageSlide imageSlideProps={[{title: 'MOODBOARD', imagePath: RollWithItMoodBoard}, {title: 'IDEATION', imagePath: RollWithItSketchbookIdeation}, {title: 'DRAWINGS',imagePath: RollWithItSketchbookDrawing1}, {title: 'DRAWINGS',imagePath: RollWithItSketchbookDrawing2}]}/>;
+    const sketches = <ImageSlide imageSlideProps={[{title: 'Mood board', imagePath: RollWithItMoodBoard}, {title: 'Ideation', imagePath: RollWithItSketchbookIdeation}, {title: 'Drawings',imagePath: RollWithItSketchbookDrawing1}, {title: 'Drawings',imagePath: RollWithItSketchbookDrawing2}]}/>;
     const colors = [
         {colorName: 'Rust 300', color: '#E96227', text: 'Hex Code: #E96227\nRGB: 233 98 39\nCMYK: 0% 58% 83% 9%', textColor: 'light'},
         {colorName: 'Sunflower 500', color: '#FFC700', text: 'Hex Code: #FFC700\nRGB: 255 199 0\nCMYK: 0% 22% 100% 0%'},

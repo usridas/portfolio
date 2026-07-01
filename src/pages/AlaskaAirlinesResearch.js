@@ -1,19 +1,19 @@
 import './Pages.css';
 import TextContainer from '../components/Text/TextContainer.js';
 import {
-    AlaskaAirlinesBanner,
-    AlaskaAirlinesCompetitiveFeatureMatrix,
-    AlaskaAirlinesSWOTAnalysis,
-    AlaskaAirlinesCTA,
     AlaskaAirlinesOriginal2,
     AlaskaAirlinesSolution2,
     AlaskaAirlinesOriginal3,
     AlaskaAirlinesSolution3,
+    AlaskaAirlinesBanner2,
+    AlaskaAirlinesBanner3,
+    AlaskaAirlinesBanner4,
+    AlaskaAirlinesSolution1,
+    AlaskaAirlinesOriginal1,
 } from '../assets/images/index.js';
 import AlaskaAirlinesSlideDeck from '../assets/documents/AlaskaAirlinesSlideDeck.pdf'
 import Button from '../components/Button/Button.js';
 import Grid from '../components/Grid/Grid.js';
-import ImageSlide from '../components/Images/ImageSlide.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import { useState } from 'react';
 import FlippingImageSlide from '../components/Images/FlippingImageSlide.js';
@@ -50,6 +50,20 @@ export const AlaskaAirlinesResearch = () => {
             recommendationTitle: 'How might we highlight add-ons and show their value clearly so that users are willing to explore options outside of their habitual choices?',
             recommendationCaption: 'I recommend moving add-ons like travel insurance (with clear, contextual information such as weather and international travel indicators) and the Atmos Rewards card to a dedicated pre-checkout step, because users overlooked add-ons when it was interspersed with payment details. This will improve add-on visibility and consideration so we can increase attachment rate and Atmos Rewards plan enrollment.'
         },
+    ];
+    const problemArray = [
+        {
+            title: 'Intuitive flight tier options',
+            caption: 'Providing clear flight tier options was a big pain point among direct competitors. Creating a clearer comparison of options through coherent messaging, spacious design, and intuitive navigation will reduce confusion and increase confidence when choosing flights.',
+        },
+        {
+            title: 'Higlighting add-ons and upgrades',
+            caption: 'Giving add-ons and upgrades their own page will allow users to focus on all add-ons at once without distractions and will remove clutter from other pages. This will also allow a clear comparison of all add-on options.',
+        },
+        {
+            title: 'Choosing flights, seats, and add-ons',
+            caption: 'These are the tasks with the heaviest cognitive load within the booking flow. It will be beneficial to focus the usability tests around these three sections.',
+        },
     ]
 
     const summaryContent = <div className='summaryContent'>
@@ -80,28 +94,7 @@ export const AlaskaAirlinesResearch = () => {
         </div>
     </div>
 
-    const problemSlideProps = [
-        {title: 'Competitive feature matrix', imagePath: AlaskaAirlinesCompetitiveFeatureMatrix, caption: 'One glaring issue with Alaska\'s booking flow was its flight choice step: tier comparison was barely visible and navigation was subpar. Qatar on the other hand, had a clean, spacious layout which was easy to sift through.'},
-        {title: 'SWOT analysis', imagePath: AlaskaAirlinesSWOTAnalysis, caption: 'Some big opportunities for Alaska included clearer flight options, clearer error messaging, more language capabilities, highlighting add-ons, and leveraging their acquirement of Hawaiian Airlines.'},
-        {title: 'Cognitive task analysis', imagePath: AlaskaAirlinesCTA, caption: 'Tasks within the booking flow with the highest cognitive load included choosing flights, choosing seats, and reviewing payment, which included add-on options.'},
-    ];
-
-    const problem1 = <TextContainer title={'What did my competitive analysis and task analysis tell me?'} insert={<p>• <span style={{fontWeight: 'bold', color: '#2519D2'}}>Intuitive flight tier options</span> was a big pain point among direct competitors. Creating a clearer comparison of flight tier options through coherent messaging, spacious design, and intuitive navigation will reduce confusion and increase confidence when choosing flights.<br/>• <span style={{fontWeight: 'bold', color: '#2519D2'}}>Higlighting add-ons and upgrades</span> through its own page will allow users to focus on all add-ons at once without distractions and will remove clutter from other pages. This will also allow a clear comparison of all add-on options.<br/>• <span style={{fontWeight: 'bold', color: '#2519D2'}}>Choosing flights, seats, and add-ons</span> are the tasks with the heaviest cognitive load within the booking flow.</p>} />;
-    const problem2 = <ImageSlide imageSlideProps={problemSlideProps}/>;
-
     const insightOverview = <TextContainer insert={<p>After understanding my competitors, I created a usability test consisting of three task scenarios: choosing flights, choosing seats, and choosing add-ons. I ended up conducting <span style={{fontWeight: 'bold', color: '#2519D2'}}>6 usability tests, 2 moderated and 4 unmoderated tests via Userbrain.</span></p>} />;
-
-    const flippingSlideProps = [
-        {title1: 'Redesigned Saver modal', imagePath1: AlaskaAirlinesSolution2, title2: 'Original Saver modal', imagePath2: AlaskaAirlinesOriginal2, flipButtonFunction: setIsFlipped2, flipButtonState: isFlipped2, caption1: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.', caption2: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.'},
-        {title1: 'Redesigned Main modal', imagePath1: AlaskaAirlinesSolution3, title2: 'Original Main modal', imagePath2: AlaskaAirlinesOriginal3, flipButtonFunction: setIsFlipped3, flipButtonState: isFlipped3, caption1: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.', caption2: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.'},
-    ];
-    const nextStepsOverview = <TextContainer title={'What should we prioritize?'} insert={<p>Out of the three tasks provided in the usability test, choosing flights seemed to stand out as a particularly difficult task; participants had low confidence, taking a long time to review options and constantly expressing confusion or frustration. With this in mind, I would prioritize providing a clear navigation component and editing the content of the modal to provide details of their chosen flights. This will lead to an upturn of completed bookings and boosted trust among the customer base.</p>}/>;
-
-    const researchPlan =
-        <div className='sectionContainer'>
-            {problem1}
-            {problem2}
-        </div>;
 
     const insight1Container =
     <div className='insightRecommendation2'>
@@ -115,7 +108,6 @@ export const AlaskaAirlinesResearch = () => {
         <p>{insightRecommendationArray[1].insightCaption}</p>
         <p style={{width: 'stretch', textAlign: 'left', fontWeight: 'bold', color: '#2519D2'}}>{insightRecommendationArray[1].recommendationTitle}</p>
         <p>{insightRecommendationArray[1].recommendationCaption}</p>
-        <FlippingImageSlide imageSlideProps={flippingSlideProps}/>
     </div>;
     
     const insight3Container =
@@ -130,31 +122,58 @@ export const AlaskaAirlinesResearch = () => {
         <p>{insightRecommendationArray[3].insightCaption}</p>
         <p style={{width: 'stretch', textAlign: 'left', fontWeight: 'bold', color: '#2519D2'}}>{insightRecommendationArray[3].recommendationTitle}</p>
         <p>{insightRecommendationArray[3].recommendationCaption}</p>
-    </div>;         
+    </div>;  
+    
+    const flippingSlideProps = [
+        {title1: 'Redesigned Saver modal', imagePath1: AlaskaAirlinesSolution1, title2: 'Original Saver modal', imagePath2: AlaskaAirlinesOriginal1, flipButtonFunction: setIsFlipped1, flipButtonState: isFlipped1, caption1: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.', caption2: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.'},
+        {title1: 'Redesigned Main modal', imagePath1: AlaskaAirlinesSolution2, title2: 'Original Main modal', imagePath2: AlaskaAirlinesOriginal2, flipButtonFunction: setIsFlipped2, flipButtonState: isFlipped2, caption1: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.', caption2: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.'},
+        {title1: 'Redesigned flight comparison', imagePath1: AlaskaAirlinesSolution3, title2: 'Original flight comparison', imagePath2: AlaskaAirlinesOriginal3, flipButtonFunction: setIsFlipped3, flipButtonState: isFlipped3, caption1: 'All participants missed the \'Compare fares\' button, so I turned it into an outlined secondary button for more visual prominence. I also made each flight tier title a hyperlink so users could also click on the tier titles to understand what benefits they will be receiving.', caption2: 'All participants missed the \'Compare fares\' button, so I turned it into an outlined secondary button for more visual prominence. I also made each flight tier title a hyperlink so users could also click on the tier titles to understand what benefits they will be receiving.'},
+    ];
+    
+    const nextStepsOverview = <TextContainer title={'What should we prioritize?'} insert={<p>Out of the three tasks provided in the usability test, <span style={{fontWeight: 'bold', color: '#2519D2'}}>choosing flights seemed to stand out as a particularly difficult task</span>; participants had low confidence, taking a long time to review options and constantly expressing confusion or frustration. With this in mind, <span style={{fontWeight: 'bold', color: '#2519D2'}}>I would prioritize providing a clear navigation component and editing the content of the modal to provide details of their chosen flights.</span></p>}/>;
 
     const nextSteps = 
         <div className='sectionContainer'>
             {nextStepsOverview}
+            <FlippingImageSlide imageSlideProps={flippingSlideProps}/>
+            <h1 style={{color: '#1A0088', margin: '80px 0px'}}>By providing clear flight details and smoothing out navigation, Alaska Airlines will reach their goal of increased completed bookings, while boosting customer trust.</h1>
         </div>;
 
-    const gridArray = [
-        {title: 'Overview', content: summaryContent, rowType: 'Column'},
-        {title: 'Identifying The Problem', content: researchPlan, rowType: 'Column'},
+    const problemGridArray = [
+        {title: 'Identifying the problem', content: <p>To start my research, I conducted a competitive analysis against <span style={{fontWeight: 'bold', color: '#2519D2'}}>Delta Air Lines, American Airlines, and Qatar Airways.</span> I chose Delta Air Lines and American Airlines to be two direct competitors to Alaska Airlines, as they all seem to serve similar populations and I chose Qatar Airways to be an aspirational competitor to Alaska Airlines, since Qatar is known for its luxury experience and technological excellence and innovation.<br/><br/>I also conducted a <span style={{fontWeight: 'bold', color: '#2519D2'}}>SWOT analysis and cognitive task analysis</span> in order to understand the pain points of Alaska Airlines and which tasks within the booking flow may have the heaviest cognitive load.</p>, rowType: 'Column', divider: 'none'},
+        {title: problemArray[0].title, titleType: 'small', content: <p>{problemArray[0].caption}</p>,  rowType: 'Row', divider: 'gray'},
+        {title: problemArray[1].title, titleType: 'small', content: <p>{problemArray[1].caption}</p>,  rowType: 'Row', divider: 'gray'},
+        {title: problemArray[2].title, titleType: 'small', content: <p>{problemArray[2].caption}</p>,  rowType: 'Row', divider: 'none'},
+    ]
+
+    const insightGridArray = [
         {title: 'Insights & Recommendations', content: insightOverview, rowType: 'Column', divider: 'none'},
         {title: insightRecommendationArray[0].insightTitle, titleType: 'small', content: insight1Container,  rowType: 'Row', divider: 'gray'},
         {title: insightRecommendationArray[1].insightTitle, titleType: 'small', content: insight2Container,  rowType: 'Row', divider: 'gray'},
         {title: insightRecommendationArray[2].insightTitle, titleType: 'small', content: insight3Container,  rowType: 'Row', divider: 'gray'},
         {title: insightRecommendationArray[3].insightTitle, titleType: 'small', content: insight4Container,  rowType: 'Row'},
-        {title: 'Next Steps', content: nextSteps, rowType: 'Column'},
     ]
 
     return (
         <div>
-            <div className='bannerWrapper'>
-                <img src={AlaskaAirlinesBanner} alt='Alaska Airlines aircraft'/>
+            <div class="banner" id="promoBanner">
+                <div class="bannerTitle">
+                    <h1 className='title'>Alaska Airlines<br/>Case Study</h1>
+                </div>
             </div>
-            <h1 className='title'>Alaska Airlines Case Study</h1>
-            <Grid gridProps={gridArray}/>
+            <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='20px 0 40px 0'/>
+            <div className='bannerWrapper'>
+                <img src={AlaskaAirlinesBanner2} alt='SWOT analysis, competitive analysis, CTA, and red routes'/>
+            </div>
+            <Grid gridProps={problemGridArray} gridMargin='20px 0 40px 0'/>
+            <div className='bannerWrapper'>
+                <img src={AlaskaAirlinesBanner3} alt='Quotes from usability tests' />
+            </div>
+            <Grid gridProps={insightGridArray}/>
+            <div className='bannerWrapper'>
+                <img src={AlaskaAirlinesBanner4} alt='Redesign mockups'/>
+            </div>
+            <Grid gridProps={[{title: 'Next Steps', content: nextSteps, rowType: 'Column'}]}/>
         </div>
     );
 }
