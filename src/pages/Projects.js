@@ -75,7 +75,7 @@ export const Projects = () => {
   ]
 
   const artworkSlideProps = [
-    {imagePath: HermitCrab, title: "Hermit crab", description: "Acrylic on canvas", imageSize: '75%'},
+    {imagePath: HermitCrab, title: "Hermit crab", description: "Acrylic on canvas", imageSize: '80%'},
     {imagePath: Kasugai, title: "Kasugai gummies", description: "Watercolor and Prismacolor pencil", imageSize: '100%'},
     {imagePath: ChrysolinaPerforata, title: "Chrysolina perforata", description: "Watercolor and Prismacolor pencil", imageSize: '100%'},
     {imagePath: DanausPlexippus, title: "Danaus plexippus", description: "Watercolor and Prismacolor pencil", imageSize: '100%'},

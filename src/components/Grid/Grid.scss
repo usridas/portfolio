@@ -6,8 +6,8 @@
   width: -webkit-fill-available;
   width: stretch;
   max-width: 996px;
-  opacity: 0;
-  animation: fadeIn 1s forwards;
+  // opacity: 0;
+  // animation: fadeIn 1s forwards;
   @media (max-width: 767px) {
        margin-top: 24px;
     }
@@ -124,7 +124,7 @@
 
   }
 
- .projectGrid-stickyRow:nth-last-child(2) {
+ .stickyRow:nth-last-child(2) {
     animation: borderFade linear;
     animation-timeline: view() !important;
     animation-range: entry 0% exit 100%;

@@ -57,7 +57,7 @@ export const AlaskaAirlinesResearch = () => {
             caption: 'Providing clear flight tier options was a big pain point among direct competitors. Creating a clearer comparison of options through coherent messaging, spacious design, and intuitive navigation will reduce confusion and increase confidence when choosing flights.',
         },
         {
-            title: 'Higlighting add-ons and upgrades',
+            title: 'Highlighting add-ons and upgrades',
             caption: 'Giving add-ons and upgrades their own page will allow users to focus on all add-ons at once without distractions and will remove clutter from other pages. This will also allow a clear comparison of all add-on options.',
         },
         {
@@ -67,7 +67,7 @@ export const AlaskaAirlinesResearch = () => {
     ]
 
     const summaryContent = <div className='summaryContent'>
-        <p>This research was conducted to develop an understanding of the experience of an Alaska Airlines customer and identify pain points of the Alaska Airlines website booking flow. Using this information, we can seek out ways to increase completed bookings, improve attach rate, and reduce confusion when comparing fares and add-ons.</p>
+        <h2>This research was conducted to develop an understanding of the experience of an Alaska Airlines customer and <span style={{color: '#2519D2'}}>identify pain points of the Alaska Airlines website booking flow.</span> Using this information, we can seek out ways to increase completed bookings, improve attach rate, and reduce confusion when comparing fares and add-ons.</h2>
         <div style={{marginBottom: '24px'}}><Button type='Primary' text='View full slide deck' link={AlaskaAirlinesSlideDeck}/></div>
         <div className='steps'>
             <div className='step'>
@@ -136,7 +136,7 @@ export const AlaskaAirlinesResearch = () => {
         <div className='sectionContainer'>
             {nextStepsOverview}
             <FlippingImageSlide imageSlideProps={flippingSlideProps}/>
-            <h1 style={{color: '#1A0088', margin: '80px 0px'}}>By providing clear flight details and smoothing out navigation, Alaska Airlines will reach their goal of increased completed bookings, while boosting customer trust.</h1>
+            <h2 style={{margin: '80px 0px 160px 0'}}>By providing clear flight details and smoothing out navigation, Alaska Airlines will reach their goal of <span style={{color: '#2519D2'}}>increased completed bookings</span>, while <span style={{color: '#2519D2'}}>boosting customer trust.</span></h2>
         </div>;
 
     const problemGridArray = [

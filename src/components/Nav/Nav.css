@@ -28,6 +28,10 @@
     font-weight: 700;
     line-height: normal;
     color: #2519D2;
+    text-decoration: none;
+    &:hover {
+        color: #2519D2;
+    }
 }
 
 .smallNavContainer {

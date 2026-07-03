@@ -58,14 +58,16 @@ export const FlippingImageSlide = ({imageSlideProps, imageMaxWidth=false}) => {
             </div>
         </div>
         }
-        {(isLoading1 || isLoading2) && <div className='imageBoxLoading'><Spinner /></div>}
+        {/* {(isLoading1 || isLoading2) && <div className='flippingImageBoxLoading'><Spinner /></div>} */}
         <div className='imageSlideFlipCard' onMouseOver={()=>{imageSlideProps[imageIndex].flipButtonFunction(true)}} onTouchEnd={(event)=>{event.preventDefault(); imageSlideProps[imageIndex].flipButtonFunction(!imageSlideProps[imageIndex].flipButtonState)}} onMouseLeave={()=>{imageSlideProps[imageIndex].flipButtonFunction(false)}}>
             <div className={imageSlideProps[imageIndex].flipButtonState ? 'imageSlideFlipCardInner imageSlideIsFlipped' : 'imageSlideFlipCardInner'}>
                 <div className='imageSlideFlipCardFront'>
-                    <img onLoad={()=>setIsLoading1(false)} alt={toSentenceCase(imageSlideProps[imageIndex].title1)} aria-label={toSentenceCase(imageSlideProps[imageIndex].title1)} className='plainImage' src={imageSlideProps[imageIndex].imagePath1} style={isLoading1 ? { display: 'none' } : {maxWidth: imageMaxWidth ? '700px' : 'none'}}/>
+                    {isLoading1 && <div className='flippingImageBoxLoading'><Spinner /></div>}
+                    {!isLoading1 && <img onLoad={()=>setIsLoading1(false)} alt={toSentenceCase(imageSlideProps[imageIndex].title1)} aria-label={toSentenceCase(imageSlideProps[imageIndex].title1)} className='plainImageFlip' src={imageSlideProps[imageIndex].imagePath1} style={isLoading1 ? { display: 'none' } : {maxWidth: imageMaxWidth ? '700px' : 'none'}}/>}
                 </div>
                 <div className='imageSlideFlipCardBack'>
-                    <img onLoad={()=>setIsLoading2(false)} alt={toSentenceCase(imageSlideProps[imageIndex].title2)} aria-label={toSentenceCase(imageSlideProps[imageIndex].title2)} className='plainImage' src={imageSlideProps[imageIndex].imagePath2} style={isLoading2 ? { display: 'none' } : {maxWidth: imageMaxWidth ? '700px' : 'none'}}/>
+                    {isLoading2 && <div className='flippingImageBoxLoading'><Spinner /></div>}
+                    {!isLoading2 && <img onLoad={()=>setIsLoading2(false)} alt={toSentenceCase(imageSlideProps[imageIndex].title2)} aria-label={toSentenceCase(imageSlideProps[imageIndex].title2)} className='plainImageFlip' src={imageSlideProps[imageIndex].imagePath2} style={isLoading2 ? { display: 'none' } : {maxWidth: imageMaxWidth ? '700px' : 'none'}}/>}
                 </div>
             </div>
         </div>

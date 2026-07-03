@@ -138,27 +138,49 @@
     border-radius: 50%;
 }
 
+.flippingImageBoxLoading {
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    aspect-ratio: 3/2;               
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plainImageFlip {
+    width: 100%;                       
+  height: 100%;  
+  object-fit: contain;
+  max-height: 60vh;
+  aspect-ratio: 3/2;
+}
+
 .imageSlideFlipCard { 
-    aspect-ratio: 1/1;
+    aspect-ratio: 3/2;
     max-height: 60vh;
-  perspective: 5000px; /* Remove this if you don't want the 3D effect */
+     width: 100%;                       
+  height: 100%;  
+  perspective: 5000px; 
   align-content: center;
   @media (max-width: 767px) {
       height: unset;
     }
 }
 
-/* This container is needed to position the front and back side */
 .imageSlideFlipCardInner {
   display: grid;
+  width: 100%;
+  height: 100%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  
 }
 
 /* Position the front and back side */
 .imageSlideFlipCardFront, .imageSlideFlipCardBack {
     grid-area: 1 / 1;
+    width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   justify-content: center;
