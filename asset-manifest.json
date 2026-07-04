@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d653b2bc.css",
-    "main.js": "/static/js/main.3ebb71a8.js",
+    "main.css": "/static/css/main.1240fdc2.css",
+    "main.js": "/static/js/main.29a513ea.js",
     "static/js/453.ac9b7e2a.chunk.js": "/static/js/453.ac9b7e2a.chunk.js",
     "static/media/mockup4.png": "/static/media/mockup4.4e883e7a5e31d886385c.png",
     "static/media/mockup3.png": "/static/media/mockup3.8a6b4c0488704ae6db2c.png",
@@ -9,7 +9,9 @@
     "static/media/mockup1.png": "/static/media/mockup1.14f4262f4ade748fdfd2.png",
     "static/media/Kasugai.png": "/static/media/Kasugai.293db4009490f57432bb.png",
     "static/media/SingSingSing.mp3": "/static/media/SingSingSing.554bebde7ddf92bbbc4f.mp3",
+    "static/media/Sketch2.png": "/static/media/Sketch2.4716be731d3df0489b8e.png",
     "static/media/Moodboard.png": "/static/media/Moodboard.8d49d43740e8fb9e9d33.png",
+    "static/media/Sketch1.png": "/static/media/Sketch1.7c71b016042ce3c81263.png",
     "static/media/KohiToKochaSlideDeck.pdf": "/static/media/KohiToKochaSlideDeck.691fe0081298e931116e.pdf",
     "static/media/AlaskaAirlinesSlideDeck.pdf": "/static/media/AlaskaAirlinesSlideDeck.f8623a9870265d23e127.pdf",
     "static/media/mockup5.png": "/static/media/mockup5.a599faac8715f5e4b7a8.png",
@@ -19,8 +21,9 @@
     "static/media/LetsGroove.mp3": "/static/media/LetsGroove.191baf701c7fa85074cf.mp3",
     "static/media/Chiquitita.mp3": "/static/media/Chiquitita.6f84131c71f3f08a59fa.mp3",
     "static/media/screenshots.png": "/static/media/screenshots.ac9c75af2c0d411c12d1.png",
-    "static/media/KohiToKochaBanner.png": "/static/media/KohiToKochaBanner.baa321e6b5c3ae248727.png",
+    "static/media/Banner2.png": "/static/media/Banner2.7987c57115a5023dd141.png",
     "static/media/AffinityDiagram.png": "/static/media/AffinityDiagram.38ac49a7f816a6b011c7.png",
+    "static/media/Banner.png": "/static/media/Banner.46ce540d19662d82eb79.png",
     "static/media/TraderJoesBanner.png": "/static/media/TraderJoesBanner.f0ec63c4db6f2d0bb0d6.png",
     "static/media/IJustCalledToSayILoveYou.mp3": "/static/media/IJustCalledToSayILoveYou.d8db95dd913d4a452985.mp3",
     "static/media/Rosmarina.mp3": "/static/media/Rosmarina.9183b1ec9918495c394b.mp3",
@@ -62,7 +65,6 @@
     "static/media/Puzzles.mp3": "/static/media/Puzzles.12715375354c2d4c3c2f.mp3",
     "static/media/FlightSearch.png": "/static/media/FlightSearch.58cb03b8d4d6406fa3c7.png",
     "static/media/Wireframes.png": "/static/media/Wireframes.448627804147a37dc58f.png",
-    "static/media/Banner2.png": "/static/media/Banner2.7987c57115a5023dd141.png",
     "static/media/cover.png": "/static/media/cover.e7e82099bfb5755951d8.png",
     "static/media/SketchbookWireframe4.png": "/static/media/SketchbookWireframe4.1bd90d2f22f9f3173cf7.png",
     "static/media/SketchbookWireframe2.png": "/static/media/SketchbookWireframe2.59b3123a274e372ea0ce.png",
@@ -96,7 +98,6 @@
     "static/media/Original3.png": "/static/media/Original3.e48640fd544b5fb93391.png",
     "static/media/CTA.png": "/static/media/CTA.08e867bf209361143f6f.png",
     "static/media/PeurDesFilles.png": "/static/media/PeurDesFilles.00ea4cf572dab52624f4.png",
-    "static/media/Banner.png": "/static/media/Banner.46ce540d19662d82eb79.png",
     "static/media/Solution3.png": "/static/media/Solution3.8b71f48f2fdfb191c34e.png",
     "static/media/CasinoNightZone.png": "/static/media/CasinoNightZone.81e4f50202d21c62b807.png",
     "static/media/OneSummerDay.png": "/static/media/OneSummerDay.82615c2aaef5bb04e2ed.png",
@@ -183,12 +184,12 @@
     "static/media/MayaPersonality.png": "/static/media/MayaPersonality.9ad423c0947eb7d8a932.png",
     "index.html": "/index.html",
     "static/media/rotate.svg": "/static/media/rotate.4308d1450fa74ad2cfd5d2efcd9b9e57.svg",
-    "main.d653b2bc.css.map": "/static/css/main.d653b2bc.css.map",
-    "main.3ebb71a8.js.map": "/static/js/main.3ebb71a8.js.map",
+    "main.1240fdc2.css.map": "/static/css/main.1240fdc2.css.map",
+    "main.29a513ea.js.map": "/static/js/main.29a513ea.js.map",
     "453.ac9b7e2a.chunk.js.map": "/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d653b2bc.css",
-    "static/js/main.3ebb71a8.js"
+    "static/css/main.1240fdc2.css",
+    "static/js/main.29a513ea.js"
   ]
 }
