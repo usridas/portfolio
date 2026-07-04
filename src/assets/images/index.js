@@ -98,7 +98,8 @@ import AlaskaAirlinesOriginal2 from './AlaskaAirlinesResearch/Original2.png';
 import AlaskaAirlinesSolution3 from './AlaskaAirlinesResearch/Solution3.png';
 import AlaskaAirlinesOriginal3 from './AlaskaAirlinesResearch/Original3.png';
 import KohiToKochaColors from './KohiToKocha/Colors.png';
-import KohiToKochaBanner from './KohiToKocha/KohiToKochaBanner.png';
+import KohiToKochaBanner from './KohiToKocha/Banner.png';
+import KohiToKochaBanner2 from './KohiToKocha/Banner2.png';
 import KohiToKochaCover from './KohiToKocha/Logo.png';
 import KohiToKochaFlowchart from './KohiToKocha/Flowchart.png';
 import KohiToKochaMoodboard from './KohiToKocha/Moodboard.png';
@@ -111,6 +112,8 @@ import KohiToKochaPrototype6 from './KohiToKocha/Prototype6.png';
 import KohiToKochaPrototype7 from './KohiToKocha/Prototype7.png';
 import KohiToKochaPrototype8 from './KohiToKocha/Prototype8.png';
 import KohiToKochaPrototype9 from './KohiToKocha/Prototype9.png';
+import KohiToKochaSketch1 from './KohiToKocha/Sketch1.png';
+import KohiToKochaSketch2 from './KohiToKocha/Sketch2.png';
 import KohiToKochaTypography from './KohiToKocha/Typography.png';
 import KohiToKochaWireframes from './KohiToKocha/Wireframes.png';
 import LetsGrooveCover from './Music/LetsGroove.png';
@@ -237,6 +240,7 @@ export {
     KaviMockup4,
     KaviMockup5,
     KohiToKochaBanner,
+    KohiToKochaBanner2,
     KohiToKochaColors,
     KohiToKochaCover,
     KohiToKochaFlowchart,
@@ -250,6 +254,8 @@ export {
     KohiToKochaPrototype7,
     KohiToKochaPrototype8,
     KohiToKochaPrototype9,
+    KohiToKochaSketch1,
+    KohiToKochaSketch2,
     KohiToKochaTypography,
     KohiToKochaWireframes,
     UmekoBrandAsset1,

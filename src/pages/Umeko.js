@@ -1,4 +1,4 @@
-import './Pages.css';
+import './Pages.scss';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import Button from '../components/Button/Button.js';
 import {
@@ -20,7 +20,7 @@ import Grid from '../components/Grid/Grid.js';
 
 export const Umeko = () => {
 
-  const content = <div className='summaryContent'>
+  const content = <div className='columnWith24Gap'>
     <p style={{marginBottom: '24px'}}>{'Umeko is a fun, light-hearted Japanese style cafe which sources tea from Japan. They serve classic teas, as well as unique blends, and boba to cater to both younger and older aficionados. The pastel, calm aesthetic is inspired by the Japanese plum (ume) and blossom. Umeko means ‘plum child’ in Japanese and plum blossoms are associated with good fortune and health.\n\n*This is a fictional business project made for design purposes.'}</p>
     <Button type='Primary' text='See full project on Behance' link={'https://www.behance.net/gallery/242576285/Umeko-Brand-Identity-and-Guidelines'}/>
   </div>

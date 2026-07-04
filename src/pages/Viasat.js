@@ -1,4 +1,4 @@
-import './Pages.css';
+import './Pages.scss';
 import {
   ViasatNavigation,
   ViasatArticle,
@@ -12,7 +12,7 @@ import Grid from '../components/Grid/Grid.js';
 
 export const Viasat = () => {
 
-  const content = <div className='summaryContent'>
+  const content = <div className='columnWith24Gap'>
     <p>While working at Viasat, my task was to update the My Viasat application user interface to provide the most useful data to clients while simultaneously being intuitive and aesthetic. I worked on both frontend and backend tasks to achieve this, but leaned more into frontend. To name a few, as a team, we used React, TypeScript, and Redux for web and mobile development. This project was done during my time working at Viasat Inc. as a software engineer.</p>
   </div>
 
@@ -29,31 +29,31 @@ export const Viasat = () => {
 
 
   const navigation =
-    <div className='sectionContainer'>
+    <div className='columnWith24Gap'>
         {imageText1}
         {imageSlide1}
     </div>;
 
   const articles =
-    <div className='sectionContainer'>
+    <div className='columnWith24Gap'>
         {imageText2}
         {imageSlide2}
     </div>;
 
   const commonQuestions =
-    <div className='sectionContainer'>
+    <div className='columnWith24Gap'>
         {imageText3}
         {imageSlide3}
     </div>;
 
 const viasatStream =
-    <div className='sectionContainer'>
+    <div className='columnWith24Gap'>
         {imageText4}
         {imageSlide4}
     </div>;
 
 const addOns =
-    <div className='sectionContainer'>
+    <div className='columnWith24Gap'>
         {imageText5}
         {imageSlide5}
     </div>;

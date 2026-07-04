@@ -4,8 +4,7 @@ import Tag from '../components/Tag/Tag.js';
 import QuoteContainer from '../components/Text/QuoteContainer.js';
 import TextContainer from '../components/Text/TextContainer.js';
 import Resume from '../assets/documents/Resume.pdf';
-
-import './Pages.css';
+import './Pages.scss';
 
 export const AboutMe = () => {
 
@@ -60,25 +59,25 @@ export const AboutMe = () => {
     const experience6 = <TextContainer title={'IT Software Engineering and Design Intern at Viasat Inc.'} subtitle={'May 2019 - August 2019'} text={'Designed Viasat 404 error page to reduce unnecessary cost of long customer calls and engineering team infographics to prevent excess cost of testing and rebuilding far into the production process.'}/>;
 
     const aboutMe = 
-        <div className='sectionContainer'>
+        <div className='columnWith24Gap'>
             <p>{'I am a UI/UX designer with a software development background aiming to bridge the gap between design and engineering in order to empower users through intuitive interfaces.\n\nAfter graduating with a Bachelor\'s in Computer Engineering and a minor in Art & Design, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. ​I am currently in a Master\'s program for User Experience Design and am searching for work in the UI/UX field.'}</p>
             <div className='skills'><Button type='Primary' text='View my resume' link={Resume}/> <Button type='Secondary' text='View my Behance' link={'https://www.behance.net/umaiyalsridas'}/></div>
         </div>;
     const allEducation =
-        <div className='sectionContainer'>
+        <div className='columnWith24Gap'>
             {education1}
             {education2}
         </div>;
 
     const allSkills =
-        <div className='sectionContainer'>
+        <div className='columnWith24Gap'>
             {skills1}
             {skills2}
             {skills3}
         </div>;
 
     const allExperiences =
-        <div className='sectionContainer'>
+        <div className='columnWith24Gap'>
             {experience1}
             {experience2}
             {experience3}
@@ -88,7 +87,7 @@ export const AboutMe = () => {
         </div>;
 
     const allQuotes =
-        <div className='sectionContainer'>
+        <div className='columnWith24Gap'>
             {quote1}
             {quote2}
             {quote3}

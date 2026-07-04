@@ -1,4 +1,4 @@
-import './Pages.css';
+import './Pages.scss';
 import TextContainer from '../components/Text/TextContainer.js';
 import {
     TraderJoesAffinityDiagram,
@@ -18,7 +18,7 @@ export const TraderJoesResearch = () => {
     const { isSmall, isXSmall } = useScreenResolution();
     const isMobile = isSmall || isXSmall;
 
-    const summaryContent = <div className='summaryContent'>
+    const summaryContent = <div className='columnWith24Gap'>
         <p>Although grocery shopping is a seemingly simple and regular task, there are ways the in-store and online shopping experience can be improved and optimized for the customer. In this research, we will focus on the experience of Trader Joe's shoppers and develop an understanding of customer needs and pain points during the grocery shopping process in order to define some opportunity spaces.</p>
         <Button type='Primary' text='View full slide deck' link={TraderJoesSlideDeck}/>
         <div className='steps'>
@@ -65,29 +65,29 @@ export const TraderJoesResearch = () => {
     const opportunity5 = <div className='columnWith12Gap'><Tag type='P2' text='Future roadmap'/><TextContainer title={'How can Trader Joe\'s continue to generate excitement around snacks and seasonal items for customers?'} text={'All 5 participants mentioned the unique frozen food, snacks, and seasonal items that Trader Joe\'s carries, which you can\'t get anywhere else. This is something that makes Trader Joe\'s stand out from other grocery stores and is something they should continue to innovate on.'}/></div>;
 
     const researchPlan =
-        <div className='sectionContainer'>
+        <div className='columnWith24Gap'>
             {researchPlan1}
             {researchPlan2}
         </div>;
     const personaContainer1 = 
-        <div className='sectionContainer'>
+        <div className='columnWith24Gap'>
             {persona1}
             {persona2}
         </div>;
     const personaContainer2 = 
-        <div className='sectionContainer'>
+        <div className='columnWith24Gap'>
             {persona3}
             {persona4}
         </div>;
     const affinityDiagram = 
-        <div className='sectionContainer'>
+        <div className='columnWith24Gap'>
             {affinityDiagram1}
             {affinityDiagram2}
             {affinityDiagram3}
         </div>;
 
     const opportunities = 
-        <div className='sectionContainer'>
+        <div className='columnWith24Gap'>
             {opportunity1}
             {opportunity2}
             {opportunity3}

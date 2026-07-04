@@ -1,4 +1,4 @@
-import './Pages.css';
+import './Pages.scss';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import {
   ElfsterScreenshot1,
@@ -21,7 +21,7 @@ export const ElfsterRedesign = () => {
   const { isSmall, isXSmall } = useScreenResolution();
   const isMobile = isSmall || isXSmall;
 
-  const summaryContent = <div className='summaryContent'>
+  const summaryContent = <div className='columnWith24Gap'>
       <p>As a fun side project, I wanted to redesign the Elfster gift exchange mobile app to be more user friendly, intuitive, and versatile. Elfster is an app that allows users to create wishlists and groups with friends to organize gift exchanges. When a group exchange is made, a user can create a wishlist which friends can see and order from. Essentially this app should allow friends to get purposeful gifts and to avoid duplicates.</p>
       <div className='steps'>
           <div className='step'>
@@ -49,7 +49,7 @@ export const ElfsterRedesign = () => {
   </div>
 
   const identify =
-    <div className='sectionContainer'>
+    <div className='columnWith24Gap'>
         {<TextContainer text={'First, I collected feedback from myself and other Elfster users about the pros and cons of the app. A lot of the criticism of the app rose from difficult navigation, the functionality of wishlists, and excess information or advertising. Some main complaints were:\n\n• Requesting the same gift across two different exchanges could result in a user receiving two of the same gift.\n• While others can mark things on your wishlist as purchased, you will not see what items have been purchased or not on your wishlist. This means you can delete an item from your wishlist that has already been purchased and the friend would likely have to return the gift.\n• When searching for gifts, more sources should appear other than Amazon, like Etsy, and maybe other big companies, like Walmart, Target, etc.'}/>}
         {<PlainImage plainImageProps={{imagePath: ElfsterFeedback}}/>}
     </div>;
@@ -62,7 +62,7 @@ export const ElfsterRedesign = () => {
   ];
 
   const research =
-    <div className='sectionContainer'>
+    <div className='columnWith24Gap'>
         {<TextContainer text={'Here I took screenshots of the entire app and extracted essential information, navigation, and interactions in order to optimize the mobile app experience.'}/>}
         {<div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}><ImageSlide imageSlideProps={imageSlideProps1} imageMaxWidth={true}/></div>}
     </div>;
@@ -75,7 +75,7 @@ export const ElfsterRedesign = () => {
   ];
 
   const execute =
-    <div className='sectionContainer'>
+    <div className='columnWith24Gap'>
         {<TextContainer text={'Finally, I used the existing framework of the app and essential ideas to redesign a better user experience for customers of Elfster.'}/>}
         {<ImageSlide imageSlideProps={imageSlideProps2} />}
     </div>;

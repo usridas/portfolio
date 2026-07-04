@@ -1,4 +1,4 @@
-import './Pages.css';
+import './Pages.scss';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import {
     KohiToKochaMoodboard,
@@ -14,7 +14,8 @@ import {
     KohiToKochaPrototype8,
     KohiToKochaPrototype9,
     KohiToKochaWireframes,
-    KohiToKochaBanner
+    KohiToKochaSketch1,
+    KohiToKochaSketch2
 } from '../assets/images/index.js';
 import KohiToKochaSlideDeck from '../assets/documents/KohiToKochaSlideDeck.pdf'
 import { PlainImage } from '../components/Images/PlainImage.js';
@@ -26,8 +27,8 @@ import Grid from '../components/Grid/Grid.js';
 export const KohiToKocha = () => {
     const { isXSmall } = useScreenResolution();
 
-    const content =<div className='summaryContent'>
-        <p>{'This app is made for learning about Japanese culture and language through cafe settings. It will cover different types of cafes and their history, vocabulary, phrases and expressions, and etiquette. The explore portion of the app allows you to build up knowledge and confidence of Japanese cafes without the fear of making mistakes; this part of the app will be applicable to anyone all over the world as it will be a fictional setting. The planning portion of the app will help you prepare for real-world interactions; this part of the app is used for planning visits and preparing dialogues for cafes in Japan.'}</p>
+    const content =<div className='columnWith24Gap'>
+        <h2>This app is made for <span style={{color: '#2519D2'}}>learning about Japanese culture and language through cafe settings.</span> It will cover different types of cafes and their <span style={{color: '#2519D2'}}>history, vocabulary, phrases and expressions, and etiquette.</span> The explore portion of the app allows you to build up knowledge and confidence of Japanese cafes without the fear of making mistakes; this part of the app will be applicable to anyone all over the world as it will be a fictional setting. The planning portion of the app will help you prepare for real-world interactions; this part of the app is used for planning visits and preparing dialogues for cafes in Japan.</h2>
         <Button type='Primary' text='See full slide deck' link={KohiToKochaSlideDeck}/>
     </div>
 
@@ -40,6 +41,10 @@ export const KohiToKocha = () => {
     
     const moodboard = <PlainImage plainImageProps={{title: 'Mood board', imagePath: KohiToKochaMoodboard, caption: 'Some of my main inspirations were lush greenery and blue skies, especially how it is portrayed in Studio Ghibli films, and the openness of Nintendo games, like Animal Crossing.'}}/>;
     const flowchart = <PlainImage plainImageProps={{title: 'Flow chart', imagePath: KohiToKochaFlowchart, caption: 'There were four basic tabs for the app: Learn, Explore, Notes, and Account. The Notes and Account tab would follow the typical format of other Notes and Account UIs, but the Learn and Explore tabs were new. This is the basic flow I wanted to follow:\n\nLearn:\n1. Choose a café type: Modern, Themed, Kissaten, Bakery\n2. Learn: History, Vocabulary, Phrases/Expressions, Etiquette\n3. Interact\n4. Earn Points\n\nExplore:\n1. Choose a café location\n2. Get a summary of the cafe\n3. See the menu\n4. Plan order/dialogue\n5. Notes on experience'}}/>;
+    const sketches = <ImageSlide imageSlideProps={[
+        {title: 'Sketches', imagePath: KohiToKochaSketch1},
+        {title: 'Sketches', imagePath: KohiToKochaSketch2},
+    ]}/>;
     const screens = <ImageSlide imageSlideProps={[
         {title: 'Wireframes', imagePath: KohiToKochaWireframes},
         {title: 'Home', imagePath: KohiToKochaPrototype1},
@@ -54,19 +59,20 @@ export const KohiToKocha = () => {
     ]}/>;
 
     const vision =
-        <div className='sectionContainer'>
-            <div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}>{moodboard}</div>
-            <div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}>{flowchart}</div>
+        <div className='columnWith24Gap'>
+            {moodboard}
+            {sketches}
+            {flowchart}
         </div>;  
     
     const design =
-        <div className='sectionContainer'>
+        <div className='columnWith24Gap'>
             {<ColorPalette colors={colors}/>}
             {<PlainImage plainImageProps={{imagePath: KohiToKochaTypography}}/>}
         </div>;
 
     const construction =
-        <div className='sectionContainer'>
+        <div className='columnWith24Gap'>
             {screens}
         </div>;
 
@@ -77,20 +83,22 @@ export const KohiToKocha = () => {
         </div>;
 
     const gridArray = [
-        {title: 'Overview', content: content, rowType: 'Column'},
-        {title: 'The Vision', content: vision},
-        {title: 'Design Foundation', content: design},
-        {title: 'Construction', content: construction},
+        {title: 'Overview', content: content, divider: 'gray', rowType: 'Column'},
+        {title: 'The Vision', content: vision, divider: 'gray', rowType: 'Column'},
+        {title: 'Design Foundation', content: design, divider: 'gray', rowType: 'Column'},
+        {title: 'Construction', content: construction, divider: 'gray', rowType: 'Column'},
         {title: 'Prototype', content: prototype, rowType: 'Column'}
-    ]
+    ];
 
     return (
         <div>
-            <div className='bannerWrapper'>
-                <img src={KohiToKochaBanner} alt='Kohi To Kocha app screens'/>
+            <div className='bannerKohiToKocha'>
+                <div className='bannerTitle'>
+                    <h1 className='title'>Kohi To Kocha</h1>
+                </div>
             </div>
-            <h1 className='title'>Kohi To Kocha</h1>
-            <Grid gridProps={gridArray}/>
+            
+            <Grid gridProps={gridArray} gridMargin='20px 0 40px 0'/>
         </div>
     );
 }

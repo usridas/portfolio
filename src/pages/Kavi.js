@@ -1,4 +1,4 @@
-import './Pages.css';
+import './Pages.scss';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import Button from '../components/Button/Button.js';
 import {
@@ -19,7 +19,7 @@ import Grid from '../components/Grid/Grid.js';
 
 export const Kavi = () => {
 
-  const content = <div className='summaryContent'>
+  const content = <div className='columnWith24Gap'>
     <p style={{marginBottom: '24px'}}>{'KAVI is a South Asian women owned luxury beauty and self care brand. Rooted in South Asian culture and ayurvedic practices, KAVI strives to make the beauty and self care routine enjoyable and relaxing through all-natural ingredients.\n\n*This is a fictional business project made for design purposes.'}</p>
     <Button type='Primary' text='See full project on Behance' link={'https://www.behance.net/gallery/242576537/KAVI-Brand-Identity-and-Guidelines'}/>
   </div>

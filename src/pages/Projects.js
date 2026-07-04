@@ -1,5 +1,5 @@
 import ImageSlide from '../components/Images/ImageSlide.js';
-import './Pages.css';
+import './Pages.scss';
 import {
   AlaskaAirlinesResearchCover,
   TraderJoesCover,

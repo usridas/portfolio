@@ -1,4 +1,4 @@
-import './Pages.css';
+import './Pages.scss';
 import TextContainer from '../components/Text/TextContainer.js';
 import {
     AlaskaAirlinesOriginal2,
@@ -66,7 +66,7 @@ export const AlaskaAirlinesResearch = () => {
         },
     ]
 
-    const summaryContent = <div className='summaryContent'>
+    const summaryContent = <div className='columnWith24Gap'>
         <h2>This research was conducted to develop an understanding of the experience of an Alaska Airlines customer and <span style={{color: '#2519D2'}}>identify pain points of the Alaska Airlines website booking flow.</span> Using this information, we can seek out ways to increase completed bookings, improve attach rate, and reduce confusion when comparing fares and add-ons.</h2>
         <div style={{marginBottom: '24px'}}><Button type='Primary' text='View full slide deck' link={AlaskaAirlinesSlideDeck}/></div>
         <div className='steps'>
@@ -97,28 +97,28 @@ export const AlaskaAirlinesResearch = () => {
     const insightOverview = <TextContainer insert={<p>After understanding my competitors, I created a usability test consisting of three task scenarios: choosing flights, choosing seats, and choosing add-ons. I ended up conducting <span style={{fontWeight: 'bold', color: '#2519D2'}}>6 usability tests, 2 moderated and 4 unmoderated tests via Userbrain.</span></p>} />;
 
     const insight1Container =
-    <div className='insightRecommendation2'>
+    <div className='insightRecommendation'>
         <p>{insightRecommendationArray[0].insightCaption}</p>
         <p style={{width: 'stretch', textAlign: 'left', fontWeight: 'bold', color: '#2519D2'}}>{insightRecommendationArray[0].recommendationTitle}</p>
         <p>{insightRecommendationArray[0].recommendationCaption}</p>
     </div>;
 
     const insight2Container =
-    <div className='insightRecommendation2'>
+    <div className='insightRecommendation'>
         <p>{insightRecommendationArray[1].insightCaption}</p>
         <p style={{width: 'stretch', textAlign: 'left', fontWeight: 'bold', color: '#2519D2'}}>{insightRecommendationArray[1].recommendationTitle}</p>
         <p>{insightRecommendationArray[1].recommendationCaption}</p>
     </div>;
     
     const insight3Container =
-    <div className='insightRecommendation2'>
+    <div className='insightRecommendation'>
         <p>{insightRecommendationArray[2].insightCaption}</p>
         <p style={{width: 'stretch', textAlign: 'left', fontWeight: 'bold', color: '#2519D2'}}>{insightRecommendationArray[2].recommendationTitle}</p>
         <p>{insightRecommendationArray[2].recommendationCaption}</p>
     </div>;
 
     const insight4Container =
-    <div className='insightRecommendation2'>
+    <div className='insightRecommendation'>
         <p>{insightRecommendationArray[3].insightCaption}</p>
         <p style={{width: 'stretch', textAlign: 'left', fontWeight: 'bold', color: '#2519D2'}}>{insightRecommendationArray[3].recommendationTitle}</p>
         <p>{insightRecommendationArray[3].recommendationCaption}</p>
@@ -133,7 +133,7 @@ export const AlaskaAirlinesResearch = () => {
     const nextStepsOverview = <TextContainer title={'What should we prioritize?'} insert={<p>Out of the three tasks provided in the usability test, <span style={{fontWeight: 'bold', color: '#2519D2'}}>choosing flights seemed to stand out as a particularly difficult task</span>; participants had low confidence, taking a long time to review options and constantly expressing confusion or frustration. With this in mind, <span style={{fontWeight: 'bold', color: '#2519D2'}}>I would prioritize providing a clear navigation component and editing the content of the modal to provide details of their chosen flights.</span></p>}/>;
 
     const nextSteps = 
-        <div className='sectionContainer'>
+        <div className='columnWith24Gap'>
             {nextStepsOverview}
             <FlippingImageSlide imageSlideProps={flippingSlideProps}/>
             <h2 style={{margin: '80px 0px 160px 0'}}>By providing clear flight details and smoothing out navigation, Alaska Airlines will reach their goal of <span style={{color: '#2519D2'}}>increased completed bookings</span>, while <span style={{color: '#2519D2'}}>boosting customer trust.</span></h2>
@@ -156,8 +156,8 @@ export const AlaskaAirlinesResearch = () => {
 
     return (
         <div>
-            <div class="banner" id="promoBanner">
-                <div class="bannerTitle">
+            <div className='bannerAlaska'>
+                <div className='bannerTitle'>
                     <h1 className='title'>Alaska Airlines<br/>Case Study</h1>
                 </div>
             </div>
