@@ -25,7 +25,7 @@ export const PlaylistHome = () => {
             <div className='playlistArrayContainer'>
                 <div tabIndex={0} className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Video game vibes')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>navigate('/VideoGameVibes')} onKeyDown={(event)=>{if (event.key === 'Enter') {navigate('/VideoGameVibes')}}}>
                     <div className='liquidGlassEffect'/>
-                    <h3 className='playlistTitle'>VIDEO GAME VIBES</h3>
+                    <h3 className='playlistTitle'>Video game vibes</h3>
                     <svg>
                         <filter id='glassDistortion'>
                             <feTurbulence
@@ -53,15 +53,15 @@ export const PlaylistHome = () => {
                 </div>
                 <div tabIndex={0} className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('A night at the casino')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>navigate('/ANightAtTheCasino')} onKeyDown={(event)=>{if (event.key === 'Enter') {navigate('/ANightAtTheCasino')}}}>
                     <div className='liquidGlassEffect'></div>
-                    <h3 className='playlistTitle'>A NIGHT AT THE CASINO</h3>
+                    <h3 className='playlistTitle'>A night at the casino</h3>
                 </div>  
                 <div tabIndex={0} className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Family road trip')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>navigate('/FamilyRoadTrip')} onKeyDown={(event)=>{if (event.key === 'Enter') {navigate('/FamilyRoadTrip')}}}>
                     <div className='liquidGlassEffect'></div>
-                    <h3 className='playlistTitle'>FAMILY ROAD TRIP</h3>
+                    <h3 className='playlistTitle'>Family road trip</h3>
                 </div>  
                 <div tabIndex={0} className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Let\'s disco')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>navigate('/LetsDisco')} onKeyDown={(event)=>{if (event.key === 'Enter') {navigate('/LetsDisco')}}}>
                     <div className='liquidGlassEffect'></div>
-                    <h3 className='playlistTitle'>LET'S DISCO</h3>
+                    <h3 className='playlistTitle'>Let's disco</h3>
                 </div>   
             </div>
         </div>
