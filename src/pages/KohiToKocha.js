@@ -1,7 +1,6 @@
 import './Pages.scss';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import {
-    KohiToKochaMoodboard,
     KohiToKochaTypography,
     KohiToKochaFlowchart,
     KohiToKochaPrototype1,
@@ -75,7 +74,7 @@ export const KohiToKocha = () => {
     const flowchart = <PlainImage plainImageProps={{title: 'Flow chart', imagePath: KohiToKochaFlowchart, caption: 'There were four basic tabs for the app: Learn, Explore, Notes, and Account. The Notes and Account tab would follow the typical format of other Notes and Account UIs, but the Learn and Explore tabs were new. This is the basic flow I wanted to follow:\n\nLearn:\n1. Choose a café type: Modern, Themed, Kissaten, Bakery\n2. Learn: History, Vocabulary, Phrases/Expressions, Etiquette\n3. Interact\n4. Earn Points\n\nExplore:\n1. Choose a café location\n2. Get a summary of the cafe\n3. See the menu\n4. Plan order/dialogue\n5. Notes on experience'}}/>;
 
     const scopingGridArray = [
-        {title: 'Scoping', content: <p>For this project, I wanted to improve my mobile design skills while focusing on subjects I am passionate about. I started learning Japanese casually a few years ago to prepare for a vacation to Japan; I ended up really enjoying it and have been studying Japanese during my free time. Simultaneously, I also worked as a barista in a bakery. I became curious about Japanese culture and specifically, cafes, and discovered four main types of cafes: Modern, Kissaten, Themed, and Bakery cafes. Through Kohi To Kocha, I wanted to help users practice Japanese in low-stakes environments, like these cafes.</p>, rowType: 'Column', divider: 'none'},
+        {title: 'Scoping', content: <p>For this project, I wanted to improve my mobile design skills while focusing on subjects I am passionate about. I started learning Japanese casually a few years ago to prepare for a vacation to Japan; I ended up really enjoying it and have been studying Japanese during my free time. Simultaneously, I also worked as a barista in a bakery. I became curious about Japanese culture and specifically, cafes, and discovered four main types of cafes: Modern, Kissaten, Themed, and Bakery cafes. Through Kohi To Kocha, I wanted to <span style={{fontWeight: 'bold', color: '#2519D2'}}>help users practice Japanese in low-stakes environments</span>, like these cafes.</p>, rowType: 'Column', divider: 'none'},
         {title: scopingArray[0].title, titleType: 'small', content: <p>{scopingArray[0].caption}</p>,  rowType: 'Row', divider: 'gray'},
         {title: scopingArray[1].title, titleType: 'small', content: <p>{scopingArray[1].caption}</p>,  rowType: 'Row', divider: 'gray'},
         {title: scopingArray[2].title, titleType: 'small', content: <p>{scopingArray[2].caption}</p>,  rowType: 'Row', divider: 'none'},
@@ -89,7 +88,6 @@ export const KohiToKocha = () => {
         {colorName: 'Gray 100', color: '#E8E7E3', text: 'Hex Code: #E8E7E3\nRGB: 232 231 227\nCMYK: 0% 0% 2% 9%'},
     ];
     
-    const moodboard = <PlainImage plainImageProps={{title: 'Mood board', imagePath: KohiToKochaMoodboard, caption: 'Some of my main inspirations were lush greenery and blue skies, especially how it is portrayed in Studio Ghibli films, and the openness of Nintendo games, like Animal Crossing.'}}/>;
     const screens = <ImageSlide imageSlideProps={[
         {title: 'Wireframes', imagePath: KohiToKochaWireframes},
         {title: 'Home', imagePath: KohiToKochaPrototype1},
@@ -105,7 +103,7 @@ export const KohiToKocha = () => {
 
     const design =
         <div className='columnWith24Gap'>
-            {moodboard}
+            <p>Some of my main inspirations were lush greenery and blue skies, especially how it is portrayed in Studio Ghibli films, and the openness of Nintendo games, like Animal Crossing. I also collected inspiration from plant, planning, meditation, and language apps to arrive to an <span style={{fontWeight: 'bold', color: '#2519D2'}}>organically whimsical</span> aesthetic.</p>
             {<ColorPalette colors={colors}/>}
             {<PlainImage plainImageProps={{imagePath: KohiToKochaTypography}}/>}
             {screens}
@@ -127,15 +125,15 @@ export const KohiToKocha = () => {
             </div>
             <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='20px 0 40px 0'/>
             <div className='bannerWrapper'>
-                <img src={KohiToKochaBanner2} alt='SWOT analysis, competitive analysis, CTA, and red routes'/>
+                <img src={KohiToKochaBanner2} alt='Different cafe orders in Japanese and English'/>
             </div>
             <Grid gridProps={scopingGridArray} gridMargin='20px 0 40px 0'/>
             <div className='bannerWrapper'>
-                <img src={KohiToKochaBanner3} alt='SWOT analysis, competitive analysis, CTA, and red routes'/>
+                <img src={KohiToKochaBanner3} alt='Inspiration screenshots'/>
             </div>
             <Grid gridProps={[{title: 'Design', content: design, rowType: 'Column'}]}/>
             <div className='bannerWrapper'>
-                <img src={KohiToKochaBanner4} alt='SWOT analysis, competitive analysis, CTA, and red routes'/>
+                <img src={KohiToKochaBanner4} alt='Screens of Kohi To Kocha'/>
             </div>
             <Grid gridProps={[{title: 'Prototype', content: prototype, rowType: 'Column'}]}/>
         </div>
