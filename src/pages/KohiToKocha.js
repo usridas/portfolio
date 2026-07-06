@@ -14,8 +14,9 @@ import {
     KohiToKochaPrototype8,
     KohiToKochaPrototype9,
     KohiToKochaWireframes,
-    KohiToKochaSketch1,
-    KohiToKochaSketch2
+    KohiToKochaBanner3,
+    KohiToKochaBanner4,
+    KohiToKochaBanner2,
 } from '../assets/images/index.js';
 import KohiToKochaSlideDeck from '../assets/documents/KohiToKochaSlideDeck.pdf'
 import { PlainImage } from '../components/Images/PlainImage.js';
@@ -25,12 +26,61 @@ import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import Grid from '../components/Grid/Grid.js';
 
 export const KohiToKocha = () => {
-    const { isXSmall } = useScreenResolution();
+    const { isXSmall, isSmall } = useScreenResolution();
+    const isMobile = isSmall || isXSmall;
 
-    const content =<div className='columnWith24Gap'>
-        <h2>This app is made for <span style={{color: '#2519D2'}}>learning about Japanese culture and language through cafe settings.</span> It will cover different types of cafes and their <span style={{color: '#2519D2'}}>history, vocabulary, phrases and expressions, and etiquette.</span> The explore portion of the app allows you to build up knowledge and confidence of Japanese cafes without the fear of making mistakes; this part of the app will be applicable to anyone all over the world as it will be a fictional setting. The planning portion of the app will help you prepare for real-world interactions; this part of the app is used for planning visits and preparing dialogues for cafes in Japan.</h2>
-        <Button type='Primary' text='See full slide deck' link={KohiToKochaSlideDeck}/>
+    const summaryContent = <div className='columnWith24Gap'>
+        <h2>This app is made for <span style={{color: '#2519D2'}}>learning about Japanese culture and language through cafe settings.</span> It will cover different types of cafes and their <span style={{color: '#2519D2'}}>history, vocabulary, phrases and expressions, and etiquette.</span> This app will help users prepare for real-world interactions by preparing dialogues for cafes in Japan and allows users to build up knowledge and confidence without the fear of making mistakes.</h2>
+        <div style={{marginBottom: '24px'}}><Button type='Primary' text='See full slide deck' link={KohiToKochaSlideDeck}/></div>
+        <div className='steps'>
+            <div className='step'>
+                {!isMobile && <div className='stepNumber'><h1>1</h1></div>}
+                <div className='journeyCard'>
+                    <h2 style={{textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>1. </span>Scoping</h2>
+                    <p>For this project, I wanted to address a very specific niche: <span style={{fontWeight: 'bold', color: '#2519D2'}}>Japanese cafes.</span> Through my previous experience with language learning apps and my research of Japanese cafes, I narrowed down my app to contain two main sections:<br/><br/><span style={{fontWeight: 'bold', color: '#2519D2'}}>• Learn: </span>Covers history, vocabulary, phrases and expressions, and etiquette<br/><span style={{fontWeight: 'bold', color: '#2519D2'}}>• Explore: </span>Helps plan dialogues for visiting specific cafes</p>
+                </div>
+            </div>
+            <div className='step'>
+                {!isMobile && <div className='stepNumber'><h1>2</h1></div>}
+                <div className='journeyCard'>
+                    <h2 style={{textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>2. </span>Design</h2>
+                    <p>I collected inspiration from plant, planning, meditation, and language apps as well as Nintendo and Studio Ghibli to extract the aesthetic I wanted to emulate: <span style={{fontWeight: 'bold', color: '#2519D2'}}>organic and whimsical.</span><br/><br/>Then, I created a color scheme, typographic hierarchy, and interactive components.</p>
+                </div>
+            </div>
+            <div className='step'>
+                {!isMobile && <div className='stepNumber'><h1>3</h1></div>}
+                <div className='journeyCard'>
+                    <h2 style={{textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>Prototype</h2>
+                    <p>Finally, I created wireframes and inserted my components, where I used Figma prototyping to make it interactive.<br/><br/>In the future, I would love to add a <span style={{fontWeight: 'bold', color: '#2519D2'}}>collected word bank and expand on the dialogue building feature.</span></p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    const scopingArray = [
+        {
+            title: 'Learning about culture and language',
+            caption: 'Japanese culture and etiquette is very different from that of the U.S. and many other countries. Learning Japanese consists of the written and spoken language, but also the poise and manners in order to be respectful.',
+        },
+        {
+            title: 'Building up confidence',
+            caption: 'The dialogue builder allows users to create their order and practice words and phrases before entering a cafe. Ordering at a cafe is generally low-stakes, but this should encourage users to use Japanese, rather than English or gestures, to order themselves.',
+        },
+        {
+            title: 'Encouraging practice',
+            caption: 'I created a system to earn points, which can be used for character customization, and provided achievement badges. Points and achievements are positive reinforcement to encourage continued practice.',
+        },
+    ];
+
+    const flowchart = <PlainImage plainImageProps={{title: 'Flow chart', imagePath: KohiToKochaFlowchart, caption: 'There were four basic tabs for the app: Learn, Explore, Notes, and Account. The Notes and Account tab would follow the typical format of other Notes and Account UIs, but the Learn and Explore tabs were new. This is the basic flow I wanted to follow:\n\nLearn:\n1. Choose a café type: Modern, Themed, Kissaten, Bakery\n2. Learn: History, Vocabulary, Phrases/Expressions, Etiquette\n3. Interact\n4. Earn Points\n\nExplore:\n1. Choose a café location\n2. Get a summary of the cafe\n3. See the menu\n4. Plan order/dialogue\n5. Notes on experience'}}/>;
+
+    const scopingGridArray = [
+        {title: 'Scoping', content: <p>For this project, I wanted to improve my mobile design skills while focusing on subjects I am passionate about. I started learning Japanese casually a few years ago to prepare for a vacation to Japan; I ended up really enjoying it and have been studying Japanese during my free time. Simultaneously, I also worked as a barista in a bakery. I became curious about Japanese culture and specifically, cafes, and discovered four main types of cafes: Modern, Kissaten, Themed, and Bakery cafes. Through Kohi To Kocha, I wanted to help users practice Japanese in low-stakes environments, like these cafes.</p>, rowType: 'Column', divider: 'none'},
+        {title: scopingArray[0].title, titleType: 'small', content: <p>{scopingArray[0].caption}</p>,  rowType: 'Row', divider: 'gray'},
+        {title: scopingArray[1].title, titleType: 'small', content: <p>{scopingArray[1].caption}</p>,  rowType: 'Row', divider: 'gray'},
+        {title: scopingArray[2].title, titleType: 'small', content: <p>{scopingArray[2].caption}</p>,  rowType: 'Row', divider: 'none'},
+        {content: flowchart,  rowType: 'Column'},
+    ]
 
     const colors = [
         {colorName: 'Green 100', color: '#DAF39E', text: 'Hex Code: #DAF39E\nRGB: 218 243 158\nCMYK: 10% 0% 35% 5%'},
@@ -40,11 +90,6 @@ export const KohiToKocha = () => {
     ];
     
     const moodboard = <PlainImage plainImageProps={{title: 'Mood board', imagePath: KohiToKochaMoodboard, caption: 'Some of my main inspirations were lush greenery and blue skies, especially how it is portrayed in Studio Ghibli films, and the openness of Nintendo games, like Animal Crossing.'}}/>;
-    const flowchart = <PlainImage plainImageProps={{title: 'Flow chart', imagePath: KohiToKochaFlowchart, caption: 'There were four basic tabs for the app: Learn, Explore, Notes, and Account. The Notes and Account tab would follow the typical format of other Notes and Account UIs, but the Learn and Explore tabs were new. This is the basic flow I wanted to follow:\n\nLearn:\n1. Choose a café type: Modern, Themed, Kissaten, Bakery\n2. Learn: History, Vocabulary, Phrases/Expressions, Etiquette\n3. Interact\n4. Earn Points\n\nExplore:\n1. Choose a café location\n2. Get a summary of the cafe\n3. See the menu\n4. Plan order/dialogue\n5. Notes on experience'}}/>;
-    const sketches = <ImageSlide imageSlideProps={[
-        {title: 'Sketches', imagePath: KohiToKochaSketch1},
-        {title: 'Sketches', imagePath: KohiToKochaSketch2},
-    ]}/>;
     const screens = <ImageSlide imageSlideProps={[
         {title: 'Wireframes', imagePath: KohiToKochaWireframes},
         {title: 'Home', imagePath: KohiToKochaPrototype1},
@@ -58,37 +103,20 @@ export const KohiToKocha = () => {
         {title: 'Account', imagePath: KohiToKochaPrototype9},
     ]}/>;
 
-    const vision =
-        <div className='columnWith24Gap'>
-            {moodboard}
-            {sketches}
-            {flowchart}
-        </div>;  
-    
     const design =
         <div className='columnWith24Gap'>
+            {moodboard}
             {<ColorPalette colors={colors}/>}
             {<PlainImage plainImageProps={{imagePath: KohiToKochaTypography}}/>}
-        </div>;
-
-    const construction =
-        <div className='columnWith24Gap'>
             {screens}
-        </div>;
+        </div>;  
+    
 
     const prototype =
         <div className='columnWith12Gap' style={{alignItems: 'center'}}>
             <div className='phoneMockupContainer'><iframe title='Kohi To Kocha Prototype' src={isXSmall ? "https://embed.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=765-9539&p=f&scaling=contain&content-scaling=responsive&page-id=72%3A1269&starting-point-node-id=765%3A9539&show-proto-sidebar=1&embed-host=share&hide-ui=1":"https://embed.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=531-19001&scaling=contain&content-scaling=responsive&page-id=72%3A1269&starting-point-node-id=531%3A19001&embed-host=share&hide-ui=1"} allowfullscreen></iframe></div>
             <div style={{width: 'stretch', maxWidth: '422px'}}><Button type='Primary' text='See prototype in full screen' fullWidth={true} link='https://www.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=531-19001&t=0Lucuy2WHfprI1dN-1&scaling=contain&content-scaling=fixed&page-id=72%3A1269&starting-point-node-id=531%3A19001'/></div>
         </div>;
-
-    const gridArray = [
-        {title: 'Overview', content: content, divider: 'gray', rowType: 'Column'},
-        {title: 'The Vision', content: vision, divider: 'gray', rowType: 'Column'},
-        {title: 'Design Foundation', content: design, divider: 'gray', rowType: 'Column'},
-        {title: 'Construction', content: construction, divider: 'gray', rowType: 'Column'},
-        {title: 'Prototype', content: prototype, rowType: 'Column'}
-    ];
 
     return (
         <div>
@@ -97,8 +125,19 @@ export const KohiToKocha = () => {
                     <h1 className='title'>Kohi To Kocha</h1>
                 </div>
             </div>
-            
-            <Grid gridProps={gridArray} gridMargin='20px 0 40px 0'/>
+            <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='20px 0 40px 0'/>
+            <div className='bannerWrapper'>
+                <img src={KohiToKochaBanner2} alt='SWOT analysis, competitive analysis, CTA, and red routes'/>
+            </div>
+            <Grid gridProps={scopingGridArray} gridMargin='20px 0 40px 0'/>
+            <div className='bannerWrapper'>
+                <img src={KohiToKochaBanner3} alt='SWOT analysis, competitive analysis, CTA, and red routes'/>
+            </div>
+            <Grid gridProps={[{title: 'Design', content: design, rowType: 'Column'}]}/>
+            <div className='bannerWrapper'>
+                <img src={KohiToKochaBanner4} alt='SWOT analysis, competitive analysis, CTA, and red routes'/>
+            </div>
+            <Grid gridProps={[{title: 'Prototype', content: prototype, rowType: 'Column'}]}/>
         </div>
     );
 }
