@@ -112,8 +112,8 @@ export const KohiToKocha = () => {
 
     const prototype =
         <div className='columnWith12Gap' style={{alignItems: 'center'}}>
-            <div className='phoneMockupContainer'><iframe title='Kohi To Kocha Prototype' src={isXSmall ? "https://embed.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=765-9539&p=f&scaling=contain&content-scaling=responsive&page-id=72%3A1269&starting-point-node-id=765%3A9539&show-proto-sidebar=1&embed-host=share&hide-ui=1":"https://embed.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=531-19001&scaling=contain&content-scaling=responsive&page-id=72%3A1269&starting-point-node-id=531%3A19001&embed-host=share&hide-ui=1"} allowfullscreen></iframe></div>
-            <div style={{width: 'stretch', maxWidth: '422px'}}><Button type='Primary' text='See prototype in full screen' fullWidth={true} link='https://www.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=531-19001&t=0Lucuy2WHfprI1dN-1&scaling=contain&content-scaling=fixed&page-id=72%3A1269&starting-point-node-id=531%3A19001'/></div>
+            <div className='phoneMockupContainer'><iframe title='Kohi To Kocha Prototype' src={"https://embed.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=765-9539&p=f&scaling=contain&content-scaling=responsive&page-id=72%3A1269&starting-point-node-id=765%3A9539&show-proto-sidebar=1&embed-host=share&hide-ui=1"} allowfullscreen></iframe></div>
+            <div style={{width: 'stretch', maxWidth: '320px'}}><Button type='Primary' text='See prototype in full screen' fullWidth={true} link='https://www.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=531-19001&t=0Lucuy2WHfprI1dN-1&scaling=contain&content-scaling=fixed&page-id=72%3A1269&starting-point-node-id=531%3A19001'/></div>
         </div>;
 
     return (
