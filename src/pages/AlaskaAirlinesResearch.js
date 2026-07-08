@@ -57,12 +57,12 @@ export const AlaskaAirlinesResearch = () => {
             caption: 'Providing clear flight tier options was a big pain point among direct competitors. Creating a clearer comparison of options through coherent messaging, spacious design, and intuitive navigation will reduce confusion and increase confidence when choosing flights.',
         },
         {
-            title: 'Highlighting add-ons and upgrades',
-            caption: 'Giving add-ons and upgrades their own page will allow users to focus on all add-ons at once without distractions and will remove clutter from other pages. This will also allow a clear comparison of all add-on options.',
+            title: 'Refining seat selection',
+            caption: 'Choosing seats served as a high cognitive load task, but addressing any friction could improve attachment rates without hurting conversion.',
         },
         {
-            title: 'Choosing flights, seats, and add-ons',
-            caption: 'These are the tasks with the heaviest cognitive load within the booking flow. It will be beneficial to focus the usability tests around these three sections.',
+            title: 'Highlighting add-ons and upgrades',
+            caption: 'Giving add-ons and upgrades their own page will allow users to focus on all add-ons at once without distractions and will remove clutter from other pages. This will also allow a clear comparison of all add-on options.',
         },
     ]
 
