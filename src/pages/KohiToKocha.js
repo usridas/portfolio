@@ -1,28 +1,22 @@
 import './Pages.scss';
 import ImageSlide from '../components/Images/ImageSlide.js';
 import {
-    KohiToKochaTypography,
     KohiToKochaFlowchart,
-    KohiToKochaPrototype1,
-    KohiToKochaPrototype2,
-    KohiToKochaPrototype3,
-    KohiToKochaPrototype4,
-    KohiToKochaPrototype5,
-    KohiToKochaPrototype6,
-    KohiToKochaPrototype7,
-    KohiToKochaPrototype8,
-    KohiToKochaPrototype9,
-    KohiToKochaWireframes,
     KohiToKochaBanner3,
     KohiToKochaBanner4,
     KohiToKochaBanner2,
+    KohiToKochaInspiration,
+    KohiToKochaComponents1,
+    KohiToKochaComponents2,
+    KohiToKochaComponents3,
+    KohiToKochaComponents4,
 } from '../assets/images/index.js';
 import KohiToKochaSlideDeck from '../assets/documents/KohiToKochaSlideDeck.pdf'
-import { PlainImage } from '../components/Images/PlainImage.js';
 import Button from '../components/Button/Button.js';
 import ColorPalette from '../components/ProjectDetails/ColorPalette.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import Grid from '../components/Grid/Grid.js';
+import Fonts from '../components/ProjectDetails/Fonts.js';
 
 export const KohiToKocha = () => {
     const { isXSmall, isSmall } = useScreenResolution();
@@ -49,7 +43,7 @@ export const KohiToKocha = () => {
             <div className='step'>
                 {!isMobile && <div className='stepNumber'><h1>3</h1></div>}
                 <div className='journeyCard'>
-                    <h2 style={{textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>Prototype</h2>
+                    <h2 style={{textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>Prototyping</h2>
                     <p>Finally, I created wireframes and inserted my components, where I used Figma prototyping to make it interactive.<br/><br/>In the future, I would love to add a <span style={{fontWeight: 'bold', color: '#2519D2'}}>collected word bank and expand on the dialogue building feature.</span></p>
                 </div>
             </div>
@@ -59,7 +53,7 @@ export const KohiToKocha = () => {
     const scopingArray = [
         {
             title: 'Learning about culture and language',
-            caption: 'Japanese culture and etiquette is very different from that of the U.S. and many other countries. Learning Japanese consists of the written and spoken language, but also the poise and manners in order to be respectful.',
+            caption: 'Japanese culture and etiquette is very different from that of the U.S. and many other countries. Learning Japanese consists of the written and spoken language, but also the poise and etiquette in order to be respectful.',
         },
         {
             title: 'Building up confidence',
@@ -71,7 +65,7 @@ export const KohiToKocha = () => {
         },
     ];
 
-    const flowchart = <PlainImage plainImageProps={{title: 'Flow chart', imagePath: KohiToKochaFlowchart, caption: 'There were four basic tabs for the app: Learn, Explore, Notes, and Account. The Notes and Account tab would follow the typical format of other Notes and Account UIs, but the Learn and Explore tabs were new. This is the basic flow I wanted to follow:\n\nLearn:\n1. Choose a café type: Modern, Themed, Kissaten, Bakery\n2. Learn: History, Vocabulary, Phrases/Expressions, Etiquette\n3. Interact\n4. Earn Points\n\nExplore:\n1. Choose a café location\n2. Get a summary of the cafe\n3. See the menu\n4. Plan order/dialogue\n5. Notes on experience'}}/>;
+    const flowchart = <ImageSlide imageSlideProps={[{title: 'Flowchart', imagePath: KohiToKochaFlowchart, caption: 'There were four basic tabs for the app: Learn, Explore, Notes, and Account. The Notes and Account tab would follow the typical format of other Notes and Account UIs, but the Learn and Explore tabs were new. This is the basic flow I wanted to follow:\n\nLearn:\n1. Choose a café type: Modern, Themed, Kissaten, Bakery\n2. Learn: History, Vocabulary, Phrases/Expressions, Etiquette\n3. Interact\n4. Earn Points\n\nExplore:\n1. Choose a café location\n2. Get a summary of the cafe\n3. See the menu\n4. Plan order/dialogue\n5. Notes on experience'}]}/>;
 
     const scopingGridArray = [
         {title: 'Scoping', content: <p>For this project, I wanted to improve my mobile design skills while focusing on subjects I am passionate about. I started learning Japanese casually a few years ago to prepare for a vacation to Japan; I ended up really enjoying it and have been studying Japanese during my free time. Simultaneously, I also worked as a barista in a bakery. I became curious about Japanese culture and specifically, cafes, and discovered four main types of cafes: Modern, Kissaten, Themed, and Bakery cafes. Through Kohi To Kocha, I wanted to <span style={{fontWeight: 'bold', color: '#2519D2'}}>help users practice Japanese in low-stakes environments</span>, like these cafes.</p>, rowType: 'Column', divider: 'none'},
@@ -87,26 +81,29 @@ export const KohiToKocha = () => {
         {colorName: 'Blue 100', color: '#C9ECFF', text: 'Hex Code: #C9ECFF\nRGB: 201 236 255\nCMYK: 21% 7% 0% 0%'},
         {colorName: 'Gray 100', color: '#E8E7E3', text: 'Hex Code: #E8E7E3\nRGB: 232 231 227\nCMYK: 0% 0% 2% 9%'},
     ];
-    
-    const screens = <ImageSlide imageSlideProps={[
-        {title: 'Wireframes', imagePath: KohiToKochaWireframes},
-        {title: 'Home', imagePath: KohiToKochaPrototype1},
-        {title: 'Learn', imagePath: KohiToKochaPrototype2},
-        {title: 'Learn', imagePath: KohiToKochaPrototype3},
-        {title: 'Explore', imagePath: KohiToKochaPrototype4},
-        {title: 'Explore', imagePath: KohiToKochaPrototype5},
-        {title: 'Explore', imagePath: KohiToKochaPrototype6},
-        {title: 'Notes', imagePath: KohiToKochaPrototype7},
-        {title: 'Account', imagePath: KohiToKochaPrototype8},
-        {title: 'Account', imagePath: KohiToKochaPrototype9},
+
+    const fonts = [
+        {fontName: 'Crimson Pro', fontSubtitle: 'Large font', fontFamily: `"Crimson Pro", serif`, fontWeight: '400', fontStyle: 'normal', fontSize: '28', allCaps: true},
+        {fontName: 'Figtree', fontSubtitle: 'Body font', fontFamily: `"figtree", sans-serif`, fontWeight: '500', fontStyle: 'normal', fontSize: '22'},
+        {fontName: 'Noto Sans JP', fontSubtitle: 'Japanese body font', fontFamily: `"Noto Sans JP", sans-serif`, fontWeight: '500', fontStyle: 'normal', fontSize: '22'}  
+    ];
+
+    const components = <ImageSlide imageSlideProps={[
+        {title: 'Basic components', imagePath: KohiToKochaComponents1},
+        {title: 'Basic components', imagePath: KohiToKochaComponents2},
+        {title: 'Basic components', imagePath: KohiToKochaComponents3},
+        {title: 'Basic components', imagePath: KohiToKochaComponents4},
     ]}/>;
 
     const design =
-        <div className='columnWith24Gap'>
+        <div className='columnWith48Gap'>
             <p>Some of my main inspirations were lush greenery and blue skies, especially how it is portrayed in Studio Ghibli films, and the openness of Nintendo games, like Animal Crossing. I also collected inspiration from plant, planning, meditation, and language apps to arrive to an <span style={{fontWeight: 'bold', color: '#2519D2'}}>organically whimsical</span> aesthetic.</p>
-            {<ColorPalette colors={colors}/>}
-            {<PlainImage plainImageProps={{imagePath: KohiToKochaTypography}}/>}
-            {screens}
+            {<ImageSlide imageSlideProps={[{title: 'Inspiration', imagePath: KohiToKochaInspiration}]}/>}
+            <div style={{display: 'flex', flexDirection: 'row', gap: '12px'}}>
+                <ColorPalette showTitle colors={colors}/>
+                <Fonts showTitle fonts={fonts}/>
+            </div>
+            {components}
         </div>;  
     
 
@@ -114,6 +111,7 @@ export const KohiToKocha = () => {
         <div className='columnWith12Gap' style={{alignItems: 'center'}}>
             <div className='phoneMockupContainer'><iframe title='Kohi To Kocha Prototype' src={"https://embed.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=765-9539&p=f&scaling=contain&content-scaling=responsive&page-id=72%3A1269&starting-point-node-id=765%3A9539&show-proto-sidebar=1&embed-host=share&hide-ui=1"} allowfullscreen></iframe></div>
             <div style={{width: 'stretch', maxWidth: '320px'}}><Button type='Primary' text='See prototype in full screen' fullWidth={true} link='https://www.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=531-19001&t=0Lucuy2WHfprI1dN-1&scaling=contain&content-scaling=fixed&page-id=72%3A1269&starting-point-node-id=531%3A19001'/></div>
+            <h2 style={{margin: '80px 0px 160px 0'}}>As my timeline was limited to a month, I focused on creating a crisp design, but in the future I would love to <span style={{color: '#2519D2'}}>develop the idea to create an Android and/or iOS app.</span> In terms of features, I would love to <span style={{color: '#2519D2'}}>add a collected word bank and expand on the dialogue building feature.</span></h2>
         </div>;
 
     return (
@@ -135,7 +133,7 @@ export const KohiToKocha = () => {
             <div className='bannerWrapper'>
                 <img src={KohiToKochaBanner4} alt='Screens of Kohi To Kocha'/>
             </div>
-            <Grid gridProps={[{title: 'Prototype', content: prototype, rowType: 'Column'}]}/>
+            <Grid gridProps={[{title: 'Prototyping', content: prototype, rowType: 'Column'}]}/>
         </div>
     );
 }

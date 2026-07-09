@@ -13,7 +13,6 @@ import {
 } from '../assets/images';
 import TextContainer from '../components/Text/TextContainer.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
-import PlainImage from '../components/Images/PlainImage.js';
 import Grid from '../components/Grid/Grid.js';
 
 export const ElfsterRedesign = () => {
@@ -51,7 +50,7 @@ export const ElfsterRedesign = () => {
   const identify =
     <div className='columnWith24Gap'>
         {<TextContainer text={'First, I collected feedback from myself and other Elfster users about the pros and cons of the app. A lot of the criticism of the app rose from difficult navigation, the functionality of wishlists, and excess information or advertising. Some main complaints were:\n\n• Requesting the same gift across two different exchanges could result in a user receiving two of the same gift.\n• While others can mark things on your wishlist as purchased, you will not see what items have been purchased or not on your wishlist. This means you can delete an item from your wishlist that has already been purchased and the friend would likely have to return the gift.\n• When searching for gifts, more sources should appear other than Amazon, like Etsy, and maybe other big companies, like Walmart, Target, etc.'}/>}
-        {<PlainImage plainImageProps={{imagePath: ElfsterFeedback}}/>}
+        {<ImageSlide imageSlideProps={[{imagePath: ElfsterFeedback}]}/>}
     </div>;
 
   const imageSlideProps1 = [

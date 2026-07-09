@@ -20,6 +20,12 @@
     width: 100%;
 }
 
+.columnWith48Gap {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
 .columnWith24Gap {
     display: flex;
     flex-direction: column;

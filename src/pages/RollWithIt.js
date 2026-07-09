@@ -29,7 +29,6 @@ import {
     RollWithItBanner
 } from '../assets/images';
 import RollWithItSlideDeck from '../assets/documents/RollWithItSlideDeck.pdf'
-import { PlainImage } from '../components/Images/PlainImage.js';
 import Button from '../components/Button/Button.js';
 import ColorPalette from '../components/ProjectDetails/ColorPalette.js';
 import Grid from '../components/Grid/Grid.js';
@@ -52,7 +51,7 @@ export const RollWithIt = () => {
     const design =
             <div className='columnWith24Gap'>
                 {<ColorPalette colors={colors}/>}
-                {<PlainImage plainImageProps={{imagePath: RollWithItTypography}}/>}
+                {<ImageSlide imageSlideProps={[{imagePath: RollWithItTypography}]}/>}
             </div>;
     const wireframes = <div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}>
         <ImageSlide imageSlideProps={[

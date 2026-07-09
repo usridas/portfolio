@@ -2,9 +2,10 @@ import './ImageSlide.scss';
 import { useState, useEffect } from 'react';
 import Button from '../Button/Button.js';
 import Spinner from '../Spinner/Spinner.js';
+import { toSentenceCase } from '../../utils/utils';
 
 
-export const ImageSlide = ({imageSlideProps, imageMaxWidth=false}) => {
+export const ImageSlide = ({imageSlideProps, imageMaxWidth=false, hugImage=false}) => {
 
   const [imageIndex, setImageIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
@@ -42,7 +43,8 @@ export const ImageSlide = ({imageSlideProps, imageMaxWidth=false}) => {
           </div>
         }
         {isLoading && <div className='imageBoxLoading'><Spinner /></div>}
-        <div className='imageBox' style={{display: isLoading ? 'none':'', backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : 'contain'}`}}/>
+        {(!hugImage && imageSlideProps.length > 1) && <div className='imageBoxNotHug' style={{display: isLoading ? 'none':'', backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : 'contain'}`}}/>}
+        {(hugImage || imageSlideProps.length === 1) && <img onLoad={()=>setIsLoading(false)} alt={toSentenceCase(imageSlideProps[imageIndex].title)} aria-label={toSentenceCase(imageSlideProps[imageIndex].title)} className='imageBoxHug' src={imageSlideProps[imageIndex].imagePath} style={isLoading ? { display: 'none' } : {maxWidth: imageMaxWidth ? '700px' : 'none'}}/>}
         {imageSlideProps[imageIndex].caption && <p>{imageSlideProps[imageIndex].caption}</p>}
         {imageSlideProps.length > 1 &&
           <div className='imageSlideTextContainer'>

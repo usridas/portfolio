@@ -7,11 +7,11 @@ import {
     TraderJoesBanner,
 } from '../assets/images';
 import TraderJoesSlideDeck from '../assets/documents/TraderJoesSlideDeck.pdf'
-import PlainImage from '../components/Images/PlainImage.js';
 import Button from '../components/Button/Button.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import Tag from '../components/Tag/Tag.js';
 import Grid from '../components/Grid/Grid.js';
+import ImageSlide from '../components/Images/ImageSlide.js';
 
 export const TraderJoesResearch = () => {
 
@@ -51,12 +51,12 @@ export const TraderJoesResearch = () => {
 
     const affinityDiagram1 = <TextContainer title={'Highlights'} text={'• Participants need to supplement Trader Joe\'s with other grocery stores, because Trader Joe\'s doesn\'t have all they need.\n• Parking is not good at most Trader Joe’s, due to lack of space and/or the huge crowds.\n• On the website, participants said the recipes are unique and they would take time to explore this. They would like to be able to add ingredients directly from the recipe, rather than re-navigating.\n• The snacks, seasonal items, and frozen items are delicious and iconic, and they have a wide variety.'} />;
     const affinityDiagram2 = <TextContainer title={'Surprising notes'} text={'• Most participants say part of the appeal of Trader Joe\'s is going in person and exploring the aisles, but one participant wishes they did have a delivery option. I was expecting more participants to advocate for online ordering options!\n• There was not a large appeal for an app or membership program, even if the participants did mention having memberships for other grocery stores.'} />;
-    const affinityDiagram3 = <div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}><PlainImage plainImageProps={{imagePath: TraderJoesAffinityDiagram}} imageMaxWidth={true}/></div>;
+    const affinityDiagram3 = <div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}><ImageSlide imageSlideProps={[{imagePath: TraderJoesAffinityDiagram}]} imageMaxWidth={true}/></div>;
 
     const persona1 = <TextContainer text={'Maya is a pretty planned person.  She is quite busy, but will find time to do her groceries every week on the weekend with the list she has accrued over the week. She does her main shopping at an alternative store, because it will have all the essentials at a lower price, and then follows up with a trip to Trader Joe’s for snacks, seasonal items, and party gifts. The location and parking of Trader Joe\'s is Maya\'s worst complaint.'}/>;
-    const persona2 = <PlainImage plainImageProps={{imagePath: TraderJoesMayaJourneyMap}}/>;
+    const persona2 = <ImageSlide imageSlideProps={[{imagePath: TraderJoesMayaJourneyMap}]}/>;
     const persona3 = <TextContainer text={'Jess is an introvert. She has to interact with people a lot at work and values alone time to do her hobbies. She does a majority of her shopping online, but is interested in certain Trader Joe\'s snacks and seasonal items that she sees on social media, so she will go on a day that might be less busy and crowded. Ideally, Jess would stay at home and browse the grocery store website to get her groceries and snacks delivered to her. She really wishes Trader Joe\'s had a delivery or online shopping option, because she does love the snacks and seasonal items, but she doesn\'t like being around people in the store. Sometimes chatting with store employees can be a little tiring.'}/>;
-    const persona4 = <PlainImage plainImageProps={{imagePath: TraderJoesJessJourneyMap}}/>;
+    const persona4 = <ImageSlide imageSlideProps={[{imagePath: TraderJoesJessJourneyMap}]}/>;
 
     const opportunity1 = <div className='columnWith12Gap'><Tag type='P0' text='High priority'/><TextContainer title={'How can Trader Joe\'s encourage customers to shop primarily at their store rather than having it as a secondary store which needs a supplement?'} text={'All 5 participants said that they supplement Trader Joe\'s with another grocery store. Customers go to Trader Joe\'s for novelty items, but how can regular grocery shopping be encouraged as well?'}/></div>;
     const opportunity2 = <div className='columnWith12Gap'><Tag type='P0' text='High priority'/><TextContainer title={'How can Trader Joe\'s make the parking situation less stressful and more accessible?'} text={'4/5 participants commented on the insufficient parking at Trader Joe\'s. Parking is not good at most locations, due to lack of space and/or the huge crowds. Essentially, there is not a big enough parking lot for the size of their customer base.'}/></div>;
