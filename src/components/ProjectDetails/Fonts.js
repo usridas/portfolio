@@ -12,7 +12,7 @@ export const Fonts = ({fonts, text, showTitle=false}) => {
             {text && <p>{text}</p>}
             {fonts?.map(font => (
             <div className="fontBox">
-                <TextContainer title={font.fontName} subtitle={font.fontSubtitle} text={font.allCaps ? allCapsFontText : fontText} fontFamily={font.fontFamily} textSize={font.fontSize} fontWeight={font.fontWeight} fontStyle={font.fontStyle}/>
+                <TextContainer title={font.fontName} subtitle={font.fontSubtitle} text={font.text ? font.text : font.allCaps ? allCapsFontText : fontText} fontFamily={font.fontFamily} textSize={font.fontSize} fontWeight={font.fontWeight} fontStyle={font.fontStyle}/>
             </div>
             ))}
         </div>;

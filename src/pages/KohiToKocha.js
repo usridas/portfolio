@@ -83,9 +83,9 @@ export const KohiToKocha = () => {
     ];
 
     const fonts = [
-        {fontName: 'Crimson Pro', fontSubtitle: 'Large font', fontFamily: `"Crimson Pro", serif`, fontWeight: '400', fontStyle: 'normal', fontSize: '28', allCaps: true},
+        {fontName: 'Crimson Pro', fontSubtitle: 'Large font, all caps', fontFamily: `"Crimson Pro", serif`, fontWeight: '400', fontStyle: 'normal', fontSize: '28', allCaps: true},
         {fontName: 'Figtree', fontSubtitle: 'Body font', fontFamily: `"figtree", sans-serif`, fontWeight: '500', fontStyle: 'normal', fontSize: '22'},
-        {fontName: 'Noto Sans JP', fontSubtitle: 'Japanese body font', fontFamily: `"Noto Sans JP", sans-serif`, fontWeight: '500', fontStyle: 'normal', fontSize: '22'}  
+        {fontName: 'Noto Sans JP', fontSubtitle: 'Japanese body font', fontFamily: `"Noto Sans JP", sans-serif`, fontWeight: '500', fontStyle: 'normal', fontSize: '22', text: 'あ い う え お ア イ ウ エ オ'}  
     ];
 
     const components = <ImageSlide imageSlideProps={[
