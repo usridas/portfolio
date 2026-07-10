@@ -99,7 +99,7 @@ export const KohiToKocha = () => {
         <div className='columnWith48Gap'>
             <p>Some of my main inspirations were lush greenery and blue skies, especially how it is portrayed in Studio Ghibli films, and the openness of Nintendo games, like Animal Crossing. I also collected inspiration from plant, planning, meditation, and language apps to arrive to an <span style={{fontWeight: 'bold', color: '#2519D2'}}>organically whimsical</span> aesthetic.</p>
             {<ImageSlide imageSlideProps={[{title: 'Inspiration', imagePath: KohiToKochaInspiration}]}/>}
-            <div style={{display: 'flex', flexDirection: 'row', gap: '12px'}}>
+            <div className='colorFontContainer'>
                 <ColorPalette showTitle colors={colors}/>
                 <Fonts showTitle fonts={fonts}/>
             </div>
