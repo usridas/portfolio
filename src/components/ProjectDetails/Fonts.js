@@ -8,8 +8,8 @@ export const Fonts = ({fonts, text, showTitle=false}) => {
 
     const fullFontBox = 
         <div className='projectDetailContent'>
-            {showTitle && <h3 style={{marginBottom: '4px'}}>Typography</h3>}
-            {text && <p>{text}</p>}
+            {showTitle && <h3 style={{marginBottom: text ? '0px' : '4px'}}>Typography</h3>}
+            {text && <p style={{marginBottom: '8px'}}>{text}</p>}
             {fonts?.map(font => (
             <div className="fontBox">
                 <TextContainer title={font.fontName} subtitle={font.fontSubtitle} text={font.text ? font.text : font.allCaps ? allCapsFontText : fontText} fontFamily={font.fontFamily} textSize={font.fontSize} fontWeight={font.fontWeight} fontStyle={font.fontStyle}/>

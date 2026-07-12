@@ -100,8 +100,8 @@ export const KohiToKocha = () => {
             <p>Some of my main inspirations were lush greenery and blue skies, especially how it is portrayed in Studio Ghibli films, and the openness of Nintendo games, like Animal Crossing. I also collected inspiration from plant, planning, meditation, and language apps to arrive to an <span style={{fontWeight: 'bold', color: '#2519D2'}}>organically whimsical</span> aesthetic.</p>
             {<ImageSlide imageSlideProps={[{title: 'Inspiration', imagePath: KohiToKochaInspiration}]}/>}
             <div className='colorFontContainer'>
-                <ColorPalette showTitle colors={colors}/>
-                <Fonts showTitle fonts={fonts}/>
+                <ColorPalette showTitle colors={colors} text={'Soothing colors to create a calm, tranquil ambiance while learning. These colors exemplify Zen philosophy and seijaku (静寂), meaning active calm.'}/>
+                <Fonts showTitle fonts={fonts} text={'Academic serif font to show sophistication and elegance. Clean sans-serif fonts for legibility and Noto Sans JP to specifically support Japanese text.'}/>
             </div>
             {components}
         </div>;  

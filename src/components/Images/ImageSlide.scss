@@ -30,6 +30,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    color: #33322A;
     &:hover {
         opacity: 1;
         backdrop-filter: blur(10px);
@@ -52,6 +53,7 @@
     height: 100%;
     backdrop-filter: blur(4px);
     background-color: #E6E5E077;
+    color: #33322A;
     &:focus {
         border: 1px solid #6D6C65;
     }
