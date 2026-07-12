@@ -7,9 +7,9 @@ import {
     KohiToKochaBanner2,
     KohiToKochaInspiration,
     KohiToKochaComponents1,
-    KohiToKochaComponents2,
-    KohiToKochaComponents3,
-    KohiToKochaComponents4,
+    KohiToKochaComponents5,
+    KohiToKochaComponents6,
+    KohiToKochaComponents7,
 } from '../assets/images/index.js';
 import KohiToKochaSlideDeck from '../assets/documents/KohiToKochaSlideDeck.pdf'
 import Button from '../components/Button/Button.js';
@@ -89,10 +89,10 @@ export const KohiToKocha = () => {
     ];
 
     const components = <ImageSlide imageSlideProps={[
+        {title: 'Design decisions', imagePath: KohiToKochaComponents5},
+        {title: 'Text and audio', imagePath: KohiToKochaComponents6},
+        {title: 'Gamification', imagePath: KohiToKochaComponents7},
         {title: 'Basic components', imagePath: KohiToKochaComponents1},
-        {title: 'Basic components', imagePath: KohiToKochaComponents2},
-        {title: 'Basic components', imagePath: KohiToKochaComponents3},
-        {title: 'Basic components', imagePath: KohiToKochaComponents4},
     ]}/>;
 
     const design =
@@ -109,7 +109,7 @@ export const KohiToKocha = () => {
 
     const prototype =
         <div className='columnWith12Gap' style={{alignItems: 'center'}}>
-            <div className='phoneMockupContainer'><iframe title='Kohi To Kocha Prototype' src={"https://embed.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=765-9539&p=f&scaling=contain&content-scaling=responsive&page-id=72%3A1269&starting-point-node-id=765%3A9539&show-proto-sidebar=1&embed-host=share&hide-ui=1"} allowfullscreen></iframe></div>
+            <div className='phoneMockupContainer'><iframe title='Kohi To Kocha Prototype' src={"https://embed.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=1125-46256&scaling=contain&content-scaling=responsive&page-id=72%3A1269&starting-point-node-id=1125%3A46256&show-proto-sidebar=1&embed-host=share&hide-ui=1"} allowfullscreen></iframe></div>
             <div style={{width: 'stretch', maxWidth: '320px'}}><Button type='Primary' text='See prototype in full screen' fullWidth={true} link='https://www.figma.com/proto/1krraobhKcrvyfy7U1ljOc/K%C5%8Dh%C4%AB-To-K%C5%8Dcha?node-id=531-19001&t=0Lucuy2WHfprI1dN-1&scaling=contain&content-scaling=fixed&page-id=72%3A1269&starting-point-node-id=531%3A19001'/></div>
             <h2 style={{margin: '80px 0px 160px 0'}}>As my timeline was limited to a month, I focused on creating a crisp design, but in the future I would love to <span style={{color: '#2519D2'}}>develop the idea to create an Android and/or iOS app.</span> In terms of features, I would love to <span style={{color: '#2519D2'}}>add a collected word bank and expand on the dialogue building feature.</span></h2>
         </div>;
