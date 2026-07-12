@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.348508f5.css",
-    "main.js": "/static/js/main.2c963e12.js",
+    "main.js": "/static/js/main.d7a46899.js",
     "static/js/453.ac9b7e2a.chunk.js": "/static/js/453.ac9b7e2a.chunk.js",
     "static/media/mockup4.png": "/static/media/mockup4.4e883e7a5e31d886385c.png",
     "static/media/mockup3.png": "/static/media/mockup3.8a6b4c0488704ae6db2c.png",
@@ -26,7 +26,9 @@
     "static/media/IJustCalledToSayILoveYou.mp3": "/static/media/IJustCalledToSayILoveYou.d8db95dd913d4a452985.mp3",
     "static/media/Rosmarina.mp3": "/static/media/Rosmarina.9183b1ec9918495c394b.mp3",
     "static/media/RollWithItSlideDeck.pdf": "/static/media/RollWithItSlideDeck.3b79571f21abdb9eaebe.pdf",
+    "static/media/Components6.png": "/static/media/Components6.f6e99280d5cddbc390df.png",
     "static/media/GetLucky.mp3": "/static/media/GetLucky.9f132a62cbdf373cc8c9.mp3",
+    "static/media/Components7.png": "/static/media/Components7.11c4ee9707e746cbf066.png",
     "static/media/Brain.png": "/static/media/Brain.76329c797b1f89506324.png",
     "static/media/Heart.png": "/static/media/Heart.49f3964ecb1049bb8a6d.png",
     "static/media/BaDaBa.mp3": "/static/media/BaDaBa.6269d15f252597252126.mp3",
@@ -56,6 +58,7 @@
     "static/media/Mushroom_3.png": "/static/media/Mushroom_3.6f0c1476291b4188e896.png",
     "static/media/Mushroom_1.png": "/static/media/Mushroom_1.b59406ebbfcf0dfe2271.png",
     "static/media/Mushroom_2.png": "/static/media/Mushroom_2.f2136d0aff28b8b13713.png",
+    "static/media/Components5.png": "/static/media/Components5.9ac9fa5f283eb4efdb9a.png",
     "static/media/TripSummary.png": "/static/media/TripSummary.06b6d916c8db2b84a7be.png",
     "static/media/HotTeaAndFirmwareUpdates.mp3": "/static/media/HotTeaAndFirmwareUpdates.376b25fc1cc34dd7e256.mp3",
     "static/media/Banner4.png": "/static/media/Banner4.30a5c8a29315059ba268.png",
@@ -154,10 +157,10 @@
     "static/media/Typography.png": "/static/media/Typography.5e9cbf68bf0e0ab78832.png",
     "static/media/GetLucky.png": "/static/media/GetLucky.a034bfdebd3eeed67094.png",
     "static/media/KanoAnalysis.png": "/static/media/KanoAnalysis.57ba1065feef88e427e5.png",
+    "static/media/Components1.png": "/static/media/Components1.54933962a7499a526622.png",
     "static/media/Wireframe7.png": "/static/media/Wireframe7.711a61ca3565c0eb6db2.png",
     "static/media/Colors.png": "/static/media/Colors.6f5771f785fb67e110d6.png",
     "static/media/Wireframe5.png": "/static/media/Wireframe5.0cc7b2be3a8bb8db7bde.png",
-    "static/media/Components1.png": "/static/media/Components1.5f830cc25e68b89d94c2.png",
     "static/media/logo3.png": "/static/media/logo3.dbb421c6d4485126c56d.png",
     "static/media/ViasatStream.png": "/static/media/ViasatStream.9308688b01edadb7dfb1.png",
     "static/media/Wireframe4.png": "/static/media/Wireframe4.4389875c959f74881924.png",
@@ -189,11 +192,11 @@
     "index.html": "/index.html",
     "static/media/rotate.svg": "/static/media/rotate.4308d1450fa74ad2cfd5d2efcd9b9e57.svg",
     "main.348508f5.css.map": "/static/css/main.348508f5.css.map",
-    "main.2c963e12.js.map": "/static/js/main.2c963e12.js.map",
+    "main.d7a46899.js.map": "/static/js/main.d7a46899.js.map",
     "453.ac9b7e2a.chunk.js.map": "/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.348508f5.css",
-    "static/js/main.2c963e12.js"
+    "static/js/main.d7a46899.js"
   ]
 }
