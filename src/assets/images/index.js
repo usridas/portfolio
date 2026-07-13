@@ -103,9 +103,6 @@ import KohiToKochaComponents1 from './KohiToKocha/Components1.png';
 import KohiToKochaComponents2 from './KohiToKocha/Components2.png';
 import KohiToKochaComponents3 from './KohiToKocha/Components3.png';
 import KohiToKochaComponents4 from './KohiToKocha/Components4.png';
-import KohiToKochaComponents5 from './KohiToKocha/Components5.png';
-import KohiToKochaComponents6 from './KohiToKocha/Components6.png';
-import KohiToKochaComponents7 from './KohiToKocha/Components7.png';
 import KohiToKochaBanner from './KohiToKocha/Banner.png';
 import KohiToKochaBanner2 from './KohiToKocha/Banner2.png';
 import KohiToKochaBanner3 from './KohiToKocha/Banner3.png';
@@ -258,9 +255,6 @@ export {
     KohiToKochaComponents2,
     KohiToKochaComponents3,
     KohiToKochaComponents4,
-    KohiToKochaComponents5,
-    KohiToKochaComponents6,
-    KohiToKochaComponents7,
     KohiToKochaCover,
     KohiToKochaFlowchart,
     KohiToKochaInspiration,

@@ -7,9 +7,9 @@ import {
     KohiToKochaBanner2,
     KohiToKochaInspiration,
     KohiToKochaComponents1,
-    KohiToKochaComponents5,
-    KohiToKochaComponents6,
-    KohiToKochaComponents7,
+    KohiToKochaComponents2,
+    KohiToKochaComponents3,
+    KohiToKochaComponents4,
 } from '../assets/images/index.js';
 import KohiToKochaSlideDeck from '../assets/documents/KohiToKochaSlideDeck.pdf'
 import Button from '../components/Button/Button.js';
@@ -24,7 +24,7 @@ export const KohiToKocha = () => {
 
     const summaryContent = <div className='columnWith24Gap'>
         <h2>This app is made for <span style={{color: '#2519D2'}}>learning about Japanese culture and language through cafe settings.</span> It will cover different types of cafes and their <span style={{color: '#2519D2'}}>history, vocabulary, phrases and expressions, and etiquette.</span> This app will help users prepare for real-world interactions by preparing dialogues for cafes in Japan and allows users to build up knowledge and confidence without the fear of making mistakes.</h2>
-        <div style={{marginBottom: '24px'}}><Button type='Primary' text='See full slide deck' link={KohiToKochaSlideDeck}/></div>
+        <div style={{marginBottom: '24px'}}><Button type='Primary' text='See full design slide deck' link={KohiToKochaSlideDeck}/></div>
         <div className='steps'>
             <div className='step'>
                 {!isMobile && <div className='stepNumber'><h1>1</h1></div>}
@@ -60,7 +60,7 @@ export const KohiToKocha = () => {
             caption: 'The dialogue builder allows users to create their order and practice words and phrases before entering a cafe. Ordering at a cafe is generally low-stakes, but this should encourage users to use Japanese, rather than English or gestures, to order themselves.',
         },
         {
-            title: 'Encouraging practice',
+            title: 'Encouraging continuous practice',
             caption: 'I created a system to earn points, which can be used for character customization, and provided achievement badges. Points and achievements are positive reinforcement to encourage continued practice.',
         },
     ];
@@ -68,7 +68,7 @@ export const KohiToKocha = () => {
     const flowchart = <ImageSlide imageSlideProps={[{title: 'Flowchart', imagePath: KohiToKochaFlowchart, caption: 'There were four basic tabs for the app: Learn, Explore, Notes, and Account. The Notes and Account tab would follow the typical format of other Notes and Account UIs, but the Learn and Explore tabs were new. This is the basic flow I wanted to follow:\n\nLearn:\n1. Choose a café type: Modern, Themed, Kissaten, Bakery\n2. Learn: History, Vocabulary, Phrases/Expressions, Etiquette\n3. Interact\n4. Earn Points\n\nExplore:\n1. Choose a café location\n2. Get a summary of the cafe\n3. See the menu\n4. Plan order/dialogue\n5. Notes on experience'}]}/>;
 
     const scopingGridArray = [
-        {title: 'Scoping', content: <p>For this project, I wanted to improve my mobile design skills while focusing on subjects I am passionate about. I started learning Japanese casually a few years ago to prepare for a vacation to Japan; I ended up really enjoying it and have been studying Japanese during my free time. Simultaneously, I also worked as a barista in a bakery. I became curious about Japanese culture and specifically, cafes, and discovered four main types of cafes: Modern, Kissaten, Themed, and Bakery cafes. Through Kohi To Kocha, I wanted to <span style={{fontWeight: 'bold', color: '#2519D2'}}>help users practice Japanese in low-stakes environments</span>, like these cafes.</p>, rowType: 'Column', divider: 'none'},
+        {title: 'Scoping', content: <p>For this project, I wanted to improve my mobile design skills while focusing on subjects I am passionate about. I started learning Japanese casually a few years ago to prepare for a vacation to Japan; while there, I practiced basic Japanese by conversing at train stations, cafes, restaurants, and shops which helped me truly envelope myself within the culture. I ended up really enjoying it and have been studying Japanese during my free time. After returning home, I started work as a barista in a bakery. I became curious about Japanese culture and specifically, cafes, and discovered four main types of cafes: Modern, Kissaten, Themed, and Bakery cafes. Through Kohi To Kocha, I wanted to <span style={{fontWeight: 'bold', color: '#2519D2'}}>help users practice Japanese in low-stakes environments</span>, like these cafes.</p>, rowType: 'Column', divider: 'none'},
         {title: scopingArray[0].title, titleType: 'small', content: <p>{scopingArray[0].caption}</p>,  rowType: 'Row', divider: 'gray'},
         {title: scopingArray[1].title, titleType: 'small', content: <p>{scopingArray[1].caption}</p>,  rowType: 'Row', divider: 'gray'},
         {title: scopingArray[2].title, titleType: 'small', content: <p>{scopingArray[2].caption}</p>,  rowType: 'Row', divider: 'none'},
@@ -89,10 +89,10 @@ export const KohiToKocha = () => {
     ];
 
     const components = <ImageSlide imageSlideProps={[
-        {title: 'Design decisions', imagePath: KohiToKochaComponents5},
-        {title: 'Text and audio', imagePath: KohiToKochaComponents6},
-        {title: 'Gamification', imagePath: KohiToKochaComponents7},
-        {title: 'Basic components', imagePath: KohiToKochaComponents1},
+        {title: 'Design decisions', imagePath: KohiToKochaComponents1, caption: 'Some of my main goals were to create a welcoming app which looked trustworthy, but not intimidating. The blue gradient background looks like a sky, and elicits a calm feeling. All my cards are rounded to look soft and welcoming. In terms of text, I defaulted to sans-serif fonts for high legibility and a minimal aesthetic, but added the serif for a touch of elegance.'},
+        {title: 'Text and audio', imagePath: KohiToKochaComponents2, caption: 'I included complete breakdowns between Japanese and English. For context, Japanese uses Kanji and Kana within their written language. While Kana represent syllables and sounds, Kanji are characters that represent a whole word, meaning, or phrase. When walking around Japan, you will see a combination of Kanji and Kana. Translating Kanji into Kana allows users to pronounce words syllable by syllable. A Romanji breakdown is also provided to show the pronunciation written in the Roman/Latin alphabet.'},
+        {title: 'Different learning styles', imagePath: KohiToKochaComponents3, caption: 'Throughout the learning portion of the app, I incorporate pictures, text, vocab, flashcards, recorded dialogues, and more to cater to visual and auditory learners. The explore portion of the app is most beneficial to kinesthetic learners, who learn best when applying their learnings to the real world, as they get to build a realistic script and practice in a cafe of their choosing.  I think users would benefit the most when utilizing all portions of the app, essentially utilizing all three learning styles.'},
+        {title: 'Gamification', imagePath: KohiToKochaComponents4, caption: 'I wanted to encourage prolonged use of the app and a sense of gratification through a point system. Points can be used to unlock character customization and users can collect different achievement badges. I wanted all my iconography to be cute and minimal.'},
     ]}/>;
 
     const design =

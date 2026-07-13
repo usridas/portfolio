@@ -45,7 +45,7 @@ export const ImageSlide = ({imageSlideProps, imageMaxWidth=false, hugImage=false
         {isLoading && <div className='imageBoxLoading'><Spinner /></div>}
         {(!hugImage && imageSlideProps.length > 1) && <div className='imageBoxNotHug' style={{display: isLoading ? 'none':'', backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : 'contain'}`}}/>}
         {(hugImage || imageSlideProps.length === 1) && <img onLoad={()=>setIsLoading(false)} alt={toSentenceCase(imageSlideProps[imageIndex].title)} aria-label={toSentenceCase(imageSlideProps[imageIndex].title)} className='imageBoxHug' src={imageSlideProps[imageIndex].imagePath} style={isLoading ? { display: 'none' } : {maxWidth: imageMaxWidth ? '700px' : 'none'}}/>}
-        {imageSlideProps[imageIndex].caption && <p>{imageSlideProps[imageIndex].caption}</p>}
+        {imageSlideProps[imageIndex].caption && <p style={{width: 'stretch', textAlign: 'left'}}>{imageSlideProps[imageIndex].caption}</p>}
         {imageSlideProps.length > 1 &&
           <div className='imageSlideTextContainer'>
             <Button type='Secondary' text='Back' onClick={onBackClick}/>
