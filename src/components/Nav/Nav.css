@@ -27,10 +27,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    color: #2519D2;
+    color: #1A0088;
     text-decoration: none;
     &:hover {
-        color: #2519D2;
+        color: #1A0088;
     }
 }
 

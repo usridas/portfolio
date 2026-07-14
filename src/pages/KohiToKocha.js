@@ -43,7 +43,7 @@ export const KohiToKocha = () => {
             <div className='step'>
                 {!isMobile && <div className='stepNumber'><h1>3</h1></div>}
                 <div className='journeyCard'>
-                    <h2 style={{textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>Prototyping</h2>
+                    <h2 style={{textAlign: 'left'}}><span style={{display: isMobile ? 'unset' : 'none'}}>3. </span>Prototyping and the future</h2>
                     <p>Finally, I created wireframes and inserted my components, where I used Figma prototyping to make it interactive.<br/><br/>In the future, I would love to add a <span style={{fontWeight: 'bold', color: '#2519D2'}}>collected word bank and expand on the dialogue building feature.</span></p>
                 </div>
             </div>
@@ -133,7 +133,7 @@ export const KohiToKocha = () => {
             <div className='bannerWrapper'>
                 <img src={KohiToKochaBanner4} alt='Screens of Kohi To Kocha'/>
             </div>
-            <Grid gridProps={[{title: 'Prototyping', content: prototype, rowType: 'Column'}]}/>
+            <Grid gridProps={[{title: 'Prototyping and the future', content: prototype, rowType: 'Column'}]}/>
         </div>
     );
 }

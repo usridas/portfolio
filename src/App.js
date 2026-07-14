@@ -34,8 +34,8 @@ function App() {
   
   const welcomeText = 
     <div className='welcomeContainer'>
-      <h1 style={{color: '#94003D', fontSize: '48px'}}>Hi, I'm Umaiyal.</h1>
-      <h2 className='welcomeText'>{'I am a UI/UX designer with a software development background aiming to bridge the gap between design and engineering in order to empower users through intuitive interfaces.\n\nAfter graduating with a Bachelor\'s in Computer Engineering and a minor in Art & Design, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. ​I am currently in a Master\'s program for User Experience Design and am searching for work in the UI/UX field.'}</h2>
+      <h1 style={{color: '#1A0088', fontSize: '48px'}}>Hi, I'm Umaiyal.</h1>
+      <h2 className='welcomeText'>I am a UI/UX designer with a software development background aiming to <span style={{color: '#2519D2'}}>bridge the gap between design and engineering in order to empower users through intuitive interfaces.</span><br/><br/>After graduating with a Bachelor's in Computer Engineering and a minor in Art & Design, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. ​I am currently in a Master's program for User Experience Design and am searching for work in the UI/UX field.</h2>
     </div>
   
   return (
