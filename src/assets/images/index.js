@@ -133,17 +133,21 @@ import PeurDesFillesCover from './Music/PeurDesFilles.png';
 import PlayButton from './Music/PlayButton.png';
 import PreviousSongButton from './Music/PreviousSongButton.png';
 import PuzzlesCover from './Music/Puzzles.png';
-import RollWithItBanner from './RollWithIt/RollWithItBanner.png';
+import RollWithItBanner from './RollWithIt/Banner.png';
+import RollWithItBanner2 from './RollWithIt/Banner2.png';
+import RollWithItBanner3 from './RollWithIt/Banner3.png';
+import RollWithItBanner4 from './RollWithIt/Banner4.png';
 import RollWithItButton from './RollWithIt/Button.png';
 import RollWithItColors from './RollWithIt/Colors.png';
 import RollWithItCounter from './RollWithIt/Counter.png';
 import RollWithItCover from './RollWithIt/Cover.png';
 import RollWithItFilter from './RollWithIt/Filter.png';
+import RollWithItInspiration from './RollWithIt/Inspiration.png';
 import RollWithItMoodBoard from './RollWithIt/MoodBoard.png';
-import RollWithItSketchbookComponents from './RollWithIt/SketchbookComponents.png';
 import RollWithItSketchbookDrawing1 from './RollWithIt/SketchbookDrawing1.png';
 import RollWithItSketchbookDrawing2 from './RollWithIt/SketchbookDrawing2.png';
-import RollWithItSketchbookIdeation from './RollWithIt/SketchbookIdeation.png';
+import RollWithItSketchbookDrawing3 from './RollWithIt/SketchbookDrawing3.png';
+import RollWithItSketchbookDrawing4 from './RollWithIt/SketchbookDrawing4.png';
 import RollWithItSketchbookWireframe1 from './RollWithIt/SketchbookWireframe1.png';
 import RollWithItSketchbookWireframe2 from './RollWithIt/SketchbookWireframe2.png';
 import RollWithItSketchbookWireframe3 from './RollWithIt/SketchbookWireframe3.png';
@@ -168,7 +172,7 @@ import SongOfStormsCover from './Music/SongOfStorms.png';
 import StillAliveCover from './Music/StillAlive.png';
 import TheGamblerCover from './Music/TheGambler.png';
 import TheVillainIAppearToBeCover from './Music/TheVillainIAppearToBe.png';
-import TraderJoesBanner from './TraderJoesResearch/TraderJoesBanner.png';
+import TraderJoesBanner from './TraderJoesResearch/Banner.png';
 import TraderJoesAffinityDiagram from './TraderJoesResearch/AffinityDiagram.png';
 import TraderJoesCover from './TraderJoesResearch/Cover.png';
 import TraderJoesJessJourneyMap from './TraderJoesResearch/JessJourneyMap.png';
@@ -316,16 +320,20 @@ export {
     PreviousSongButton,
     PuzzlesCover,
     RollWithItBanner,
+    RollWithItBanner2,
+    RollWithItBanner3,
+    RollWithItBanner4,
     RollWithItButton,
     RollWithItColors,
     RollWithItCounter,
     RollWithItCover,
     RollWithItFilter,
+    RollWithItInspiration,
     RollWithItMoodBoard,
-    RollWithItSketchbookComponents,
     RollWithItSketchbookDrawing1,
     RollWithItSketchbookDrawing2,
-    RollWithItSketchbookIdeation,
+    RollWithItSketchbookDrawing3,
+    RollWithItSketchbookDrawing4,
     RollWithItSketchbookWireframe1,
     RollWithItSketchbookWireframe2,
     RollWithItSketchbookWireframe3,

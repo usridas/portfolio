@@ -4,7 +4,6 @@ import {
     TraderJoesAffinityDiagram,
     TraderJoesMayaJourneyMap,
     TraderJoesJessJourneyMap,
-    TraderJoesBanner,
 } from '../assets/images';
 import TraderJoesSlideDeck from '../assets/documents/TraderJoesSlideDeck.pdf'
 import Button from '../components/Button/Button.js';
@@ -51,7 +50,7 @@ export const TraderJoesResearch = () => {
 
     const affinityDiagram1 = <TextContainer title={'Highlights'} text={'• Participants need to supplement Trader Joe\'s with other grocery stores, because Trader Joe\'s doesn\'t have all they need.\n• Parking is not good at most Trader Joe’s, due to lack of space and/or the huge crowds.\n• On the website, participants said the recipes are unique and they would take time to explore this. They would like to be able to add ingredients directly from the recipe, rather than re-navigating.\n• The snacks, seasonal items, and frozen items are delicious and iconic, and they have a wide variety.'} />;
     const affinityDiagram2 = <TextContainer title={'Surprising notes'} text={'• Most participants say part of the appeal of Trader Joe\'s is going in person and exploring the aisles, but one participant wishes they did have a delivery option. I was expecting more participants to advocate for online ordering options!\n• There was not a large appeal for an app or membership program, even if the participants did mention having memberships for other grocery stores.'} />;
-    const affinityDiagram3 = <div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}><ImageSlide imageSlideProps={[{imagePath: TraderJoesAffinityDiagram}]} imageMaxWidth={true}/></div>;
+    const affinityDiagram3 = <div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}><ImageSlide imageSlideProps={[{imagePath: TraderJoesAffinityDiagram}]}/></div>;
 
     const persona1 = <TextContainer text={'Maya is a pretty planned person.  She is quite busy, but will find time to do her groceries every week on the weekend with the list she has accrued over the week. She does her main shopping at an alternative store, because it will have all the essentials at a lower price, and then follows up with a trip to Trader Joe’s for snacks, seasonal items, and party gifts. The location and parking of Trader Joe\'s is Maya\'s worst complaint.'}/>;
     const persona2 = <ImageSlide imageSlideProps={[{imagePath: TraderJoesMayaJourneyMap}]}/>;
@@ -106,10 +105,11 @@ export const TraderJoesResearch = () => {
 
     return (
         <div>
-            <div className='bannerWrapper'>
-                <img src={TraderJoesBanner} alt='Alaska Airlines aircraft'/>
+            <div className='bannerTraderJoes'>
+                <div className='bannerTitle'>
+                    <h1 className='title'>Trader Joe's Case Study</h1>
+                </div>
             </div>
-            <h1 className='title'>Trader Joe's Case Study</h1>
             <Grid gridProps={gridArray}/>
         </div>
     );

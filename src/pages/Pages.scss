@@ -223,6 +223,9 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  @media (max-width: 767px) {
+        height: 400px;
+    }
 }
 
 .bannerAlaska {
@@ -233,6 +236,16 @@
 .bannerKohiToKocha {
   @extend .banner;
   background-image: url('../assets/images/KohiToKocha/Banner.png');
+}
+
+.bannerRollWithIt {
+  @extend .banner;
+  background-image: url('../assets/images/RollWithIt/Banner.png');
+}
+
+.bannerTraderJoes {
+    @extend .banner;
+    background-image: url('../assets/images/TraderJoesResearch/Banner.png');
 }
 
 .bannerOverlay {
