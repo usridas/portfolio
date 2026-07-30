@@ -6,8 +6,7 @@
   width: -webkit-fill-available;
   width: stretch;
   max-width: 996px;
-  // opacity: 0;
-  // animation: fadeIn 1s forwards;
+  animation: fadeIn 1s forwards;
   @media (max-width: 767px) {
        margin-top: 24px;
     }
@@ -44,55 +43,25 @@
 .gridRowWithDivider {
     @extend .gridRow;
     &:not(:last-child)::after {
-    content: "";
-    grid-column: 1 / -1;
-    border-bottom: 2px solid #C3BFFF;
-  }
+      content: "";
+      grid-column: 1 / -1;
+      border-bottom: 1px solid #C4C3BD;
+    }
 }
 
 .gridColumnWithDivider {
     @extend .gridColumn;
     &:not(:last-child)::after {
-    content: "";
-    grid-column: 1 / -1;
-    border-bottom: 2px solid #C3BFFF;
-  }
+      content: "";
+      grid-column: 1 / -1;
+      border-bottom: 1px solid #C4C3BD;
+    }
 }
 
-.gridRowWithGrayDivider {
-    @extend .gridRow;
-    &:not(:last-child)::after {
-    content: "";
-    grid-column: 1 / -1;
-    border-bottom: 1px solid #C4C3BD;
-  }
-}
-
-.gridColumnWithGrayDivider {
-    @extend .gridColumn;
-    &:not(:last-child)::after {
-    content: "";
-    grid-column: 1 / -1;
-    border-bottom: 1px solid #C4C3BD;
-  }
-}
-
-.row {
-  display: contents;
-  &:not(:last-child)::after {
-    content: "";
-    grid-column: 1 / -1;
-    border-bottom: 1px solid #C3BFFF;
-  }
-}
-
-
-
-.leftCol {
+.firstCell {
   background: linear-gradient(to bottom, #fdfcf8 90%, #fdfcf800);
   position: sticky;
   top: 0px;
-  padding: 24px 0;
   align-self: start;
   z-index: 2;
   width: -moz-available;
@@ -100,14 +69,34 @@
   width: stretch;
 }
 
-.rightCol {
-  padding: 24px 0;
+.secondCell {
   width: -moz-available;
   width: -webkit-fill-available;
   width: stretch;
   @media (max-width: 767px) {
-    padding: 0px 0px 24px 0px;
+    padding: 0px 0px 48px 0px;
   }
+}
+
+
+.leftCol {
+  @extend .firstCell;
+  padding: 48px 0;
+}
+
+.rightCol {
+  @extend .secondCell;
+  padding: 48px 0;
+}
+
+.topRow {
+  @extend .firstCell;
+  padding: 24px 0;
+}
+
+.bottomRow {
+  @extend .secondCell;
+  padding: 24px 0;
 }
 
 @supports (animation-timeline: view()) {

@@ -51,8 +51,20 @@
   gap: 24px;
   justify-content: center;
   align-items: center;
+}
+
+.welcomeTitle {
+  max-width: 996px;
+  font-size: 80px;
+  font-weight: 700;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: #1A0088;
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  transform-origin: left center;
+  animation: zoomOut 2s forwards;
+  @media (max-width: 767px) {
+    font-size: 48px;
+  }
 }
 
 .welcomeText {
@@ -61,7 +73,28 @@
   white-space: pre-line;
   font-weight: 700;
   font-family: "neue-haas-grotesk-text", sans-serif;
+  opacity: 0;
+  animation: fadeIn 1s ease-out 2s forwards;
   @media (max-width: 767px) {
     font-size: 16px;
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(1); 
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1); 
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1); 
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.8); 
   }
 }

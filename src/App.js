@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useScreenResolution } from './utils/ScreenSize.tsx';
 import LargeNav from './components/Nav/LargeNav';
 import AboutMe from './pages/AboutMe';
-import Projects from './pages/Projects';
+import Work from './pages/Work.js';
 import Umeko from './pages/Umeko';
 import Kavi from './pages/Kavi';
 import ElfsterRedesign from './pages/ElfsterRedesign';
@@ -34,7 +34,7 @@ function App() {
   
   const welcomeText = 
     <div className='welcomeContainer'>
-      <h1 style={{color: '#1A0088', fontSize: '48px'}}>Hi, I'm Umaiyal.</h1>
+      <h1 className='welcomeTitle'>Hello, World! I'm Umaiyal.</h1>
       <h2 className='welcomeText'>I am a UI/UX designer with a software development background aiming to <span style={{color: '#2519D2'}}>bridge the gap between design and engineering in order to empower users through intuitive interfaces.</span><br/><br/>After graduating with a Bachelor's in Computer Engineering and a minor in Art & Design, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. ​I am currently in a Master's program for User Experience Design and am searching for work in the UI/UX field.</h2>
     </div>
   
@@ -46,7 +46,7 @@ function App() {
         <Routes role='main'>
           <Route path="/" element={welcomeText} />
           <Route path="/AboutMe" element={<AboutMe />} />
-          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Work" element={<Work />} />
           <Route path="/AlaskaAirlinesResearch" element={<AlaskaAirlinesResearch />} />
           <Route path="/KohiToKocha" element={<KohiToKocha />} />
           <Route path="/RollWithIt" element={<RollWithIt />} />

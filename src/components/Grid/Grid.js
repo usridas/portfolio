@@ -1,6 +1,6 @@
 import './Grid.scss';
 
-export const Grid = ({gridProps, gridMargin='40px 0'}) => {
+export const Grid = ({gridProps, gridMargin='0px 0'}) => {
 
     function getClassName(rowType, divider) {
         if (divider === 'none') {
@@ -8,12 +8,6 @@ export const Grid = ({gridProps, gridMargin='40px 0'}) => {
                 return 'gridColumn';
             }
             else return 'gridRow';
-        }
-        else if (divider === 'gray') {
-            if (rowType === 'Column') {
-                return 'gridColumnWithGrayDivider';
-            }
-            else return 'gridRowWithGrayDivider';
         }
         else if (rowType === 'Column') {
             return 'gridColumnWithDivider';
@@ -26,9 +20,9 @@ export const Grid = ({gridProps, gridMargin='40px 0'}) => {
             <div className='grid'>
                 {gridProps?.map((item, index) => (
                     <div key={index} className={getClassName(item.rowType, item.divider)}>
-                        {item.titleType !== 'small' && item.title && <h1 className='leftCol'>{item.title}</h1>}
-                        {item.titleType === 'small' && item.title && <h2 className='leftCol'>{item.title}</h2>}
-                        {item.content && <div className='rightCol'>{item.content}</div>}
+                        {item.titleType !== 'small' && item.title && <h1 className={item.rowType === 'Column' ? 'topRow' : 'leftCol'}>{item.title}</h1>}
+                        {item.titleType === 'small' && item.title && <h2 className={item.rowType === 'Column' ? 'topRow' : 'leftCol'}>{item.title}</h2>}
+                        {item.content && <div className={item.rowType === 'Column' ? 'bottomRow' : 'rightCol'}>{item.content}</div>}
                     </div>
                 ))}
             </div>

@@ -69,8 +69,8 @@ export const KohiToKocha = () => {
 
     const scopingGridArray = [
         {title: 'Scoping', content: <p>For this project, I wanted to improve my mobile design skills while focusing on subjects I am passionate about. I started learning Japanese casually a few years ago to prepare for a vacation to Japan; while there, I practiced basic Japanese by conversing at train stations, cafes, restaurants, and shops which helped me truly envelope myself within the culture. I ended up really enjoying it and have been studying Japanese during my free time. After returning home, I started work as a barista in a bakery. I became curious about Japanese culture and specifically, cafes, and discovered four main types of cafes: Modern, Kissaten, Themed, and Bakery cafes. Through Kohi To Kocha, I wanted to <span style={{fontWeight: 'bold', color: '#2519D2'}}>help users practice Japanese in low-stakes environments</span>, like these cafes.</p>, rowType: 'Column', divider: 'none'},
-        {title: scopingArray[0].title, titleType: 'small', content: <p>{scopingArray[0].caption}</p>,  rowType: 'Row', divider: 'gray'},
-        {title: scopingArray[1].title, titleType: 'small', content: <p>{scopingArray[1].caption}</p>,  rowType: 'Row', divider: 'gray'},
+        {title: scopingArray[0].title, titleType: 'small', content: <p>{scopingArray[0].caption}</p>,  rowType: 'Row'},
+        {title: scopingArray[1].title, titleType: 'small', content: <p>{scopingArray[1].caption}</p>,  rowType: 'Row'},
         {title: scopingArray[2].title, titleType: 'small', content: <p>{scopingArray[2].caption}</p>,  rowType: 'Row', divider: 'none'},
         {content: flowchart,  rowType: 'Column'},
     ]
@@ -121,19 +121,19 @@ export const KohiToKocha = () => {
                     <h1 className='title'>Kohi To Kocha</h1>
                 </div>
             </div>
-            <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='20px 0 40px 0'/>
+            <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='40px 0'/>
             <div className='bannerWrapper'>
                 <img src={KohiToKochaBanner2} alt='Different cafe orders in Japanese and English'/>
             </div>
-            <Grid gridProps={scopingGridArray} gridMargin='20px 0 40px 0'/>
+            <Grid gridProps={scopingGridArray} gridMargin='40px 0'/>
             <div className='bannerWrapper'>
                 <img src={KohiToKochaBanner3} alt='Inspiration screenshots'/>
             </div>
-            <Grid gridProps={[{title: 'Designing', content: design, rowType: 'Column'}]}/>
+            <Grid gridProps={[{title: 'Designing', content: design, rowType: 'Column'}]} gridMargin='40px 0'/>
             <div className='bannerWrapper'>
                 <img src={KohiToKochaBanner4} alt='Screens of Kohi To Kocha'/>
             </div>
-            <Grid gridProps={[{title: 'Prototyping', content: prototype, rowType: 'Column'}]}/>
+            <Grid gridProps={[{title: 'Prototyping', content: prototype, rowType: 'Column'}]} gridMargin='40px 0'/>
         </div>
     );
 }

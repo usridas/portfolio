@@ -2,7 +2,7 @@ import './Nav.css';
 
 export const Footer = () => {
   return (
-    <footer><p className='footer'>Website designed and developed by Umaiyal Sridas. Last updated 26 July 2026.</p></footer>
+    <footer><p className='footer'>Website designed and developed by Umaiyal Sridas. Last updated 29 July 2026.</p></footer>
   );
 }
 

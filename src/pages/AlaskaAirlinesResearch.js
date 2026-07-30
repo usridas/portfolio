@@ -141,16 +141,16 @@ export const AlaskaAirlinesResearch = () => {
 
     const problemGridArray = [
         {title: 'Identifying the problem', content: <p>To start my research, I conducted a competitive analysis against <span style={{fontWeight: 'bold', color: '#2519D2'}}>Delta Air Lines, American Airlines, and Qatar Airways.</span> I chose Delta Air Lines and American Airlines to be two direct competitors to Alaska Airlines, as they all seem to serve similar populations and I chose Qatar Airways to be an aspirational competitor to Alaska Airlines, since Qatar is known for its luxury experience and technological excellence and innovation.<br/><br/>I also conducted a <span style={{fontWeight: 'bold', color: '#2519D2'}}>SWOT analysis and cognitive task analysis</span> in order to understand the pain points of Alaska Airlines and which tasks within the booking flow may have the heaviest cognitive load.</p>, rowType: 'Column', divider: 'none'},
-        {title: problemArray[0].title, titleType: 'small', content: <p>{problemArray[0].caption}</p>,  rowType: 'Row', divider: 'gray'},
-        {title: problemArray[1].title, titleType: 'small', content: <p>{problemArray[1].caption}</p>,  rowType: 'Row', divider: 'gray'},
-        {title: problemArray[2].title, titleType: 'small', content: <p>{problemArray[2].caption}</p>,  rowType: 'Row', divider: 'none'},
+        {title: problemArray[0].title, titleType: 'small', content: <p>{problemArray[0].caption}</p>,  rowType: 'Row'},
+        {title: problemArray[1].title, titleType: 'small', content: <p>{problemArray[1].caption}</p>,  rowType: 'Row'},
+        {title: problemArray[2].title, titleType: 'small', content: <p>{problemArray[2].caption}</p>,  rowType: 'Row'},
     ]
 
     const insightGridArray = [
         {title: 'Insights & Recommendations', content: insightOverview, rowType: 'Column', divider: 'none'},
-        {title: insightRecommendationArray[0].insightTitle, titleType: 'small', content: insight1Container,  rowType: 'Row', divider: 'gray'},
-        {title: insightRecommendationArray[1].insightTitle, titleType: 'small', content: insight2Container,  rowType: 'Row', divider: 'gray'},
-        {title: insightRecommendationArray[2].insightTitle, titleType: 'small', content: insight3Container,  rowType: 'Row', divider: 'gray'},
+        {title: insightRecommendationArray[0].insightTitle, titleType: 'small', content: insight1Container,  rowType: 'Row'},
+        {title: insightRecommendationArray[1].insightTitle, titleType: 'small', content: insight2Container,  rowType: 'Row'},
+        {title: insightRecommendationArray[2].insightTitle, titleType: 'small', content: insight3Container,  rowType: 'Row'},
         {title: insightRecommendationArray[3].insightTitle, titleType: 'small', content: insight4Container,  rowType: 'Row'},
     ]
 
@@ -161,19 +161,19 @@ export const AlaskaAirlinesResearch = () => {
                     <h1 className='title'>Alaska Airlines<br/>Case Study</h1>
                 </div>
             </div>
-            <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='20px 0 40px 0'/>
+            <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='40px 0'/>
             <div className='bannerWrapper'>
                 <img src={AlaskaAirlinesBanner2} alt='SWOT analysis, competitive analysis, CTA, and red routes'/>
             </div>
-            <Grid gridProps={problemGridArray} gridMargin='20px 0 40px 0'/>
+            <Grid gridProps={problemGridArray} gridMargin='40px 0'/>
             <div className='bannerWrapper'>
                 <img src={AlaskaAirlinesBanner3} alt='Quotes from usability tests' />
             </div>
-            <Grid gridProps={insightGridArray}/>
+            <Grid gridProps={insightGridArray} gridMargin='40px 0'/>
             <div className='bannerWrapper'>
                 <img src={AlaskaAirlinesBanner4} alt='Redesign mockups'/>
             </div>
-            <Grid gridProps={[{title: 'Next Steps', content: nextSteps, rowType: 'Column'}]}/>
+            <Grid gridProps={[{title: 'Next Steps', content: nextSteps, rowType: 'Column'}]} gridMargin='40px 0'/>
         </div>
     );
 }

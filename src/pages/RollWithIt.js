@@ -113,19 +113,19 @@ export const RollWithIt = () => {
                     <h1 className='title'>Roll With It</h1>
                 </div>
             </div>
-            <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='20px 0 40px 0'/>
+            <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='40px 0'/>
             <div className='bannerWrapper'>
-                <img src={RollWithItBanner2} alt='Different cafe orders in Japanese and English'/>
+                <img src={RollWithItBanner2} alt='Roll With It mood board'/>
             </div>
-            <Grid gridProps={[{title: 'Moodboarding', content: ideation, rowType: 'Column'}]}/>
+            <Grid gridProps={[{title: 'Moodboarding', content: ideation, rowType: 'Column'}]} gridMargin='40px 0'/>
             <div className='bannerWrapper'>
-                <img src={RollWithItBanner3} alt='Different cafe orders in Japanese and English'/>
+                <img src={RollWithItBanner3} alt='Roll With It component set' gridMargin='40px 0'/>
             </div>
             <Grid gridProps={[{title: 'Designing', content: design, rowType: 'Column'}]}/>
             <div className='bannerWrapper'>
-                <img src={RollWithItBanner4} alt='Different cafe orders in Japanese and English'/>
+                <img src={RollWithItBanner4} alt='Roll With It character illustrations' gridMargin='40px 0'/>
             </div>
-            <Grid gridProps={[{title: 'Prototyping', content: prototype, rowType: 'Column'}]}/>
+            <Grid gridProps={[{title: 'Prototyping', content: prototype, rowType: 'Column'}]} gridMargin='40px 0'/>
         </div>
     );
 }

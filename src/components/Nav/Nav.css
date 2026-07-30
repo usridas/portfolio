@@ -92,6 +92,7 @@
 
 .footer {
     padding-top: 80px;
+    animation: fadeIn 1s forwards;
 }
 
 .link {

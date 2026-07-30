@@ -20,7 +20,7 @@ export const PlaylistHome = () => {
         <>
         <GradientBackground />
         <div className={isMobileVar ? 'fullPageMobile' : 'fullPage'}>
-            <button tabIndex={0} className='backToProjects' onClick={()=>{navigate('/Projects')}} onKeyDown={(event)=>{if (event.key === 'Enter') {navigate('/Projects')}}}>Back to my portfolio</button>
+            <button tabIndex={0} className='backToWork' onClick={()=>{navigate('/Work')}} onKeyDown={(event)=>{if (event.key === 'Enter') {navigate('/Work')}}}>Back to my portfolio</button>
             <h1 className='individualPlaylistTitle'>{hoverText}</h1>
             <div className='playlistArrayContainer'>
                 <div tabIndex={0} className='liquidGlassWrapper' onMouseEnter={()=> setHoverText('Video game vibes')} onMouseLeave={()=> setHoverText('Choose a playlist')} onClick={()=>navigate('/VideoGameVibes')} onKeyDown={(event)=>{if (event.key === 'Enter') {navigate('/VideoGameVibes')}}}>

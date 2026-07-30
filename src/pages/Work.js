@@ -23,13 +23,13 @@ import {
   Mushroom1,
   Mushroom2,
   Mushroom3
-} from '../assets/images';
+} from '../assets/images/index.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import Tag from '../components/Tag/Tag.js';
 import ProjectPreview from '../components/Images/ProjectPreview.js';
 import Grid from '../components/Grid/Grid.js';
 
-export const Projects = () => {
+export const Work = () => {
 
   const { isSmall } = useScreenResolution();
 
@@ -104,4 +104,4 @@ export const Projects = () => {
   )
 }
 
-export default Projects;
+export default Work;

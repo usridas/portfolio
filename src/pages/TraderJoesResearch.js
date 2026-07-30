@@ -97,8 +97,8 @@ export const TraderJoesResearch = () => {
     const gridArray = [
         {title: 'Overview', content: summaryContent, rowType: 'Column'},
         {title: 'Discovery', content: researchPlan, rowType: 'Column'},
-        {title: 'Insights & Personas', content: affinityDiagram, rowType: 'Column', divider: 'gray'},
-        {title: 'Maya AKA The Snack Seeker', content: personaContainer1, divider: 'gray'},
+        {title: 'Insights & Personas', content: affinityDiagram, rowType: 'Column'},
+        {title: 'Maya AKA The Snack Seeker', content: personaContainer1},
         {title: 'Jess AKA The Convenience Consumer', content: personaContainer2},
         {title: 'Next steps', content: opportunities, rowType: 'Column'}
     ]

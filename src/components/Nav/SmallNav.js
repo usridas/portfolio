@@ -10,7 +10,7 @@ export const SmallNav = ({setIsModalOpen}) => {
     <navigation className="smallNavContainer">
       <div className='navTitle'>Umaiyal Sridas</div>
       {!isProject && <button tabIndex={0} className='link' style={{textAlign: 'right'}} onClick={()=>{setIsModalOpen(true)}} onKeyDown={(event)=>{if (event.key === 'Enter') {setIsModalOpen(true)}}}>Menu</button>}
-      {isProject && <button tabIndex={0} className='link' style={{textAlign: 'right'}} onClick={()=>{navigate('/Projects')}} onKeyDown={(event)=>{if (event.key === 'Enter') {navigate('/Projects')}}}>Back to projects</button>}
+      {isProject && <button tabIndex={0} className='link' style={{textAlign: 'right'}} onClick={()=>{navigate('/Work')}} onKeyDown={(event)=>{if (event.key === 'Enter') {navigate('/Work')}}}>Back to my work</button>}
     </navigation>
   );
 }
