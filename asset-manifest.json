@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2119628d.css",
-    "main.js": "/static/js/main.9cb248a6.js",
+    "main.css": "/static/css/main.75061e6f.css",
+    "main.js": "/static/js/main.c4cbbbf0.js",
     "static/js/453.ac9b7e2a.chunk.js": "/static/js/453.ac9b7e2a.chunk.js",
     "static/media/mockup4.png": "/static/media/mockup4.4e883e7a5e31d886385c.png",
     "static/media/mockup3.png": "/static/media/mockup3.8a6b4c0488704ae6db2c.png",
@@ -28,6 +28,7 @@
     "static/media/IJustCalledToSayILoveYou.mp3": "/static/media/IJustCalledToSayILoveYou.d8db95dd913d4a452985.mp3",
     "static/media/Rosmarina.mp3": "/static/media/Rosmarina.9183b1ec9918495c394b.mp3",
     "static/media/RollWithItSlideDeck.pdf": "/static/media/RollWithItSlideDeck.3b79571f21abdb9eaebe.pdf",
+    "static/media/Cover.mp4": "/static/media/Cover.50d0236ec63e00072e38.mp4",
     "static/media/GetLucky.mp3": "/static/media/GetLucky.9f132a62cbdf373cc8c9.mp3",
     "static/media/Components2.png": "/static/media/Components2.64e537659b89f4abf378.png",
     "static/media/Components4.png": "/static/media/Components4.11c4ee9707e746cbf066.png",
@@ -186,12 +187,12 @@
     "static/media/MayaPersonality.png": "/static/media/MayaPersonality.9ad423c0947eb7d8a932.png",
     "index.html": "/index.html",
     "static/media/rotate.svg": "/static/media/rotate.4308d1450fa74ad2cfd5d2efcd9b9e57.svg",
-    "main.2119628d.css.map": "/static/css/main.2119628d.css.map",
-    "main.9cb248a6.js.map": "/static/js/main.9cb248a6.js.map",
+    "main.75061e6f.css.map": "/static/css/main.75061e6f.css.map",
+    "main.c4cbbbf0.js.map": "/static/js/main.c4cbbbf0.js.map",
     "453.ac9b7e2a.chunk.js.map": "/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2119628d.css",
-    "static/js/main.9cb248a6.js"
+    "static/css/main.75061e6f.css",
+    "static/js/main.c4cbbbf0.js"
   ]
 }
