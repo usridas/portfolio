@@ -29,7 +29,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1/1;
     color: #33322A;
     &:hover {
         opacity: 1;
@@ -50,7 +50,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1/1;
     backdrop-filter: blur(4px);
     background-color: #E6E5E077;
     color: #33322A;
@@ -74,6 +74,55 @@
     width: stretch;
     aspect-ratio: 1/1;
     max-height: 60vh;
+}
+
+.videoBoxNotHug {
+    position: relative;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    aspect-ratio: 1/1;
+    max-height: 60vh;
+
+  .imageSlideLink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &:hover {
+        opacity: 1;
+        backdrop-filter: blur(10px);
+        background-color: #E6E5E077;
+        }
+    &:focus {
+        border: 1px solid #6D6C65;
+        opacity: 1;
+        backdrop-filter: blur(10px);
+        background-color: #E6E5E077;
+        }
+    }
+
+    .imageSlideLinkSmallHover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        backdrop-filter: blur(10px);
+        background-color: #E6E5E077;
+        
+        &:focus {
+            border: 1px solid #6D6C65;
+            opacity: 1;
+            backdrop-filter: blur(10px);
+            background-color: #E6E5E077;
+        }
+    }
+
+  .tags {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
 }
 
 .imageBoxHug {
@@ -216,4 +265,23 @@
 
 .imageSlideFlipCardInner.imageSlideIsFlipped {
   transform: rotateY(180deg);
+}
+
+.mockupContainer {
+    position: relative;
+    width: 100%;
+    max-width: 976px;
+    box-sizing: content-box;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+}
+
+.mockupContainer iframe {
+    position: absolute;
+    border: none;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;   
 }

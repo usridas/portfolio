@@ -108,6 +108,7 @@ import KohiToKochaBanner2 from './KohiToKocha/Banner2.png';
 import KohiToKochaBanner3 from './KohiToKocha/Banner3.png';
 import KohiToKochaBanner4 from './KohiToKocha/Banner4.png';
 import KohiToKochaCover from './KohiToKocha/Logo.png';
+import KohiToKochaVideoCover from './KohiToKocha/Cover.mp4';
 import KohiToKochaFlowchart from './KohiToKocha/Flowchart.png';
 import KohiToKochaInspiration from './KohiToKocha/Inspiration.png';
 import KohiToKochaMoodboard from './KohiToKocha/Moodboard.png';
@@ -138,6 +139,7 @@ import RollWithItBanner2 from './RollWithIt/Banner2.png';
 import RollWithItBanner3 from './RollWithIt/Banner3.png';
 import RollWithItBanner4 from './RollWithIt/Banner4.png';
 import RollWithItButton from './RollWithIt/Button.png';
+import RollWithItVideoCover from './RollWithIt/Cover.mp4';
 import RollWithItColors from './RollWithIt/Colors.png';
 import RollWithItCounter from './RollWithIt/Counter.png';
 import RollWithItCover from './RollWithIt/Cover.png';
@@ -260,6 +262,7 @@ export {
     KohiToKochaComponents3,
     KohiToKochaComponents4,
     KohiToKochaCover,
+    KohiToKochaVideoCover,
     KohiToKochaFlowchart,
     KohiToKochaInspiration,
     KohiToKochaMoodboard,
@@ -326,6 +329,7 @@ export {
     RollWithItButton,
     RollWithItColors,
     RollWithItCounter,
+    RollWithItVideoCover,
     RollWithItCover,
     RollWithItFilter,
     RollWithItInspiration,

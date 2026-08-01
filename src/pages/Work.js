@@ -5,8 +5,6 @@ import {
   TraderJoesCover,
   UmekoLogo2,
   KaviLogo1,
-  RollWithItCover,
-  KohiToKochaCover,
   ElfsterCover,
   ViasatCover,
   HermitCrab,
@@ -22,7 +20,9 @@ import {
   Eyeball,
   Mushroom1,
   Mushroom2,
-  Mushroom3
+  Mushroom3,
+  KohiToKochaVideoCover,
+  RollWithItVideoCover
 } from '../assets/images/index.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
 import Tag from '../components/Tag/Tag.js';
@@ -65,8 +65,8 @@ export const Work = () => {
 
   const projectSlideProps = [
     {imagePath: AlaskaAirlinesResearchCover, title: "Alaska Airlines Case Study", description: "May 2026", imageLink: "/AlaskaAirlinesResearch", imageText: 'See full project', tags: alaskaAirlinesTags, caption: "This was my final research project for Design Research Feasibility within my Master's program at the Columbus College of Art & Design. I conducted a competitive analysis as well as usability tests to create some recommendations for the Alaska Airlines website booking flow."},
-    {imagePath: KohiToKochaCover, title: "Kohi To Kocha", description: isSmall ? "Jan 2026" : "January 2026", imageLink: "/KohiToKocha", imageText: 'See full project', tags: figmaProjectTags, caption: "This was a personal project I made between semesters of my grad program. I wanted to tie my new design learnings along with my Japanese language studies. This app design allowed me to explore mobile app design and interactions."},
-    {imagePath: RollWithItCover, title: "Roll With It", description: isSmall ? "Dec 2025" :"December 2025", imageLink: "/RollWithIt", imageText: 'See full project', tags: figmaProjectTags, caption: "This was my final design project for Visual Design Fundamentals within my Master's program at the Columbus College of Art & Design. During this project, I used sketching and Figma to create a website for a fictional Asian bakery called Roll With It."},
+    {videoPath: KohiToKochaVideoCover, title: "Kohi To Kocha", description: isSmall ? "Jan 2026" : "January 2026", imageLink: "/KohiToKocha", imageText: 'See full project', tags: figmaProjectTags, caption: "This was a personal project I made between semesters of my grad program. I wanted to tie my new design learnings along with my Japanese language studies. This app design allowed me to explore mobile app design and interactions."},
+    {videoPath: RollWithItVideoCover, title: "Roll With It", description: isSmall ? "Dec 2025" :"December 2025", imageLink: "/RollWithIt", imageText: 'See full project', tags: figmaProjectTags, caption: "This was my final design project for Visual Design Fundamentals within my Master's program at the Columbus College of Art & Design. During this project, I used sketching and Figma to create a website for a fictional Asian bakery called Roll With It."},
     {imagePath: TraderJoesCover, title: "Trader Joe's Case Study", description: isSmall ? "Dec 2025" :"December 2025", imageLink: "/TraderJoesResearch", imageText: 'See full project', tags: traderJoesTags, caption: "This was my final research project for Design Research: Discovery within my Master's program at the Columbus College of Art & Design. I learned to how to conduct, analyze and present qualitative research."},
     {imagePath: UmekoLogo2, title: "Umeko", description: isSmall ? "Jul 2024" :"July 2024", imageLink: "/Umeko", tags: umekoKaviTags, imageText: 'See full project', caption: "Umeko is a fictional business project made for design purposes. Umeko is a fun, light-hearted Japanese style cafe which sources tea from Japan. They serve classic teas, as well as unique blends, and boba to cater to both younger and older aficionados."},
     {imagePath: KaviLogo1, title: "KAVI", description: isSmall ? "Jul 2024" :"July 2024", imageLink: "/Kavi", imageText: 'See full project', tags: umekoKaviTags, caption: "KAVI is a fictional business project made for design purposes. KAVI is a South Asian women owned luxury beauty and self care brand. KAVI strives to make the beauty and self care routine enjoyable and relaxing through all-natural ingredients."},
