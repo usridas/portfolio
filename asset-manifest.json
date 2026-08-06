@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.75061e6f.css",
-    "main.js": "/static/js/main.c4cbbbf0.js",
+    "main.css": "/static/css/main.cf795af1.css",
+    "main.js": "/static/js/main.23de9ba9.js",
     "static/js/453.ac9b7e2a.chunk.js": "/static/js/453.ac9b7e2a.chunk.js",
     "static/media/mockup4.png": "/static/media/mockup4.4e883e7a5e31d886385c.png",
     "static/media/mockup3.png": "/static/media/mockup3.8a6b4c0488704ae6db2c.png",
@@ -15,7 +15,7 @@
     "static/media/AlaskaAirlinesSlideDeck.pdf": "/static/media/AlaskaAirlinesSlideDeck.f8623a9870265d23e127.pdf",
     "static/media/mockup5.png": "/static/media/mockup5.a599faac8715f5e4b7a8.png",
     "static/media/Banner2.png": "/static/media/Banner2.f4bfe6c8a9676d7dfdd9.png",
-    "static/media/Banner3.png": "/static/media/Banner3.706ce73c0a40a088f473.png",
+    "static/media/Banner3.png": "/static/media/Banner3.2b6589606a66c7d24c0f.png",
     "static/media/TraderJoesSlideDeck.pdf": "/static/media/TraderJoesSlideDeck.b26036e16736a0c65fcf.pdf",
     "static/media/MoodBoard.png": "/static/media/MoodBoard.a161baca8d8419a66f6b.png",
     "static/media/AmericanPie.mp3": "/static/media/AmericanPie.4eee48b76da6e3931b38.mp3",
@@ -187,12 +187,12 @@
     "static/media/MayaPersonality.png": "/static/media/MayaPersonality.9ad423c0947eb7d8a932.png",
     "index.html": "/index.html",
     "static/media/rotate.svg": "/static/media/rotate.4308d1450fa74ad2cfd5d2efcd9b9e57.svg",
-    "main.75061e6f.css.map": "/static/css/main.75061e6f.css.map",
-    "main.c4cbbbf0.js.map": "/static/js/main.c4cbbbf0.js.map",
+    "main.cf795af1.css.map": "/static/css/main.cf795af1.css.map",
+    "main.23de9ba9.js.map": "/static/js/main.23de9ba9.js.map",
     "453.ac9b7e2a.chunk.js.map": "/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75061e6f.css",
-    "static/js/main.c4cbbbf0.js"
+    "static/css/main.cf795af1.css",
+    "static/js/main.23de9ba9.js"
   ]
 }
