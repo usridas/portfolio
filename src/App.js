@@ -53,8 +53,8 @@ function App() {
           <Route path="/TraderJoesResearch" element={<TraderJoesResearch />} />
           <Route path="/Umeko" element={<Umeko />} />
           <Route path="/Kavi" element={<Kavi />} />
-          <Route path="/ElfsterRedesign" element={<ElfsterRedesign />} />
-          <Route path="/Viasat" element={<Viasat />} />
+          {/* <Route path="/ElfsterRedesign" element={<ElfsterRedesign />} /> */}
+          {/* <Route path="/Viasat" element={<Viasat />} /> */}
           <Route path="/Music" element={<PlaylistHome />} />
           <Route path="/VideoGameVibes" element={<IndividualPlaylist />} />
           <Route path="/ANightAtTheCasino" element={<IndividualPlaylist />} />

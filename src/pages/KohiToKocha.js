@@ -115,25 +115,39 @@ export const KohiToKocha = () => {
         </div>;
 
     return (
-        <div>
+        <div style={{width: 'stretch', justifyItems: 'center'}}>
             <div className='bannerKohiToKocha'>
                 <div className='bannerTitle'>
                     <h1 className='title'>Kohi To Kocha</h1>
+                    <div className='bannerDataContainer'>
+                        <div className='bannerData'>
+                            <p style={{color: '#6D6C65'}}>Timeline</p>
+                            <p style={{fontWeight: '700'}}>December 2025 - January 2026</p>
+                        </div>
+                        <div className='bannerData'>
+                            <p style={{color: '#6D6C65'}}>Industry</p>
+                            <p style={{fontWeight: '700'}}>Language Learning</p>
+                        </div>
+                        <div className='bannerData'>
+                            <p style={{color: '#6D6C65'}}>Role</p>
+                            <p style={{fontWeight: '700'}}>UI Designer</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='40px 0'/>
+            <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='40px 24px'/>
             <div className='bannerWrapper'>
                 <img src={KohiToKochaBanner2} alt='Different cafe orders in Japanese and English'/>
             </div>
-            <Grid gridProps={scopingGridArray} gridMargin='40px 0'/>
+            <Grid gridProps={scopingGridArray} gridMargin='40px 24px'/>
             <div className='bannerWrapper'>
                 <img src={KohiToKochaBanner3} alt='Inspiration screenshots'/>
             </div>
-            <Grid gridProps={[{title: 'Designing', content: design, rowType: 'Column'}]} gridMargin='40px 0'/>
+            <Grid gridProps={[{title: 'Designing', content: design, rowType: 'Column'}]} gridMargin='40px 24px'/>
             <div className='bannerWrapper'>
                 <img src={KohiToKochaBanner4} alt='Screens of Kohi To Kocha'/>
             </div>
-            <Grid gridProps={[{title: 'Prototyping', content: prototype, rowType: 'Column'}]} gridMargin='40px 0'/>
+            <Grid gridProps={[{title: 'Prototyping', content: prototype, rowType: 'Column'}]} gridMargin='40px 24px'/>
         </div>
     );
 }

@@ -7,6 +7,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   background-color: #FDFCF8;
+  min-width: 320px;
 }
 
 * {
@@ -94,6 +95,16 @@ h4 {
   font-family: "neue-haas-grotesk-display", sans-serif;
   font-size: 16px;
   font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  color: #6D6C65;
+  margin: 0;
+}
+
+h5 {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-size: 12px;
+  font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: #6D6C65;

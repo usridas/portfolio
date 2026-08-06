@@ -60,9 +60,9 @@ export const RollWithIt = () => {
         </div>
     
     const sketches = <ImageSlide imageSlideProps={[
-        {title: 'Writing ideas', imagePath: RollWithItSketchbookDrawing1, caption: 'Here, I am laying down the foundation of my website design and extracting the main themes from my mood board in order to continue with a cohesive design.'},
         {title: 'Sketching characters', imagePath: RollWithItSketchbookDrawing2, caption: 'These illustrations would be cute additions to the website, especially if animated. Here I focused on a croissant, bao, onigiri, and dango, common goods at an eastern Asian bakery or cafe.'},
         {title: 'Sketching characters', imagePath: RollWithItSketchbookDrawing3, caption: 'These illustrations would be cute additions to the website, especially if animated. I drew a gulab jamun, bun, baguette, and reiterated on the dango to create the main logo of the brand. Again, I want to focus on Asian culture through iconic Asian desserts.'},
+        {title: 'Writing ideas', imagePath: RollWithItSketchbookDrawing1, caption: 'Here, I am laying down the foundation of my website design and extracting the main themes from my mood board in order to continue with a cohesive design.'},
     ]}/>;
     const colors = [
         {colorName: 'Rust 300', color: '#E96227', text: 'Hex Code: #E96227\nRGB: 233 98 39\nCMYK: 0% 58% 83% 9%', textColor: 'light'},
@@ -90,15 +90,16 @@ export const RollWithIt = () => {
             <p>With my mood board finalized, I settled on elements that were <span style={{fontWeight: 'bold', color: '#2519D2'}}>cute and playful, subdued in color, and rounded.</span> I also added a 3D effect to interactive components in order to emulate physical buttons, such as ones seen on Nintendo consoles or Tamagotchis, to pay homage to retro tech. For images, I used pebble-like shapes to look visually interesting and organic, rather than formulaic and rigid. Through the design, I want to <span style={{fontWeight: 'bold', color: '#2519D2'}}>cater to a customer's inner child and create a fun, welcoming setting.</span></p>
             <Fonts showTitle fonts={fonts} text={'Soft, playful, rounded sans-serif fonts to create a welcoming environment.'}/>
             <ImageSlide imageSlideProps={[
+                {title: 'Button set', imagePath: RollWithItButton},
+                {title: 'Counter set',imagePath: RollWithItCounter},
+                {title: 'Filter set',imagePath: RollWithItFilter},
+                {title: 'Text input set', imagePath: RollWithItTextInput},
                 {title: 'Sketched components', imagePath: RollWithItSketchbookDrawing4},
                 {title: 'Sketched wireframes',imagePath: RollWithItSketchbookWireframe1},
                 {title: 'Sketched wireframes',imagePath: RollWithItSketchbookWireframe2},
                 {title: 'Sketched wireframes', imagePath: RollWithItSketchbookWireframe3},
                 {title: 'Sketched wireframes', imagePath: RollWithItSketchbookWireframe4},
-                {title: 'Button set', imagePath: RollWithItButton},
-                {title: 'Counter set',imagePath: RollWithItCounter},
-                {title: 'Filter set',imagePath: RollWithItFilter},
-                {title: 'Text input set', imagePath: RollWithItTextInput}]}/>
+                ]}/>
         </div>;
     const prototype = <div className='columnWith12Gap' style={{alignItems: 'center'}}>
         <div className='desktopMockupContainer'><iframe title='Roll With It Prototype' className='rollWithItPrototype' src="https://embed.figma.com/proto/2AQTimF0QrG3lk8lXFX05C/UXDE5100--Final-Project?node-id=467-223&scaling=scale-down-width&content-scaling=fixed&page-id=467%3A222&starting-point-node-id=467%3A223&embed-host=share&hide-ui=1" allowfullscreen></iframe></div>
@@ -111,21 +112,35 @@ export const RollWithIt = () => {
             <div className='bannerRollWithIt'>
                 <div className='bannerTitle'>
                     <h1 className='title'>Roll With It</h1>
+                    <div className='bannerDataContainer'>
+                        <div className='bannerData'>
+                            <p style={{color: '#6D6C65'}}>Timeline</p>
+                            <p style={{fontWeight: '700'}}>August - December 2025</p>
+                        </div>
+                        <div className='bannerData'>
+                            <p style={{color: '#6D6C65'}}>Industry</p>
+                            <p style={{fontWeight: '700'}}>Food/Service</p>
+                        </div>
+                        <div className='bannerData'>
+                            <p style={{color: '#6D6C65'}}>Role</p>
+                            <p style={{fontWeight: '700'}}>UI Designer</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='40px 0'/>
+            <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='40px 24px'/>
             <div className='bannerWrapper'>
                 <img src={RollWithItBanner2} alt='Roll With It mood board'/>
             </div>
-            <Grid gridProps={[{title: 'Moodboarding', content: ideation, rowType: 'Column'}]} gridMargin='40px 0'/>
+            <Grid gridProps={[{title: 'Moodboarding', content: ideation, rowType: 'Column'}]} gridMargin='40px 24px'/>
             <div className='bannerWrapper'>
-                <img src={RollWithItBanner3} alt='Roll With It component set' gridMargin='40px 0'/>
+                <img src={RollWithItBanner3} alt='Roll With It component set' gridMargin='40px 24px'/>
             </div>
             <Grid gridProps={[{title: 'Designing', content: design, rowType: 'Column'}]}/>
             <div className='bannerWrapper'>
-                <img src={RollWithItBanner4} alt='Roll With It character illustrations' gridMargin='40px 0'/>
+                <img src={RollWithItBanner4} alt='Roll With It character illustrations' gridMargin='40px 24px'/>
             </div>
-            <Grid gridProps={[{title: 'Prototyping', content: prototype, rowType: 'Column'}]} gridMargin='40px 0'/>
+            <Grid gridProps={[{title: 'Prototyping', content: prototype, rowType: 'Column'}]} gridMargin='40px 24px'/>
         </div>
     );
 }

@@ -175,6 +175,8 @@ import StillAliveCover from './Music/StillAlive.png';
 import TheGamblerCover from './Music/TheGambler.png';
 import TheVillainIAppearToBeCover from './Music/TheVillainIAppearToBe.png';
 import TraderJoesBanner from './TraderJoesResearch/Banner.png';
+import TraderJoesBanner2 from './TraderJoesResearch/Banner2.png';
+import TraderJoesBanner3 from './TraderJoesResearch/Banner3.png';
 import TraderJoesAffinityDiagram from './TraderJoesResearch/AffinityDiagram.png';
 import TraderJoesCover from './TraderJoesResearch/Cover.png';
 import TraderJoesJessJourneyMap from './TraderJoesResearch/JessJourneyMap.png';
@@ -363,6 +365,8 @@ export {
     TheGamblerCover,
     TheVillainIAppearToBeCover,
     TraderJoesBanner,
+    TraderJoesBanner2,
+    TraderJoesBanner3,
     TraderJoesAffinityDiagram,
     TraderJoesCover,
     TraderJoesJessJourneyMap,

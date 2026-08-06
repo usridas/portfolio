@@ -1,4 +1,16 @@
 .largeNavContainer {
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    top: 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    z-index: 1000;
+    justify-items: center;
+    padding: 0 24px 40px 24px;
+}
+
+.largeNav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -6,12 +18,8 @@
     width: -webkit-fill-available;
     width: stretch;
     gap: 40px;
-    top: 0;
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-    max-width: 996px;
-    margin-bottom: 40px;
-    z-index: 1000;
+    max-width: 1200px;
+    align-items: center;
 }
 
 .largeNavList {
@@ -35,20 +43,27 @@
 }
 
 .smallNavContainer {
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    top: 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    margin-bottom: 24px;
+    z-index: 1000;
+    justify-items: center;
+    padding: 0px 24px;
+}
+
+.smallNav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: -moz-available;
     width: -webkit-fill-available;
     width: stretch;
-    max-width: 996px;
+    max-width: 1200px;
     gap: 40px;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-    margin-bottom: 24px;
-    z-index: 1000;
 }
 
 .smallNavModalContainer {
@@ -91,7 +106,7 @@
 }
 
 .footer {
-    padding-top: 80px;
+    padding: 80px 24px 0px 24px;
     animation: fadeIn 1s forwards;
 }
 

@@ -60,7 +60,7 @@ export const AboutMe = () => {
 
     const aboutMe = 
         <div className='columnWith24Gap'>
-            <p>{'I am a UI/UX designer with a software development background aiming to bridge the gap between design and engineering in order to empower users through intuitive interfaces.\n\nAfter graduating with a Bachelor\'s in Computer Engineering and a minor in Art & Design, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. ​I am currently in a Master\'s program for User Experience Design and am searching for work in the UI/UX field.'}</p>
+            <p><span style={{fontWeight: 'bold', color: '#2519D2'}}>I am a UI/UX designer with a software development background aiming to bridge the gap between design and engineering in order to empower users through intuitive interfaces.</span><br/><br/>After graduating with a Bachelor's in Computer Engineering and a minor in Art & Design, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. ​I am currently in a Master's program for User Experience Design and am searching for work in the UI/UX field.</p>
             <div className='skills'><Button type='Primary' text='View my resume' link={Resume}/> <Button type='Secondary' text='View my Behance' link={'https://www.behance.net/umaiyalsridas'}/></div>
         </div>;
     const allEducation =

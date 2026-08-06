@@ -1,6 +1,6 @@
 import './Grid.scss';
 
-export const Grid = ({gridProps, gridMargin='0px 0'}) => {
+export const Grid = ({gridProps, gridMargin='0px 24px'}) => {
 
     function getClassName(rowType, divider) {
         if (divider === 'none') {

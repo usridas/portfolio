@@ -159,21 +159,39 @@ export const AlaskaAirlinesResearch = () => {
             <div className='bannerAlaska'>
                 <div className='bannerTitle'>
                     <h1 className='title'>Alaska Airlines<br/>Case Study</h1>
+                    <div className='bannerDataContainer'>
+                        <div className='bannerData'>
+                            <p style={{color: '#6D6C65'}}>Client</p>
+                            <p style={{fontWeight: '700'}}>Alaska Airlines</p>
+                        </div>
+                        <div className='bannerData'>
+                            <p style={{color: '#6D6C65'}}>Timeline</p>
+                            <p style={{fontWeight: '700'}}>January - May 2026</p>
+                        </div>
+                        <div className='bannerData'>
+                            <p style={{color: '#6D6C65'}}>Industry</p>
+                            <p style={{fontWeight: '700'}}>Airlines</p>
+                        </div>
+                        <div className='bannerData'>
+                            <p style={{color: '#6D6C65'}}>Role</p>
+                            <p style={{fontWeight: '700'}}>UX Researcher</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='40px 0'/>
+            <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='40px 24px'/>
             <div className='bannerWrapper'>
                 <img src={AlaskaAirlinesBanner2} alt='SWOT analysis, competitive analysis, CTA, and red routes'/>
             </div>
-            <Grid gridProps={problemGridArray} gridMargin='40px 0'/>
+            <Grid gridProps={problemGridArray} gridMargin='40px 24px'/>
             <div className='bannerWrapper'>
                 <img src={AlaskaAirlinesBanner3} alt='Quotes from usability tests' />
             </div>
-            <Grid gridProps={insightGridArray} gridMargin='40px 0'/>
+            <Grid gridProps={insightGridArray} gridMargin='40px 24px'/>
             <div className='bannerWrapper'>
                 <img src={AlaskaAirlinesBanner4} alt='Redesign mockups'/>
             </div>
-            <Grid gridProps={[{title: 'Next Steps', content: nextSteps, rowType: 'Column'}]} gridMargin='40px 0'/>
+            <Grid gridProps={[{title: 'Next Steps', content: nextSteps, rowType: 'Column'}]} gridMargin='40px 24px'/>
         </div>
     );
 }

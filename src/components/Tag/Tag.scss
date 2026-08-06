@@ -45,6 +45,13 @@
     border: 1px solid #930000;
 }
 
+.tagP0Dark {
+    @extend .tag;
+    background: #930000;
+    color: #FFAFAF;
+    border: 1px solid #930000;
+}
+
 .tagP1 {
     @extend .tag;
     background: #FFE0C2;
@@ -52,10 +59,24 @@
     border: 1px solid #7B3D00;
 }
 
+.tagP1Dark {
+    @extend .tag;
+    background: #7B3D00;
+    color: #FFE0C2;
+    border: 1px solid #7B3D00;
+}
+
 .tagP2 {
     @extend .tag;
     background: #C3BFFF;
     color: #1A0088;
+    border: 1px solid #1A0088;
+}
+
+.tagP2Dark {
+    @extend .tag;
+    background: #1A0088;
+    color: #C3BFFF;
     border: 1px solid #1A0088;
 }
 

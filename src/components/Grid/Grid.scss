@@ -15,10 +15,6 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    
-    @media (max-width: 767px) {
-      gap: 12px;
-    }
 }
 
 .gridRow {
@@ -63,7 +59,7 @@
   position: sticky;
   top: 0px;
   align-self: start;
-  z-index: 2;
+  z-index: 20;
   width: -moz-available;
   width: -webkit-fill-available;
   width: stretch;
@@ -82,21 +78,33 @@
 .leftCol {
   @extend .firstCell;
   padding: 48px 0;
+  @media (max-width: 767px) {
+    padding: 24px 0;
+  }
 }
 
 .rightCol {
   @extend .secondCell;
   padding: 48px 0;
+  @media (max-width: 767px) {
+    padding: 0 0 24px 0;
+  }
 }
 
 .topRow {
   @extend .firstCell;
   padding: 24px 0;
+  @media (max-width: 767px) {
+    padding: 24px 0;
+  }
 }
 
 .bottomRow {
   @extend .secondCell;
   padding: 24px 0;
+  @media (max-width: 767px) {
+    padding: 24px 0;
+  }
 }
 
 @supports (animation-timeline: view()) {
