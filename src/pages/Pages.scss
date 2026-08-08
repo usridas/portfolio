@@ -255,6 +255,16 @@
     background-color: #048A81;
 }
 
+.bannerUmeko {
+    @extend .banner;
+    background-image: url('../assets/images/Umeko/banner.png');
+}
+
+.bannerKavi {
+    @extend .banner;
+    background-image: url('../assets/images/Kavi/banner.png');
+}
+
 .bannerOverlay {
   position: absolute;
   top: 0;

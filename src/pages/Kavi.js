@@ -7,11 +7,12 @@ import {
   KaviLogo3,
   KaviBrandAsset1,
   KaviBrandAsset2,
+  KaviBrandAsset3,
   KaviMockup1,
   KaviMockup2,
   KaviMockup3,
   KaviMockup4,
-  KaviMockup5
+  KaviBanner2
 } from '../assets/images'
 import { ColorPalette } from '../components/ProjectDetails/ColorPalette.js';
 import Fonts from '../components/ProjectDetails/Fonts.js';
@@ -19,10 +20,12 @@ import Grid from '../components/Grid/Grid.js';
 
 export const Kavi = () => {
 
-  const content = <div className='columnWith24Gap'>
-    <p style={{marginBottom: '24px'}}>{'KAVI is a South Asian women owned luxury beauty and self care brand. Rooted in South Asian culture and ayurvedic practices, KAVI strives to make the beauty and self care routine enjoyable and relaxing through all-natural ingredients.\n\n*This is a fictional business project made for design purposes.'}</p>
-    <Button type='Primary' text='See full project on Behance' link={'https://www.behance.net/gallery/242576537/KAVI-Brand-Identity-and-Guidelines'}/>
-  </div>
+  const summaryContent =
+      <div className='columnWith24Gap'>
+          <h2>KAVI is a South Asian women owned luxury beauty and self care brand. Rooted in South Asian culture and ayurvedic practices, KAVI strives to <span style={{color: '#2519D2'}}>make the beauty and self care routine enjoyable and relaxing through all-natural ingredients.</span></h2>
+          <p>*This is a fictional company made for design purposes.</p>
+          <Button type='Primary' text='See full project on Behance' link={'https://www.behance.net/gallery/242576537/KAVI-Brand-Identity-and-Guidelines'}/>
+      </div>
 
   const colors = [
     {colorName: 'Rani pink', color: '#E42776', text: 'Hex Code: #E42776\nRGB: 228 39 118\nCMYK: 4% 96% 25% 0%', textColor: 'light'},
@@ -38,33 +41,59 @@ export const Kavi = () => {
     {fontName: 'Cormorant Garamond Semibold Italic', fontSubtitle: 'For quotes and extra information', fontFamily: `"cormorant-garamond", serif`, fontWeight: '600', fontStyle: 'italic'},
   ];
 
-  const imageSlideProps = [
+  const imageSlideProps1 = [
     {imagePath: KaviLogo1, title: "Primary logo"},
     {imagePath: KaviLogo2, title: "Secondary logo"},
     {imagePath: KaviLogo3, title: "Tertiary logo"},
     {imagePath: KaviBrandAsset1, title: "Brand asset 1"},
     {imagePath: KaviBrandAsset2, title: "Brand asset 2"},
+    {imagePath: KaviBrandAsset3, title: "Brand asset 3"},
+  ];
+
+  const imageSlideProps2 = [
     {imagePath: KaviMockup1, title: "Mockup"},
     {imagePath: KaviMockup2, title: "Mockup"},
     {imagePath: KaviMockup3, title: "Mockup"},
     {imagePath: KaviMockup4, title: "Mockup"},
-    {imagePath: KaviMockup5, title: "Mockup"},
   ];
 
-  const imageSlide = <div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}><ImageSlide imageSlideProps={imageSlideProps} imageMaxWidth={true}/></div>;
-
-  const gridArray = [
-        {title: 'Overview', content: content, rowType: 'Column'},
-        {title: 'Colors', content: <ColorPalette colors={colors} text={'This brand should use bold, tropical colors to imitate bright saree/textile colors. I also took inspiration from colors applied in Pichwai or Mughal art with lotuses and peacocks.'}/>},
-        {title: 'Fonts', content: <Fonts fonts={fonts} text={'These typefaces are mature and elegant. The Cormorant Garamond Medium is the primary typeface while the DM Sans Regular is the secondary typeface. For quotes and extra information, use the Cormorant Garamond Semibold Italic.'}/>},
-        {title: 'Images', content: imageSlide}
-  ]
+  const design =
+      <div className='columnWith48Gap'>
+          <div className='colorFontContainer'>
+              <ColorPalette showTitle colors={colors} text={'This brand should use bold, tropical colors to imitate bright saree/textile colors. I also took inspiration from colors applied in Pichwai or Mughal art with lotuses and peacocks.'}/>
+              <Fonts showTitle fonts={fonts} text={'These typefaces are mature and elegant. The Cormorant Garamond Medium is the primary typeface while the DM Sans Regular is the secondary typeface. For quotes and extra information, use the Cormorant Garamond Semibold Italic.'}/>
+          </div>
+          {<ImageSlide imageSlideProps={imageSlideProps1}/>}
+      </div>;
 
   return (
     <div>
-        <h1 className='title'>KAVI</h1>
-        <Grid gridProps={gridArray}/>
-    </div>
+          <div className='bannerKavi'>
+              <div className='bannerTitle'>
+                  <h1 className='title'>Kavi</h1>
+                  <div className='bannerDataContainer'>
+                      <div className='bannerData'>
+                          <p style={{color: '#6D6C65'}}>Timeline</p>
+                          <p style={{fontWeight: '700'}}>July 2024</p>
+                      </div>
+                      <div className='bannerData'>
+                          <p style={{color: '#6D6C65'}}>Industry</p>
+                          <p style={{fontWeight: '700'}}>Luxury Goods</p>
+                      </div>
+                      <div className='bannerData'>
+                          <p style={{color: '#6D6C65'}}>Role</p>
+                          <p style={{fontWeight: '700'}}>Brand Designer</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='40px 24px'/>
+          <Grid gridProps={[{title: 'Colors & Fonts', content: design, rowType: 'Column'}]} gridMargin='40px 24px'/>
+          <div className='bannerWrapper'>
+            <img src={KaviBanner2} alt='Kavi brand assets'/>
+          </div>
+          <Grid gridProps={[{title: 'Mockups', content: <ImageSlide imageSlideProps={imageSlideProps2}/>, rowType: 'Column'}]} gridMargin='40px 24px'/>
+        </div>
   );
 }
 

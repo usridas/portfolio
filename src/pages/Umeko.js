@@ -7,12 +7,12 @@ import {
   UmekoLogo3,
   UmekoBrandAsset1,
   UmekoBrandAsset2,
-  UmekoBrandAsset3,
   UmekoMockup1,
   UmekoMockup2,
   UmekoMockup3,
   UmekoMockup4,
-  UmekoMockup5
+  UmekoMockup5,
+  UmekoBanner2
 } from '../assets/images';
 import ColorPalette from '../components/ProjectDetails/ColorPalette.js';
 import Fonts from '../components/ProjectDetails/Fonts.js';
@@ -20,10 +20,12 @@ import Grid from '../components/Grid/Grid.js';
 
 export const Umeko = () => {
 
-  const content = <div className='columnWith24Gap'>
-    <p style={{marginBottom: '24px'}}>{'Umeko is a fun, light-hearted Japanese style cafe which sources tea from Japan. They serve classic teas, as well as unique blends, and boba to cater to both younger and older aficionados. The pastel, calm aesthetic is inspired by the Japanese plum (ume) and blossom. Umeko means ‘plum child’ in Japanese and plum blossoms are associated with good fortune and health.\n\n*This is a fictional business project made for design purposes.'}</p>
-    <Button type='Primary' text='See full project on Behance' link={'https://www.behance.net/gallery/242576285/Umeko-Brand-Identity-and-Guidelines'}/>
-  </div>
+  const summaryContent =
+    <div className='columnWith24Gap'>
+        <h2>Umeko is a fun, light-hearted Japanese style cafe which sources tea from Japan. <span style={{color: '#2519D2'}}>They serve classic teas, as well as unique blends, and boba to cater to both younger and older aficionados.</span> The pastel, calm aesthetic is inspired by the Japanese plum (ume) and blossom. Umeko means "plum child" in Japanese and plum blossoms are associated with good fortune and health.</h2>
+        <p>*This is a fictional company made for design purposes.</p>
+        <Button type='Primary' text='See full project on Behance' link={'https://www.behance.net/gallery/242576285/Umeko-Brand-Identity-and-Guidelines'}/>
+    </div>
 
   const colors = [
     {colorName: 'Cherry blossom', color: '#FDDBDA', text: 'Hex Code: #FDDBDA\nRGB: 253 219 218\nCMYK: 0% 16.29% 7.55% 0%'},
@@ -36,14 +38,16 @@ export const Umeko = () => {
     {fontName: 'Rampart One Regular', fontSubtitle: 'Primary font', fontFamily: `"rampart-one", sans-serif`, fontWeight: '400', fontStyle: 'normal', fontSize: '32'},
     {fontName: 'Rounded M+ 1C Medium', fontSubtitle: 'Secondary font', fontFamily: `"m-plus-rounded-1c", sans-serif`, fontWeight: '500', fontStyle: 'normal', fontSize: '32'}  
   ];
-
-  const imageSlideProps = [
+  
+  const imageSlideProps1 = [
     {imagePath: UmekoLogo1, title: "Primary logo"},
     {imagePath: UmekoLogo2, title: "Secondary logo"},
     {imagePath: UmekoLogo3, title: "Tertiary logo"},
     {imagePath: UmekoBrandAsset1, title: "Brand asset 1"},
     {imagePath: UmekoBrandAsset2, title: "Brand asset 2"},
-    {imagePath: UmekoBrandAsset3, title: "Illustrations"},
+  ];
+
+  const imageSlideProps2 = [
     {imagePath: UmekoMockup1, title: "Mockup"},
     {imagePath: UmekoMockup2, title: "Mockup"},
     {imagePath: UmekoMockup3, title: "Mockup"},
@@ -51,19 +55,42 @@ export const Umeko = () => {
     {imagePath: UmekoMockup5, title: "Mockup"},
   ];
 
-  const imageSlide = <div style={{display: 'flex', width: 'stretch', justifyContent: 'center'}}><ImageSlide imageSlideProps={imageSlideProps} imageMaxWidth={true}/></div>;
-
-  const gridArray = [
-        {title: 'Overview', content: content, rowType: 'Column'},
-        {title: 'Colors', content: <ColorPalette colors={colors} text={'Used cute, romantic pastels to create an inviting aesthetic. Pinks and purples will pay homage to the plum and plum blossom and give almost a 90s anime/vaporwave feel.'}/>},
-        {title: 'Fonts', content: <Fonts fonts={fonts} text={'These typefaces are bubbly, yet easy to read, to welcome an audience of all ages. The typeface also pairs well with the cute cat logo.'}/>},
-        {title: 'Images', content: imageSlide}
-  ]
+  const design =
+    <div className='columnWith48Gap'>
+        <div className='colorFontContainer'>
+            <ColorPalette showTitle colors={colors} text={'Used cute, romantic pastels to create an inviting aesthetic. Pinks and purples will pay homage to the plum and plum blossom and give almost a 90s anime/vaporwave feel.'}/>
+            <Fonts showTitle fonts={fonts} text={'These typefaces are bubbly, yet easy to read, to welcome an audience of all ages. The typeface also pairs well with the cute cat logo.'}/>
+        </div>
+        {<ImageSlide imageSlideProps={imageSlideProps1}/>}
+    </div>;
 
   return (
     <div>
-        <h1 className='title'>Umeko</h1>
-        <Grid gridProps={gridArray}/>
+      <div className='bannerUmeko'>
+          <div className='bannerTitle'>
+              <h1 className='title'>Umeko</h1>
+              <div className='bannerDataContainer'>
+                  <div className='bannerData'>
+                      <p style={{color: '#6D6C65'}}>Timeline</p>
+                      <p style={{fontWeight: '700'}}>July 2024</p>
+                  </div>
+                  <div className='bannerData'>
+                      <p style={{color: '#6D6C65'}}>Industry</p>
+                      <p style={{fontWeight: '700'}}>Food/Service</p>
+                  </div>
+                  <div className='bannerData'>
+                      <p style={{color: '#6D6C65'}}>Role</p>
+                      <p style={{fontWeight: '700'}}>Brand Designer</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <Grid gridProps={[{title: 'Overview', content: summaryContent, rowType: 'Column'}]} gridMargin='40px 24px'/>
+      <Grid gridProps={[{title: 'Colors & Fonts', content: design, rowType: 'Column'}]} gridMargin='40px 24px'/>
+      <div className='bannerWrapper'>
+        <img src={UmekoBanner2} alt='Umeko illustrations'/>
+      </div>
+      <Grid gridProps={[{title: 'Mockups', content: <ImageSlide imageSlideProps={imageSlideProps2}/>, rowType: 'Column'}]} gridMargin='40px 24px'/>
     </div>
   );
 }

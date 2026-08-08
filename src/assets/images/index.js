@@ -32,8 +32,11 @@ import ElfsterExchangeScreens from './ElfsterRedesign/exchangeScreens.png';
 import ElfsterFriendScreens from './ElfsterRedesign/friendScreen.png';
 import ElfsterProfileScreens from './ElfsterRedesign/profileScreen.png';
 import ElfsterWishlistScreens from './ElfsterRedesign/wishlistScreens.png';
+import KaviBanner from './Kavi/banner.png';
+import KaviBanner2 from './Kavi/banner2.png';
 import KaviBrandAsset1 from './Kavi/brandAsset1.png';
 import KaviBrandAsset2 from './Kavi/brandAsset2.png';
+import KaviBrandAsset3 from './Kavi/brandAsset3.png';
 import KaviLogo1 from './Kavi/logo1.png';
 import KaviLogo2 from './Kavi/logo2.png';
 import KaviLogo3 from './Kavi/logo3.png';
@@ -41,7 +44,8 @@ import KaviMockup1 from './Kavi/mockup1.png';
 import KaviMockup2 from './Kavi/mockup2.png';
 import KaviMockup3 from './Kavi/mockup3.png';
 import KaviMockup4 from './Kavi/mockup4.png';
-import KaviMockup5 from './Kavi/mockup5.png';
+import UmekoBanner from './Umeko/banner.png';
+import UmekoBanner2 from './Umeko/banner2.png';
 import UmekoBrandAsset1 from './Umeko/brandAsset1.png';
 import UmekoBrandAsset2 from './Umeko/brandAsset2.png';
 import UmekoBrandAsset3 from './Umeko/brandAsset3.png';
@@ -243,8 +247,11 @@ export {
     ElfsterFriendScreens,
     ElfsterProfileScreens,
     ElfsterWishlistScreens,
+    KaviBanner,
+    KaviBanner2,
     KaviBrandAsset1,
     KaviBrandAsset2,
+    KaviBrandAsset3,
     KaviLogo1,
     KaviLogo2,
     KaviLogo3,
@@ -252,7 +259,6 @@ export {
     KaviMockup2,
     KaviMockup3,
     KaviMockup4,
-    KaviMockup5,
     KohiToKochaBanner,
     KohiToKochaBanner2,
     KohiToKochaBanner3,
@@ -279,6 +285,8 @@ export {
     KohiToKochaPrototype9,
     KohiToKochaTypography,
     KohiToKochaWireframes,
+    UmekoBanner,
+    UmekoBanner2,
     UmekoBrandAsset1,
     UmekoBrandAsset2,
     UmekoBrandAsset3,
