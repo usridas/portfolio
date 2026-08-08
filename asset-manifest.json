@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.cf795af1.css",
-    "main.js": "/static/js/main.23de9ba9.js",
+    "main.css": "/static/css/main.959f21b3.css",
+    "main.js": "/static/js/main.4025b49d.js",
     "static/js/453.ac9b7e2a.chunk.js": "/static/js/453.ac9b7e2a.chunk.js",
-    "static/media/mockup4.png": "/static/media/mockup4.4e883e7a5e31d886385c.png",
     "static/media/mockup3.png": "/static/media/mockup3.8a6b4c0488704ae6db2c.png",
     "static/media/Inspiration.png": "/static/media/Inspiration.c6a0e38e20a01227ae6a.png",
+    "static/media/mockup1.png": "/static/media/mockup1.ac11e73db170f5c8ce96.png",
     "static/media/mockup2.png": "/static/media/mockup2.0968cb4a0857cb50dd84.png",
-    "static/media/mockup1.png": "/static/media/mockup1.14f4262f4ade748fdfd2.png",
     "static/media/Kasugai.png": "/static/media/Kasugai.293db4009490f57432bb.png",
     "static/media/SingSingSing.mp3": "/static/media/SingSingSing.554bebde7ddf92bbbc4f.mp3",
     "static/media/Moodboard.png": "/static/media/Moodboard.8d49d43740e8fb9e9d33.png",
     "static/media/KohiToKochaSlideDeck.pdf": "/static/media/KohiToKochaSlideDeck.33df38664eceeb1cc5fe.pdf",
     "static/media/AlaskaAirlinesSlideDeck.pdf": "/static/media/AlaskaAirlinesSlideDeck.f8623a9870265d23e127.pdf",
-    "static/media/mockup5.png": "/static/media/mockup5.a599faac8715f5e4b7a8.png",
+    "static/media/mockup5.png": "/static/media/mockup5.92139a3371667f10f0dc.png",
     "static/media/Banner2.png": "/static/media/Banner2.f4bfe6c8a9676d7dfdd9.png",
     "static/media/Banner3.png": "/static/media/Banner3.2b6589606a66c7d24c0f.png",
     "static/media/TraderJoesSlideDeck.pdf": "/static/media/TraderJoesSlideDeck.b26036e16736a0c65fcf.pdf",
+    "static/media/mockup4.png": "/static/media/mockup4.4e883e7a5e31d886385c.png",
     "static/media/MoodBoard.png": "/static/media/MoodBoard.a161baca8d8419a66f6b.png",
     "static/media/AmericanPie.mp3": "/static/media/AmericanPie.4eee48b76da6e3931b38.mp3",
     "static/media/LetsGroove.mp3": "/static/media/LetsGroove.191baf701c7fa85074cf.mp3",
@@ -84,7 +84,8 @@
     "static/media/SeatAssignment.png": "/static/media/SeatAssignment.645b7d040d842c932388.png",
     "static/media/Logo.png": "/static/media/Logo.aa3af76feba6685e685b.png",
     "static/media/Prototype1.png": "/static/media/Prototype1.8b82b2080a0363f77172.png",
-    "static/media/brandAsset3.png": "/static/media/brandAsset3.1b265b5cdbc5bc3b5f70.png",
+    "static/media/banner.png": "/static/media/banner.c2413dcbbe80837df9af.png",
+    "static/media/brandAsset3.png": "/static/media/brandAsset3.14f4262f4ade748fdfd2.png",
     "static/media/Prototype7.png": "/static/media/Prototype7.94de4b3aac02d594a37e.png",
     "static/media/ChrysolinaPerforata.jpg": "/static/media/ChrysolinaPerforata.85ec325df89008e3e33f.jpg",
     "static/media/Prototype9.png": "/static/media/Prototype9.e192400492efc692b1b3.png",
@@ -96,6 +97,7 @@
     "static/media/CompetitiveFeatureMatrix.png": "/static/media/CompetitiveFeatureMatrix.bbef08ed3c11f20017f1.png",
     "static/media/DanausPlexippus.jpg": "/static/media/DanausPlexippus.1d1b12a9735cca99f730.jpg",
     "static/media/Daruma.jpg": "/static/media/Daruma.ad79e52f6631038396f9.jpg",
+    "static/media/banner2.png": "/static/media/banner2.363b9e9fd2260dd99918.png",
     "static/media/Cover.png": "/static/media/Cover.9a3c18a3a24e12e086c9.png",
     "static/media/wishlistScreens.png": "/static/media/wishlistScreens.2fa43d96d6c5cba9399a.png",
     "static/media/Original3.png": "/static/media/Original3.e48640fd544b5fb93391.png",
@@ -187,12 +189,12 @@
     "static/media/MayaPersonality.png": "/static/media/MayaPersonality.9ad423c0947eb7d8a932.png",
     "index.html": "/index.html",
     "static/media/rotate.svg": "/static/media/rotate.4308d1450fa74ad2cfd5d2efcd9b9e57.svg",
-    "main.cf795af1.css.map": "/static/css/main.cf795af1.css.map",
-    "main.23de9ba9.js.map": "/static/js/main.23de9ba9.js.map",
+    "main.959f21b3.css.map": "/static/css/main.959f21b3.css.map",
+    "main.4025b49d.js.map": "/static/js/main.4025b49d.js.map",
     "453.ac9b7e2a.chunk.js.map": "/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf795af1.css",
-    "static/js/main.23de9ba9.js"
+    "static/css/main.959f21b3.css",
+    "static/js/main.4025b49d.js"
   ]
 }
