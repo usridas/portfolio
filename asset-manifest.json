@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.959f21b3.css",
-    "main.js": "/static/js/main.4025b49d.js",
+    "main.css": "/static/css/main.1c4cbc70.css",
+    "main.js": "/static/js/main.2449c7e8.js",
     "static/js/453.ac9b7e2a.chunk.js": "/static/js/453.ac9b7e2a.chunk.js",
     "static/media/mockup3.png": "/static/media/mockup3.8a6b4c0488704ae6db2c.png",
     "static/media/Inspiration.png": "/static/media/Inspiration.c6a0e38e20a01227ae6a.png",
@@ -13,8 +13,6 @@
     "static/media/KohiToKochaSlideDeck.pdf": "/static/media/KohiToKochaSlideDeck.33df38664eceeb1cc5fe.pdf",
     "static/media/AlaskaAirlinesSlideDeck.pdf": "/static/media/AlaskaAirlinesSlideDeck.f8623a9870265d23e127.pdf",
     "static/media/mockup5.png": "/static/media/mockup5.92139a3371667f10f0dc.png",
-    "static/media/Banner2.png": "/static/media/Banner2.f4bfe6c8a9676d7dfdd9.png",
-    "static/media/Banner3.png": "/static/media/Banner3.2b6589606a66c7d24c0f.png",
     "static/media/TraderJoesSlideDeck.pdf": "/static/media/TraderJoesSlideDeck.b26036e16736a0c65fcf.pdf",
     "static/media/mockup4.png": "/static/media/mockup4.4e883e7a5e31d886385c.png",
     "static/media/MoodBoard.png": "/static/media/MoodBoard.a161baca8d8419a66f6b.png",
@@ -24,7 +22,6 @@
     "static/media/screenshots.png": "/static/media/screenshots.ac9c75af2c0d411c12d1.png",
     "static/media/AffinityDiagram.png": "/static/media/AffinityDiagram.38ac49a7f816a6b011c7.png",
     "static/media/Components3.png": "/static/media/Components3.1301d199fb1796f04969.png",
-    "static/media/Banner.png": "/static/media/Banner.46ce540d19662d82eb79.png",
     "static/media/IJustCalledToSayILoveYou.mp3": "/static/media/IJustCalledToSayILoveYou.d8db95dd913d4a452985.mp3",
     "static/media/Rosmarina.mp3": "/static/media/Rosmarina.9183b1ec9918495c394b.mp3",
     "static/media/RollWithItSlideDeck.pdf": "/static/media/RollWithItSlideDeck.3b79571f21abdb9eaebe.pdf",
@@ -54,6 +51,8 @@
     "static/media/NineToFive.mp3": "/static/media/NineToFive.d490ded700783ff4258e.mp3",
     "static/media/IkoIko.mp3": "/static/media/IkoIko.6e6e10b41fd7ce270faa.mp3",
     "static/media/OhPrettyWoman.mp3": "/static/media/OhPrettyWoman.6cbd30b6762921b907fd.mp3",
+    "static/media/Banner3.png": "/static/media/Banner3.9db720c561a136c4cb32.png",
+    "static/media/Banner2.png": "/static/media/Banner2.dd2916329a4a81d4222e.png",
     "static/media/PeurDesFilles.mp3": "/static/media/PeurDesFilles.325348991cc805db364c.mp3",
     "static/media/Components1.png": "/static/media/Components1.efeae0ea2a42aa155ca5.png",
     "static/media/LovelyCity.mp3": "/static/media/LovelyCity.7697fea6aba8c9b07239.mp3",
@@ -63,7 +62,6 @@
     "static/media/Mushroom_2.png": "/static/media/Mushroom_2.f2136d0aff28b8b13713.png",
     "static/media/TripSummary.png": "/static/media/TripSummary.06b6d916c8db2b84a7be.png",
     "static/media/HotTeaAndFirmwareUpdates.mp3": "/static/media/HotTeaAndFirmwareUpdates.376b25fc1cc34dd7e256.mp3",
-    "static/media/Banner4.png": "/static/media/Banner4.b565b7a6cede719e2506.png",
     "static/media/AceOfAces.mp3": "/static/media/AceOfAces.ad8ca52168d0b0270621.mp3",
     "static/media/Prototype8.png": "/static/media/Prototype8.c2b69c36eb1a3ffcf77c.png",
     "static/media/Prototype4.png": "/static/media/Prototype4.e6d31040a11a8168c266.png",
@@ -81,6 +79,7 @@
     "static/media/SketchbookDrawing2.png": "/static/media/SketchbookDrawing2.df31316736a4e9713058.png",
     "static/media/SketchbookWireframe3.png": "/static/media/SketchbookWireframe3.e437dbf41664923621a7.png",
     "static/media/Prototype5.png": "/static/media/Prototype5.9363dc51b24aff5c44ec.png",
+    "static/media/Banner.png": "/static/media/Banner.259d638c3527678d9dd5.png",
     "static/media/SeatAssignment.png": "/static/media/SeatAssignment.645b7d040d842c932388.png",
     "static/media/Logo.png": "/static/media/Logo.aa3af76feba6685e685b.png",
     "static/media/Prototype1.png": "/static/media/Prototype1.8b82b2080a0363f77172.png",
@@ -97,7 +96,7 @@
     "static/media/CompetitiveFeatureMatrix.png": "/static/media/CompetitiveFeatureMatrix.bbef08ed3c11f20017f1.png",
     "static/media/DanausPlexippus.jpg": "/static/media/DanausPlexippus.1d1b12a9735cca99f730.jpg",
     "static/media/Daruma.jpg": "/static/media/Daruma.ad79e52f6631038396f9.jpg",
-    "static/media/banner2.png": "/static/media/banner2.363b9e9fd2260dd99918.png",
+    "static/media/Banner4.png": "/static/media/Banner4.87e61859be527c287e24.png",
     "static/media/Cover.png": "/static/media/Cover.9a3c18a3a24e12e086c9.png",
     "static/media/wishlistScreens.png": "/static/media/wishlistScreens.2fa43d96d6c5cba9399a.png",
     "static/media/Original3.png": "/static/media/Original3.e48640fd544b5fb93391.png",
@@ -140,6 +139,7 @@
     "static/media/IJustCalledToSayILoveYou.png": "/static/media/IJustCalledToSayILoveYou.731a0e24711d7e853f38.png",
     "static/media/friendScreen.png": "/static/media/friendScreen.8a67536b96e320db72c8.png",
     "static/media/Califas.png": "/static/media/Califas.e12b2156b553422319e3.png",
+    "static/media/banner2.png": "/static/media/banner2.0666b54625202cffda2d.png",
     "static/media/brandAsset2.png": "/static/media/brandAsset2.beee6c0d387d72cc8e3b.png",
     "static/media/Wireframe3.png": "/static/media/Wireframe3.29af33e69dc7ed453d89.png",
     "static/media/screenshot2.png": "/static/media/screenshot2.6692345b6c3bdc2fdc93.png",
@@ -189,12 +189,12 @@
     "static/media/MayaPersonality.png": "/static/media/MayaPersonality.9ad423c0947eb7d8a932.png",
     "index.html": "/index.html",
     "static/media/rotate.svg": "/static/media/rotate.4308d1450fa74ad2cfd5d2efcd9b9e57.svg",
-    "main.959f21b3.css.map": "/static/css/main.959f21b3.css.map",
-    "main.4025b49d.js.map": "/static/js/main.4025b49d.js.map",
+    "main.1c4cbc70.css.map": "/static/css/main.1c4cbc70.css.map",
+    "main.2449c7e8.js.map": "/static/js/main.2449c7e8.js.map",
     "453.ac9b7e2a.chunk.js.map": "/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.959f21b3.css",
-    "static/js/main.4025b49d.js"
+    "static/css/main.1c4cbc70.css",
+    "static/js/main.2449c7e8.js"
   ]
 }
