@@ -22,6 +22,10 @@ export const KohiToKocha = () => {
     const { isXSmall, isSmall } = useScreenResolution();
     const isMobile = isSmall || isXSmall;
 
+    requestAnimationFrame(() => {
+        window.scrollTo(0,0);
+    });
+
     const summaryContent = <div className='columnWith24Gap'>
         <h2>This app is made for <span style={{color: '#2519D2'}}>learning about Japanese culture and language through cafe settings.</span> It will cover different types of cafes and their <span style={{color: '#2519D2'}}>history, vocabulary, phrases and expressions, and etiquette.</span> This app will help users prepare for real-world interactions by preparing dialogues for cafes in Japan and allows users to build up knowledge and confidence without the fear of making mistakes.</h2>
         <div style={{marginBottom: '24px'}}><Button type='Primary' text='See full design slide deck' link={KohiToKochaSlideDeck}/></div>
@@ -69,9 +73,9 @@ export const KohiToKocha = () => {
 
     const scopingGridArray = [
         {title: 'Scoping', content: <p>For this project, I wanted to improve my mobile design skills while focusing on subjects I am passionate about. I started learning Japanese casually a few years ago to prepare for a vacation to Japan; while there, I practiced basic Japanese by conversing at train stations, cafes, restaurants, and shops which helped me truly envelope myself within the culture. I ended up really enjoying it and have been studying Japanese during my free time. After returning home, I started work as a barista in a bakery. I became curious about Japanese culture and specifically, cafes, and discovered four main types of cafes: Modern, Kissaten, Themed, and Bakery cafes. Through Kohi To Kocha, I wanted to <span style={{fontWeight: 'bold', color: '#2519D2'}}>help users practice Japanese in low-stakes environments</span>, like these cafes.</p>, rowType: 'Column', divider: 'none'},
-        {title: scopingArray[0].title, titleType: 'small', content: <p>{scopingArray[0].caption}</p>,  rowType: 'Row'},
-        {title: scopingArray[1].title, titleType: 'small', content: <p>{scopingArray[1].caption}</p>,  rowType: 'Row'},
-        {title: scopingArray[2].title, titleType: 'small', content: <p>{scopingArray[2].caption}</p>,  rowType: 'Row', divider: 'none'},
+        {titleContent: <h2>{scopingArray[0].title}</h2>, content: <p>{scopingArray[0].caption}</p>,  rowType: 'Row'},
+        {titleContent: <h2>{scopingArray[1].title}</h2>, content: <p>{scopingArray[1].caption}</p>,  rowType: 'Row'},
+        {titleContent: <h2>{scopingArray[2].title}</h2>, content: <p>{scopingArray[2].caption}</p>,  rowType: 'Row', divider: 'none'},
         {content: flowchart,  rowType: 'Column'},
     ]
 

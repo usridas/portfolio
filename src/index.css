@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 html, body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,6 +10,12 @@ html, body {
   height: 100%;
   background-color: #FDFCF8;
   min-width: 320px;
+  cursor: none;
+  scroll-snap-type: y proximity;
+  @media (max-width: 767px) {
+    cursor: auto;
+    scroll-snap-type: none;
+  }
 }
 
 * {
@@ -24,7 +32,7 @@ hr {
 }
 
 p {
-  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 16px;
@@ -37,7 +45,7 @@ p {
 
 a, button {
   all: unset;
-  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -51,7 +59,6 @@ a, button {
   &:hover {
     text-decoration-line: none;
     color: #6D6C65;
-    cursor: pointer;
   }
   &:active {
     text-decoration-line: none;
@@ -60,7 +67,7 @@ a, button {
 }
 
 h1 {
-  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 36px;
@@ -72,7 +79,7 @@ h1 {
 }
 
 h2 {
-  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
@@ -82,7 +89,7 @@ h2 {
 }
 
 h3 {
-  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
   font-style: italic;
   font-weight: 700;
@@ -92,7 +99,7 @@ h3 {
 }
 
 h4 {
-  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
@@ -102,7 +109,7 @@ h4 {
 }
 
 h5 {
-  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;

@@ -29,14 +29,14 @@ export const ProjectPreview = ({imageSlideProps}) => {
   }
 
   return (
-    <div className="projectPreviewContainer">
+    <div className="projectPreviewContainer hover-target" style={{background: imageSlideProps[imageIndex].background ?? 'none'}}>
         {imageSlideProps[imageIndex].title &&
             <div className='projectPreviewTitleContainer'>
                 <h3>{imageSlideProps[imageIndex].title}</h3>
                 {imageSlideProps[imageIndex].description && <h4 style={{textAlign: 'end'}}>{imageSlideProps[imageIndex].description}</h4>}
             </div>  
         }
-        {imageSlideProps[imageIndex].imagePath && <div className='imageBoxNotHug' style={{backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : 'contain'}`}}>
+        {imageSlideProps[imageIndex].imagePath && <div className='imageBoxNotHug' style={{backgroundImage: `url(${imageSlideProps[imageIndex].imagePath})`, backgroundSize: `${imageSlideProps[imageIndex].imageSize ? imageSlideProps[imageIndex].imageSize : 'cover'}`}}>
           {imageSlideProps[imageIndex].tags}
           {imageSlideProps[imageIndex].imageLink && !isMobileVar && <button className='imageSlideLink' tabIndex={0} onClick={()=>{navigate(imageSlideProps[imageIndex].imageLink)}} onKeyDown={(event)=>{if (event.key === 'Enter') {navigate(imageSlideProps[imageIndex].imageLink)}}}>{'See full project'}</button>}
           {imageSlideProps[imageIndex].imageLink && isMobileVar && <button className='imageSlideLinkSmallHover' onClick={()=>{navigate(imageSlideProps[imageIndex].imageLink)}}>{imageSlideProps[imageIndex].imageText}</button>}

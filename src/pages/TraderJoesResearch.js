@@ -14,6 +14,11 @@ export const TraderJoesResearch = () => {
     const { isSmall, isXSmall } = useScreenResolution();
     const isMobile = isSmall || isXSmall;
 
+    requestAnimationFrame(() => {
+        window.scrollTo(0,0);
+    });
+
+
     const summaryContent = <div className='columnWith24Gap'>
         <p>Although grocery shopping is a seemingly simple and regular task, there are ways the in-store and online shopping experience can be improved and optimized for the customer. In this research, we will focus on the experience of Trader Joe's shoppers and develop an understanding of customer needs and pain points during the grocery shopping process in order to define some opportunity spaces.</p>
         <Button type='Primary' text='View full slide deck' link={TraderJoesSlideDeck}/>
@@ -110,17 +115,17 @@ export const TraderJoesResearch = () => {
 
     const insightGridArray = [
         {title: 'Insights', content: <p>Using the quotes and notes taken from interviews and shadowing sessions, I created an affinity diagram which lead me a few main insights of what Trader Joe's excels and should continue and where they could improve.<br/><br/>One surprising thing I noted was that there was <span style={{fontWeight: 'bold', color: '#2519D2'}}>not a large appeal for an app or membership program,</span> even if the participants did mention having memberships for other grocery stores.</p>, rowType: 'Column', divider: 'none'},
-        {title: insightArray[0].insightTitle, titleType: 'small', content: insight1Container,  rowType: 'Row'},
-        {title: insightArray[1].insightTitle, titleType: 'small', content: insight2Container,  rowType: 'Row'},
-        {title: insightArray[2].insightTitle, titleType: 'small', content: insight3Container,  rowType: 'Row'},
-        {title: insightArray[3].insightTitle, titleType: 'small', content: insight4Container,  rowType: 'Row'},
-        {title: insightArray[4].insightTitle, titleType: 'small', content: insight5Container,  rowType: 'Row'}
+        {titleContent: <h2>{insightArray[0].insightTitle}</h2>, content: insight1Container,  rowType: 'Row'},
+        {titleContent: <h2>{insightArray[1].insightTitle}</h2>, content: insight2Container,  rowType: 'Row'},
+        {titleContent: <h2>{insightArray[2].insightTitle}</h2>, content: insight3Container,  rowType: 'Row'},
+        {titleContent: <h2>{insightArray[3].insightTitle}</h2>, content: insight4Container,  rowType: 'Row'},
+        {titleContent: <h2>{insightArray[4].insightTitle}</h2>, content: insight5Container,  rowType: 'Row'}
     ]
 
     const personaGridArray = [
         {title: 'Personas', content: <p>After interviewing, I created a journey map for each participant. From my 5 journey maps, I was able to extract two distinct personalities: <span style={{fontWeight: 'bold', color: '#2519D2'}}>the Snack Seeker and the Convenience Consumer.</span></p>, rowType: 'Column', divider: 'none'},
-        {title: 'Maya AKA The Snack Seeker', titleType: 'small', content: <p>Maya is a pretty planned person.  She is quite busy, but will find time to do her groceries every week on the weekend with the list she has accrued over the week. <span style={{fontWeight: 'bold', color: '#2519D2'}}>She does her main shopping at an alternative store,</span> because it will have all the essentials at a lower price, and then <span style={{fontWeight: 'bold', color: '#2519D2'}}>follows up with a trip to Trader Joe's for snacks, seasonal items, and party gifts. The location and parking of Trader Joe's is Maya's worst complaint.</span></p>,  rowType: 'Row'},
-        {title: 'Jess AKA The Convenience Consumer', titleType: 'small', content: <p>Jess is an introvert. She has to interact with people a lot at work and values alone time to do her hobbies. She does a majority of her shopping online, but is <span style={{fontWeight: 'bold', color: '#2519D2'}}>interested in certain Trader Joe's snacks and seasonal items that she sees on social media</span>, so she will go on a day that might be less busy and crowded. Ideally, Jess would stay at home and browse the grocery store website to get her groceries and snacks delivered to her. <span style={{fontWeight: 'bold', color: '#2519D2'}}>She really wishes Trader Joe's had a delivery or online shopping option,</span> because she does love the snacks and seasonal items, but she doesn't like being around people in the store. Sometimes chatting with store employees can be a little tiring.</p>,  rowType: 'Row'},
+        {titleContent: <h2>Maya AKA The Snack Seeker</h2>, content: <p>Maya is a pretty planned person.  She is quite busy, but will find time to do her groceries every week on the weekend with the list she has accrued over the week. <span style={{fontWeight: 'bold', color: '#2519D2'}}>She does her main shopping at an alternative store,</span> because it will have all the essentials at a lower price, and then <span style={{fontWeight: 'bold', color: '#2519D2'}}>follows up with a trip to Trader Joe's for snacks, seasonal items, and party gifts. The location and parking of Trader Joe's is Maya's worst complaint.</span></p>,  rowType: 'Row'},
+        {titleContent: <h2>Jess AKA The Convenience Consumer</h2>, content: <p>Jess is an introvert. She has to interact with people a lot at work and values alone time to do her hobbies. She does a majority of her shopping online, but is <span style={{fontWeight: 'bold', color: '#2519D2'}}>interested in certain Trader Joe's snacks and seasonal items that she sees on social media</span>, so she will go on a day that might be less busy and crowded. Ideally, Jess would stay at home and browse the grocery store website to get her groceries and snacks delivered to her. <span style={{fontWeight: 'bold', color: '#2519D2'}}>She really wishes Trader Joe's had a delivery or online shopping option,</span> because she does love the snacks and seasonal items, but she doesn't like being around people in the store. Sometimes chatting with store employees can be a little tiring.</p>,  rowType: 'Row'},
     ]
 
     const researchPlan =
@@ -135,6 +140,10 @@ export const TraderJoesResearch = () => {
                 <div className='bannerTitle'>
                     <h1 className='title'>Trader Joe's Case Study</h1>
                     <div className='bannerDataContainer'>
+                        <div className='bannerData'>
+                            <p style={{color: '#6D6C65'}}>Client</p>
+                            <p style={{fontWeight: '700'}}>Trader Joe's</p>
+                        </div>
                         <div className='bannerData'>
                             <p style={{color: '#6D6C65'}}>Timeline</p>
                             <p style={{fontWeight: '700'}}>August - December 2025</p>

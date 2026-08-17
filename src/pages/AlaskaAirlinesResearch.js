@@ -1,29 +1,26 @@
 import './Pages.scss';
 import TextContainer from '../components/Text/TextContainer.js';
 import {
-    AlaskaAirlinesOriginal2,
+    AlaskaAirlinesSolution1,
     AlaskaAirlinesSolution2,
-    AlaskaAirlinesOriginal3,
     AlaskaAirlinesSolution3,
     AlaskaAirlinesBanner2,
     AlaskaAirlinesBanner3,
     AlaskaAirlinesBanner4,
-    AlaskaAirlinesSolution1,
-    AlaskaAirlinesOriginal1,
 } from '../assets/images/index.js';
 import AlaskaAirlinesSlideDeck from '../assets/documents/AlaskaAirlinesSlideDeck.pdf'
 import Button from '../components/Button/Button.js';
 import Grid from '../components/Grid/Grid.js';
 import { useScreenResolution } from '../utils/ScreenSize.tsx';
-import { useState } from 'react';
-import FlippingImageSlide from '../components/Images/FlippingImageSlide.js';
+import ImageSlide from '../components/Images/ImageSlide.js';
 
 export const AlaskaAirlinesResearch = () => {
     const { isSmall, isXSmall } = useScreenResolution();
-    const [isFlipped1, setIsFlipped1] = useState(false);
-    const [isFlipped2, setIsFlipped2] = useState(false);
-    const [isFlipped3, setIsFlipped3] = useState(false);
     const isMobile = isSmall || isXSmall;
+
+    requestAnimationFrame(() => {
+        window.scrollTo(0,0);
+    });
 
     const insightRecommendationArray = [
         {
@@ -122,12 +119,12 @@ export const AlaskaAirlinesResearch = () => {
         <p>{insightRecommendationArray[3].insightCaption}</p>
         <p style={{width: 'stretch', textAlign: 'left', fontWeight: 'bold', color: '#2519D2'}}>{insightRecommendationArray[3].recommendationTitle}</p>
         <p>{insightRecommendationArray[3].recommendationCaption}</p>
-    </div>;  
-    
-    const flippingSlideProps = [
-        {title1: 'Redesigned flight comparison', imagePath1: AlaskaAirlinesSolution3, title2: 'Original flight comparison', imagePath2: AlaskaAirlinesOriginal3, flipButtonFunction: setIsFlipped3, flipButtonState: isFlipped3, caption1: 'All participants missed the \'Compare fares\' button, so I turned it into an outlined secondary button for more visual prominence. I also made each flight tier title a hyperlink so users could also click on the tier titles to understand what benefits they will be receiving.', caption2: 'All participants missed the \'Compare fares\' button, so I turned it into an outlined secondary button for more visual prominence. I also made each flight tier title a hyperlink so users could also click on the tier titles to understand what benefits they will be receiving.'},
-        {title1: 'Redesigned Saver modal', imagePath1: AlaskaAirlinesSolution1, title2: 'Original Saver modal', imagePath2: AlaskaAirlinesOriginal1, flipButtonFunction: setIsFlipped1, flipButtonState: isFlipped1, caption1: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.', caption2: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.'},
-        {title1: 'Redesigned Main modal', imagePath1: AlaskaAirlinesSolution2, title2: 'Original Main modal', imagePath2: AlaskaAirlinesOriginal2, flipButtonFunction: setIsFlipped2, flipButtonState: isFlipped2, caption1: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.', caption2: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.'},
+    </div>; 
+
+    const imageSlideProps = [
+        {title: 'Redesigned flight comparison', imagePath: AlaskaAirlinesSolution1, caption: 'All participants missed the \'Compare fares\' button, so I turned it into an outlined secondary button for more visual prominence. I also made each flight tier title a hyperlink so users could also click on the tier titles to understand what benefits they will be receiving.', caption2: 'All participants missed the \'Compare fares\' button, so I turned it into an outlined secondary button for more visual prominence. I also made each flight tier title a hyperlink so users could also click on the tier titles to understand what benefits they will be receiving.'},
+        {title: 'Redesigned Saver modal', imagePath: AlaskaAirlinesSolution2, caption: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.', caption2: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.'},
+        {title: 'Redesigned Main modal', imagePath: AlaskaAirlinesSolution3, caption: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.', caption2: 'While the original modal gave no details about your chosen flight tier, my redesign reiterates what a customer selected while also offering an upgrade if available.'},
     ];
     
     const nextStepsOverview = <TextContainer title={'What should we prioritize?'} insert={<p>Out of the three tasks provided in the usability test, <span style={{fontWeight: 'bold', color: '#2519D2'}}>choosing flights seemed to stand out as a particularly difficult task</span>; participants had low confidence, taking a long time to review options and constantly expressing confusion or frustration. With this in mind, <span style={{fontWeight: 'bold', color: '#2519D2'}}>I would prioritize providing a clear navigation component, highlighting fare comparison, and editing the content of the modal to provide details of their chosen flights.</span></p>}/>;
@@ -135,23 +132,23 @@ export const AlaskaAirlinesResearch = () => {
     const nextSteps = 
         <div className='columnWith24Gap'>
             {nextStepsOverview}
-            <FlippingImageSlide imageSlideProps={flippingSlideProps}/>
+            <ImageSlide imageSlideProps={imageSlideProps}/>
             <h2 style={{margin: '80px 0px 160px 0'}}>By providing clear flight details and smoothing out navigation, Alaska Airlines will reach their goal of <span style={{color: '#2519D2'}}>increased completed bookings</span>, while <span style={{color: '#2519D2'}}>boosting customer trust.</span></h2>
         </div>;
 
     const problemGridArray = [
         {title: 'Identifying the problem', content: <p>To start my research, I conducted a competitive analysis against <span style={{fontWeight: 'bold', color: '#2519D2'}}>Delta Air Lines, American Airlines, and Qatar Airways.</span> I chose Delta Air Lines and American Airlines to be two direct competitors to Alaska Airlines, as they all seem to serve similar populations and I chose Qatar Airways to be an aspirational competitor to Alaska Airlines, since Qatar is known for its luxury experience and technological excellence and innovation.<br/><br/>I also conducted a <span style={{fontWeight: 'bold', color: '#2519D2'}}>SWOT analysis and cognitive task analysis</span> in order to understand the pain points of Alaska Airlines and which tasks within the booking flow may have the heaviest cognitive load.</p>, rowType: 'Column', divider: 'none'},
-        {title: problemArray[0].title, titleType: 'small', content: <p>{problemArray[0].caption}</p>,  rowType: 'Row'},
-        {title: problemArray[1].title, titleType: 'small', content: <p>{problemArray[1].caption}</p>,  rowType: 'Row'},
-        {title: problemArray[2].title, titleType: 'small', content: <p>{problemArray[2].caption}</p>,  rowType: 'Row'},
+        {titleContent: <h2>{problemArray[0].title}</h2>, content: <p>{problemArray[0].caption}</p>,  rowType: 'Row'},
+        {titleContent: <h2>{problemArray[1].title}</h2>, content: <p>{problemArray[1].caption}</p>,  rowType: 'Row'},
+        {titleContent: <h2>{problemArray[2].title}</h2>, content: <p>{problemArray[2].caption}</p>,  rowType: 'Row'},
     ]
 
     const insightGridArray = [
         {title: 'Insights & Recommendations', content: insightOverview, rowType: 'Column', divider: 'none'},
-        {title: insightRecommendationArray[0].insightTitle, titleType: 'small', content: insight1Container,  rowType: 'Row'},
-        {title: insightRecommendationArray[1].insightTitle, titleType: 'small', content: insight2Container,  rowType: 'Row'},
-        {title: insightRecommendationArray[2].insightTitle, titleType: 'small', content: insight3Container,  rowType: 'Row'},
-        {title: insightRecommendationArray[3].insightTitle, titleType: 'small', content: insight4Container,  rowType: 'Row'},
+        {titleContent: <h2>{insightRecommendationArray[0].insightTitle}</h2>, content: insight1Container,  rowType: 'Row'},
+        {titleContent: <h2>{insightRecommendationArray[1].insightTitle}</h2>, content: insight2Container,  rowType: 'Row'},
+        {titleContent: <h2>{insightRecommendationArray[2].insightTitle}</h2>, content: insight3Container,  rowType: 'Row'},
+        {titleContent: <h2>{insightRecommendationArray[3].insightTitle}</h2>, content: insight4Container,  rowType: 'Row'},
     ]
 
     return (

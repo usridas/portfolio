@@ -3,7 +3,6 @@
     flex-direction: column;
     gap: 48px;
     padding: 40px 24px;
-    justify-content: center;
     align-items: center;
     width: -moz-available;
     width: -webkit-fill-available;
@@ -76,7 +75,6 @@
     aspect-ratio: 1/1;
     &:hover {
         top: -100px;
-        cursor: pointer;
     }
 }
 
@@ -323,19 +321,18 @@
 
 .playlistButton {
     all: unset;
-    cursor: pointer;
+    cursor: none;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
     &:active {
         all: unset;
-        cursor: pointer;
     }
 }
 
 .playButton {
     all: unset;
-    cursor: pointer;
+    cursor: none;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
@@ -346,7 +343,7 @@
 
 .pauseButton {
     all: unset;
-    cursor: pointer;
+    cursor: none;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
@@ -357,7 +354,7 @@
 
 .previousSongButton {
     all: unset;
-    cursor: pointer;
+    cursor: none;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
@@ -368,7 +365,7 @@
 
 .nextSongButton {
     all: unset;
-    cursor: pointer;
+    cursor: none;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
@@ -512,7 +509,7 @@
 
 .timestamp {
     color: #FFF;
-    font-family: Inter;
+    font-family: "Space Grotesk", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;

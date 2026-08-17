@@ -20,6 +20,11 @@ import Grid from '../components/Grid/Grid.js';
 
 export const Kavi = () => {
 
+  requestAnimationFrame(() => {
+        window.scrollTo(0,0);
+    });
+
+
   const summaryContent =
       <div className='columnWith24Gap'>
           <h2>KAVI is a South Asian women owned luxury beauty and self care brand. Rooted in South Asian culture and ayurvedic practices, KAVI strives to <span style={{color: '#2519D2'}}>make the beauty and self care routine enjoyable and relaxing through all-natural ingredients.</span></h2>

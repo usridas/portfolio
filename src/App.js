@@ -6,10 +6,8 @@ import AboutMe from './pages/AboutMe';
 import Work from './pages/Work.js';
 import Umeko from './pages/Umeko';
 import Kavi from './pages/Kavi';
-import ElfsterRedesign from './pages/ElfsterRedesign';
 import SmallNav from './components/Nav/SmallNav.js';
 import SmallNavModal from './components/Nav/SmallNavModal.js';
-import Viasat from './pages/Viasat.js';
 import PlaylistHome from './pages/PlaylistHome.js';
 import IndividualPlaylist from './pages/IndividualPlaylist.js';
 import { isMobile } from './utils/utils.js';
@@ -26,16 +24,61 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMusic, setIsMusic] = useState(false);
   const location = useLocation();
+  const cursor = document.getElementById('cursor');
+  const targets = document.querySelectorAll('.hover-target');
+
+  document.addEventListener("mouseleave", () => {
+    cursor.style.opacity = '0';
+  });
+
+  document.addEventListener("mouseenter", () => {
+    cursor.style.opacity = '1';
+  });
+
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const html = document.documentElement;
+    const body = document.body;
+    if (isMobileVar) {
+      html.style.scrollSnapType = 'none';
+      body.style.scrollSnapType = 'none';
+    }
+
+    window.scrollTo(0,0);
+
     setIsMusic(location.pathname === '/Music' || location.pathname === '/VideoGameVibes' || location.pathname === '/ANightAtTheCasino' || location.pathname === '/FamilyRoadTrip' || location.pathname === '/LetsDisco');
-  }, [location]);
+    cursor.classList.remove('grow');
+    window.addEventListener('mousemove', (e) => {
+      if (isMobileVar) {
+        cursor.style.opacity = '0';
+      }
+      else {
+        cursor.style.opacity = '1';
+      }
+    });
+  }, [location, isMobileVar]);
+
+  
+  window.addEventListener('mousemove', (e) => {
+    cursor.style.top = `${e.clientY-20}px`;
+    cursor.style.left = `${e.clientX-20}px`;
+  });
+
+  targets.forEach(target => {
+    target.addEventListener('mouseenter', () => {
+      cursor.classList.add('grow');
+    });
+    
+    target.addEventListener('mouseleave', () => {
+      cursor.classList.remove('grow');
+    });
+  });
+ 
   
   const welcomeText = 
     <div className='welcomeContainer'>
       <h1 className='welcomeTitle'>Hello, World! I'm Umaiyal.</h1>
-      <h2 className='welcomeText'>I am a UI/UX designer with a software development background aiming to <span style={{color: '#2519D2'}}>bridge the gap between design and engineering in order to empower users through intuitive interfaces.</span><br/><br/>After graduating with a Bachelor's in Computer Engineering and a minor in Art & Design, I moved to San Diego, California to start work as a software engineer. Through work, I was able to explore my love for development, design, and management. ​I am currently in a Master's program for User Experience Design and am searching for work in the UI/UX field.</h2>
+      <h2 className='welcomeText'>I am a UI/UX designer with a software development background aiming to <span style={{color: '#2519D2', fontWeight: '700'}}>bridge the gap between design and engineering</span> in order to empower users through intuitive interfaces.</h2>
     </div>
   
   return (
@@ -53,8 +96,6 @@ function App() {
           <Route path="/TraderJoesResearch" element={<TraderJoesResearch />} />
           <Route path="/Umeko" element={<Umeko />} />
           <Route path="/Kavi" element={<Kavi />} />
-          {/* <Route path="/ElfsterRedesign" element={<ElfsterRedesign />} /> */}
-          {/* <Route path="/Viasat" element={<Viasat />} /> */}
           <Route path="/Music" element={<PlaylistHome />} />
           <Route path="/VideoGameVibes" element={<IndividualPlaylist />} />
           <Route path="/ANightAtTheCasino" element={<IndividualPlaylist />} />

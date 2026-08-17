@@ -96,11 +96,8 @@ import AlaskaAirlinesFlightTierOptions from './AlaskaAirlinesResearch/FlightTier
 import AlaskaAirlinesSeatAssignment from './AlaskaAirlinesResearch/SeatAssignment.png';
 import AlaskaAirlinesTripSummary from './AlaskaAirlinesResearch/TripSummary.png';
 import AlaskaAirlinesSolution1 from './AlaskaAirlinesResearch/Solution1.png';
-import AlaskaAirlinesOriginal1 from './AlaskaAirlinesResearch/Original1.png';
 import AlaskaAirlinesSolution2 from './AlaskaAirlinesResearch/Solution2.png';
-import AlaskaAirlinesOriginal2 from './AlaskaAirlinesResearch/Original2.png';
 import AlaskaAirlinesSolution3 from './AlaskaAirlinesResearch/Solution3.png';
-import AlaskaAirlinesOriginal3 from './AlaskaAirlinesResearch/Original3.png';
 import KohiToKochaColors from './KohiToKocha/Colors.png';
 import KohiToKochaComponents from './KohiToKocha/Components.png';
 import KohiToKochaComponents1 from './KohiToKocha/Components1.png';
@@ -221,11 +218,8 @@ export {
     AlaskaAirlinesFlightTierOptions,
     AlaskaAirlinesSeatAssignment,
     AlaskaAirlinesTripSummary,
-    AlaskaAirlinesOriginal1,
     AlaskaAirlinesSolution1,
-    AlaskaAirlinesOriginal2,
     AlaskaAirlinesSolution2,
-    AlaskaAirlinesOriginal3,
     AlaskaAirlinesSolution3,
     ElfsterCover,
     ElfsterFeedback,

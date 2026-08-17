@@ -60,7 +60,7 @@ export const FlippingImageSlide = ({imageSlideProps, imageMaxWidth=false}) => {
         }
         {/* {(isLoading1 || isLoading2) && <div className='flippingImageBoxLoading'><Spinner /></div>} */}
         <div className='imageSlideFlipCard' onMouseOver={()=>{imageSlideProps[imageIndex].flipButtonFunction(true)}} onTouchEnd={(event)=>{event.preventDefault(); imageSlideProps[imageIndex].flipButtonFunction(!imageSlideProps[imageIndex].flipButtonState)}} onMouseLeave={()=>{imageSlideProps[imageIndex].flipButtonFunction(false)}}>
-            <div className={imageSlideProps[imageIndex].flipButtonState ? 'imageSlideFlipCardInner imageSlideIsFlipped' : 'imageSlideFlipCardInner'}>
+            <div className={imageSlideProps[imageIndex].flipButtonState ? 'imageSlideFlipCardInner imageSlideIsFlipped hover-target' : 'imageSlideFlipCardInner hover-target'}>
                 <div className='imageSlideFlipCardFront'>
                     {isLoading1 && <div className='flippingImageBoxLoading'><Spinner /></div>}
                     {!isLoading1 && <img onLoad={()=>setIsLoading1(false)} alt={toSentenceCase(imageSlideProps[imageIndex].title1)} aria-label={toSentenceCase(imageSlideProps[imageIndex].title1)} className='plainImageFlip' src={imageSlideProps[imageIndex].imagePath1} style={isLoading1 ? { display: 'none' } : {maxWidth: imageMaxWidth ? '700px' : 'none'}}/>}

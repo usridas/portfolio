@@ -7,7 +7,12 @@
     animation: fadeIn 1s forwards;
     z-index: 1000;
     justify-items: center;
-    padding: 0 24px 40px 24px;
+    padding: 40px;
+    background: linear-gradient(to bottom, #fdfcf8 90%, #fdfcf800);
+    position: fixed;
+    @media (max-width: 767px) {
+       padding: 0 24px 24px 24px;
+    }
 }
 
 .largeNav {
@@ -18,7 +23,6 @@
     width: -webkit-fill-available;
     width: stretch;
     gap: 40px;
-    max-width: 1200px;
     align-items: center;
 }
 
@@ -30,7 +34,6 @@
 }
 
 .navTitle {
-    font-family: "neue-haas-grotesk-display", sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -52,7 +55,10 @@
     margin-bottom: 24px;
     z-index: 1000;
     justify-items: center;
-    padding: 0px 24px;
+    padding: 0px 40px;
+    @media (max-width: 767px) {
+       padding: 0 24px;
+    }
 }
 
 .smallNav {
@@ -62,7 +68,6 @@
     width: -moz-available;
     width: -webkit-fill-available;
     width: stretch;
-    max-width: 1200px;
     gap: 40px;
 }
 
@@ -105,8 +110,19 @@
     gap: 8px;
 }
 
+.footerContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: stretch;
+    background-color: #1A0088;
+    padding: 80px 40px;
+    color: #FDFCF8;
+}
+
 .footer {
-    padding: 80px 24px 0px 24px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 80px 24px;
     animation: fadeIn 1s forwards;
 }
 

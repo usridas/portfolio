@@ -215,6 +215,7 @@
   position: relative;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
+  margin-top: 70px;
   width: 100vw;
   height: 600px;
   background-size: cover;
@@ -225,7 +226,8 @@
   overflow: hidden;
   min-width: 320px;
   @media (max-width: 767px) {
-        height: 400px;
+        margin-top: 0px;
+        height: 600px;
     }
 }
 

@@ -29,6 +29,11 @@ export const RollWithIt = () => {
     const { isXSmall, isSmall } = useScreenResolution();
     const isMobile = isSmall || isXSmall;
 
+    requestAnimationFrame(() => {
+        window.scrollTo(0,0);
+    });
+
+
     const summaryContent =
         <div className='columnWith24Gap'>
             <h2>This website will be the touchpoint of Roll With It, an Asian bakery. Roll With It offers baked goods and pastries as well as coffee and tea drinks. <span style={{color: '#2519D2'}}>They focus on highlighting Asian culture and uplifting the Asian communities and diasporas through food.</span> This website will include a blog page about coffee, tea, baked goods, and Asian culture, a menu of in-store products, and an online product catalog.</h2>

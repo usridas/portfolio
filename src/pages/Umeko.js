@@ -20,6 +20,11 @@ import Grid from '../components/Grid/Grid.js';
 
 export const Umeko = () => {
 
+  requestAnimationFrame(() => {
+        window.scrollTo(0,0);
+    });
+
+
   const summaryContent =
     <div className='columnWith24Gap'>
         <h2>Umeko is a fun, light-hearted Japanese style cafe which sources tea from Japan. <span style={{color: '#2519D2'}}>They serve classic teas, as well as unique blends, and boba to cater to both younger and older aficionados.</span> The pastel, calm aesthetic is inspired by the Japanese plum (ume) and blossom. Umeko means "plum child" in Japanese and plum blossoms are associated with good fortune and health.</h2>

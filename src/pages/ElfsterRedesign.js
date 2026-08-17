@@ -20,6 +20,11 @@ export const ElfsterRedesign = () => {
   const { isSmall, isXSmall } = useScreenResolution();
   const isMobile = isSmall || isXSmall;
 
+  requestAnimationFrame(() => {
+        window.scrollTo(0,0);
+    });
+
+
   const summaryContent = <div className='columnWith24Gap'>
       <p>As a fun side project, I wanted to redesign the Elfster gift exchange mobile app to be more user friendly, intuitive, and versatile. Elfster is an app that allows users to create wishlists and groups with friends to organize gift exchanges. When a group exchange is made, a user can create a wishlist which friends can see and order from. Essentially this app should allow friends to get purposeful gifts and to avoid duplicates.</p>
       <div className='steps'>
