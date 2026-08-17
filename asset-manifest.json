@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fd6ead64.css",
-    "main.js": "/static/js/main.7f9beb95.js",
+    "main.js": "/static/js/main.daab25cd.js",
     "static/js/453.ac9b7e2a.chunk.js": "/static/js/453.ac9b7e2a.chunk.js",
     "static/media/mockup3.png": "/static/media/mockup3.8a6b4c0488704ae6db2c.png",
     "static/media/Inspiration.png": "/static/media/Inspiration.c6a0e38e20a01227ae6a.png",
@@ -83,7 +83,7 @@
     "static/media/Logo.png": "/static/media/Logo.aa3af76feba6685e685b.png",
     "static/media/Prototype1.png": "/static/media/Prototype1.8b82b2080a0363f77172.png",
     "static/media/banner.png": "/static/media/banner.c2413dcbbe80837df9af.png",
-    "static/media/Solution2.png": "/static/media/Solution2.390563406eafe783165a.png",
+    "static/media/Solution3.png": "/static/media/Solution3.390563406eafe783165a.png",
     "static/media/brandAsset3.png": "/static/media/brandAsset3.14f4262f4ade748fdfd2.png",
     "static/media/Prototype7.png": "/static/media/Prototype7.94de4b3aac02d594a37e.png",
     "static/media/ChrysolinaPerforata.jpg": "/static/media/ChrysolinaPerforata.85ec325df89008e3e33f.jpg",
@@ -95,7 +95,7 @@
     "static/media/CompetitiveFeatureMatrix.png": "/static/media/CompetitiveFeatureMatrix.bbef08ed3c11f20017f1.png",
     "static/media/DanausPlexippus.jpg": "/static/media/DanausPlexippus.1d1b12a9735cca99f730.jpg",
     "static/media/Daruma.jpg": "/static/media/Daruma.ad79e52f6631038396f9.jpg",
-    "static/media/Solution3.png": "/static/media/Solution3.f2d1cbd54db4a05c6802.png",
+    "static/media/Solution2.png": "/static/media/Solution2.f2d1cbd54db4a05c6802.png",
     "static/media/Banner4.png": "/static/media/Banner4.87e61859be527c287e24.png",
     "static/media/wishlistScreens.png": "/static/media/wishlistScreens.2fa43d96d6c5cba9399a.png",
     "static/media/CTA.png": "/static/media/CTA.08e867bf209361143f6f.png",
@@ -187,11 +187,11 @@
     "index.html": "/index.html",
     "static/media/rotate.svg": "/static/media/rotate.4308d1450fa74ad2cfd5d2efcd9b9e57.svg",
     "main.fd6ead64.css.map": "/static/css/main.fd6ead64.css.map",
-    "main.7f9beb95.js.map": "/static/js/main.7f9beb95.js.map",
+    "main.daab25cd.js.map": "/static/js/main.daab25cd.js.map",
     "453.ac9b7e2a.chunk.js.map": "/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd6ead64.css",
-    "static/js/main.7f9beb95.js"
+    "static/js/main.daab25cd.js"
   ]
 }
