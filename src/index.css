@@ -59,6 +59,9 @@ a, button {
   &:hover {
     text-decoration-line: none;
     color: #6D6C65;
+    @media (max-width: 767px) {
+      cursor: pointer;
+    }
   }
   &:active {
     text-decoration-line: none;

@@ -98,6 +98,7 @@
 }
 
 .cursor {
+  opacity: 0;
   position: fixed;
   height: 40px;
   width: 40px;

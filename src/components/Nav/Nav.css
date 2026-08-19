@@ -117,6 +117,9 @@
     background-color: #1A0088;
     padding: 80px 40px;
     color: #FDFCF8;
+    @media (max-width: 767px) {
+       padding: 40px 24px;
+    }
 }
 
 .footer {
